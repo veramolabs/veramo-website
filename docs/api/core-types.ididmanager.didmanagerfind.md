@@ -33,7 +33,7 @@ const aliceIdentifiers = await agent.didManagerFind({
   alias: 'alice',
 })
 
-const goerliIdentifiers = await agent.didManagerFind({
-  provider: 'did:ethr:goerli',
+const sepoliaIdentifiers = await agent.didManagerFind({
+  provider: 'did:ethr',
 })
 ```

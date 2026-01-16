@@ -17,15 +17,5 @@ See [IDataStoreORM.dataStoreORMGetMessagesCount()](./core-types.idatastoreorm.da
 **Signature:**
 
 ```typescript
-export type TMessageColumns =
-  | 'from'
-  | 'to'
-  | 'id'
-  | 'createdAt'
-  | 'expiresAt'
-  | 'threadId'
-  | 'type'
-  | 'raw'
-  | 'replyTo'
-  | 'replyUrl'
+export type TMessageColumns = (typeof ALLOWED_COLUMNS.message)[number]
 ```

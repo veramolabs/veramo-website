@@ -19,12 +19,5 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export type TPresentationColumns =
-  | 'context'
-  | 'type'
-  | 'id'
-  | 'holder'
-  | 'verifier'
-  | 'expirationDate'
-  | 'issuanceDate'
+export type TPresentationColumns = (typeof ALLOWED_COLUMNS.presentation)[number]
 ```

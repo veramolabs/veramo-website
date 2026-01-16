@@ -19,13 +19,5 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export type TCredentialColumns =
-  | 'context'
-  | 'type'
-  | 'id'
-  | 'issuer'
-  | 'subject'
-  | 'expirationDate'
-  | 'issuanceDate'
-  | 'hash'
+export type TCredentialColumns = (typeof ALLOWED_COLUMNS.credential)[number]
 ```

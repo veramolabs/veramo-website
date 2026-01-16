@@ -19,5 +19,5 @@ The columns that can be queried for an [IIdentifier](./core-types.iidentifier.md
 **Signature:**
 
 ```typescript
-export type TIdentifiersColumns = 'did' | 'alias' | 'provider'
+export type TIdentifiersColumns = (typeof ALLOWED_COLUMNS.identifier)[number]
 ```

@@ -19,15 +19,5 @@ This API may change without a BREAKING CHANGE notice.
 **Signature:**
 
 ```typescript
-export type TClaimsColumns =
-  | 'context'
-  | 'credentialType'
-  | 'type'
-  | 'value'
-  | 'isObj'
-  | 'id'
-  | 'issuer'
-  | 'subject'
-  | 'expirationDate'
-  | 'issuanceDate'
+export type TClaimsColumns = (typeof ALLOWED_COLUMNS.claim)[number]
 ```

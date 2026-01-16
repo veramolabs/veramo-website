@@ -32,7 +32,7 @@ Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;
 ```typescript
 const identifier = await agent.didManagerCreate({
   alias: 'charlie',
-  provider: 'did:ethr:goerli',
+  provider: 'did:ethr',
   kms: 'local',
 })
 ```

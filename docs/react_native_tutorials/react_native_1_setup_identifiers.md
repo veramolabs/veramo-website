@@ -65,14 +65,14 @@ Create `metro.config.js` file and make sure it looks like this:
 // filename: metro.config.js
 const { getDefaultConfig } = require('expo/metro-config')
 
-const config = getDefaultConfig(__dirname);
+const config = getDefaultConfig(__dirname)
 
-config.resolver.unstable_enablePackageExports = true;
+config.resolver.unstable_enablePackageExports = true
 
 // For React Native below v0.72.0 you need to also add:
-config.resolver.sourceExts.push('cjs');
+config.resolver.sourceExts.push('cjs')
 
-module.exports = config;
+module.exports = config
 ```
 
 #### `crypto` shims
@@ -91,7 +91,7 @@ Now edit your `babel.config.js` file at your project root and add the `babel-plu
 ```js
 // filename: babel.config.js
 module.exports = function (api) {
-  api.cache(true);
+  api.cache(true)
   return {
     presets: [['babel-preset-expo', { lazyImports: true }]],
     plugins: [
@@ -118,9 +118,8 @@ module.exports = function (api) {
       ],
       // 'react-native-reanimated/plugin',
     ],
-  };
-};
-
+  }
+}
 ```
 
 Next, we can start adding the shims to the top of our `App.tsx` file. Read
@@ -242,24 +241,24 @@ Finally, create the agent and add plugins for Key, Identifiers, Resolution, Cred
 
 // Veramo agent setup
 export const agent = createAgent<IDIDManager & IKeyManager & IDataStore & IDataStoreORM>({
-    plugins: [
-      new KeyManager({
-        store: new KeyStore(dbConnection),
-        kms: {
-          local: new KeyManagementSystem(new PrivateKeyStore(dbConnection, new SecretBox(DB_ENCRYPTION_KEY))),
-        },
-      }),
-      new DIDManager({
-        store: new DIDStore(dbConnection),
-        defaultProvider: 'did:peer',
-        providers: {
-          'did:peer': new PeerDIDProvider({
-            defaultKms: 'local'
-          }),
-        },
-      }),
-    ],
-  })
+  plugins: [
+    new KeyManager({
+      store: new KeyStore(dbConnection),
+      kms: {
+        local: new KeyManagementSystem(new PrivateKeyStore(dbConnection, new SecretBox(DB_ENCRYPTION_KEY))),
+      },
+    }),
+    new DIDManager({
+      store: new DIDStore(dbConnection),
+      defaultProvider: 'did:peer',
+      providers: {
+        'did:peer': new PeerDIDProvider({
+          defaultKms: 'local',
+        }),
+      },
+    }),
+  ],
+})
 ```
 
 ### What we have so far
@@ -322,8 +321,13 @@ const App = () => {
       provider: 'did:peer',
       options: {
         num_algo: 2,
-        service: { id: '1', type: 'DIDCommMessaging', serviceEndpoint: "did:web:dev-didcomm-mediator.herokuapp.com", description: 'for messaging' } 
-      }
+        service: {
+          id: '1',
+          type: 'DIDCommMessaging',
+          serviceEndpoint: 'did:web:dev-didcomm-mediator.herokuapp.com',
+          description: 'for messaging',
+        },
+      },
     })
     setIdentifiers((s) => s.concat([_id]))
   }

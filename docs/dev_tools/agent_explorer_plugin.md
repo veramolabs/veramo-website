@@ -16,7 +16,7 @@ some of the methods it will use from the associated Veramo agent.
 A [plugin](https://github.com/veramolabs/agent-explorer/blob/main/packages/agent-explore/src/plugins/contacts/index.tsx#L9) that adds a new menu item and a new page to the UI to manage some contacts.
 
 ```tsx
-import { IPlugin } from '@veramo-community/agent-explorer-plugin';
+import { IPlugin } from '@veramo-community/agent-explorer-plugin'
 
 const Plugin: IPlugin = {
   init: () => {
@@ -46,11 +46,10 @@ const Plugin: IPlugin = {
           icon: <ContactsOutlined />,
         },
       ],
-      getCredentialContextMenuItems
+      getCredentialContextMenuItems,
     }
-  }
-};
-
+  },
+}
 ```
 
 ### Example implementations
@@ -86,7 +85,7 @@ https://github.com/veramolabs/agent-explorer/assets/16773277/0fda3289-1d71-4559-
 #### Option 2: without `ngrok`
 
 Run local `agent-explore` instance
-  
+
 ```bash
 git clone https://github.com/veramolabs/agent-explorer.git
 cd agent-explorer
@@ -97,12 +96,10 @@ cd ../agent-explore
 pnpm dev
 ```
 
-
 - Clone any of the above mentioned plugin repositories
 - Run `pnpm i`
 - Run `pnpm serve` to start the development server
 - Copy `http://localhost:8080/plugin.js` and paste it in the text field after clicking Add http://localhost:3000/plugins
-
 
 ### Publishing
 
@@ -113,14 +110,15 @@ pnpm dev
 ```
 https://cdn.jsdelivr.net/gh/{USER}/{REPO}/dist/plugin.js
 ```
+
 ## Plugin API
 
 ### `name`
 
-The plugin name 
+The plugin name
 
-```ts  
-name: string;
+```ts
+name: string
 ```
 
 ### `description`
@@ -128,12 +126,13 @@ name: string;
 A short description of the plugin
 
 ```ts
-description: string;
+description: string
 ```
 
 ### `icon`
 
 The plugin icon
+
 ```ts
 icon?: React.ReactNode;
 ```
@@ -146,9 +145,11 @@ These will be displayed in the plugins list
 
 ```ts
 /** An array of routes to be added to the explorer */
-routes?: IRouteComponent[];  
+routes?: IRouteComponent[];
 ```
+
 Example:
+
 ```ts
 routes: [
   {
@@ -171,6 +172,7 @@ menuItems?: ExtendedMenuDataItem[];
 ```
 
 Example:
+
 ```ts
 menuItems: [
   {
@@ -188,16 +190,16 @@ menuItems: [
 An array of methods that the plugin requires to be implemented by the agent.
 
 If the agent does not implement the required methods, the plugin will be loaded but the menu item will not be shown.
+
 ```ts
 requiredMethods: string[];
 ```
 
 Example:
+
 ```ts
 requiredMethods: ['dataStoreORMGetIdentifiers'],
 ```
-
-
 
 ### `hasCss`
 
@@ -267,6 +269,7 @@ Returns a react component that will be displayed in the identifier hover compone
 ```ts
 getIdentifierHoverComponent?: () => React.FC<IIdentifierHoverComponentProps>;
 ```
+
 Example: [Gitcoin Passport plugin](https://github.com/veramolabs/agent-explorer-plugin-gitcoin-passport/blob/main/src/index.tsx#L20)
 
 ![Identifier hover](./identifier-hover.png)
@@ -295,6 +298,7 @@ getIdentifierTabsComponents: () => {
   ]
 }
 ```
+
 ![Identifier tabs](./identifier-tabs.png)
 
 ### `getCredentialActionComponents`
@@ -316,6 +320,7 @@ Example: [Reactions plugin](https://github.com/veramolabs/agent-explorer/blob/ma
 ```ts
 getMarkdownComponents?: () => Partial<Components> | undefined;
 ```
+
 ### `getRemarkPlugins`
 
 `remark` plugins for custom markdown manipulations

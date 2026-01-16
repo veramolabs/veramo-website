@@ -21,9 +21,9 @@ ESM" stance. See [this article](https://medium.com/veramo/veramo-is-switching-to
 
 Additional info regarding ESM can be found at the following links:
 
-* [https://www.typescriptlang.org/docs/handbook/esm-node.html](https://www.typescriptlang.org/docs/handbook/esm-node.html)
-* [https://nodejs.org/api/esm.html](https://nodejs.org/api/esm.html)
-* [https://caniuse.com/?search=modules](https://caniuse.com/?search=modules)
+- [https://www.typescriptlang.org/docs/handbook/esm-node.html](https://www.typescriptlang.org/docs/handbook/esm-node.html)
+- [https://nodejs.org/api/esm.html](https://nodejs.org/api/esm.html)
+- [https://caniuse.com/?search=modules](https://caniuse.com/?search=modules)
 
 ### The `jsonld` ecosystem
 
@@ -39,18 +39,18 @@ dependencies:
 // filename: package.json
 {
   // ...
-  "resolutions": {
-    "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
-  }
+  resolutions: {
+    jsonld: 'npm:@digitalcredentials/jsonld@^6.0.0',
+  },
 }
 ```
 
 Different package managers use different configurations for such overrides:
 
-* [npm overrides](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#overrides)
-* [yarn v2+ resolutions](https://yarnpkg.com/configuration/manifest#resolutions)
-* [yarn v1 resolutions](https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/)
-* [pnpm resolutions](https://pnpm.io/package_json#resolutions)
+- [npm overrides](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#overrides)
+- [yarn v2+ resolutions](https://yarnpkg.com/configuration/manifest#resolutions)
+- [yarn v1 resolutions](https://classic.yarnpkg.com/lang/en/docs/selective-version-resolutions/)
+- [pnpm resolutions](https://pnpm.io/package_json#resolutions)
 
 See [this issue for more details](https://github.com/decentralized-identity/veramo/issues/1407)
 
@@ -63,9 +63,9 @@ maintained by Sphereon](https://github.com/Sphereon-Opensource/isomorphic-webcry
 // filename: package.json
 {
   // ...
-  "resolutions": {
-    "isomorphic-webcrypto": "npm:@sphereon/isomorphic-webcrypto@^2.4.0"
-  }
+  resolutions: {
+    'isomorphic-webcrypto': 'npm:@sphereon/isomorphic-webcrypto@^2.4.0',
+  },
 }
 ```
 
@@ -73,6 +73,5 @@ maintained by Sphereon](https://github.com/Sphereon-Opensource/isomorphic-webcry
 
 Checkout the following projects to see how they have successfully configured their production-level React Native apps using Veramo:
 
-* [Sphereon mobile wallet](https://github.com/Sphereon-Opensource/mobile-wallet)
-* [Tonomy ID](https://github.com/Tonomy-Foundation/Tonomy-ID)
-
+- [Sphereon mobile wallet](https://github.com/Sphereon-Opensource/mobile-wallet)
+- [Tonomy ID](https://github.com/Tonomy-Foundation/Tonomy-ID)

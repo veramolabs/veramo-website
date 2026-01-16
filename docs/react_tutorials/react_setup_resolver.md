@@ -87,17 +87,17 @@ Open `src/App.css` and add the following styles to the top of the file:
 
 ```css
 pre {
-    font-family: monospace;
-    white-space: pre;
+  font-family: monospace;
+  white-space: pre;
 }
 
 #result {
-    text-align: left;
-    width: 900px;
-    background-color: #24232d;
-    color: #25c2a0;
-    padding: 15px;
-    overflow: scroll;
+  text-align: left;
+  width: 900px;
+  background-color: #24232d;
+  color: #25c2a0;
+  padding: 15px;
+  overflow: scroll;
 }
 ```
 
@@ -168,9 +168,9 @@ The solution is to add a `resolutions` block to your `package.json` file and rep
 // filename: package.json
 {
   // ...
-  "resolutions": {
-    "jsonld": "npm:@digitalcredentials/jsonld@^6.0.0"
-  }
+  resolutions: {
+    jsonld: 'npm:@digitalcredentials/jsonld@^6.0.0',
+  },
 }
 ```
 
