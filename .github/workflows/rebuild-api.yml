@@ -1,4 +1,6 @@
 name: Trigger API reference docs rebuild
+permissions:
+  contents: read
 on:
   workflow_dispatch:
   repository_dispatch:
@@ -7,17 +9,19 @@ jobs:
   docs:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:
           fetch-depth: 0
+          persist-credentials: false
           token: ${{secrets.GH_TOKEN}}
-      - uses: pnpm/action-setup@v4
-      - name: 'setup node with cache'
-        uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@41ff72655975bd51cab0327fa583b6e92b6d3061 # v4.2.0
         with:
-          node-version: 20
+          version: 10
+      - name: 'Setup Node.js with pnpm cache'
+        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        with:
+          node-version: 22
           cache: 'pnpm'
-      - run: pnpm add -g pnpm
       - name: 'build veramo API docs'
         run: |
           pnpm install
@@ -34,12 +38,12 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/$GITHUB_REPOSITORY
       - name: 'Commit changes and tag the new version'
         run: |
-          git clone -b main https://github.com/uport-project/veramo.git veramo
+          git clone -b main https://github.com/decentralized-identity/veramo.git veramo
           RELEASE_VERSION=`echo "console.log(require('./veramo/lerna.json').version)" | node`
           if [ "${GITHUB_REF}" != "refs/heads/main" ]; then
             RELEASE_VERSION="${RELEASE_VERSION}-preview-${GITHUB_SHA}"
           fi
-          yarn version --no-git-tag-version --new-version "$RELEASE_VERSION"
+          pnpm version --no-git-tag-version --new-version "$RELEASE_VERSION"
           git status
           echo Deploying docs for version v$RELEASE_VERSION
           git add .
