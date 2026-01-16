@@ -294,11 +294,11 @@ function Home() {
         <div className="container">
           <div className={styles.socialLinks}>
             <GitHubButton
-              href="https://github.com/uport-project/veramo"
+              href="https://github.com/decentralized-identity/veramo"
               data-color-scheme="no-preference: dark; light: light; dark: light;"
               data-icon="octicon-star"
               data-size="large"
-              aria-label="Star uport-project/veramo on GitHub"
+              aria-label="Star decentralized-identity/veramo on GitHub"
             >
               Star
             </GitHubButton>

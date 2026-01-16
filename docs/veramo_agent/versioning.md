@@ -6,7 +6,7 @@ sidebar_label: Versioning
 
 Veramo is currently in public beta, but we want to make sure that the road is smooth as possible for anyone starting to
 build applications on Veramo with a view to deploying in production. If you are planning on deploying an application in
-production within the next year please [contact us here](https://github.com/uport-project/veramo/discussions) and talk
+production within the next year please [contact us here](https://github.com/decentralized-identity/veramo/discussions) and talk
 with us about your plans.
 
 Veramo packages are released under multiple tags to allow usage of the cutting edge or experimental features alongside

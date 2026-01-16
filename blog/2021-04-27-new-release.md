@@ -14,7 +14,7 @@ This new release brings together a bunch of fixes and features that we've been w
 the community (thank you for your contributions!).
 
 You can get a detailed list of changes in
-the [release description](https://github.com/uport-project/veramo/releases/tag/v1.2.0). Depending on how you're
+the [release description](https://github.com/decentralized-identity/veramo/releases/tag/v1.2.0). Depending on how you're
 using `Veramo` you might be impacted by some breaking changes that had to be added in this release.
 
 ## Veramo uses the latest DID spec
@@ -128,6 +128,6 @@ const myKeyDid = await agent.didManagerCreate({ provider: 'did:key' })
 
 ---
 
-As always, if there are any issues, [let us know abut them](https://github.com/uport-project/veramo/issues), and if
-there are questions, please use the [discussions page](https://github.com/uport-project/veramo/discussions) to get them
+As always, if there are any issues, [let us know about them](https://github.com/decentralized-identity/veramo/issues), and if
+there are questions, please use the [discussions page](https://github.com/decentralized-identity/veramo/discussions) to get them
 answered and stay tuned for more.

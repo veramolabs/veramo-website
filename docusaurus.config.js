@@ -11,7 +11,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
-  organizationName: 'uport-project', // Usually your GitHub org/username.
+  organizationName: 'veramolabs', // Usually your GitHub org/username.
   projectName: 'veramo', // Usually your repo name.
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
   themeConfig: {
@@ -61,12 +61,12 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/uport-project/veramo/discussions',
+          href: 'https://github.com/decentralized-identity/veramo/discussions',
           label: 'Discussions',
           position: 'right',
         },
         {
-          href: 'https://github.com/uport-project/veramo',
+          href: 'https://github.com/decentralized-identity/veramo',
           label: 'GitHub',
           position: 'right',
         },
@@ -129,17 +129,17 @@ module.exports = {
               href: 'https://discord.gg/FRRBdjemHV',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/veramolabs',
+              label: 'Bluesky',
+              href: 'https://bsky.app/profile/veramolabs.bsky.social',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/uport-project/veramo',
+              href: 'https://github.com/decentralized-identity/veramo',
             },
             {
               label: 'This website is powered by Netlify',
               to: 'https://www.netlify.com/',
-            }
+            },
           ],
         },
       ],
@@ -184,12 +184,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
+          editUrl: 'https://github.com/veramolabs/veramo-website/edit/main/',
         },
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
-        //   editUrl: 'https://github.com/uport-project/veramo-website/edit/main/',
+        //   editUrl: 'https://github.com/veramolabs/veramo-website/edit/main/',
         //   feedOptions: {
         //     type: 'all',
         //     copyright: `Copyright © ${new Date().getFullYear()} Veramo`,

@@ -26,7 +26,7 @@ We organize and participate in various community events throughout the year, inc
 
 We use various communication channels to stay connected and collaborate on our product. Our main communication channels include:
 
-- [GitHub discussions](https://github.com/uport-project/veramo/discussions)
+- [GitHub discussions](https://github.com/decentralized-identity/veramo/discussions)
 - [Discord](http://discord.gg/rhmDv85axQ)
 - [Community Email](mailto:hello@veramo.io)
 - [LinkedIn](https://www.linkedin.com/company/veramo) / [Twitter](https://twitter.com/veramolabs)
@@ -38,11 +38,11 @@ We welcome contributions of all kinds, from code changes to documentation improv
 
 ## Code of Conduct
 
-Our community is committed to providing a welcoming and inclusive environment for all contributors. We expect all members of our community to adhere to our [code of conduct](https://github.com/uport-project/veramo/blob/next/CODE_OF_CONDUCT.md).
+Our community is committed to providing a welcoming and inclusive environment for all contributors. We expect all members of our community to adhere to our [code of conduct](https://github.com/decentralized-identity/veramo/blob/next/CODE_OF_CONDUCT.md).
 
 ## Recognition
 
 We value and appreciate all contributions made by our community members. To recognize these contributions, we have a spotlight program in place. Contributors can earn verifiable credentials and other rewards for their contributions.
-The active contributors and maintainers of the Veramo repo can be found on [Github](https://github.com/uport-project/veramo/graphs/contributors).
+The active contributors and maintainers of the Veramo repo can be found on [Github](https://github.com/decentralized-identity/veramo/graphs/contributors).
 
 Join our open source community today and be a part of the amazing product we’re building.

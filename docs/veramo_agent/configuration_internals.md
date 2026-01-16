@@ -8,7 +8,7 @@ The CLI uses a YAML file for configuration. This is a deep dive into the interna
 executable code.
 
 Objects are created by a helper
-function [createObjects](https://github.com/uport-project/veramo/blob/faa7940c515bbd65dfaf9370594794f627099a38/packages/cli/src/lib/objectCreator.ts#L5)
+function [createObjects](https://github.com/decentralized-identity/veramo/blob/faa7940c515bbd65dfaf9370594794f627099a38/packages/cli/src/lib/objectCreator.ts#L5)
 , which recursively mutates the configuration object that was parsed from a YAML file and applies custom rules for
 objects containing:
 

@@ -4,7 +4,7 @@ set -e
 
 docsDir=$(pwd)
 
-GITREPO=https://github.com/uport-project/veramo.git
+GITREPO=https://github.com/decentralized-identity/veramo.git
 
 revamoDir=$(mktemp -d)
 cd $revamoDir
