@@ -22,13 +22,141 @@ export interface CredentialPayload
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                                                   | Description               |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------------------- |
-| ["@context"?](./core-types.credentialpayload.__context_.md)               |           | [ContextType](./core-types.contexttype.md)                             | **_(BETA)_** _(Optional)_ |
-| [credentialStatus?](./core-types.credentialpayload.credentialstatus.md)   |           | [CredentialStatusReference](./core-types.credentialstatusreference.md) | **_(BETA)_** _(Optional)_ |
-| [credentialSubject?](./core-types.credentialpayload.credentialsubject.md) |           | [CredentialSubject](./core-types.credentialsubject.md)                 | **_(BETA)_** _(Optional)_ |
-| [expirationDate?](./core-types.credentialpayload.expirationdate.md)       |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
-| [id?](./core-types.credentialpayload.id.md)                               |           | string                                                                 | **_(BETA)_** _(Optional)_ |
-| [issuanceDate?](./core-types.credentialpayload.issuancedate.md)           |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
-| [issuer](./core-types.credentialpayload.issuer.md)                        |           | [IssuerType](./core-types.issuertype.md)                               | **_(BETA)_**              |
-| [type?](./core-types.credentialpayload.type.md)                           |           | string\[\]                                                             | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+["@context"?](./core-types.credentialpayload.__context_.md)
+
+</td><td>
+
+</td><td>
+
+[ContextType](./core-types.contexttype.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[credentialStatus?](./core-types.credentialpayload.credentialstatus.md)
+
+</td><td>
+
+</td><td>
+
+[CredentialStatusReference](./core-types.credentialstatusreference.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[credentialSubject?](./core-types.credentialpayload.credentialsubject.md)
+
+</td><td>
+
+</td><td>
+
+[CredentialSubject](./core-types.credentialsubject.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[expirationDate?](./core-types.credentialpayload.expirationdate.md)
+
+</td><td>
+
+</td><td>
+
+[DateType](./core-types.datetype.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[id?](./core-types.credentialpayload.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[issuanceDate?](./core-types.credentialpayload.issuancedate.md)
+
+</td><td>
+
+</td><td>
+
+[DateType](./core-types.datetype.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[issuer](./core-types.credentialpayload.issuer.md)
+
+</td><td>
+
+</td><td>
+
+[IssuerType](./core-types.issuertype.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[type?](./core-types.credentialpayload.type.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

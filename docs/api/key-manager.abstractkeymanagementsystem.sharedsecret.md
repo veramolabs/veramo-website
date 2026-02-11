@@ -19,10 +19,31 @@ abstract sharedSecret(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                             | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| args      | { myKeyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; theirKey: Pick&lt;[IKey](./core-types.ikey.md), 'publicKeyHex' &#124; 'type'&gt;; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ myKeyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; theirKey: Pick&lt;[IKey](./core-types.ikey.md), 'publicKeyHex' \| 'type'&gt;; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

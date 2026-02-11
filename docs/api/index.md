@@ -10,34 +10,278 @@ hide_title: true
 
 ## Packages
 
-| Package                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [@veramo/core](./core.md)                                 | Provides [Agent](./core.agent.md) implementation                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [@veramo/core-types](./core-types.md)                     | Provides [Agent](./core.agent.md) implementation and defines [IResolver](./core-types.iresolver.md), [IDIDManager](./core-types.ididmanager.md), [IKeyManager](./core-types.ikeymanager.md), [IDataStore](./core-types.idatastore.md), [IMessageHandler](./core-types.imessagehandler.md) plugin interfaces                                                                                                                                                                                                  |
-| [@veramo/credential-eip712](./credential-eip712.md)       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [@veramo/credential-ld](./credential-ld.md)               | <p>Provides a [plugin](./credential-ld.credentialissuerld.md) for the [Agent](./core.agent.md) that implements [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md) interface.</p><p>This plugin adds support for working with JSON-LD credentials. When installed, this plugin will be automatically used by [CredentialPlugin](./credential-w3c.credentialplugin.md) if the user requests the credential to be signed by one of the installed signature suites.</p>                               |
-| [@veramo/credential-status](./credential-status.md)       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [@veramo/credential-w3c](./credential-w3c.md)             | <p>Provides a [plugin](./credential-w3c.credentialplugin.md) for the [Agent](./core.agent.md) that implements [ICredentialIssuer](./core-types.icredentialissuer.md) interface.</p><p>Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that verifies Credentials and Presentations in a message.</p>                                                                                                                                 |
-| [@veramo/data-store](./data-store.md)                     | [TypeORM](https://typeorm.io/) backed plugins. [Agent](./core.agent.md) [plugin](./data-store.datastore.md) that implements [IDataStore](./core-types.idatastore.md) interface. [Agent](./core.agent.md) [plugin](./data-store.datastoreorm.md) that implements [IDataStoreORM](./core-types.idatastoreorm.md) interface. Provides [KeyStore](./data-store.keystore.md) for [KeyManager](./key-manager.keymanager.md) and [DIDStore](./data-store.didstore.md) for [DIDManager](./did-manager.didmanager.md) |
-| [@veramo/data-store-json](./data-store-json.md)           | <p>[Agent](./core.agent.md) [plugin](./data-store-json.datastorejson.md) that implements [IDataStore](./core-types.idatastore.md) and [IDataStoreORM](./core-types.idatastoreorm.md)interfaces and uses a JSON tree as a backend.</p><p>The JSON tree backend can be persisted to any JSON compatible media using a callback that gets called when the agent data is updated.</p>                                                                                                                            |
-| [@veramo/did-comm](./did-comm.md)                         | Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that implements [IDIDComm](./did-comm.ididcomm.md) interface. Provides a [plugin](./did-comm.didcommmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that decrypts messages.                                                                                                                                                                                                                     |
-| [@veramo/did-discovery](./did-discovery.md)               | Provides a [plugin](./did-discovery.ididdiscovery.md) for the [Agent](./core.agent.md)                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [@veramo/did-jwt](./did-jwt.md)                           | Provides a [plugin](./did-jwt.jwtmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that finds and verifies a JWT in a message.                                                                                                                                                                                                                                                                                                                                                |
-| [@veramo/did-manager](./did-manager.md)                   | Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md) that implements [IDIDManager](./core-types.ididmanager.md) interface.                                                                                                                                                                                                                                                                                                                                                      |
-| [@veramo/did-provider-ethr](./did-provider-ethr.md)       | Provides <code>did:ethr</code> [identifier provider](./did-provider-ethr.ethrdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                               |
-| [@veramo/did-provider-ion](./did-provider-ion.md)         | Provides <code>did:ion</code> [identifier provider](./did-provider-ion.iondidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                                  |
-| [@veramo/did-provider-jwk](./did-provider-jwk.md)         | Provides <code>did:jwk</code> [identifier provider](./did-provider-jwk.jwkdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                                  |
-| [@veramo/did-provider-key](./did-provider-key.md)         | Provides <code>did:key</code> [identifier provider](./did-provider-key.keydidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                                  |
-| [@veramo/did-provider-peer](./did-provider-peer.md)       | Provides <code>did:key</code> [identifier provider](./did-provider-peer.peerdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                                |
-| [@veramo/did-provider-pkh](./did-provider-pkh.md)         | Provides <code>did:pkh</code> [identifier provider](./did-provider-pkh.pkhdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                                  |
-| [@veramo/did-provider-web](./did-provider-web.md)         | Provides <code>did:web</code> [identifier provider](./did-provider-web.webdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)                                                                                                                                                                                                                                                                                                                                                                  |
-| [@veramo/did-resolver](./did-resolver.md)                 | Provides a [plugin](./did-resolver.didresolverplugin.md) for the [Agent](./core.agent.md) that implements [IResolver](./core-types.iresolver.md) interface.                                                                                                                                                                                                                                                                                                                                                  |
-| [@veramo/key-manager](./key-manager.md)                   | Provides a [plugin](./key-manager.keymanager.md) for the [Agent](./core.agent.md) that implements [IKeyManager](./core-types.ikeymanager.md) interface                                                                                                                                                                                                                                                                                                                                                       |
-| [@veramo/kms-local](./kms-local.md)                       | Provides a [libsodium](https://github.com/jedisct1/libsodium.js) backed [key management system](./kms-local.keymanagementsystem.md) and [secret box](./kms-local.secretbox.md) for the [KeyManager](./key-manager.keymanager.md)                                                                                                                                                                                                                                                                             |
-| [@veramo/kms-web3](./kms-web3.md)                         | Provides a web3 wallet backed [key management system](./kms-web3.web3keymanagementsystem.md) for the [KeyManager](./key-manager.keymanager.md)                                                                                                                                                                                                                                                                                                                                                               |
-| [@veramo/message-handler](./message-handler.md)           | Provides a [plugin](./message-handler.messagehandler.md) for the [Agent](./core.agent.md) that implements [IMessageHandler](./core-types.imessagehandler.md) interface.                                                                                                                                                                                                                                                                                                                                      |
-| [@veramo/remote-client](./remote-client.md)               | Provides a [plugin](./remote-client.agentrestclient.md) for the [Agent](./core.agent.md) that can proxy method execution over HTTPS                                                                                                                                                                                                                                                                                                                                                                          |
-| [@veramo/remote-server](./remote-server.md)               | [Express](https://expressjs.com) router for exposing <code>@veramo/remote-client</code> OpenAPI schema                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [@veramo/selective-disclosure](./selective-disclosure.md) | <p>Provides a [plugin](./selective-disclosure.iselectivedisclosure.md) for the [Agent](./core.agent.md) that implements [SelectiveDisclosure](./selective-disclosure.selectivedisclosure.md) interface.</p><p>Provides a [plugin](./selective-disclosure.sdrmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that detects Selective Disclosure Request in a message</p>                                                                                                      |
-| [@veramo/url-handler](./url-handler.md)                   | Provides a [plugin](./url-handler.urlmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that can extract a raw message from a URL query string or by fetching.                                                                                                                                                                                                                                                                                                                 |
-| [@veramo/utils](./utils.md)                               | Contains helper methods for Veramo plugins.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+<table><thead><tr><th>
+
+Package
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[@veramo/core](./core.md)
+
+</td><td>
+
+Provides [Agent](./core.agent.md) implementation
+
+</td></tr>
+<tr><td>
+
+[@veramo/core-types](./core-types.md)
+
+</td><td>
+
+Provides [Agent](./core.agent.md) implementation and defines [IResolver](./core-types.iresolver.md), [IDIDManager](./core-types.ididmanager.md), [IKeyManager](./core-types.ikeymanager.md), [IDataStore](./core-types.idatastore.md), [IMessageHandler](./core-types.imessagehandler.md) plugin interfaces
+
+</td></tr>
+<tr><td>
+
+[@veramo/credential-eip712](./credential-eip712.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[@veramo/credential-ld](./credential-ld.md)
+
+</td><td>
+
+Provides a [handler](./credential-ld.credentialproviderld.md) for the [CredentialPlugin](./credential-w3c.credentialplugin.md) that implements interface.
+
+This plugin adds support for working with JSON-LD credentials. When installed, this plugin will be automatically used by [CredentialPlugin](./credential-w3c.credentialplugin.md) if the user requests the credential to be signed by one of the installed signature suites.
+
+</td></tr>
+<tr><td>
+
+[@veramo/credential-status](./credential-status.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[@veramo/credential-w3c](./credential-w3c.md)
+
+</td><td>
+
+Provides a [plugin](./credential-w3c.credentialplugin.md) for the [Agent](./core.agent.md) that implements [ICredentialIssuer](./core-types.icredentialissuer.md) interface.
+
+Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that verifies Credentials and Presentations in a message.
+
+</td></tr>
+<tr><td>
+
+[@veramo/data-store](./data-store.md)
+
+</td><td>
+
+[TypeORM](https://typeorm.io/) backed plugins. [Agent](./core.agent.md) [plugin](./data-store.datastore.md) that implements [IDataStore](./core-types.idatastore.md) interface. [Agent](./core.agent.md) [plugin](./data-store.datastoreorm.md) that implements [IDataStoreORM](./core-types.idatastoreorm.md) interface. Provides [KeyStore](./data-store.keystore.md) for [KeyManager](./key-manager.keymanager.md) and [DIDStore](./data-store.didstore.md) for [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/data-store-json](./data-store-json.md)
+
+</td><td>
+
+[Agent](./core.agent.md) [plugin](./data-store-json.datastorejson.md) that implements [IDataStore](./core-types.idatastore.md) and [IDataStoreORM](./core-types.idatastoreorm.md)interfaces and uses a JSON tree as a backend.
+
+The JSON tree backend can be persisted to any JSON compatible media using a callback that gets called when the agent data is updated.
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-comm](./did-comm.md)
+
+</td><td>
+
+Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that implements [IDIDComm](./did-comm.ididcomm.md) interface. Provides a [plugin](./did-comm.didcommmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that decrypts messages.
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-discovery](./did-discovery.md)
+
+</td><td>
+
+Provides a [plugin](./did-discovery.ididdiscovery.md) for the [Agent](./core.agent.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-jwt](./did-jwt.md)
+
+</td><td>
+
+Provides a [plugin](./did-jwt.jwtmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that finds and verifies a JWT in a message.
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-manager](./did-manager.md)
+
+</td><td>
+
+Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md) that implements [IDIDManager](./core-types.ididmanager.md) interface.
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-ethr](./did-provider-ethr.md)
+
+</td><td>
+
+Provides `did:ethr` [identifier provider](./did-provider-ethr.ethrdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-ion](./did-provider-ion.md)
+
+</td><td>
+
+Provides `did:ion` [identifier provider](./did-provider-ion.iondidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-jwk](./did-provider-jwk.md)
+
+</td><td>
+
+Provides `did:jwk` [identifier provider](./did-provider-jwk.jwkdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-key](./did-provider-key.md)
+
+</td><td>
+
+Provides `did:key` [identifier provider](./did-provider-key.keydidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-peer](./did-provider-peer.md)
+
+</td><td>
+
+Provides `did:key` [identifier provider](./did-provider-peer.peerdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-pkh](./did-provider-pkh.md)
+
+</td><td>
+
+Provides `did:pkh` [identifier provider](./did-provider-pkh.pkhdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-provider-web](./did-provider-web.md)
+
+</td><td>
+
+Provides `did:web` [identifier provider](./did-provider-web.webdidprovider.md) for the [DIDManager](./did-manager.didmanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/did-resolver](./did-resolver.md)
+
+</td><td>
+
+Provides a [plugin](./did-resolver.didresolverplugin.md) for the [Agent](./core.agent.md) that implements [IResolver](./core-types.iresolver.md) interface.
+
+</td></tr>
+<tr><td>
+
+[@veramo/key-manager](./key-manager.md)
+
+</td><td>
+
+Provides a [plugin](./key-manager.keymanager.md) for the [Agent](./core.agent.md) that implements [IKeyManager](./core-types.ikeymanager.md) interface
+
+</td></tr>
+<tr><td>
+
+[@veramo/kms-local](./kms-local.md)
+
+</td><td>
+
+Provides a [libsodium](https://github.com/jedisct1/libsodium.js) backed [key management system](./kms-local.keymanagementsystem.md) and [secret box](./kms-local.secretbox.md) for the [KeyManager](./key-manager.keymanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/kms-web3](./kms-web3.md)
+
+</td><td>
+
+Provides a web3 wallet backed [key management system](./kms-web3.web3keymanagementsystem.md) for the [KeyManager](./key-manager.keymanager.md)
+
+</td></tr>
+<tr><td>
+
+[@veramo/message-handler](./message-handler.md)
+
+</td><td>
+
+Provides a [plugin](./message-handler.messagehandler.md) for the [Agent](./core.agent.md) that implements [IMessageHandler](./core-types.imessagehandler.md) interface.
+
+</td></tr>
+<tr><td>
+
+[@veramo/remote-client](./remote-client.md)
+
+</td><td>
+
+Provides a [plugin](./remote-client.agentrestclient.md) for the [Agent](./core.agent.md) that can proxy method execution over HTTPS
+
+</td></tr>
+<tr><td>
+
+[@veramo/remote-server](./remote-server.md)
+
+</td><td>
+
+[Express](https://expressjs.com) router for exposing `@veramo/remote-client` OpenAPI schema
+
+</td></tr>
+<tr><td>
+
+[@veramo/selective-disclosure](./selective-disclosure.md)
+
+</td><td>
+
+Provides a [plugin](./selective-disclosure.iselectivedisclosure.md) for the [Agent](./core.agent.md) that implements [SelectiveDisclosure](./selective-disclosure.selectivedisclosure.md) interface.
+
+Provides a [plugin](./selective-disclosure.sdrmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that detects Selective Disclosure Request in a message
+
+</td></tr>
+<tr><td>
+
+[@veramo/url-handler](./url-handler.md)
+
+</td><td>
+
+Provides a [plugin](./url-handler.urlmessagehandler.md) for the [MessageHandler](./message-handler.messagehandler.md) that can extract a raw message from a URL query string or by fetching.
+
+</td></tr>
+<tr><td>
+
+[@veramo/utils](./utils.md)
+
+</td><td>
+
+Contains helper methods for Veramo plugins.
+
+</td></tr>
+</tbody></table>

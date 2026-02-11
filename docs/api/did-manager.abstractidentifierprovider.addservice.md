@@ -14,17 +14,48 @@ hide_title: true
 abstract addService(args: {
         identifier: IIdentifier;
         service: IService;
-        options?: any;
+        options?: IDIDManagerAddServiceArgs['options'];
     }, context: IAgentContext<IKeyManager>): Promise<any>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                                                      | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: any; } |             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;                          |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: [IDIDManagerAddServiceArgs](./core-types.ididmanageraddserviceargs.md)\['options'\]; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

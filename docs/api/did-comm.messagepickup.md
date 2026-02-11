@@ -20,7 +20,43 @@ export declare enum MessagePickup
 
 ## Enumeration Members
 
-| Member                        | Value                                                                           | Description  |
-| ----------------------------- | ------------------------------------------------------------------------------- | ------------ |
-| DELIVERY_REQUEST_MESSAGE_TYPE | <code>&quot;https://didcomm.org/messagepickup/3.0/delivery-request&quot;</code> | **_(BETA)_** |
-| STATUS_REQUEST_MESSAGE_TYPE   | <code>&quot;https://didcomm.org/messagepickup/3.0/status-request&quot;</code>   | **_(BETA)_** |
+<table><thead><tr><th>
+
+Member
+
+</th><th>
+
+Value
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+DELIVERY_REQUEST_MESSAGE_TYPE
+
+</td><td>
+
+`"https://didcomm.org/messagepickup/3.0/delivery-request"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+STATUS_REQUEST_MESSAGE_TYPE
+
+</td><td>
+
+`"https://didcomm.org/messagepickup/3.0/status-request"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

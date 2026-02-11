@@ -24,19 +24,103 @@ export declare class DIDCommHttpTransport extends AbstractDIDCommTransport
 
 ## Constructors
 
-| Constructor                                                                   | Modifiers | Description                                                                            |
-| ----------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------- |
-| [(constructor)(httpMethod)](./did-comm.didcommhttptransport._constructor_.md) |           | **_(BETA)_** Creates a new [DIDCommHttpTransport](./did-comm.didcommhttptransport.md). |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(httpMethod)](./did-comm.didcommhttptransport._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Creates a new [DIDCommHttpTransport](./did-comm.didcommhttptransport.md).
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                | Description                                                                                                              |
-| ----------------------------------------------------------- | --------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| [httpMethod](./did-comm.didcommhttptransport.httpmethod.md) |           | 'post' &#124; 'get' | **_(BETA)_** Defines the default HTTP method to use if not specified in the DID Document service entry of the recipient. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[httpMethod](./did-comm.didcommhttptransport.httpmethod.md)
+
+</td><td>
+
+</td><td>
+
+'post' \| 'get'
+
+</td><td>
+
+**_(BETA)_** Defines the default HTTP method to use if not specified in the DID Document service entry of the recipient.
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                               | Modifiers | Description                                                                                                                                            |
-| ------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [isServiceSupported(service)](./did-comm.didcommhttptransport.isservicesupported.md) |           | **_(BETA)_** Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
-| [send(service, message)](./did-comm.didcommhttptransport.send.md)                    |           | **_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isServiceSupported(service)](./did-comm.didcommhttptransport.isservicesupported.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Returns `true` if this transport is suitable for the provided DID Document service section, otherwise `false`.
+
+</td></tr>
+<tr><td>
+
+[send(service, message)](./did-comm.didcommhttptransport.send.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section.
+
+</td></tr>
+</tbody></table>

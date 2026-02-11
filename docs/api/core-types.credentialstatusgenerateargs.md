@@ -20,6 +20,36 @@ export interface CredentialStatusGenerateArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type   | Description                                                                                                                        |
-| --------------------------------------------------------- | --------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------- |
-| [type](./core-types.credentialstatusgenerateargs.type.md) |           | string | **_(BETA)_** The credential status type (aka credential status method) to be used in the <code>credentialStatus</code> generation. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[type](./core-types.credentialstatusgenerateargs.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** The credential status type (aka credential status method) to be used in the `credentialStatus` generation.
+
+</td></tr>
+</tbody></table>

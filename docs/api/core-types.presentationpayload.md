@@ -22,13 +22,141 @@ export interface PresentationPayload
 
 ## Properties
 
-| Property                                                                          | Modifiers | Type                                                                   | Description               |
-| --------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------------------- |
-| ["@context"?](./core-types.presentationpayload.__context_.md)                     |           | [ContextType](./core-types.contexttype.md)                             | **_(BETA)_** _(Optional)_ |
-| [expirationDate?](./core-types.presentationpayload.expirationdate.md)             |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
-| [holder](./core-types.presentationpayload.holder.md)                              |           | string                                                                 | **_(BETA)_**              |
-| [id?](./core-types.presentationpayload.id.md)                                     |           | string                                                                 | **_(BETA)_** _(Optional)_ |
-| [issuanceDate?](./core-types.presentationpayload.issuancedate.md)                 |           | [DateType](./core-types.datetype.md)                                   | **_(BETA)_** _(Optional)_ |
-| [type?](./core-types.presentationpayload.type.md)                                 |           | string\[\]                                                             | **_(BETA)_** _(Optional)_ |
-| [verifiableCredential?](./core-types.presentationpayload.verifiablecredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\] | **_(BETA)_** _(Optional)_ |
-| [verifier?](./core-types.presentationpayload.verifier.md)                         |           | string\[\]                                                             | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+["@context"?](./core-types.presentationpayload.__context_.md)
+
+</td><td>
+
+</td><td>
+
+[ContextType](./core-types.contexttype.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[expirationDate?](./core-types.presentationpayload.expirationdate.md)
+
+</td><td>
+
+</td><td>
+
+[DateType](./core-types.datetype.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[holder](./core-types.presentationpayload.holder.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[id?](./core-types.presentationpayload.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[issuanceDate?](./core-types.presentationpayload.issuancedate.md)
+
+</td><td>
+
+</td><td>
+
+[DateType](./core-types.datetype.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type?](./core-types.presentationpayload.type.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[verifiableCredential?](./core-types.presentationpayload.verifiablecredential.md)
+
+</td><td>
+
+</td><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[verifier?](./core-types.presentationpayload.verifier.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

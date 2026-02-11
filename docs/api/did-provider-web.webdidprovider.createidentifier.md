@@ -14,17 +14,48 @@ hide_title: true
 createIdentifier({ kms, alias, options }: {
         kms?: string;
         alias?: string;
-        options: any;
+        options: CreateWebDidOptions;
     }, context: IContext): Promise<Omit<IIdentifier, 'provider'>>;
 ```
 
 ## Parameters
 
-| Parameter               | Type                                            | Description |
-| ----------------------- | ----------------------------------------------- | ----------- |
-| { kms, alias, options } | { kms?: string; alias?: string; options: any; } |             |
-| context                 | IContext                                        |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ kms, alias, options }
+
+</td><td>
+
+{ kms?: string; alias?: string; options: CreateWebDidOptions; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

@@ -10,6 +10,28 @@ hide_title: true
 
 ## Classes
 
-| Class                                                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CredentialStatusPlugin](./credential-status.credentialstatusplugin.md) | <p>**_(BETA)_** This plugin implements the [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md) interface.</p><p>This aggregates some to provide a second layer of validation when verifying Verifiable Credentials.</p><p>This is used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information is determined by the specific <code>credentialStatus</code> type definition.</p><p>The results provided by this plugin depend on whether the required by the credential is installed.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CredentialStatusPlugin](./credential-status.credentialstatusplugin.md)
+
+</td><td>
+
+**_(BETA)_** This plugin implements the [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md) interface.
+
+This aggregates some to provide a second layer of validation when verifying Verifiable Credentials.
+
+This is used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information is determined by the specific `credentialStatus` type definition.
+
+The results provided by this plugin depend on whether the required by the credential is installed.
+
+</td></tr>
+</tbody></table>

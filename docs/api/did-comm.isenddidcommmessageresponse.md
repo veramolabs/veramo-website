@@ -22,7 +22,51 @@ export interface ISendDIDCommMessageResponse
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                 | Description               |
-| ------------------------------------------------------------------------- | --------- | ------------------------------------ | ------------------------- |
-| [returnMessage?](./did-comm.isenddidcommmessageresponse.returnmessage.md) |           | [IMessage](./core-types.imessage.md) | **_(BETA)_** _(Optional)_ |
-| [transportId](./did-comm.isenddidcommmessageresponse.transportid.md)      |           | string                               | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[returnMessage?](./did-comm.isenddidcommmessageresponse.returnmessage.md)
+
+</td><td>
+
+</td><td>
+
+[IMessage](./core-types.imessage.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[transportId](./did-comm.isenddidcommmessageresponse.transportid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

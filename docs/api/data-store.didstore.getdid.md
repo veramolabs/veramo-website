@@ -20,10 +20,31 @@ getDID({ did, alias, provider, }: {
 
 ## Parameters
 
-| Parameter                 | Type                                              | Description |
-| ------------------------- | ------------------------------------------------- | ----------- |
-| { did, alias, provider, } | { did: string; alias: string; provider: string; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ did, alias, provider, }
+
+</td><td>
+
+{ did: string; alias: string; provider: string; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

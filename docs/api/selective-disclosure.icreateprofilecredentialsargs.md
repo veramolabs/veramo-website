@@ -22,12 +22,126 @@ export interface ICreateProfileCredentialsArgs
 
 ## Properties
 
-| Property                                                                      | Modifiers | Type    | Description                                      |
-| ----------------------------------------------------------------------------- | --------- | ------- | ------------------------------------------------ |
-| [holder](./selective-disclosure.icreateprofilecredentialsargs.holder.md)      |           | string  | **_(BETA)_** Holder DID                          |
-| [name?](./selective-disclosure.icreateprofilecredentialsargs.name.md)         |           | string  | **_(BETA)_** _(Optional)_ Optional. Name         |
-| [picture?](./selective-disclosure.icreateprofilecredentialsargs.picture.md)   |           | string  | **_(BETA)_** _(Optional)_ Optional. Picture URL  |
-| [save](./selective-disclosure.icreateprofilecredentialsargs.save.md)          |           | boolean | **_(BETA)_** Save presentation                   |
-| [send](./selective-disclosure.icreateprofilecredentialsargs.send.md)          |           | boolean | **_(BETA)_** Send presentation                   |
-| [url?](./selective-disclosure.icreateprofilecredentialsargs.url.md)           |           | string  | **_(BETA)_** _(Optional)_ Optional. URL          |
-| [verifier?](./selective-disclosure.icreateprofilecredentialsargs.verifier.md) |           | string  | **_(BETA)_** _(Optional)_ Optional. Verifier DID |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[holder](./selective-disclosure.icreateprofilecredentialsargs.holder.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** Holder DID
+
+</td></tr>
+<tr><td>
+
+[name?](./selective-disclosure.icreateprofilecredentialsargs.name.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional. Name
+
+</td></tr>
+<tr><td>
+
+[picture?](./selective-disclosure.icreateprofilecredentialsargs.picture.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional. Picture URL
+
+</td></tr>
+<tr><td>
+
+[save](./selective-disclosure.icreateprofilecredentialsargs.save.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** Save presentation
+
+</td></tr>
+<tr><td>
+
+[send](./selective-disclosure.icreateprofilecredentialsargs.send.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** Send presentation
+
+</td></tr>
+<tr><td>
+
+[url?](./selective-disclosure.icreateprofilecredentialsargs.url.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional. URL
+
+</td></tr>
+<tr><td>
+
+[verifier?](./selective-disclosure.icreateprofilecredentialsargs.verifier.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional. Verifier DID
+
+</td></tr>
+</tbody></table>

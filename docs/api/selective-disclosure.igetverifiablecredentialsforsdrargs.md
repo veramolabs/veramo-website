@@ -26,7 +26,51 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                  | Modifiers | Type                                                                                                       | Description                                                       |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md) |           | string                                                                                                     | **_(BETA)_** _(Optional)_ The DID of the subject                  |
-| [sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)  |           | Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt; | **_(BETA)_** The Selective Disclosure Request (issuer is omitted) |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[did?](./selective-disclosure.igetverifiablecredentialsforsdrargs.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The DID of the subject
+
+</td></tr>
+<tr><td>
+
+[sdr](./selective-disclosure.igetverifiablecredentialsforsdrargs.sdr.md)
+
+</td><td>
+
+</td><td>
+
+Omit&lt;[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md), 'issuer'&gt;
+
+</td><td>
+
+**_(BETA)_** The Selective Disclosure Request (issuer is omitted)
+
+</td></tr>
+</tbody></table>

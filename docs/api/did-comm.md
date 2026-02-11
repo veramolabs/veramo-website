@@ -12,91 +12,651 @@ Provides a [plugin](./did-comm.didcomm.md) for the [Agent](./core.agent.md) that
 
 ## Classes
 
-| Class                                                                                                      | Description                                                                                                                                                                                                                                         |
-| ---------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CoordinateMediationMediatorMessageHandler](./did-comm.coordinatemediationmediatormessagehandler.md)       | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the mediator role. This API may change without a BREAKING CHANGE notice.                                         |
-| [CoordinateMediationRecipientMessageHandler](./did-comm.coordinatemediationrecipientmessagehandler.md)     | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the recipient role. This API may change without a BREAKING CHANGE notice.                                        |
-| [CoordinateMediationV3MediatorMessageHandler](./did-comm.coordinatemediationv3mediatormessagehandler.md)   | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the mediator role. This API may change without a BREAKING CHANGE notice.                                         |
-| [CoordinateMediationV3RecipientMessageHandler](./did-comm.coordinatemediationv3recipientmessagehandler.md) | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the recipient role. This API may change without a BREAKING CHANGE notice.                                        |
-| [DIDComm](./did-comm.didcomm.md)                                                                           | <p>**_(BETA)_** DID Comm plugin for [Agent](./core.agent.md)</p><p>This plugin provides a method of creating an encrypted message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation.</p> |
-| [DIDCommHttpTransport](./did-comm.didcommhttptransport.md)                                                 | <p>**_(BETA)_** Implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md) to provide a simple transport based on HTTP(S) requests.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                     |
-| [DIDCommMessageHandler](./did-comm.didcommmessagehandler.md)                                               | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that decrypts DIDComm messages. This API may change without a BREAKING CHANGE notice.                                                                           |
-| [PickupMediatorMessageHandler](./did-comm.pickupmediatormessagehandler.md)                                 | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Pickup messages for the mediator role. This API may change without a BREAKING CHANGE notice.                                                       |
-| [PickupRecipientMessageHandler](./did-comm.pickuprecipientmessagehandler.md)                               | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Pickup messages for the mediator role. This API may change without a BREAKING CHANGE notice.                                                       |
-| [RoutingMessageHandler](./did-comm.routingmessagehandler.md)                                               | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles forward messages for the Routing protocol. This API may change without a BREAKING CHANGE notice.                                                   |
-| [TrustPingMessageHandler](./did-comm.trustpingmessagehandler.md)                                           | **_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Trust Ping messages. This API may change without a BREAKING CHANGE notice.                                                                         |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CoordinateMediationMediatorMessageHandler](./did-comm.coordinatemediationmediatormessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the mediator role. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CoordinateMediationRecipientMessageHandler](./did-comm.coordinatemediationrecipientmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the recipient role. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CoordinateMediationV3MediatorMessageHandler](./did-comm.coordinatemediationv3mediatormessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the mediator role. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CoordinateMediationV3RecipientMessageHandler](./did-comm.coordinatemediationv3recipientmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Mediator Coordinator messages for the recipient role. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DIDComm](./did-comm.didcomm.md)
+
+</td><td>
+
+**_(BETA)_** DID Comm plugin for [Agent](./core.agent.md)
+
+This plugin provides a method of creating an encrypted message according to the initial [DIDComm-js](https://github.com/decentralized-identifier/DIDComm-js) implementation.
+
+</td></tr>
+<tr><td>
+
+[DIDCommHttpTransport](./did-comm.didcommhttptransport.md)
+
+</td><td>
+
+**_(BETA)_** Implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md) to provide a simple transport based on HTTP(S) requests.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DIDCommMessageHandler](./did-comm.didcommmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that decrypts DIDComm messages. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[PickupMediatorMessageHandler](./did-comm.pickupmediatormessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Pickup messages for the mediator role. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[PickupRecipientMessageHandler](./did-comm.pickuprecipientmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Pickup messages for the mediator role. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[RoutingMessageHandler](./did-comm.routingmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles forward messages for the Routing protocol. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[TrustPingMessageHandler](./did-comm.trustpingmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A plugin for the [MessageHandler](./message-handler.messagehandler.md) that handles Trust Ping messages. This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-| Abstract Class                                                     | Description                                                                                                                                                      |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [AbstractDIDCommTransport](./did-comm.abstractdidcommtransport.md) | <p>**_(BETA)_** Abstract implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md).</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Abstract Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AbstractDIDCommTransport](./did-comm.abstractdidcommtransport.md)
+
+</td><td>
+
+**_(BETA)_** Abstract implementation of [IDIDCommTransport](./did-comm.ididcommtransport.md).
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Enumerations
 
-| Enumeration                                                      | Description                                                                                                                                                                         |
-| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CoordinateMediation](./did-comm.coordinatemediation.md)         | <p>**_(BETA)_** This API may change without a BREAKING CHANGE notice.</p><p>Represents the types of messages that can be sent and received by the Mediator Coordinator protocol</p> |
-| [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md) | <p>**_(BETA)_** Represents different DIDComm v2 message encapsulation.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                              |
-| [MessagePickup](./did-comm.messagepickup.md)                     | **_(BETA)_** This API may change without a BREAKING CHANGE notice.                                                                                                                  |
-| [RecipientUpdateResult](./did-comm.recipientupdateresult.md)     | <p>**_(BETA)_** This API may change without a BREAKING CHANGE notice.</p><p>Represents the result of an update action</p>                                                           |
-| [UpdateAction](./did-comm.updateaction.md)                       | <p>**_(BETA)_** This API may change without a BREAKING CHANGE notice.</p><p>Represents the actions (add or remove) that can be taken on a recipient did</p>                         |
+<table><thead><tr><th>
+
+Enumeration
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CoordinateMediation](./did-comm.coordinatemediation.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+Represents the types of messages that can be sent and received by the Mediator Coordinator protocol
+
+</td></tr>
+<tr><td>
+
+[DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)
+
+</td><td>
+
+**_(BETA)_** Represents different DIDComm v2 message encapsulation.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[MessagePickup](./did-comm.messagepickup.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[RecipientUpdateResult](./did-comm.recipientupdateresult.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+Represents the result of an update action
+
+</td></tr>
+<tr><td>
+
+[UpdateAction](./did-comm.updateaction.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+Represents the actions (add or remove) that can be taken on a recipient did
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                                                                                                       | Description                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [createDeliveryRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createdeliveryrequestmessage.md)                                    | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createMediateGrantMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createmediategrantmessage.md)                                    | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createMediateRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createmediaterequestmessage.md)                                      | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createStatusRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createstatusrequestmessage.md)                                        | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3DeliveryRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3deliveryrequestmessage.md)                                | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3MediateDenyMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createv3mediatedenymessage.md)                                  | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3MediateGrantMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createv3mediategrantmessage.md)                                | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3MediateRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3mediaterequestmessage.md)                                  | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientQueryMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3recipientquerymessage.md)                                  | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientQueryResponseMessage(recipientDidUrl, mediatorDidUrl, thid, dids)](./did-comm.createv3recipientqueryresponsemessage.md)      | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientUpdateMessage(recipientDidUrl, mediatorDidUrl, updates)](./did-comm.createv3recipientupdatemessage.md)                       | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3RecipientUpdateResponseMessage(recipientDidUrl, mediatorDidUrl, thid, updates)](./did-comm.createv3recipientupdateresponsemessage.md) | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [createV3StatusRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3statusrequestmessage.md)                                    | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createDeliveryRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createdeliveryrequestmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createMediateGrantMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createmediategrantmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createMediateRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createmediaterequestmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createStatusRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createstatusrequestmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3DeliveryRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3deliveryrequestmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3MediateDenyMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createv3mediatedenymessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3MediateGrantMessage(recipientDidUrl, mediatorDidUrl, thid)](./did-comm.createv3mediategrantmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3MediateRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3mediaterequestmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3RecipientQueryMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3recipientquerymessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3RecipientQueryResponseMessage(recipientDidUrl, mediatorDidUrl, thid, dids)](./did-comm.createv3recipientqueryresponsemessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3RecipientUpdateMessage(recipientDidUrl, mediatorDidUrl, updates)](./did-comm.createv3recipientupdatemessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3RecipientUpdateResponseMessage(recipientDidUrl, mediatorDidUrl, thid, updates)](./did-comm.createv3recipientupdateresponsemessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[createV3StatusRequestMessage(recipientDidUrl, mediatorDidUrl)](./did-comm.createv3statusrequestmessage.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-| Interface                                                                                                              | Description                                                                                                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CoordinateMediationV3MediatorMessageHandlerOptions](./did-comm.coordinatemediationv3mediatormessagehandleroptions.md) | <p>**_(BETA)_** This API may change without a BREAKING CHANGE notice.</p><p>Parameter options for the CoordinateMediationV3MediatorMessageHandler [CoordinateMediationV3MediatorMessageHandler](./did-comm.coordinatemediationv3mediatormessagehandler.md)</p>                                              |
-| [DIDCommConfig](./did-comm.didcommconfig.md)                                                                           | <p>**_(BETA)_** The config for the [DIDComm](./did-comm.didcomm.md) DIDComm plugin.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                         |
-| [IDIDComm](./did-comm.ididcomm.md)                                                                                     | <p>**_(BETA)_** DID Comm plugin interface for [Agent](./core.agent.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                      |
-| [IDIDCommMessage](./did-comm.ididcommmessage.md)                                                                       | <p>**_(BETA)_** The DIDComm message structure. See https://identity.foundation/didcomm-messaging/spec/\#plaintext-message-structure</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                         |
-| [IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)                                                   | <p>**_(BETA)_** The DIDComm message structure for attachments. See https://identity.foundation/didcomm-messaging/spec/\#attachments</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                         |
-| [IDIDCommMessageAttachmentData](./did-comm.ididcommmessageattachmentdata.md)                                           | <p>**_(BETA)_** The DIDComm message structure for data in an attachment. See https://identity.foundation/didcomm-messaging/spec/\#attachments</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                               |
-| [IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md)                                                       | <p>**_(BETA)_** Metadata resulting from unpacking a DIDComm v2 message.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                     |
-| [IDIDCommOptions](./did-comm.ididcommoptions.md)                                                                       | <p>**_(BETA)_** Extra options when packing a DIDComm message.</p><p>- This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                             |
-| [IDIDCommTransport](./did-comm.ididcommtransport.md)                                                                   | <p>**_(BETA)_** Common interface for transports that can be used in the [DIDComm](./did-comm.didcomm.md) module.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                            |
-| [IDIDCommTransportResult](./did-comm.ididcommtransportresult.md)                                                       | <p>**_(BETA)_** Result interface for sending DIDComm messages through [IDIDCommTransport.send()](./did-comm.ididcommtransport.send.md).</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                     |
-| [IPackDIDCommMessageArgs](./did-comm.ipackdidcommmessageargs.md)                                                       | <p>**_(BETA)_** The input to the [IDIDComm.packDIDCommMessage()](./did-comm.ididcomm.packdidcommmessage.md) method. When <code>packing</code> is <code>authcrypt</code> or <code>jws</code>, a <code>keyRef</code> MUST be provided.</p><p>This API may change without a BREAKING CHANGE notice.</p>        |
-| [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)                                                           | <p>**_(BETA)_** The result of packing a DIDComm v2 message. The message is always serialized as string.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                     |
-| [ISendDIDCommMessageArgs](./did-comm.isenddidcommmessageargs.md)                                                       | <p>**_(BETA)_** The input to the [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) method. The provided <code>messageId</code> will be used in the emitted event to allow event/message correlation.</p><p>This API may change without a BREAKING CHANGE notice.</p>               |
-| [ISendDIDCommMessageResponse](./did-comm.isenddidcommmessageresponse.md)                                               | <p>**_(BETA)_** The response from the [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) method.</p><p>This API may change without a BREAKING CHANGE notice. <code>return_message</code> is only present if the <code>return_route: 'all'</code> was used in the packedMessage.</p> |
-| [ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)                                           | **_(BETA)_**                                                                                                                                                                                                                                                                                                |
-| [IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)                                                       | <p>**_(BETA)_** The result of unpacking a DIDComm v2 message.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                               |
-| [Update](./did-comm.update.md)                                                                                         | <p>**_(BETA)_** This API may change without a BREAKING CHANGE notice.</p><p>Represents the structure of a specific update on RECIPIENT_UPDATE</p>                                                                                                                                                           |
-| [UpdateResult](./did-comm.updateresult.md)                                                                             | <p>**_(BETA)_** This API may change without a BREAKING CHANGE notice.</p><p>Represents an update response on RECIPIENT_UPDATE_RESPONSE</p>                                                                                                                                                                  |
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CoordinateMediationV3MediatorMessageHandlerOptions](./did-comm.coordinatemediationv3mediatormessagehandleroptions.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+Parameter options for the CoordinateMediationV3MediatorMessageHandler [CoordinateMediationV3MediatorMessageHandler](./did-comm.coordinatemediationv3mediatormessagehandler.md)
+
+</td></tr>
+<tr><td>
+
+[DIDCommConfig](./did-comm.didcommconfig.md)
+
+</td><td>
+
+**_(BETA)_** The config for the [DIDComm](./did-comm.didcomm.md) DIDComm plugin.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDComm](./did-comm.ididcomm.md)
+
+</td><td>
+
+**_(BETA)_** DID Comm plugin interface for [Agent](./core.agent.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommMessage](./did-comm.ididcommmessage.md)
+
+</td><td>
+
+**_(BETA)_** The DIDComm message structure. See https://identity.foundation/didcomm-messaging/spec/\#plaintext-message-structure
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)
+
+</td><td>
+
+**_(BETA)_** The DIDComm message structure for attachments. See https://identity.foundation/didcomm-messaging/spec/\#attachments
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommMessageAttachmentData](./did-comm.ididcommmessageattachmentdata.md)
+
+</td><td>
+
+**_(BETA)_** The DIDComm message structure for data in an attachment. See https://identity.foundation/didcomm-messaging/spec/\#attachments
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md)
+
+</td><td>
+
+**_(BETA)_** Metadata resulting from unpacking a DIDComm v2 message.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommOptions](./did-comm.ididcommoptions.md)
+
+</td><td>
+
+**_(BETA)_** Extra options when packing a DIDComm message.
+
+- This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommTransport](./did-comm.ididcommtransport.md)
+
+</td><td>
+
+**_(BETA)_** Common interface for transports that can be used in the [DIDComm](./did-comm.didcomm.md) module.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IDIDCommTransportResult](./did-comm.ididcommtransportresult.md)
+
+</td><td>
+
+**_(BETA)_** Result interface for sending DIDComm messages through [IDIDCommTransport.send()](./did-comm.ididcommtransport.send.md).
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IPackDIDCommMessageArgs](./did-comm.ipackdidcommmessageargs.md)
+
+</td><td>
+
+**_(BETA)_** The input to the [IDIDComm.packDIDCommMessage()](./did-comm.ididcomm.packdidcommmessage.md) method. When `packing` is `authcrypt` or `jws`, a `keyRef` MUST be provided.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)
+
+</td><td>
+
+**_(BETA)_** The result of packing a DIDComm v2 message. The message is always serialized as string.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ISendDIDCommMessageArgs](./did-comm.isenddidcommmessageargs.md)
+
+</td><td>
+
+**_(BETA)_** The input to the [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) method. The provided `messageId` will be used in the emitted event to allow event/message correlation.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ISendDIDCommMessageResponse](./did-comm.isenddidcommmessageresponse.md)
+
+</td><td>
+
+**_(BETA)_** The response from the [IDIDComm.sendDIDCommMessage()](./did-comm.ididcomm.senddidcommmessage.md) method.
+
+This API may change without a BREAKING CHANGE notice. `return_message` is only present if the `return_route: 'all'` was used in the packedMessage.
+
+</td></tr>
+<tr><td>
+
+[ISendMessageDIDCommAlpha1Args](./did-comm.isendmessagedidcommalpha1args.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)
+
+</td><td>
+
+**_(BETA)_** The result of unpacking a DIDComm v2 message.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[Update](./did-comm.update.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+Represents the structure of a specific update on RECIPIENT_UPDATE
+
+</td></tr>
+<tr><td>
+
+[UpdateResult](./did-comm.updateresult.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+Represents an update response on RECIPIENT_UPDATE_RESPONSE
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                                                     | Description                                                        |
-| ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [DELIVERY_REQUEST_MESSAGE_TYPE](./did-comm.delivery_request_message_type.md) | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [MEDIATE_DENY_MESSAGE_TYPE](./did-comm.mediate_deny_message_type.md)         | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [MEDIATE_GRANT_MESSAGE_TYPE](./did-comm.mediate_grant_message_type.md)       | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [MEDIATE_REQUEST_MESSAGE_TYPE](./did-comm.mediate_request_message_type.md)   | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
-| [schema](./did-comm.schema.md)                                               |                                                                    |
-| [STATUS_REQUEST_MESSAGE_TYPE](./did-comm.status_request_message_type.md)     | **_(BETA)_** This API may change without a BREAKING CHANGE notice. |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DELIVERY_REQUEST_MESSAGE_TYPE](./did-comm.delivery_request_message_type.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[MEDIATE_DENY_MESSAGE_TYPE](./did-comm.mediate_deny_message_type.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[MEDIATE_GRANT_MESSAGE_TYPE](./did-comm.mediate_grant_message_type.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[MEDIATE_REQUEST_MESSAGE_TYPE](./did-comm.mediate_request_message_type.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[schema](./did-comm.schema.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[STATUS_REQUEST_MESSAGE_TYPE](./did-comm.status_request_message_type.md)
+
+</td><td>
+
+**_(BETA)_** This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md)         | <p>**_(BETA)_** The possible types of message packing.</p><p><code>authcrypt</code>, <code>anoncrypt</code>, <code>anoncrypt+authcrypt</code>, and <code>anoncrypt+jws</code> will produce <code>DIDCommMessageMediaType.ENCRYPTED</code> messages.</p><p><code>jws</code> will produce <code>DIDCommMessageMediaType.SIGNED</code> messages.</p><p><code>none</code> will produce <code>DIDCommMessageMediaType.PLAIN</code> messages.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [IUnpackDIDCommMessageArgs](./did-comm.iunpackdidcommmessageargs.md) | <p>**_(BETA)_** The input to the [IDIDComm.unpackDIDCommMessage()](./did-comm.ididcomm.unpackdidcommmessage.md) method.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                 |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DIDCommMessagePacking](./did-comm.didcommmessagepacking.md)
+
+</td><td>
+
+**_(BETA)_** The possible types of message packing.
+
+`authcrypt`, `anoncrypt`, `anoncrypt+authcrypt`, and `anoncrypt+jws` will produce `DIDCommMessageMediaType.ENCRYPTED` messages.
+
+`jws` will produce `DIDCommMessageMediaType.SIGNED` messages.
+
+`none` will produce `DIDCommMessageMediaType.PLAIN` messages.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IUnpackDIDCommMessageArgs](./did-comm.iunpackdidcommmessageargs.md)
+
+</td><td>
+
+**_(BETA)_** The input to the [IDIDComm.unpackDIDCommMessage()](./did-comm.ididcomm.unpackdidcommmessage.md) method.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>

@@ -22,11 +22,42 @@ removeKey({ identifier, kid, options }: {
 
 ## Parameters
 
-| Parameter                    | Type                                                                                            | Description |
-| ---------------------------- | ----------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, kid, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: IUpdateOpts; } |             |
-| context                      | IContext                                                                                        |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ identifier, kid, options }
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: IUpdateOpts; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

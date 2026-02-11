@@ -20,10 +20,35 @@ export declare function asArray<T>(arg?: T | T[] | any): (T | any)[]
 
 ## Parameters
 
-| Parameter | Type                      | Description                                                                                                                    |
-| --------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| arg       | T &#124; T\[\] &#124; any | <p>_(Optional)_ a variable that needs to be converted to array</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+arg
+
+</td><td>
+
+T \| T\[\] \| any
+
+</td><td>
+
+_(Optional)_ a variable that needs to be converted to array
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 (T \| any)\[\]

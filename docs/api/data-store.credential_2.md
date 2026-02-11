@@ -22,17 +22,201 @@ export declare class Credential extends BaseEntity
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                             | Description               |
-| -------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------------------- |
-| [claims](./data-store.credential_2.claims.md)                  |           | Relation&lt;[Claim](./data-store.claim.md)\[\]&gt;               | **_(BETA)_**              |
-| [context](./data-store.credential_2.context.md)                |           | string\[\]                                                       | **_(BETA)_**              |
-| [expirationDate?](./data-store.credential_2.expirationdate.md) |           | Date                                                             | **_(BETA)_** _(Optional)_ |
-| [hash](./data-store.credential_2.hash.md)                      |           | string                                                           | **_(BETA)_**              |
-| [id?](./data-store.credential_2.id.md)                         |           | string                                                           | **_(BETA)_** _(Optional)_ |
-| [issuanceDate](./data-store.credential_2.issuancedate.md)      |           | Date                                                             | **_(BETA)_**              |
-| [issuer](./data-store.credential_2.issuer.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_**              |
-| [messages](./data-store.credential_2.messages.md)              |           | Relation&lt;[Message](./data-store.message.md)\[\]&gt;           | **_(BETA)_**              |
-| [presentations](./data-store.credential_2.presentations.md)    |           | Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt; | **_(BETA)_**              |
-| [raw](./data-store.credential_2.raw.md)                        |           | [VerifiableCredential](./core-types.verifiablecredential.md)     | **_(BETA)_**              |
-| [subject?](./data-store.credential_2.subject.md)               |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_** _(Optional)_ |
-| [type](./data-store.credential_2.type.md)                      |           | string\[\]                                                       | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[claims](./data-store.credential_2.claims.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Claim](./data-store.claim.md)\[\]&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[context](./data-store.credential_2.context.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[expirationDate?](./data-store.credential_2.expirationdate.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[hash](./data-store.credential_2.hash.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[id?](./data-store.credential_2.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[issuanceDate](./data-store.credential_2.issuancedate.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[issuer](./data-store.credential_2.issuer.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[messages](./data-store.credential_2.messages.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Message](./data-store.message.md)\[\]&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[presentations](./data-store.credential_2.presentations.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[raw](./data-store.credential_2.raw.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[subject?](./data-store.credential_2.subject.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type](./data-store.credential_2.type.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

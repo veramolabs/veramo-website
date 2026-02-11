@@ -18,6 +18,36 @@ export interface UsingResolutionOptions
 
 ## Properties
 
-| Property                                                                       | Modifiers | Type                                                     | Description                                            |
-| ------------------------------------------------------------------------------ | --------- | -------------------------------------------------------- | ------------------------------------------------------ |
-| [resolutionOptions?](./core-types.usingresolutionoptions.resolutionoptions.md) |           | DIDResolutionOptions &amp; { publicKeyFormat?: string; } | _(Optional)_ Options to be passed to the DID resolver. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[resolutionOptions?](./core-types.usingresolutionoptions.resolutionoptions.md)
+
+</td><td>
+
+</td><td>
+
+DIDResolutionOptions &amp; { publicKeyFormat?: string; }
+
+</td><td>
+
+_(Optional)_ Options to be passed to the DID resolver.
+
+</td></tr>
+</tbody></table>

@@ -16,10 +16,31 @@ createX25519ECDH(secretKeyRef: string): ECDH;
 
 ## Parameters
 
-| Parameter    | Type   | Description |
-| ------------ | ------ | ----------- |
-| secretKeyRef | string |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+secretKeyRef
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 ECDH

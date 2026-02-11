@@ -22,9 +22,81 @@ export interface FindArgs<TColumns>
 
 ## Properties
 
-| Property                                 | Modifiers | Type                                               | Description                                                                                                                     |
-| ---------------------------------------- | --------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [order?](./core-types.findargs.order.md) |           | [Order](./core-types.order.md)&lt;TColumns&gt;\[\] | **_(BETA)_** _(Optional)_ Sorts the results according to the given array of column priorities.                                  |
-| [skip?](./core-types.findargs.skip.md)   |           | number                                             | **_(BETA)_** _(Optional)_ Ignores the first number of entries in a [IDataStoreORM](./core-types.idatastoreorm.md) query result. |
-| [take?](./core-types.findargs.take.md)   |           | number                                             | **_(BETA)_** _(Optional)_ Returns at most this number of results from a [IDataStoreORM](./core-types.idatastoreorm.md) query.   |
-| [where?](./core-types.findargs.where.md) |           | [Where](./core-types.where.md)&lt;TColumns&gt;\[\] | **_(BETA)_** _(Optional)_ Imposes constraints on the values of the given columns. WHERE clauses are combined using AND.         |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[order?](./core-types.findargs.order.md)
+
+</td><td>
+
+</td><td>
+
+[Order](./core-types.order.md)&lt;TColumns&gt;\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Sorts the results according to the given array of column priorities.
+
+</td></tr>
+<tr><td>
+
+[skip?](./core-types.findargs.skip.md)
+
+</td><td>
+
+</td><td>
+
+number
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Ignores the first number of entries in a [IDataStoreORM](./core-types.idatastoreorm.md) query result.
+
+</td></tr>
+<tr><td>
+
+[take?](./core-types.findargs.take.md)
+
+</td><td>
+
+</td><td>
+
+number
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Returns at most this number of results from a [IDataStoreORM](./core-types.idatastoreorm.md) query.
+
+</td></tr>
+<tr><td>
+
+[where?](./core-types.findargs.where.md)
+
+</td><td>
+
+</td><td>
+
+[Where](./core-types.where.md)&lt;TColumns&gt;\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Imposes constraints on the values of the given columns. WHERE clauses are combined using AND.
+
+</td></tr>
+</tbody></table>

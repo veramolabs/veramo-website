@@ -24,15 +24,81 @@ export declare class KeyStore extends AbstractKeyStore
 
 ## Constructors
 
-| Constructor                                                           | Modifiers | Description                                                  |
-| --------------------------------------------------------------------- | --------- | ------------------------------------------------------------ |
-| [(constructor)(dbConnection)](./data-store.keystore._constructor_.md) |           | Constructs a new instance of the <code>KeyStore</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(dbConnection)](./data-store.keystore._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `KeyStore` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                   | Modifiers | Description |
-| -------------------------------------------------------- | --------- | ----------- |
-| [deleteKey({ kid })](./data-store.keystore.deletekey.md) |           |             |
-| [getKey({ kid })](./data-store.keystore.getkey.md)       |           |             |
-| [importKey(args)](./data-store.keystore.importkey.md)    |           |             |
-| [listKeys(args)](./data-store.keystore.listkeys.md)      |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteKey({ kid })](./data-store.keystore.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getKey({ kid })](./data-store.keystore.getkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./data-store.keystore.importkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listKeys(args)](./data-store.keystore.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

@@ -28,6 +28,36 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                | Modifiers | Type                                                                         | Description  |
-| ----------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- | ------------ |
-| [credentials](./selective-disclosure.icredentialsforsdr.credentials.md) |           | [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)\[\] | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[credentials](./selective-disclosure.icredentialsforsdr.credentials.md)
+
+</td><td>
+
+</td><td>
+
+[UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)\[\]
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

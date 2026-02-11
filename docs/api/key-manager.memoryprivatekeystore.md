@@ -22,9 +22,53 @@ export declare class MemoryPrivateKeyStore extends AbstractPrivateKeyStore
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description |
-| ------------------------------------------------------------------------ | --------- | ----------- |
-| [deleteKey({ alias })](./key-manager.memoryprivatekeystore.deletekey.md) |           |             |
-| [getKey({ alias })](./key-manager.memoryprivatekeystore.getkey.md)       |           |             |
-| [importKey(args)](./key-manager.memoryprivatekeystore.importkey.md)      |           |             |
-| [listKeys()](./key-manager.memoryprivatekeystore.listkeys.md)            |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteKey({ alias })](./key-manager.memoryprivatekeystore.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getKey({ alias })](./key-manager.memoryprivatekeystore.getkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./key-manager.memoryprivatekeystore.importkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listKeys()](./key-manager.memoryprivatekeystore.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

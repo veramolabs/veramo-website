@@ -22,7 +22,51 @@ export interface IValidatePresentationAgainstSdrArgs
 
 ## Properties
 
-| Property                                                                                   | Modifiers | Type                                                                                 | Description  |
-| ------------------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------------------------ | ------------ |
-| [presentation](./selective-disclosure.ivalidatepresentationagainstsdrargs.presentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)                     | **_(BETA)_** |
-| [sdr](./selective-disclosure.ivalidatepresentationagainstsdrargs.sdr.md)                   |           | [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[presentation](./selective-disclosure.ivalidatepresentationagainstsdrargs.presentation.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiablePresentation](./core-types.verifiablepresentation.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[sdr](./selective-disclosure.ivalidatepresentationagainstsdrargs.sdr.md)
+
+</td><td>
+
+</td><td>
+
+[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

@@ -22,12 +22,56 @@ export declare class DIDCommMessageHandler extends AbstractMessageHandler
 
 ## Constructors
 
-| Constructor                                                          | Modifiers | Description                                                                            |
-| -------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------- |
-| [(constructor)()](./did-comm.didcommmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>DIDCommMessageHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./did-comm.didcommmessagehandler._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `DIDCommMessageHandler` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                 | Modifiers | Description                                                                                                                                                                                            |
-| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [handle(message, context)](./did-comm.didcommmessagehandler.handle.md) |           | **_(BETA)_** Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). - |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./did-comm.didcommmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Handles a new packed DIDCommV2 Message (also Alpha support but soon deprecated). - Tests whether raw message is a DIDCommV2 message - Unpacks raw message (JWM/JWE/JWS, or plain JSON). -
+
+</td></tr>
+</tbody></table>

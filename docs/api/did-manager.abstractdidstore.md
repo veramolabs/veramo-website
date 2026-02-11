@@ -18,10 +18,72 @@ export declare abstract class AbstractDIDStore
 
 ## Methods
 
-| Method                                                         | Modifiers             | Description |
-| -------------------------------------------------------------- | --------------------- | ----------- |
-| [deleteDID(args)](./did-manager.abstractdidstore.deletedid.md) | <code>abstract</code> |             |
-| [getDID(args)](./did-manager.abstractdidstore.getdid.md)       | <code>abstract</code> |             |
-| [getDID(args)](./did-manager.abstractdidstore.getdid_1.md)     | <code>abstract</code> |             |
-| [importDID(args)](./did-manager.abstractdidstore.importdid.md) | <code>abstract</code> |             |
-| [listDIDs(args)](./did-manager.abstractdidstore.listdids.md)   | <code>abstract</code> |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteDID(args)](./did-manager.abstractdidstore.deletedid.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getDID(args)](./did-manager.abstractdidstore.getdid.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getDID(args)](./did-manager.abstractdidstore.getdid_1.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importDID(args)](./did-manager.abstractdidstore.importdid.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listDIDs(args)](./did-manager.abstractdidstore.listdids.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+</tbody></table>

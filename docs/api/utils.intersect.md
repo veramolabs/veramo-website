@@ -18,11 +18,46 @@ export declare function intersect<T>(a: T[] | any, b: any[] | any): T[]
 
 ## Parameters
 
-| Parameter | Type               | Description  |
-| --------- | ------------------ | ------------ |
-| a         | T\[\] &#124; any   | first array  |
-| b         | any\[\] &#124; any | second array |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+a
+
+</td><td>
+
+T\[\] \| any
+
+</td><td>
+
+first array
+
+</td></tr>
+<tr><td>
+
+b
+
+</td><td>
+
+any\[\] \| any
+
+</td><td>
+
+second array
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 T\[\]

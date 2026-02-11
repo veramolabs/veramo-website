@@ -24,7 +24,51 @@ export interface MetaData
 
 ## Properties
 
-| Property                                 | Modifiers | Type   | Description               |
-| ---------------------------------------- | --------- | ------ | ------------------------- |
-| [type](./data-store.metadata.type.md)    |           | string | **_(BETA)_**              |
-| [value?](./data-store.metadata.value.md) |           | string | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[type](./data-store.metadata.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[value?](./data-store.metadata.value.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

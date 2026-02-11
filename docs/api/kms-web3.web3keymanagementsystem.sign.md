@@ -22,10 +22,31 @@ sign({ keyRef, algorithm, data, }: {
 
 ## Parameters
 
-| Parameter                    | Type                                                                                               | Description |
-| ---------------------------- | -------------------------------------------------------------------------------------------------- | ----------- |
-| { keyRef, algorithm, data, } | { keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ keyRef, algorithm, data, }
+
+</td><td>
+
+{ keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

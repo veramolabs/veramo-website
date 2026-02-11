@@ -8,10 +8,13 @@ hide_title: true
 
 ## IDIDManagerAddKeyArgs.options property
 
-Optional. Identifier provider specific options
+Optional. Identifier-provider specific options
 
 **Signature:**
 
 ```typescript
-options?: object;
+options?: {
+        localOnly?: boolean;
+        [key: string]: any;
+    };
 ```

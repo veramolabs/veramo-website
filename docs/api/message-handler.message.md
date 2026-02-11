@@ -22,35 +22,329 @@ export declare class Message implements IMessage
 
 ## Constructors
 
-| Constructor                                                       | Modifiers | Description                                                 |
-| ----------------------------------------------------------------- | --------- | ----------------------------------------------------------- |
-| [(constructor)(data)](./message-handler.message._constructor_.md) |           | Constructs a new instance of the <code>Message</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(data)](./message-handler.message._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `Message` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                                     | Modifiers | Type                                                                 | Description  |
-| ------------------------------------------------------------ | --------- | -------------------------------------------------------------------- | ------------ |
-| [attachments?](./message-handler.message.attachments.md)     |           | [IMessageAttachment](./core-types.imessageattachment.md)\[\]         | _(Optional)_ |
-| [createdAt?](./message-handler.message.createdat.md)         |           | string                                                               | _(Optional)_ |
-| [credentials?](./message-handler.message.credentials.md)     |           | [VerifiableCredential](./core-types.verifiablecredential.md)\[\]     | _(Optional)_ |
-| [data?](./message-handler.message.data.md)                   |           | any                                                                  | _(Optional)_ |
-| [expiresAt?](./message-handler.message.expiresat.md)         |           | string                                                               | _(Optional)_ |
-| [from?](./message-handler.message.from.md)                   |           | string                                                               | _(Optional)_ |
-| [id](./message-handler.message.id.md)                        |           | string                                                               |              |
-| [metaData?](./message-handler.message.metadata.md)           |           | [IMetaData](./core-types.imetadata.md)\[\]                           | _(Optional)_ |
-| [presentations?](./message-handler.message.presentations.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)\[\] | _(Optional)_ |
-| [raw?](./message-handler.message.raw.md)                     |           | string                                                               | _(Optional)_ |
-| [replyTo?](./message-handler.message.replyto.md)             |           | string\[\]                                                           | _(Optional)_ |
-| [replyUrl?](./message-handler.message.replyurl.md)           |           | string                                                               | _(Optional)_ |
-| [returnRoute?](./message-handler.message.returnroute.md)     |           | string                                                               | _(Optional)_ |
-| [threadId?](./message-handler.message.threadid.md)           |           | string                                                               | _(Optional)_ |
-| [to?](./message-handler.message.to.md)                       |           | string                                                               | _(Optional)_ |
-| [type](./message-handler.message.type.md)                    |           | string                                                               |              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[attachments?](./message-handler.message.attachments.md)
+
+</td><td>
+
+</td><td>
+
+[IMessageAttachment](./core-types.imessageattachment.md)\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[createdAt?](./message-handler.message.createdat.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[credentials?](./message-handler.message.credentials.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[data?](./message-handler.message.data.md)
+
+</td><td>
+
+</td><td>
+
+any
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[expiresAt?](./message-handler.message.expiresat.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[from?](./message-handler.message.from.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[id](./message-handler.message.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[metaData?](./message-handler.message.metadata.md)
+
+</td><td>
+
+</td><td>
+
+[IMetaData](./core-types.imetadata.md)\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[presentations?](./message-handler.message.presentations.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiablePresentation](./core-types.verifiablepresentation.md)\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[raw?](./message-handler.message.raw.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[replyTo?](./message-handler.message.replyto.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[replyUrl?](./message-handler.message.replyurl.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[returnRoute?](./message-handler.message.returnroute.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[threadId?](./message-handler.message.threadid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[to?](./message-handler.message.to.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type](./message-handler.message.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                            | Modifiers | Description |
-| ----------------------------------------------------------------- | --------- | ----------- |
-| [addMetaData(meta)](./message-handler.message.addmetadata.md)     |           |             |
-| [getLastMetaData()](./message-handler.message.getlastmetadata.md) |           |             |
-| [isValid()](./message-handler.message.isvalid.md)                 |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addMetaData(meta)](./message-handler.message.addmetadata.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getLastMetaData()](./message-handler.message.getlastmetadata.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[isValid()](./message-handler.message.isvalid.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

@@ -10,61 +10,333 @@ hide_title: true
 
 Contains helper methods for Veramo plugins.
 
-## Enumerations
-
-| Enumeration                                       | Description |
-| ------------------------------------------------- | ----------- |
-| [SupportedKeyTypes](./utils.supportedkeytypes.md) |             |
-
 ## Functions
 
-| Function                                                                                                     | Description                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [asArray(arg)](./utils.asarray.md)                                                                           | **_(BETA)_** Ensures that a given input is an array. If the input is a single item, it is converted to an array with a single entry.                                                                                                                                            |
-| [bytesToBase64(b)](./utils.bytestobase64.md)                                                                 | Encodes a Uint8Array to a base64 string representation with padding.                                                                                                                                                                                                            |
-| [bytesToHex(byteArray, prefix)](./utils.bytestohex.md)                                                       | **_(BETA)_** Converts a Uint8Array input to a hex string                                                                                                                                                                                                                        |
-| [bytesToUtf8String(b)](./utils.bytestoutf8string.md)                                                         | Builds a string from a Uint8Array using the utf-8 encoding.                                                                                                                                                                                                                     |
-| [compressIdentifierSecp256k1Keys(identifier)](./utils.compressidentifiersecp256k1keys.md)                    | **_(BETA)_** Converts any Secp256k1 public keys of an [IIdentifier](./core-types.iidentifier.md) to their compressed form.                                                                                                                                                      |
-| [computeEntryHash(input)](./utils.computeentryhash.md)                                                       | **_(BETA)_** Computes a hash for a given credential or presentation. This hash is usable as an internal ID for database indexing                                                                                                                                                |
-| [concat(arrays, length)](./utils.concat.md)                                                                  | **_(BETA)_** Concatenates a bunch of arrays into one Uint8Array                                                                                                                                                                                                                 |
-| [convertEd25519PrivateKeyToX25519(privateKey)](./utils.converted25519privatekeytox25519.md)                  | **_(BETA)_** Converts Ed25519 private keys to X25519                                                                                                                                                                                                                            |
-| [convertEd25519PublicKeyToX25519(publicKey)](./utils.converted25519publickeytox25519.md)                     | **_(BETA)_** Converts Ed25519 public keys to X25519                                                                                                                                                                                                                             |
-| [convertIdentifierEncryptionKeys(identifier)](./utils.convertidentifierencryptionkeys.md)                    | **_(BETA)_** Converts any Ed25519 keys of an [IIdentifier](./core-types.iidentifier.md) to X25519 to be usable for encryption.                                                                                                                                                  |
-| [createJWK(keyType, pubKey, passedKeyUse)](./utils.createjwk.md)                                             |                                                                                                                                                                                                                                                                                 |
-| [decodeBase64url(s)](./utils.decodebase64url.md)                                                             | **_(BETA)_** Decodes a base64url string to a utf8 string represented by the same bytes.                                                                                                                                                                                         |
-| [decodeCredentialToObject(input)](./utils.decodecredentialtoobject.md)                                       | **_(BETA)_** Parses a [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) and converts it to a [VerifiableCredential](./core-types.verifiablecredential.md) so it is easier to use programmatically.                                                             |
-| [decodeJoseBlob(blob)](./utils.decodejoseblob.md)                                                            | **_(BETA)_** Decodes a base64url string representing stringified JSON to a JSON object.                                                                                                                                                                                         |
-| [decodePresentationToObject(input)](./utils.decodepresentationtoobject.md)                                   | **_(BETA)_** Parses a [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) and converts it to a [VerifiablePresentation](./core-types.verifiablepresentation.md) so it is easier to use programmatically.                                                     |
-| [dereferenceDidKeys(didDocument, section, context)](./utils.dereferencedidkeys.md)                           | <p>**_(BETA)_** Dereferences keys from DID document and normalizes them for easy comparison.</p><p>When dereferencing keyAgreement keys, only Ed25519 and X25519 curves are supported. Other key types are omitted from the result and Ed25519 keys are converted to X25519</p> |
-| [encodeBase64url(s)](./utils.encodebase64url.md)                                                             | **_(BETA)_** Encodes the bytes of an input string to base64url                                                                                                                                                                                                                  |
-| [encodeJoseBlob(payload)](./utils.encodejoseblob.md)                                                         | **_(BETA)_** Stringifies a JSON object and encodes the bytes of the resulting string to a base64url representation.                                                                                                                                                             |
-| [extractIssuer(input, options)](./utils.extractissuer.md)                                                    | **_(BETA)_** Decodes a credential or presentation and returns the issuer ID <code>iss</code> from a JWT or <code>issuer</code>/<code>issuer.id</code> from a VC or <code>holder</code> from a VP                                                                                |
-| [extractPublicKeyHex(pk, convert)](./utils.extractpublickeyhex.md)                                           | **_(BETA)_** Converts the publicKey of a VerificationMethod to hex encoding (publicKeyHex)                                                                                                                                                                                      |
-| [generateJwkFromVerificationMethod(keyType, key, keyUse)](./utils.generatejwkfromverificationmethod.md)      |                                                                                                                                                                                                                                                                                 |
-| [getChainId(verificationMethod)](./utils.getchainid.md)                                                      | **_(BETA)_** Extracts the chain ID from a supporting legacy representations as well.                                                                                                                                                                                            |
-| [getEthereumAddress(verificationMethod)](./utils.getethereumaddress.md)                                      | **_(BETA)_** Extracts an ethereum address from a supporting legacy representations.                                                                                                                                                                                             |
-| [getKeyUse(keyType, passedKeyUse)](./utils.getkeyuse.md)                                                     |                                                                                                                                                                                                                                                                                 |
-| [hexToBytes(hexString)](./utils.hextobytes.md)                                                               | **_(BETA)_** Converts a hex string (with or without prefix) to a byte array (Uint8Array)                                                                                                                                                                                        |
-| [intersect(a, b)](./utils.intersect.md)                                                                      | Compute the intersection of two arrays Elements are compared by reference so object types will appear as unique even if they contain the same data.                                                                                                                             |
-| [isDefined(arg)](./utils.isdefined.md)                                                                       | **_(BETA)_** Checks if a variable is defined and not null. After this check, typescript sees the variable as defined.                                                                                                                                                           |
-| [isIterable(obj)](./utils.isiterable.md)                                                                     | **_(BETA)_** Checks if an object is iterable (can be used for <code>for..of</code>)                                                                                                                                                                                             |
-| [isJWK(data)](./utils.isjwk.md)                                                                              |                                                                                                                                                                                                                                                                                 |
-| [mapIdentifierKeysToDoc(identifier, section, context, resolutionOptions)](./utils.mapidentifierkeystodoc.md) | **_(BETA)_** Maps the keys of a locally managed [IIdentifier](./core-types.iidentifier.md) to the corresponding entries from the DID document.                                                                                                                                  |
-| [processEntryToArray(inputEntryOrArray, startWithEntry)](./utils.processentrytoarray.md)                     | **_(BETA)_** Processes an entry or an array of entries into an array of entries. If a <code>startWithEntry</code> param is provided, it is set as the first item in the result array.                                                                                           |
-| [removeDIDParameters(did)](./utils.removedidparameters.md)                                                   | **_(BETA)_** Remove all DID parameters from a DID url                                                                                                                                                                                                                           |
-| [resolveDidOrThrow(didUrl, context, resolutionOptions)](./utils.resolvedidorthrow.md)                        | **_(BETA)_** Resolve a DID document or throw an error if the resolution fails.                                                                                                                                                                                                  |
-| [stringToUtf8Bytes(s)](./utils.stringtoutf8bytes.md)                                                         | Encodes a string to a Uint8Array using the utf-8 encoding.                                                                                                                                                                                                                      |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[asArray(arg)](./utils.asarray.md)
+
+</td><td>
+
+**_(BETA)_** Ensures that a given input is an array. If the input is a single item, it is converted to an array with a single entry.
+
+</td></tr>
+<tr><td>
+
+[bytesToBase64(b)](./utils.bytestobase64.md)
+
+</td><td>
+
+Encodes a Uint8Array to a base64 string representation with padding.
+
+</td></tr>
+<tr><td>
+
+[bytesToHex(byteArray, prefix)](./utils.bytestohex.md)
+
+</td><td>
+
+**_(BETA)_** Converts a Uint8Array input to a hex string
+
+</td></tr>
+<tr><td>
+
+[bytesToUtf8String(b)](./utils.bytestoutf8string.md)
+
+</td><td>
+
+Builds a string from a Uint8Array using the utf-8 encoding.
+
+</td></tr>
+<tr><td>
+
+[compressIdentifierSecp256k1Keys(identifier)](./utils.compressidentifiersecp256k1keys.md)
+
+</td><td>
+
+**_(BETA)_** Converts any Secp256k1 public keys of an [IIdentifier](./core-types.iidentifier.md) to their compressed form.
+
+</td></tr>
+<tr><td>
+
+[computeEntryHash(input)](./utils.computeentryhash.md)
+
+</td><td>
+
+**_(BETA)_** Computes a hash for a given credential or presentation. This hash is usable as an internal ID for database indexing
+
+</td></tr>
+<tr><td>
+
+[concat(arrays, length)](./utils.concat.md)
+
+</td><td>
+
+**_(BETA)_** Concatenates a bunch of arrays into one Uint8Array
+
+</td></tr>
+<tr><td>
+
+[convertEd25519PrivateKeyToX25519(privateKey)](./utils.converted25519privatekeytox25519.md)
+
+</td><td>
+
+**_(BETA)_** Converts Ed25519 private keys to X25519
+
+</td></tr>
+<tr><td>
+
+[convertEd25519PublicKeyToX25519(publicKey)](./utils.converted25519publickeytox25519.md)
+
+</td><td>
+
+**_(BETA)_** Converts Ed25519 public keys to X25519
+
+</td></tr>
+<tr><td>
+
+[convertIdentifierEncryptionKeys(identifier)](./utils.convertidentifierencryptionkeys.md)
+
+</td><td>
+
+**_(BETA)_** Converts any Ed25519 keys of an [IIdentifier](./core-types.iidentifier.md) to X25519 to be usable for encryption.
+
+</td></tr>
+<tr><td>
+
+[decodeBase64url(s)](./utils.decodebase64url.md)
+
+</td><td>
+
+**_(BETA)_** Decodes a base64url string to a utf8 string represented by the same bytes.
+
+</td></tr>
+<tr><td>
+
+[decodeCredentialToObject(input)](./utils.decodecredentialtoobject.md)
+
+</td><td>
+
+**_(BETA)_** Parses a [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) and converts it to a [VerifiableCredential](./core-types.verifiablecredential.md) so it is easier to use programmatically.
+
+</td></tr>
+<tr><td>
+
+[decodeJoseBlob(blob)](./utils.decodejoseblob.md)
+
+</td><td>
+
+**_(BETA)_** Decodes a base64url string representing stringified JSON to a JSON object.
+
+</td></tr>
+<tr><td>
+
+[decodePresentationToObject(input)](./utils.decodepresentationtoobject.md)
+
+</td><td>
+
+**_(BETA)_** Parses a [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) and converts it to a [VerifiablePresentation](./core-types.verifiablepresentation.md) so it is easier to use programmatically.
+
+</td></tr>
+<tr><td>
+
+[dereferenceDidKeys(didDocument, section, context)](./utils.dereferencedidkeys.md)
+
+</td><td>
+
+**_(BETA)_** Dereferences keys from DID document and normalizes them for easy comparison.
+
+When dereferencing keyAgreement keys, only Ed25519 and X25519 curves are supported. Other key types are omitted from the result and Ed25519 keys are converted to X25519
+
+</td></tr>
+<tr><td>
+
+[encodeBase64url(s)](./utils.encodebase64url.md)
+
+</td><td>
+
+**_(BETA)_** Encodes the bytes of an input string to base64url
+
+</td></tr>
+<tr><td>
+
+[encodeJoseBlob(payload)](./utils.encodejoseblob.md)
+
+</td><td>
+
+**_(BETA)_** Stringifies a JSON object and encodes the bytes of the resulting string to a base64url representation.
+
+</td></tr>
+<tr><td>
+
+[extractIssuer(input, options)](./utils.extractissuer.md)
+
+</td><td>
+
+**_(BETA)_** Decodes a credential or presentation and returns the issuer ID `iss` from a JWT or `issuer`/`issuer.id` from a VC or `holder` from a VP
+
+</td></tr>
+<tr><td>
+
+[extractPublicKeyHex(pk, convert)](./utils.extractpublickeyhex.md)
+
+</td><td>
+
+**_(BETA)_** Converts the publicKey of a VerificationMethod to hex encoding (publicKeyHex), with no 0x prefix. Secp256k1 public keys are compressed.
+
+</td></tr>
+<tr><td>
+
+[getChainId(verificationMethod)](./utils.getchainid.md)
+
+</td><td>
+
+**_(BETA)_** Extracts the chain ID from a supporting legacy representations as well.
+
+</td></tr>
+<tr><td>
+
+[getEthereumAddress(verificationMethod)](./utils.getethereumaddress.md)
+
+</td><td>
+
+**_(BETA)_** Extracts an ethereum address from a supporting legacy representations.
+
+</td></tr>
+<tr><td>
+
+[hexToBytes(hexString)](./utils.hextobytes.md)
+
+</td><td>
+
+**_(BETA)_** Converts a hex string (with or without prefix) to a byte array (Uint8Array)
+
+</td></tr>
+<tr><td>
+
+[intersect(a, b)](./utils.intersect.md)
+
+</td><td>
+
+Compute the intersection of two arrays Elements are compared by reference so object types will appear as unique even if they contain the same data.
+
+</td></tr>
+<tr><td>
+
+[isDefined(arg)](./utils.isdefined.md)
+
+</td><td>
+
+**_(BETA)_** Checks if a variable is defined and not null. After this check, typescript sees the variable as defined.
+
+</td></tr>
+<tr><td>
+
+[isIterable(obj)](./utils.isiterable.md)
+
+</td><td>
+
+**_(BETA)_** Checks if an object is iterable (can be used for `for..of`)
+
+</td></tr>
+<tr><td>
+
+[mapIdentifierKeysToDoc(identifier, section, context, resolutionOptions)](./utils.mapidentifierkeystodoc.md)
+
+</td><td>
+
+**_(BETA)_** Maps the keys of a locally managed [IIdentifier](./core-types.iidentifier.md) to the corresponding entries from the DID document.
+
+</td></tr>
+<tr><td>
+
+[processEntryToArray(inputEntryOrArray, startWithEntry)](./utils.processentrytoarray.md)
+
+</td><td>
+
+**_(BETA)_** Processes an entry or an array of entries into an array of entries. If a `startWithEntry` param is provided, it is set as the first item in the result array.
+
+</td></tr>
+<tr><td>
+
+[removeDIDParameters(did)](./utils.removedidparameters.md)
+
+</td><td>
+
+**_(BETA)_** Remove all DID query parameters and fragment components from a DID URL
+
+</td></tr>
+<tr><td>
+
+[resolveDidOrThrow(didUrl, context, resolutionOptions)](./utils.resolvedidorthrow.md)
+
+</td><td>
+
+**_(BETA)_** Resolve a DID document or throw an error if the resolution fails.
+
+</td></tr>
+<tr><td>
+
+[stringToUtf8Bytes(s)](./utils.stringtoutf8bytes.md)
+
+</td><td>
+
+Encodes a string to a Uint8Array using the utf-8 encoding.
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                                                | Description                                                                   |
-| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| [MANDATORY_CREDENTIAL_CONTEXT](./utils.mandatory_credential_context.md) | Every Verifiable Credential <code>@context</code> property must contain this. |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MANDATORY_CREDENTIAL_CONTEXT](./utils.mandatory_credential_context.md)
+
+</td><td>
+
+Every Verifiable Credential `@context` property must contain this.
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                                                    | Description                                                                                                                                            |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [JwkDidSupportedKeyTypes](./utils.jwkdidsupportedkeytypes.md) |                                                                                                                                                        |
-| [KeyUse](./utils.keyuse.md)                                   |                                                                                                                                                        |
-| [RecordLike](./utils.recordlike.md)                           | <p>**_(BETA)_** A mapping of string to another type. Both Map and Record are accepted.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[RecordLike](./utils.recordlike.md)
+
+</td><td>
+
+**_(BETA)_** A mapping of string to another type. Both Map and Record are accepted.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>

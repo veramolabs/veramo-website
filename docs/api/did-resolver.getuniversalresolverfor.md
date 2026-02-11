@@ -18,11 +18,46 @@ export declare function getUniversalResolverFor(methods: string[], url?: string)
 
 ## Parameters
 
-| Parameter | Type       | Description                                                                            |
-| --------- | ---------- | -------------------------------------------------------------------------------------- |
-| methods   | string\[\] | an array of DID methods that should be resolved by this universal resolver             |
-| url       | string     | _(Optional)_ the URL for the universal resolver instance (See https://uniresolver.io ) |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+methods
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+an array of DID methods that should be resolved by this universal resolver
+
+</td></tr>
+<tr><td>
+
+url
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ the URL for the universal resolver instance (See https://uniresolver.io )
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Record&lt;string, DIDResolver&gt;

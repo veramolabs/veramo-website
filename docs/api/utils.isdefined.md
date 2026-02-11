@@ -20,10 +20,33 @@ export declare function isDefined<T>(arg: T): arg is Exclude<T, null | undefined
 
 ## Parameters
 
-| Parameter | Type | Description              |
-| --------- | ---- | ------------------------ |
-| arg       | T    | The input to be verified |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+arg
+
+</td><td>
+
+T
+
+</td><td>
+
+The input to be verified
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 arg is Exclude&lt;T, null \| undefined&gt;

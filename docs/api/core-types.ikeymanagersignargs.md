@@ -18,9 +18,83 @@ export interface IKeyManagerSignArgs
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                 | Description                                                                                                                                                                                                                              |
-| ----------------------------------------------------------- | --------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [algorithm?](./core-types.ikeymanagersignargs.algorithm.md) |           | string                                               | <p>_(Optional)_ The algorithm to use for signing. This must be one of the algorithms supported by the KMS for this key type.</p><p>The algorithm used here should match one of the names listed in <code>IKey.meta.algorithms</code></p> |
-| [data](./core-types.ikeymanagersignargs.data.md)            |           | string                                               | Data to sign                                                                                                                                                                                                                             |
-| [encoding?](./core-types.ikeymanagersignargs.encoding.md)   |           | 'utf-8' &#124; 'base16' &#124; 'base64' &#124; 'hex' | _(Optional)_ If the data is a "string" then you can specify which encoding is used. Default is "utf-8"                                                                                                                                   |
-| [keyRef](./core-types.ikeymanagersignargs.keyref.md)        |           | string                                               | The key handle, as returned during <code>keyManagerCreateKey</code>                                                                                                                                                                      |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[algorithm?](./core-types.ikeymanagersignargs.algorithm.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ The algorithm to use for signing. This must be one of the algorithms supported by the KMS for this key type.
+
+The algorithm used here should match one of the names listed in `IKey.meta.algorithms`
+
+</td></tr>
+<tr><td>
+
+[data](./core-types.ikeymanagersignargs.data.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Data to sign
+
+</td></tr>
+<tr><td>
+
+[encoding?](./core-types.ikeymanagersignargs.encoding.md)
+
+</td><td>
+
+</td><td>
+
+'utf-8' \| 'base16' \| 'base64' \| 'hex'
+
+</td><td>
+
+_(Optional)_ If the data is a "string" then you can specify which encoding is used. Default is "utf-8"
+
+</td></tr>
+<tr><td>
+
+[keyRef](./core-types.ikeymanagersignargs.keyref.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+The key handle, as returned during `keyManagerCreateKey`
+
+</td></tr>
+</tbody></table>

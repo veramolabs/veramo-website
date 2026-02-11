@@ -22,16 +22,186 @@ export declare class Claim extends BaseEntity
 
 ## Properties
 
-| Property                                                | Modifiers | Type                                                       | Description               |
-| ------------------------------------------------------- | --------- | ---------------------------------------------------------- | ------------------------- |
-| [context](./data-store.claim.context.md)                |           | string\[\]                                                 | **_(BETA)_**              |
-| [credential](./data-store.claim.credential.md)          |           | Relation&lt;[Credential](./data-store.credential_2.md)&gt; | **_(BETA)_**              |
-| [credentialType](./data-store.claim.credentialtype.md)  |           | string\[\]                                                 | **_(BETA)_**              |
-| [expirationDate?](./data-store.claim.expirationdate.md) |           | Date                                                       | **_(BETA)_** _(Optional)_ |
-| [hash](./data-store.claim.hash.md)                      |           | string                                                     | **_(BETA)_**              |
-| [isObj](./data-store.claim.isobj.md)                    |           | boolean                                                    | **_(BETA)_**              |
-| [issuanceDate](./data-store.claim.issuancedate.md)      |           | Date                                                       | **_(BETA)_**              |
-| [issuer](./data-store.claim.issuer.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;   | **_(BETA)_**              |
-| [subject?](./data-store.claim.subject.md)               |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;   | **_(BETA)_** _(Optional)_ |
-| [type](./data-store.claim.type.md)                      |           | string                                                     | **_(BETA)_**              |
-| [value](./data-store.claim.value.md)                    |           | string &#124; null                                         | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context](./data-store.claim.context.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[credential](./data-store.claim.credential.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Credential](./data-store.credential_2.md)&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[credentialType](./data-store.claim.credentialtype.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[expirationDate?](./data-store.claim.expirationdate.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[hash](./data-store.claim.hash.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[isObj](./data-store.claim.isobj.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[issuanceDate](./data-store.claim.issuancedate.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[issuer](./data-store.claim.issuer.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[subject?](./data-store.claim.subject.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type](./data-store.claim.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[value](./data-store.claim.value.md)
+
+</td><td>
+
+</td><td>
+
+string \| null
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

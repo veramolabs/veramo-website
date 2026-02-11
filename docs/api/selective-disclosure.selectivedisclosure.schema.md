@@ -105,6 +105,9 @@ readonly schema: {
                         type: {
                             type: string;
                         };
+                        proofValue: {
+                            type: string;
+                        };
                     };
                     description: string;
                 };

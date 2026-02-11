@@ -12,13 +12,57 @@ Provides [Agent](./core.agent.md) implementation
 
 ## Classes
 
-| Class                                        | Description                                                                                                                                                                                                                                                                                                                 |
-| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Agent](./core.agent.md)                     | <p>Provides a common context for all plugin methods.</p><p>This is the main entry point into the API of Veramo. When plugins are installed, they extend the API of the agent and the methods they provide can all use the common context so that plugins can build on top of each other and create a richer experience.</p> |
-| [ValidationError](./core.validationerror.md) | <p>Represents a Schema validation error.</p><p>This can occur when a method of the agent is invoked with certain parameters or the returned value doesn't match the declared plugin schema.</p>                                                                                                                             |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Agent](./core.agent.md)
+
+</td><td>
+
+Provides a common context for all plugin methods.
+
+This is the main entry point into the API of Veramo. When plugins are installed, they extend the API of the agent and the methods they provide can all use the common context so that plugins can build on top of each other and create a richer experience.
+
+</td></tr>
+<tr><td>
+
+[ValidationError](./core.validationerror.md)
+
+</td><td>
+
+Represents a Schema validation error.
+
+This can occur when a method of the agent is invoked with certain parameters or the returned value doesn't match the declared plugin schema.
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                      | Description                                                                                      |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [createAgent(options)](./core.createagent.md) | Helper function to create a new instance of the [Agent](./core.agent.md) class with correct type |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createAgent(options)](./core.createagent.md)
+
+</td><td>
+
+Helper function to create a new instance of the [Agent](./core.agent.md) class with correct type
+
+</td></tr>
+</tbody></table>

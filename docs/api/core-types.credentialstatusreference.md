@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information is determined by the specific `credentialStatus` type definition, and varies depending on factors such as whether it is simple to implement or if it is privacy-enhancing.
+Used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information are determined by the specific `credentialStatus` type definition and vary depending on factors such as whether it is simple to implement or if it is privacy-enhancing.
 
 See [Credential Status](https://www.w3.org/TR/vc-data-model/#status)
 

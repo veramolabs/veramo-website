@@ -26,19 +26,111 @@ export declare class MessageHandler implements IAgentPlugin
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                        |
-| --------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------ |
-| [(constructor)(options)](./message-handler.messagehandler._constructor_.md) |           | Constructs a new instance of the <code>MessageHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./message-handler.messagehandler._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `MessageHandler` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                               | Modifiers             | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Description    |
-| ------------------------------------------------------ | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| [methods](./message-handler.messagehandler.methods.md) | <code>readonly</code> | [IMessageHandler](./core-types.imessagehandler.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Plugin methods |
-| [schema](./message-handler.messagehandler.schema.md)   | <code>readonly</code> | { components: { schemas: { IHandleMessageArgs: { type: string; properties: { raw: { type: string; description: string; }; metaData: { type: string; items: { $ref: string; }; description: string; }; save: { type: string; description: string; deprecated: string; }; }; required: string\[\]; description: string; }; IMetaData: { type: string; properties: { type: { type: string; description: string; }; value: { type: string; description: string; }; }; required: string\[\]; description: string; }; IMessage: { type: string; properties: { id: { type: string; description: string; }; type: { type: string; description: string; }; createdAt: { type: string; description: string; }; expiresAt: { type: string; description: string; }; threadId: { type: string; description: string; }; raw: { type: string; description: string; }; data: { anyOf: { type: string; }\[\]; description: string; }; replyTo: { type: string; items: { type: string; }; description: string; }; replyUrl: { type: string; description: string; }; from: { type: string; description: string; }; to: { type: string; description: string; }; metaData: { anyOf: ({ type: string; items: { $ref: string; }; } &#124; { type: string; items?: undefined; })\[\]; description: string; }; credentials: { type: string; items: { $ref: string; }; description: string; }; presentations: { type: string; items: { $ref: string; }; description: string; }; attachments: { type: string; items: { $ref: string; }; description: string; }; returnRoute: { type: string; description: string; }; }; required: string\[\]; description: string; }; VerifiableCredential: { type: string; properties: { proof: { $ref: string; }; issuer: { $ref: string; }; credentialSubject: { $ref: string; }; type: { anyOf: ({ type: string; items: { type: string; }; } &#124; { type: string; items?: undefined; })\[\]; }; "@context": { $ref: string; }; issuanceDate: { type: string; }; expirationDate: { type: string; }; credentialStatus: { $ref: string; }; id: { type: string; }; }; required: string\[\]; description: string; }; ProofType: { type: string; properties: { type: { type: string; }; }; description: string; }; IssuerType: { anyOf: ({ type: string; properties: { id: { type: string; }; }; required: string\[\]; } &#124; { type: string; properties?: undefined; required?: undefined; })\[\]; description: string; }; CredentialSubject: { type: string; properties: { id: { type: string; }; }; description: string; }; ContextType: { anyOf: ({ type: string; items?: undefined; } &#124; { type: string; items: { anyOf: { type: string; }\[\]; }; })\[\]; description: string; }; CredentialStatusReference: { type: string; properties: { id: { type: string; }; type: { type: string; }; }; required: string\[\]; description: string; }; VerifiablePresentation: { type: string; properties: { proof: { $ref: string; }; holder: { type: string; }; verifiableCredential: { type: string; items: { $ref: string; }; }; type: { anyOf: ({ type: string; items: { type: string; }; } &#124; { type: string; items?: undefined; })\[\]; }; "@context": { $ref: string; }; verifier: { type: string; items: { type: string; }; }; issuanceDate: { type: string; }; expirationDate: { type: string; }; id: { type: string; }; }; required: string\[\]; description: string; }; W3CVerifiableCredential: { anyOf: { $ref: string; }\[\]; description: string; }; CompactJWT: { type: string; description: string; }; IMessageAttachment: { type: string; properties: { id: { type: string; }; description: { type: string; }; filename: { type: string; }; media_type: { type: string; }; format: { type: string; }; lastmod_time: { type: string; }; byte_count: { type: string; }; data: { $ref: string; }; }; required: string\[\]; description: string; }; IMessageAttachmentData: { type: string; properties: { jws: {}; hash: { type: string; }; links: { type: string; items: { type: string; }; }; base64: { type: string; }; json: {}; }; description: string; }; }; methods: { handleMessage: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; }; }; } |                |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[methods](./message-handler.messagehandler.methods.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IMessageHandler](./core-types.imessagehandler.md)
+
+</td><td>
+
+Plugin methods
+
+</td></tr>
+<tr><td>
+
+[schema](./message-handler.messagehandler.schema.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+{ components: { schemas: { IHandleMessageArgs: { type: string; properties: { raw: { type: string; description: string; }; metaData: { type: string; items: { $ref: string; }; description: string; }; save: { type: string; description: string; deprecated: string; }; }; required: string\[\]; description: string; }; IMetaData: { type: string; properties: { type: { type: string; description: string; }; value: { type: string; description: string; }; }; required: string\[\]; description: string; }; IMessage: { type: string; properties: { id: { type: string; description: string; }; type: { type: string; description: string; }; createdAt: { type: string; description: string; }; expiresAt: { type: string; description: string; }; threadId: { type: string; description: string; }; raw: { type: string; description: string; }; data: { anyOf: { type: string; }\[\]; description: string; }; replyTo: { type: string; items: { type: string; }; description: string; }; replyUrl: { type: string; description: string; }; from: { type: string; description: string; }; to: { type: string; description: string; }; metaData: { anyOf: ({ type: string; items: { $ref: string; }; } \| { type: string; items?: undefined; })\[\]; description: string; }; credentials: { type: string; items: { $ref: string; }; description: string; }; presentations: { type: string; items: { $ref: string; }; description: string; }; attachments: { type: string; items: { $ref: string; }; description: string; }; returnRoute: { type: string; description: string; }; }; required: string\[\]; description: string; }; VerifiableCredential: { type: string; properties: { proof: { $ref: string; }; issuer: { $ref: string; }; credentialSubject: { $ref: string; }; type: { anyOf: ({ type: string; items: { type: string; }; } \| { type: string; items?: undefined; })\[\]; }; "@context": { $ref: string; }; issuanceDate: { type: string; }; expirationDate: { type: string; }; credentialStatus: { $ref: string; }; id: { type: string; }; }; required: string\[\]; description: string; }; ProofType: { type: string; properties: { type: { type: string; }; proofValue: { type: string; }; }; description: string; }; IssuerType: { anyOf: ({ type: string; properties: { id: { type: string; }; }; required: string\[\]; } \| { type: string; properties?: undefined; required?: undefined; })\[\]; description: string; }; CredentialSubject: { type: string; properties: { id: { type: string; }; }; description: string; }; ContextType: { anyOf: ({ type: string; items?: undefined; } \| { type: string; items: { anyOf: { type: string; }\[\]; }; })\[\]; description: string; }; CredentialStatusReference: { type: string; properties: { id: { type: string; }; type: { type: string; }; }; required: string\[\]; description: string; }; VerifiablePresentation: { type: string; properties: { proof: { $ref: string; }; holder: { type: string; }; verifiableCredential: { type: string; items: { $ref: string; }; }; type: { anyOf: ({ type: string; items: { type: string; }; } \| { type: string; items?: undefined; })\[\]; }; "@context": { $ref: string; }; verifier: { type: string; items: { type: string; }; }; issuanceDate: { type: string; }; expirationDate: { type: string; }; id: { type: string; }; }; required: string\[\]; description: string; }; W3CVerifiableCredential: { anyOf: { $ref: string; }\[\]; description: string; }; CompactJWT: { type: string; description: string; }; IMessageAttachment: { type: string; properties: { id: { type: string; }; description: { type: string; }; filename: { type: string; }; media_type: { type: string; }; format: { type: string; }; lastmod_time: { type: string; }; byte_count: { type: string; }; data: { $ref: string; }; }; required: string\[\]; description: string; }; IMessageAttachmentData: { type: string; properties: { jws: {}; hash: { type: string; }; links: { type: string; items: { type: string; }; }; base64: { type: string; }; json: {}; }; description: string; }; }; methods: { handleMessage: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; }; }; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [handleMessage(args, context)](./message-handler.messagehandler.handlemessage.md) |           | <p>Parses a raw message.</p><p>After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core-types.idatastore.datastoresavemessage.md) to save it.</p> |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handleMessage(args, context)](./message-handler.messagehandler.handlemessage.md)
+
+</td><td>
+
+</td><td>
+
+Parses a raw message.
+
+After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core-types.idatastore.datastoresavemessage.md) to save it.
+
+</td></tr>
+</tbody></table>

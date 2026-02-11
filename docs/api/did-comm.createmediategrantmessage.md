@@ -24,12 +24,53 @@ export declare function createMediateGrantMessage(
 
 ## Parameters
 
-| Parameter       | Type   | Description |
-| --------------- | ------ | ----------- |
-| recipientDidUrl | string |             |
-| mediatorDidUrl  | string |             |
-| thid            | string |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+recipientDidUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+mediatorDidUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+thid
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [IDIDCommMessage](./did-comm.ididcommmessage.md)

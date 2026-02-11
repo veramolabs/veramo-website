@@ -18,10 +18,31 @@ export declare function migrationConcat(...migrationArrays: MigrationInterface[]
 
 ## Parameters
 
-| Parameter       | Type                       | Description |
-| --------------- | -------------------------- | ----------- |
-| migrationArrays | MigrationInterface\[\]\[\] |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+migrationArrays
+
+</td><td>
+
+MigrationInterface\[\]\[\]
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 MigrationInterface\[\]

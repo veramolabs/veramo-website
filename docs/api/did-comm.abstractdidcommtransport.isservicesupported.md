@@ -20,10 +20,35 @@ abstract isServiceSupported(service: any): boolean;
 
 ## Parameters
 
-| Parameter | Type | Description                                                                                         |
-| --------- | ---- | --------------------------------------------------------------------------------------------------- |
-| service   | any  | <p>The DID Document service section</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+service
+
+</td><td>
+
+any
+
+</td><td>
+
+The DID Document service section
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 boolean

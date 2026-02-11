@@ -20,9 +20,61 @@ export declare abstract class AbstractKeyStore
 
 ## Methods
 
-| Method                                                         | Modifiers             | Description |
-| -------------------------------------------------------------- | --------------------- | ----------- |
-| [deleteKey(args)](./key-manager.abstractkeystore.deletekey.md) | <code>abstract</code> |             |
-| [getKey(args)](./key-manager.abstractkeystore.getkey.md)       | <code>abstract</code> |             |
-| [importKey(args)](./key-manager.abstractkeystore.importkey.md) | <code>abstract</code> |             |
-| [listKeys(args)](./key-manager.abstractkeystore.listkeys.md)   | <code>abstract</code> |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteKey(args)](./key-manager.abstractkeystore.deletekey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getKey(args)](./key-manager.abstractkeystore.getkey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./key-manager.abstractkeystore.importkey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listKeys(args)](./key-manager.abstractkeystore.listkeys.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+</tbody></table>

@@ -18,7 +18,39 @@ export declare abstract class AbstractSecretBox
 
 ## Methods
 
-| Method                                                                     | Modifiers             | Description |
-| -------------------------------------------------------------------------- | --------------------- | ----------- |
-| [decrypt(encryptedMessageHex)](./key-manager.abstractsecretbox.decrypt.md) | <code>abstract</code> |             |
-| [encrypt(message)](./key-manager.abstractsecretbox.encrypt.md)             | <code>abstract</code> |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[decrypt(encryptedMessageHex)](./key-manager.abstractsecretbox.decrypt.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[encrypt(message)](./key-manager.abstractsecretbox.encrypt.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+</tbody></table>

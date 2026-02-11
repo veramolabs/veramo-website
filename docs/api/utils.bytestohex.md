@@ -20,11 +20,46 @@ export declare function bytesToHex(byteArray: Uint8Array, prefix?: boolean): str
 
 ## Parameters
 
-| Parameter | Type       | Description                                                                            |
-| --------- | ---------- | -------------------------------------------------------------------------------------- |
-| byteArray | Uint8Array | The array to be converted                                                              |
-| prefix    | boolean    | _(Optional)_ If this is set to true, the resulting hex string will be prefixed with 0x |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+byteArray
+
+</td><td>
+
+Uint8Array
+
+</td><td>
+
+The array to be converted
+
+</td></tr>
+<tr><td>
+
+prefix
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ If this is set to true, the resulting hex string will be prefixed with 0x
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string

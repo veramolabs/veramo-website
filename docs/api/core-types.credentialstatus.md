@@ -12,7 +12,7 @@ hide_title: true
 
 Represents the result of a status check.
 
-Implementations MUST populate the `revoked` boolean property, but they can return additional metadata that is method specific.
+Implementations MUST populate the `revoked` boolean property, but they can return additional metadata that is method-specific.
 
 **Signature:**
 

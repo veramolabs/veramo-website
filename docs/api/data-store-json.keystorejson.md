@@ -28,15 +28,89 @@ export declare class KeyStoreJson extends AbstractKeyStore
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                                   |
-| --------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
-| [(constructor)(jsonStore)](./data-store-json.keystorejson._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>KeyStoreJson</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(jsonStore)](./data-store-json.keystorejson._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `KeyStoreJson` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                            | Modifiers | Description  |
-| ----------------------------------------------------------------- | --------- | ------------ |
-| [deleteKey({ kid })](./data-store-json.keystorejson.deletekey.md) |           | **_(BETA)_** |
-| [getKey({ kid })](./data-store-json.keystorejson.getkey.md)       |           | **_(BETA)_** |
-| [importKey(args)](./data-store-json.keystorejson.importkey.md)    |           | **_(BETA)_** |
-| [listKeys(args)](./data-store-json.keystorejson.listkeys.md)      |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteKey({ kid })](./data-store-json.keystorejson.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[getKey({ kid })](./data-store-json.keystorejson.getkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./data-store-json.keystorejson.importkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[listKeys(args)](./data-store-json.keystorejson.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

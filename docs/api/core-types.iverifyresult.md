@@ -20,7 +20,51 @@ export interface IVerifyResult
 
 ## Properties
 
-| Property                                           | Modifiers | Type                             | Description                                                                                                                                                |
-| -------------------------------------------------- | --------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [error?](./core-types.iverifyresult.error.md)      |           | [IError](./core-types.ierror.md) | **_(BETA)_** _(Optional)_ Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here |
-| [verified](./core-types.iverifyresult.verified.md) |           | boolean                          | **_(BETA)_** This value is used to transmit the result of verification.                                                                                    |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[error?](./core-types.iverifyresult.error.md)
+
+</td><td>
+
+</td><td>
+
+[IError](./core-types.ierror.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional Error object for the but currently the machine readable errors are not expored from DID-JWT package to be imported here
+
+</td></tr>
+<tr><td>
+
+[verified](./core-types.iverifyresult.verified.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** This value is used to transmit the result of verification.
+
+</td></tr>
+</tbody></table>

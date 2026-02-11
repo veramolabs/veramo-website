@@ -22,10 +22,33 @@ credentialStatusGenerate(args: CredentialStatusGenerateArgs): Promise<Credential
 
 ## Parameters
 
-| Parameter | Type                                                                         | Description                                                                                |
-| --------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| args      | [CredentialStatusGenerateArgs](./core-types.credentialstatusgenerateargs.md) | Input arguments for generating the <code>credentialStatus</code> field of a new credential |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[CredentialStatusGenerateArgs](./core-types.credentialstatusgenerateargs.md)
+
+</td><td>
+
+Input arguments for generating the `credentialStatus` field of a new credential
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[CredentialStatusReference](./core-types.credentialstatusreference.md)&gt;

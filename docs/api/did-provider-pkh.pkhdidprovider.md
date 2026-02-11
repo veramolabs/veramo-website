@@ -24,18 +24,122 @@ export declare class PkhDIDProvider extends AbstractIdentifierProvider
 
 ## Constructors
 
-| Constructor                                                                  | Modifiers | Description                                                                     |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------- |
-| [(constructor)(options)](./did-provider-pkh.pkhdidprovider._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>PkhDIDProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./did-provider-pkh.pkhdidprovider._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `PkhDIDProvider` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                                    | Modifiers | Description  |
-| --------------------------------------------------------------------------------------------------------- | --------- | ------------ |
-| [addKey({ identifier, key, options, }, context)](./did-provider-pkh.pkhdidprovider.addkey.md)             |           | **_(BETA)_** |
-| [addService({ identifier, service, options, }, context)](./did-provider-pkh.pkhdidprovider.addservice.md) |           | **_(BETA)_** |
-| [createIdentifier({ kms, options }, context)](./did-provider-pkh.pkhdidprovider.createidentifier.md)      |           | **_(BETA)_** |
-| [deleteIdentifier(identifier, context)](./did-provider-pkh.pkhdidprovider.deleteidentifier.md)            |           | **_(BETA)_** |
-| [removeKey(args, context)](./did-provider-pkh.pkhdidprovider.removekey.md)                                |           | **_(BETA)_** |
-| [removeService(args, context)](./did-provider-pkh.pkhdidprovider.removeservice.md)                        |           | **_(BETA)_** |
-| [updateIdentifier(args, context)](./did-provider-pkh.pkhdidprovider.updateidentifier.md)                  |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addKey({ identifier, key, options }, context)](./did-provider-pkh.pkhdidprovider.addkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[addService({ identifier, service, options }, context)](./did-provider-pkh.pkhdidprovider.addservice.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[createIdentifier({ kms, options }, context)](./did-provider-pkh.pkhdidprovider.createidentifier.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[deleteIdentifier(identifier, context)](./did-provider-pkh.pkhdidprovider.deleteidentifier.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[removeKey(args, context)](./did-provider-pkh.pkhdidprovider.removekey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[removeService(args, context)](./did-provider-pkh.pkhdidprovider.removeservice.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[updateIdentifier(args, context)](./did-provider-pkh.pkhdidprovider.updateidentifier.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

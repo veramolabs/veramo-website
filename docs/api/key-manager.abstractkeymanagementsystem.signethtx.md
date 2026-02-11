@@ -23,10 +23,31 @@ signEthTX({ key, transaction }: {
 
 ## Parameters
 
-| Parameter            | Type                                                                           | Description |
-| -------------------- | ------------------------------------------------------------------------------ | ----------- |
-| { key, transaction } | { key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; transaction: object; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ key, transaction }
+
+</td><td>
+
+{ key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; transaction: object; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

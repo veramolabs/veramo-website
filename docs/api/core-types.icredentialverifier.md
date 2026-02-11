@@ -24,7 +24,31 @@ Please see [W3C Verifiable Credentials data model](https://www.w3.org/TR/vc-data
 
 ## Methods
 
-| Method                                                                                      | Description                                                 |
-| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| [verifyCredential(args, context)](./core-types.icredentialverifier.verifycredential.md)     | Verifies a Verifiable Credential JWT, LDS Format or EIP712. |
-| [verifyPresentation(args, context)](./core-types.icredentialverifier.verifypresentation.md) | Verifies a Verifiable Presentation JWT or LDS Format.       |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[verifyCredential(args, context)](./core-types.icredentialverifier.verifycredential.md)
+
+</td><td>
+
+Verifies a Verifiable Credential
+
+</td></tr>
+<tr><td>
+
+[verifyPresentation(args, context)](./core-types.icredentialverifier.verifypresentation.md)
+
+</td><td>
+
+Verifies a Verifiable Presentation JWT or LDS Format.
+
+</td></tr>
+</tbody></table>

@@ -12,6 +12,22 @@ Provides a web3 wallet backed [key management system](./kms-web3.web3keymanageme
 
 ## Classes
 
-| Class                                                            | Description                                                                                                                                                                                                    |
-| ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Web3KeyManagementSystem](./kms-web3.web3keymanagementsystem.md) | **_(BETA)_** This is a [KMS](./key-manager.abstractkeymanagementsystem.md) implementation that uses the addresses of a web3 wallet as key identifiers, and calls the respective wallet for signing operations. |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Web3KeyManagementSystem](./kms-web3.web3keymanagementsystem.md)
+
+</td><td>
+
+**_(BETA)_** This is a [KMS](./key-manager.abstractkeymanagementsystem.md) implementation that uses the addresses of a web3 wallet as key identifiers, and calls the respective wallet for signing operations.
+
+</td></tr>
+</tbody></table>

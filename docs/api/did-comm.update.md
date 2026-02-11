@@ -22,7 +22,51 @@ export interface Update
 
 ## Properties
 
-| Property                                            | Modifiers | Type                                       | Description  |
-| --------------------------------------------------- | --------- | ------------------------------------------ | ------------ |
-| [action](./did-comm.update.action.md)               |           | [UpdateAction](./did-comm.updateaction.md) | **_(BETA)_** |
-| [recipient_did](./did-comm.update.recipient_did.md) |           | RecipientDid                               | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[action](./did-comm.update.action.md)
+
+</td><td>
+
+</td><td>
+
+[UpdateAction](./did-comm.updateaction.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[recipient_did](./did-comm.update.recipient_did.md)
+
+</td><td>
+
+</td><td>
+
+RecipientDid
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

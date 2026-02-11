@@ -18,13 +18,101 @@ export declare abstract class AbstractKeyManagementSystem
 
 ## Methods
 
-| Method                                                                                    | Modifiers             | Description |
-| ----------------------------------------------------------------------------------------- | --------------------- | ----------- |
-| [createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)                 | <code>abstract</code> |             |
-| [deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)                 | <code>abstract</code> |             |
-| [importKey(args)](./key-manager.abstractkeymanagementsystem.importkey.md)                 | <code>abstract</code> |             |
-| [listKeys()](./key-manager.abstractkeymanagementsystem.listkeys.md)                       | <code>abstract</code> |             |
-| [sharedSecret(args)](./key-manager.abstractkeymanagementsystem.sharedsecret.md)           | <code>abstract</code> |             |
-| [sign(args)](./key-manager.abstractkeymanagementsystem.sign.md)                           | <code>abstract</code> |             |
-| [signEthTX({ key, transaction })](./key-manager.abstractkeymanagementsystem.signethtx.md) |                       |             |
-| [signJWT({ key, data })](./key-manager.abstractkeymanagementsystem.signjwt.md)            |                       |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createKey(args)](./key-manager.abstractkeymanagementsystem.createkey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[deleteKey(args)](./key-manager.abstractkeymanagementsystem.deletekey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./key-manager.abstractkeymanagementsystem.importkey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listKeys()](./key-manager.abstractkeymanagementsystem.listkeys.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[sharedSecret(args)](./key-manager.abstractkeymanagementsystem.sharedsecret.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[sign(args)](./key-manager.abstractkeymanagementsystem.sign.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[signEthTX({ key, transaction })](./key-manager.abstractkeymanagementsystem.signethtx.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[signJWT({ key, data })](./key-manager.abstractkeymanagementsystem.signjwt.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

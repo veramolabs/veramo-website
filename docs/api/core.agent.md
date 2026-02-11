@@ -22,22 +22,158 @@ export declare class Agent implements IAgent
 
 ## Constructors
 
-| Constructor                                             | Modifiers | Description                                               |
-| ------------------------------------------------------- | --------- | --------------------------------------------------------- |
-| [(constructor)(options)](./core.agent._constructor_.md) |           | Constructs a new instance of the <code>Agent</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./core.agent._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `Agent` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                            | Modifiers             | Type                                                 | Description                          |
-| ----------------------------------- | --------------------- | ---------------------------------------------------- | ------------------------------------ |
-| [context?](./core.agent.context.md) | <code>readonly</code> | Record&lt;string, any&gt;                            | _(Optional)_                         |
-| [methods](./core.agent.methods.md)  | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md) | The map of plugin + override methods |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[context?](./core.agent.context.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+Record&lt;string, any&gt;
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[methods](./core.agent.methods.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IPluginMethodMap](./core-types.ipluginmethodmap.md)
+
+</td><td>
+
+The map of plugin + override methods
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                 | Modifiers | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------ | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [availableMethods()](./core.agent.availablemethods.md) |           | Lists available agent method names                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [emit(eventType, data)](./core.agent.emit.md)          |           | <p>Broadcasts an <code>Event</code> to potential listeners.</p><p>Listeners are <code>IEventListener</code> instances that declare <code>eventTypes</code> and implement an <code>async onEvent({type, data}, context)</code> method. Note that <code>IAgentPlugin</code> is also an <code>IEventListener</code> so plugins can be listeners for events.</p><p>During creation, the agent automatically registers listener plugins to the <code>eventTypes</code> that they declare.</p><p>Events are processed asynchronously, so the general pattern to be used is fire-and-forget. Ex: <code>agent.emit('foo', {eventData})</code></p><p>In situations where you need to make sure that all events in the queue have been exhausted, the <code>Promise</code> returned by <code>emit</code> can be awaited. Ex: <code>await agent.emit('foo', {eventData})</code></p><p>In case an error is thrown while processing an event, the error is re-emitted as an event of type <code>CoreEvents.error</code> with a <code>EventListenerError</code> as payload.</p><p>Note that <code>await agent.emit()</code> will NOT throw an error. To process errors, use a listener with <code>eventTypes: [ CoreEvents.error ]</code> in the definition.</p> |
-| [execute(method, args)](./core.agent.execute.md)       |           | <p>Executes a plugin method.</p><p>Normally, the <code>execute()</code> method need not be called. The agent will expose the plugin methods directly on the agent instance but this can be used when dynamically deciding which methods to call.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [getSchema()](./core.agent.getschema.md)               |           | Returns agent plugin schema                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[availableMethods()](./core.agent.availablemethods.md)
+
+</td><td>
+
+</td><td>
+
+Lists available agent method names
+
+</td></tr>
+<tr><td>
+
+[emit(eventType, data)](./core.agent.emit.md)
+
+</td><td>
+
+</td><td>
+
+Broadcasts an `Event` to potential listeners.
+
+Listeners are `IEventListener` instances that declare `eventTypes` and implement an `async onEvent({type, data}, context)` method. Note that `IAgentPlugin` is also an `IEventListener` so plugins can be listeners for events.
+
+During creation, the agent automatically registers listener plugins to the `eventTypes` that they declare.
+
+Events are processed asynchronously, so the general pattern to be used is fire-and-forget. Ex: `agent.emit('foo', {eventData})`
+
+In situations where you need to make sure that all events in the queue have been exhausted, the `Promise` returned by `emit` can be awaited. Ex: `await agent.emit('foo', {eventData})`
+
+In case an error is thrown while processing an event, the error is re-emitted as an event of type `CoreEvents.error` with a `EventListenerError` as payload.
+
+Note that `await agent.emit()` will NOT throw an error. To process errors, use a listener with `eventTypes: [ CoreEvents.error ]` in the definition.
+
+</td></tr>
+<tr><td>
+
+[execute(method, args)](./core.agent.execute.md)
+
+</td><td>
+
+</td><td>
+
+Executes a plugin method.
+
+Normally, the `execute()` method need not be called. The agent will expose the plugin methods directly on the agent instance but this can be used when dynamically deciding which methods to call.
+
+</td></tr>
+<tr><td>
+
+[getSchema()](./core.agent.getschema.md)
+
+</td><td>
+
+</td><td>
+
+Returns agent plugin schema
+
+</td></tr>
+</tbody></table>

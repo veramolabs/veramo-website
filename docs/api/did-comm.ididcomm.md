@@ -24,10 +24,60 @@ export interface IDIDComm extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [getDIDCommMessageMediaType(args)](./did-comm.ididcomm.getdidcommmessagemediatype.md)      | **_(BETA)_** Partially decodes a possible DIDComm message string to determine the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)                                                                                                                                                                                                                                                                                                           |
-| [packDIDCommMessage(args, context)](./did-comm.ididcomm.packdidcommmessage.md)             | **_(BETA)_** Packs a [IDIDCommMessage](./did-comm.ididcommmessage.md) using one of the [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) options.                                                                                                                                                                                                                                                                                                 |
-| [sendDIDCommMessage(args, context)](./did-comm.ididcomm.senddidcommmessage.md)             | <p>**_(BETA)_** Sends the given message to the recipient. If a return-transport is provided it will be checked whether the parent thread allows reusing the route. You cannot reuse the transport if the message was forwarded from a DIDComm mediator.</p><p>Emits an eventType 'DIDCommV2Message-sent' that contains the message id of packed DIDComm message [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) after the message was sent.</p> |
-| [sendMessageDIDCommAlpha1(args, context)](./did-comm.ididcomm.sendmessagedidcommalpha1.md) | **_(BETA)_**                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [unpackDIDCommMessage(args, context)](./did-comm.ididcomm.unpackdidcommmessage.md)         | **_(BETA)_** Unpacks a possible DIDComm message and returns the [IDIDCommMessage](./did-comm.ididcommmessage.md) and [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) used to pack it.                                                                                                                                                                                                                                                           |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDIDCommMessageMediaType(args)](./did-comm.ididcomm.getdidcommmessagemediatype.md)
+
+</td><td>
+
+**_(BETA)_** Partially decodes a possible DIDComm message string to determine the [DIDCommMessageMediaType](./did-comm.didcommmessagemediatype.md)
+
+</td></tr>
+<tr><td>
+
+[packDIDCommMessage(args, context)](./did-comm.ididcomm.packdidcommmessage.md)
+
+</td><td>
+
+**_(BETA)_** Packs a [IDIDCommMessage](./did-comm.ididcommmessage.md) using one of the [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) options.
+
+</td></tr>
+<tr><td>
+
+[sendDIDCommMessage(args, context)](./did-comm.ididcomm.senddidcommmessage.md)
+
+</td><td>
+
+**_(BETA)_** Sends the given message to the recipient. If a return-transport is provided it will be checked whether the parent thread allows reusing the route. You cannot reuse the transport if the message was forwarded from a DIDComm mediator.
+
+Emits an eventType 'DIDCommV2Message-sent' that contains the message id of packed DIDComm message [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) after the message was sent.
+
+</td></tr>
+<tr><td>
+
+[sendMessageDIDCommAlpha1(args, context)](./did-comm.ididcomm.sendmessagedidcommalpha1.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[unpackDIDCommMessage(args, context)](./did-comm.ididcomm.unpackdidcommmessage.md)
+
+</td><td>
+
+**_(BETA)_** Unpacks a possible DIDComm message and returns the [IDIDCommMessage](./did-comm.ididcommmessage.md) and [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) used to pack it.
+
+</td></tr>
+</tbody></table>

@@ -10,9 +10,9 @@ hide_title: true
 
 > This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Represents the requirements that this plugin has. The agent that is using this plugin is expected to provide these methods.
+Represents the requirements that this plugin has. The agent using this plugin is expected to provide these methods.
 
-This interface can be used for static type checks, to make sure your application is properly initialized.
+This interface can be used for static type checks to make sure your application is properly initialized.
 
 **Signature:**
 

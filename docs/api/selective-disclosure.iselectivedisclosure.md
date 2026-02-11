@@ -28,9 +28,49 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Methods
 
-| Method                                                                                                                             | Description  |
-| ---------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| [createProfilePresentation(args, context)](./selective-disclosure.iselectivedisclosure.createprofilepresentation.md)               | **_(BETA)_** |
-| [createSelectiveDisclosureRequest(args, context)](./selective-disclosure.iselectivedisclosure.createselectivedisclosurerequest.md) | **_(BETA)_** |
-| [getVerifiableCredentialsForSdr(args, context)](./selective-disclosure.iselectivedisclosure.getverifiablecredentialsforsdr.md)     | **_(BETA)_** |
-| [validatePresentationAgainstSdr(args, context)](./selective-disclosure.iselectivedisclosure.validatepresentationagainstsdr.md)     | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createProfilePresentation(args, context)](./selective-disclosure.iselectivedisclosure.createprofilepresentation.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[createSelectiveDisclosureRequest(args, context)](./selective-disclosure.iselectivedisclosure.createselectivedisclosurerequest.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[getVerifiableCredentialsForSdr(args, context)](./selective-disclosure.iselectivedisclosure.getverifiablecredentialsforsdr.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[validatePresentationAgainstSdr(args, context)](./selective-disclosure.iselectivedisclosure.validatepresentationagainstsdr.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

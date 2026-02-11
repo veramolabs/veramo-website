@@ -26,12 +26,126 @@ This API may change without a BREAKING CHANGE notice.
 
 ## Properties
 
-| Property                                                                                  | Modifiers | Type                                           | Description                                                                                                                   |
-| ----------------------------------------------------------------------------------------- | --------- | ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| [claimType](./selective-disclosure.icredentialrequestinput.claimtype.md)                  |           | string                                         | **_(BETA)_** The name of the claim property that the credential should express.                                               |
-| [claimValue?](./selective-disclosure.icredentialrequestinput.claimvalue.md)               |           | string                                         | **_(BETA)_** _(Optional)_ The value of the claim that the credential should express.                                          |
-| [credentialContext?](./selective-disclosure.icredentialrequestinput.credentialcontext.md) |           | string                                         | **_(BETA)_** _(Optional)_ The credential context. See [W3C Credential Context](https://www.w3.org/TR/vc-data-model/#contexts) |
-| [credentialType?](./selective-disclosure.icredentialrequestinput.credentialtype.md)       |           | string                                         | **_(BETA)_** _(Optional)_ The credential type. See [W3C Credential Types](https://www.w3.org/TR/vc-data-model/#types)         |
-| [essential?](./selective-disclosure.icredentialrequestinput.essential.md)                 |           | boolean                                        | **_(BETA)_** _(Optional)_ If it is essential. A response that does not include this credential is not sufficient.             |
-| [issuers?](./selective-disclosure.icredentialrequestinput.issuers.md)                     |           | [Issuer](./selective-disclosure.issuer.md)\[\] | **_(BETA)_** _(Optional)_ A list of accepted Issuers for this credential.                                                     |
-| [reason?](./selective-disclosure.icredentialrequestinput.reason.md)                       |           | string                                         | **_(BETA)_** _(Optional)_ Motive for requiring this credential.                                                               |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[claimType](./selective-disclosure.icredentialrequestinput.claimtype.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** The name of the claim property that the credential should express.
+
+</td></tr>
+<tr><td>
+
+[claimValue?](./selective-disclosure.icredentialrequestinput.claimvalue.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The value of the claim that the credential should express.
+
+</td></tr>
+<tr><td>
+
+[credentialContext?](./selective-disclosure.icredentialrequestinput.credentialcontext.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The credential context. See [W3C Credential Context](https://www.w3.org/TR/vc-data-model/#contexts)
+
+</td></tr>
+<tr><td>
+
+[credentialType?](./selective-disclosure.icredentialrequestinput.credentialtype.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The credential type. See [W3C Credential Types](https://www.w3.org/TR/vc-data-model/#types)
+
+</td></tr>
+<tr><td>
+
+[essential?](./selective-disclosure.icredentialrequestinput.essential.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ If it is essential. A response that does not include this credential is not sufficient.
+
+</td></tr>
+<tr><td>
+
+[issuers?](./selective-disclosure.icredentialrequestinput.issuers.md)
+
+</td><td>
+
+</td><td>
+
+[Issuer](./selective-disclosure.issuer.md)\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ A list of accepted Issuers for this credential.
+
+</td></tr>
+<tr><td>
+
+[reason?](./selective-disclosure.icredentialrequestinput.reason.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Motive for requiring this credential.
+
+</td></tr>
+</tbody></table>

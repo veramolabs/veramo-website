@@ -20,7 +20,55 @@ export interface IAgentPlugin extends IEventListener
 
 ## Properties
 
-| Property                                         | Modifiers             | Type                                                     | Description  |
-| ------------------------------------------------ | --------------------- | -------------------------------------------------------- | ------------ |
-| [methods?](./core-types.iagentplugin.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md)     | _(Optional)_ |
-| [schema?](./core-types.iagentplugin.schema.md)   | <code>readonly</code> | [IAgentPluginSchema](./core-types.iagentpluginschema.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[methods?](./core-types.iagentplugin.methods.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IPluginMethodMap](./core-types.ipluginmethodmap.md)
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[schema?](./core-types.iagentplugin.schema.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IAgentPluginSchema](./core-types.iagentpluginschema.md)
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

@@ -24,20 +24,128 @@ export declare class DIDDiscovery implements IAgentPlugin
 
 ## Constructors
 
-| Constructor                                                             | Modifiers | Description                                                                   |
-| ----------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
-| [(constructor)(options)](./did-discovery.diddiscovery._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>DIDDiscovery</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./did-discovery.diddiscovery._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `DIDDiscovery` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                               | Modifiers             | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Description  |
-| ------------------------------------------------------ | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| [methods](./did-discovery.diddiscovery.methods.md)     | <code>readonly</code> | [IDIDDiscovery](./did-discovery.ididdiscovery.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | **_(BETA)_** |
-| [providers](./did-discovery.diddiscovery.providers.md) | <code>readonly</code> | Array&lt;[AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)&gt;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | **_(BETA)_** |
-| [schema](./did-discovery.diddiscovery.schema.md)       | <code>readonly</code> | { components: { schemas: { IDIDDiscoveryDiscoverDidArgs: { type: string; properties: { query: { type: string; description: string; }; options: { type: string; description: string; }; }; required: string\[\]; description: string; }; IDIDDiscoveryDiscoverDidResult: { type: string; properties: { query: { type: string; description: string; }; options: { type: string; description: string; }; results: { type: string; items: { $ref: string; }; description: string; }; errors: { type: string; additionalProperties: { type: string; }; description: string; }; }; required: string\[\]; description: string; }; IDIDDiscoveryProviderResult: { type: string; properties: { provider: { type: string; description: string; }; matches: { type: string; items: { $ref: string; }; description: string; }; }; required: string\[\]; description: string; }; IDIDDiscoverMatch: { type: string; properties: { did: { type: string; description: string; }; metaData: { type: string; description: string; }; }; required: string\[\]; description: string; }; }; methods: { discoverDid: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; }; }; } | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[methods](./did-discovery.diddiscovery.methods.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IDIDDiscovery](./did-discovery.ididdiscovery.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[providers](./did-discovery.diddiscovery.providers.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+Array&lt;[AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[schema](./did-discovery.diddiscovery.schema.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+{ components: { schemas: { IDIDDiscoveryDiscoverDidArgs: { type: string; properties: { query: { type: string; description: string; }; options: { type: string; description: string; }; }; required: string\[\]; description: string; }; IDIDDiscoveryDiscoverDidResult: { type: string; properties: { query: { type: string; description: string; }; options: { type: string; description: string; }; results: { type: string; items: { $ref: string; }; description: string; }; errors: { type: string; additionalProperties: { type: string; }; description: string; }; }; required: string\[\]; description: string; }; IDIDDiscoveryProviderResult: { type: string; properties: { provider: { type: string; description: string; }; matches: { type: string; items: { $ref: string; }; description: string; }; }; required: string\[\]; description: string; }; IDIDDiscoverMatch: { type: string; properties: { did: { type: string; description: string; }; metaData: { type: string; description: string; }; }; required: string\[\]; description: string; }; }; methods: { discoverDid: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; }; }; }
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                    | Modifiers | Description                                                        |
-| ------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------ |
-| [discoverDid(args, context)](./did-discovery.diddiscovery.discoverdid.md) |           | **_(BETA)_** Queries data providers and returns DIDs with metadata |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[discoverDid(args, context)](./did-discovery.diddiscovery.discoverdid.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Queries data providers and returns DIDs with metadata
+
+</td></tr>
+</tbody></table>

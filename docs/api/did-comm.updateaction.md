@@ -22,7 +22,43 @@ export declare enum UpdateAction
 
 ## Enumeration Members
 
-| Member | Value                           | Description  |
-| ------ | ------------------------------- | ------------ |
-| ADD    | <code>&quot;add&quot;</code>    | **_(BETA)_** |
-| REMOVE | <code>&quot;remove&quot;</code> | **_(BETA)_** |
+<table><thead><tr><th>
+
+Member
+
+</th><th>
+
+Value
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ADD
+
+</td><td>
+
+`"add"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+REMOVE
+
+</td><td>
+
+`"remove"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

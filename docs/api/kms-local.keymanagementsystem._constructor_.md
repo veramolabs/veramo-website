@@ -18,6 +18,28 @@ constructor(keyStore: AbstractPrivateKeyStore);
 
 ## Parameters
 
-| Parameter | Type                                                                | Description |
-| --------- | ------------------------------------------------------------------- | ----------- |
-| keyStore  | [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+keyStore
+
+</td><td>
+
+[AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>

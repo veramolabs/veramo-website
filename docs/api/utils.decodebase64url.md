@@ -20,10 +20,35 @@ export declare function decodeBase64url(s: string): string
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                           |
-| --------- | ------ | ----------------------------------------------------------------------------------------------------- |
-| s         | string | <p>the base64url string to be decoded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+s
+
+</td><td>
+
+string
+
+</td><td>
+
+the base64url string to be decoded
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string

@@ -18,10 +18,31 @@ getKey({ alias }: {
 
 ## Parameters
 
-| Parameter | Type               | Description |
-| --------- | ------------------ | ----------- |
-| { alias } | { alias: string; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ alias }
+
+</td><td>
+
+{ alias: string; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;

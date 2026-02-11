@@ -22,13 +22,67 @@ export interface IDIDCommTransport
 
 ## Properties
 
-| Property                                 | Modifiers | Type   | Description                                                                                                                      |
-| ---------------------------------------- | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| [id](./did-comm.ididcommtransport.id.md) |           | string | **_(BETA)_** Identifier of this transport that can be used in case the message thread supports reusing the transport connection. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[id](./did-comm.ididcommtransport.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** Identifier of this transport that can be used in case the message thread supports reusing the transport connection.
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                            | Description                                                                                                                                            |
-| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [isServiceSupported(service)](./did-comm.ididcommtransport.isservicesupported.md) | **_(BETA)_** Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
-| [send(service, message)](./did-comm.ididcommtransport.send.md)                    | **_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isServiceSupported(service)](./did-comm.ididcommtransport.isservicesupported.md)
+
+</td><td>
+
+**_(BETA)_** Returns `true` if this transport is suitable for the provided DID Document service section, otherwise `false`.
+
+</td></tr>
+<tr><td>
+
+[send(service, message)](./did-comm.ididcommtransport.send.md)
+
+</td><td>
+
+**_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section.
+
+</td></tr>
+</tbody></table>

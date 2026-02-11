@@ -16,10 +16,31 @@ static fromLocalStorage(localStorageKey: string): BrowserLocalStorageStore;
 
 ## Parameters
 
-| Parameter       | Type   | Description |
-| --------------- | ------ | ----------- |
-| localStorageKey | string |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+localStorageKey
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [BrowserLocalStorageStore](./data-store-json.browserlocalstoragestore.md)

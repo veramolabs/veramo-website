@@ -20,10 +20,33 @@ matchPrefix(prefix: string): boolean;
 
 ## Parameters
 
-| Parameter | Type   | Description                     |
-| --------- | ------ | ------------------------------- |
-| prefix    | string | The DID prefix to match against |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+prefix
+
+</td><td>
+
+string
+
+</td><td>
+
+The DID prefix to match against
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 boolean

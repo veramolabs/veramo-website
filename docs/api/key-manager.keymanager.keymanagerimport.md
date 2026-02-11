@@ -18,10 +18,31 @@ keyManagerImport(key: MinimalImportableKey): Promise<ManagedKeyInfo>;
 
 ## Parameters
 
-| Parameter | Type                                                         | Description |
-| --------- | ------------------------------------------------------------ | ----------- |
-| key       | [MinimalImportableKey](./core-types.minimalimportablekey.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+key
+
+</td><td>
+
+[MinimalImportableKey](./core-types.minimalimportablekey.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

@@ -18,6 +18,36 @@ export interface IDataStoreSaveVerifiablePresentationArgs
 
 ## Properties
 
-| Property                                                                                                  | Modifiers | Type                                                             | Description                      |
-| --------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | -------------------------------- |
-| [verifiablePresentation](./core-types.idatastoresaveverifiablepresentationargs.verifiablepresentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md) | Required. VerifiablePresentation |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[verifiablePresentation](./core-types.idatastoresaveverifiablepresentationargs.verifiablepresentation.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiablePresentation](./core-types.verifiablepresentation.md)
+
+</td><td>
+
+Required. VerifiablePresentation
+
+</td></tr>
+</tbody></table>

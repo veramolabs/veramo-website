@@ -18,10 +18,31 @@ keyManagerSignEthTX({ kid, transaction }: IKeyManagerSignEthTXArgs): Promise<str
 
 ## Parameters
 
-| Parameter            | Type                                                                 | Description |
-| -------------------- | -------------------------------------------------------------------- | ----------- |
-| { kid, transaction } | [IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ kid, transaction }
+
+</td><td>
+
+[IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

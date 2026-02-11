@@ -18,9 +18,81 @@ export interface IService
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                                                                                 | Description                        |
-| ----------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| [description?](./core-types.iservice.description.md)        |           | string                                                                                                               | _(Optional)_ Optional. Description |
-| [id](./core-types.iservice.id.md)                           |           | string                                                                                                               | ID                                 |
-| [serviceEndpoint](./core-types.iservice.serviceendpoint.md) |           | [IServiceEndpoint](./core-types.iserviceendpoint.md) &#124; [IServiceEndpoint](./core-types.iserviceendpoint.md)\[\] | Endpoint URL                       |
-| [type](./core-types.iservice.type.md)                       |           | string                                                                                                               | Service type                       |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[description?](./core-types.iservice.description.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Description
+
+</td></tr>
+<tr><td>
+
+[id](./core-types.iservice.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+ID
+
+</td></tr>
+<tr><td>
+
+[serviceEndpoint](./core-types.iservice.serviceendpoint.md)
+
+</td><td>
+
+</td><td>
+
+[IServiceEndpoint](./core-types.iserviceendpoint.md) \| [IServiceEndpoint](./core-types.iserviceendpoint.md)\[\]
+
+</td><td>
+
+Endpoint URL
+
+</td></tr>
+<tr><td>
+
+[type](./core-types.iservice.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Service type
+
+</td></tr>
+</tbody></table>

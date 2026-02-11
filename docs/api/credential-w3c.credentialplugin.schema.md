@@ -102,6 +102,9 @@ readonly schema: {
                         type: {
                             type: string;
                         };
+                        proofValue: {
+                            type: string;
+                        };
                     };
                     description: string;
                 };
@@ -400,12 +403,17 @@ readonly schema: {
                     description: string;
                 };
                 DateType: {
-                    type: string;
+                    anyOf: ({
+                        type: string;
+                        format?: undefined;
+                    } | {
+                        type: string;
+                        format: string;
+                    })[];
                     description: string;
                 };
                 ProofFormat: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 ICreateVerifiablePresentationArgs: {
@@ -579,7 +587,6 @@ readonly schema: {
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {

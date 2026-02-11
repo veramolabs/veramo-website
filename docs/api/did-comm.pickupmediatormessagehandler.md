@@ -22,12 +22,56 @@ export declare class PickupMediatorMessageHandler extends AbstractMessageHandler
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                                                   |
-| --------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------- |
-| [(constructor)()](./did-comm.pickupmediatormessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>PickupMediatorMessageHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./did-comm.pickupmediatormessagehandler._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `PickupMediatorMessageHandler` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                        | Modifiers | Description                                                                                         |
-| ----------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.pickupmediatormessagehandler.handle.md) |           | **_(BETA)_** Handles messages for Pickup protocol and mediator role https://didcomm.org/pickup/3.0/ |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./did-comm.pickupmediatormessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Handles messages for Pickup protocol and mediator role https://didcomm.org/pickup/3.0/
+
+</td></tr>
+</tbody></table>

@@ -22,6 +22,36 @@ export interface CoordinateMediationV3MediatorMessageHandlerOptions
 
 ## Properties
 
-| Property                                                                                                              | Modifiers | Type    | Description  |
-| --------------------------------------------------------------------------------------------------------------------- | --------- | ------- | ------------ |
-| [isMediateDefaultGrantAll](./did-comm.coordinatemediationv3mediatormessagehandleroptions.ismediatedefaultgrantall.md) |           | boolean | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isMediateDefaultGrantAll](./did-comm.coordinatemediationv3mediatormessagehandleroptions.ismediatedefaultgrantall.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

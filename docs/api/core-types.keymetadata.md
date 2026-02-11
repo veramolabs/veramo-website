@@ -22,6 +22,36 @@ export interface KeyMetadata
 
 ## Properties
 
-| Property                                              | Modifiers | Type                             | Description  |
-| ----------------------------------------------------- | --------- | -------------------------------- | ------------ |
-| [algorithms?](./core-types.keymetadata.algorithms.md) |           | [TAlg](./core-types.talg.md)\[\] | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[algorithms?](./core-types.keymetadata.algorithms.md)
+
+</td><td>
+
+</td><td>
+
+[TAlg](./core-types.talg.md)\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

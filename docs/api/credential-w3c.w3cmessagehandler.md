@@ -28,6 +28,26 @@ export declare class W3cMessageHandler extends AbstractMessageHandler
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description |
-| ------------------------------------------------------------------------ | --------- | ----------- |
-| [handle(message, context)](./credential-w3c.w3cmessagehandler.handle.md) |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./credential-w3c.w3cmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

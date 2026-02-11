@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICredentialIssuer.createVerifiableCredential() method
 
-Creates a Verifiable Credential. The payload, signer and format are chosen based on the `args` parameter.
+Creates a Verifiable Credential. The payload, signer, and format are chosen based on the `args` parameter.
 
 **Signature:**
 
@@ -18,11 +18,46 @@ createVerifiableCredential(args: ICreateVerifiableCredentialArgs, context: Issue
 
 ## Parameters
 
-| Parameter | Type                                                                               | Description                                                                                  |
-| --------- | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| args      | [ICreateVerifiableCredentialArgs](./core-types.icreateverifiablecredentialargs.md) | Arguments necessary to create the Presentation.                                              |
-| context   | [IssuerAgentContext](./core-types.issueragentcontext.md)                           | This reserved param is automatically added and handled by the framework, \*do not override\* |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[ICreateVerifiableCredentialArgs](./core-types.icreateverifiablecredentialargs.md)
+
+</td><td>
+
+Arguments necessary to create the Presentation.
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IssuerAgentContext](./core-types.issueragentcontext.md)
+
+</td><td>
+
+This reserved param is automatically added and handled by the framework, \*do not override\*
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[VerifiableCredential](./core-types.verifiablecredential.md)&gt;

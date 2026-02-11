@@ -22,12 +22,56 @@ export declare class RoutingMessageHandler extends AbstractMessageHandler
 
 ## Constructors
 
-| Constructor                                                          | Modifiers | Description                                                                            |
-| -------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------- |
-| [(constructor)()](./did-comm.routingmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>RoutingMessageHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./did-comm.routingmessagehandler._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `RoutingMessageHandler` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                 | Modifiers | Description                                                                                 |
-| ---------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.routingmessagehandler.handle.md) |           | **_(BETA)_** Handles forward messages for Routing protocol https://didcomm.org/routing/2.0/ |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./did-comm.routingmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Handles forward messages for Routing protocol https://didcomm.org/routing/2.0/
+
+</td></tr>
+</tbody></table>

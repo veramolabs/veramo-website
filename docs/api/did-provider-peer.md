@@ -12,12 +12,46 @@ Provides `did:key` [identifier provider](./did-provider-peer.peerdidprovider.md)
 
 ## Classes
 
-| Class                                                     | Description                                                                                                                                                                        |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [PeerDIDProvider](./did-provider-peer.peerdidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:key</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PeerDIDProvider](./did-provider-peer.peerdidprovider.md)
+
+</td><td>
+
+**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for `did:key` identifiers
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                            | Description                                                                         |
-| --------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [getResolver()](./did-provider-peer.getresolver.md) | Creates a DID Resolver that can resolve Peer DIDs (for the 0 and 2 num_algo values) |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getResolver()](./did-provider-peer.getresolver.md)
+
+</td><td>
+
+Creates a DID Resolver that can resolve Peer DIDs (for the 0 and 2 num_algo values)
+
+</td></tr>
+</tbody></table>

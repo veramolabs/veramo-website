@@ -28,7 +28,51 @@ export interface ICheckCredentialStatusArgs extends UsingResolutionOptions
 
 ## Properties
 
-| Property                                                                               | Modifiers | Type                                                         | Description                                                                                                                                                                         |
-| -------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [credential](./core-types.icheckcredentialstatusargs.credential.md)                    |           | [VerifiableCredential](./core-types.verifiablecredential.md) | **_(BETA)_** The credential whose status needs to be checked                                                                                                                        |
-| [didDocumentOverride?](./core-types.icheckcredentialstatusargs.diddocumentoverride.md) |           | DIDDocument                                                  | **_(BETA)_** _(Optional)_ The DID document of the issuer. This can be used in case the DID Document is already resolver, to avoid a potentially expensive DID resolution operation. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[credential](./core-types.icheckcredentialstatusargs.credential.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)
+
+</td><td>
+
+**_(BETA)_** The credential whose status needs to be checked
+
+</td></tr>
+<tr><td>
+
+[didDocumentOverride?](./core-types.icheckcredentialstatusargs.diddocumentoverride.md)
+
+</td><td>
+
+</td><td>
+
+DIDDocument
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The DID document of the issuer. This can be used in case the DID Document is already resolver, to avoid a potentially expensive DID resolution operation.
+
+</td></tr>
+</tbody></table>

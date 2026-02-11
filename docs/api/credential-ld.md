@@ -8,46 +8,148 @@ hide_title: true
 
 ## credential-ld package
 
-Provides a [plugin](./credential-ld.credentialissuerld.md) for the [Agent](./core.agent.md) that implements [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md) interface.
+Provides a [handler](./credential-ld.credentialproviderld.md) for the [CredentialPlugin](./credential-w3c.credentialplugin.md) that implements interface.
 
 This plugin adds support for working with JSON-LD credentials. When installed, this plugin will be automatically used by [CredentialPlugin](./credential-w3c.credentialplugin.md) if the user requests the credential to be signed by one of the installed signature suites.
 
 ## Classes
 
-| Class                                                                                                     | Description                                                                                                                                                                                                               |
-| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CredentialIssuerLD](./credential-ld.credentialissuerld.md)                                               | A Veramo plugin that implements the [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md) methods.                                                                                                                |
-| [VeramoEcdsaSecp256k1RecoverySignature2020](./credential-ld.veramoecdsasecp256k1recoverysignature2020.md) | <p>**_(ALPHA)_** Veramo wrapper for the EcdsaSecp256k1RecoverySignature2020 suite by Transmute Industries</p><p>This API is experimental and is very likely to change or disappear in future releases without notice.</p> |
-| [VeramoEd25519Signature2018](./credential-ld.veramoed25519signature2018.md)                               | <p>**_(ALPHA)_** Veramo wrapper for the Ed25519Signature2018 suite by Transmute Industries</p><p>This API is experimental and is very likely to change or disappear in future releases without notice.</p>                |
-| [VeramoEd25519Signature2020](./credential-ld.veramoed25519signature2020.md)                               | <p>**_(ALPHA)_** Veramo wrapper for the Ed25519Signature2020 suite by digitalcredentials</p><p>This API is experimental and is very likely to change or disappear in future releases without notice.</p>                  |
-| [VeramoJsonWebSignature2020](./credential-ld.veramojsonwebsignature2020.md)                               | <p>**_(ALPHA)_** Veramo wrapper for the JsonWebSignature2020 suite by Transmute Industries</p><p>This API is experimental and is very likely to change or disappear in future releases without notice.</p>                |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CredentialProviderLD](./credential-ld.credentialproviderld.md)
+
+</td><td>
+
+**_(BETA)_** A Veramo Credential sub-plugin that implements a [ICredentialProvider](./credential-w3c.icredentialprovider.md) with support for Verifiable Credentials and Presentations using JSON-LD proofs.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[VeramoEcdsaSecp256k1RecoverySignature2020](./credential-ld.veramoecdsasecp256k1recoverysignature2020.md)
+
+</td><td>
+
+**_(ALPHA)_** Veramo wrapper for the EcdsaSecp256k1RecoverySignature2020 suite by Transmute Industries
+
+This API is experimental and is very likely to change or disappear in future releases without notice.
+
+</td></tr>
+<tr><td>
+
+[VeramoEd25519Signature2018](./credential-ld.veramoed25519signature2018.md)
+
+</td><td>
+
+**_(ALPHA)_** Veramo wrapper for the Ed25519Signature2018 suite by Transmute Industries
+
+This API is experimental and is very likely to change or disappear in future releases without notice.
+
+</td></tr>
+<tr><td>
+
+[VeramoEd25519Signature2020](./credential-ld.veramoed25519signature2020.md)
+
+</td><td>
+
+**_(ALPHA)_** Veramo wrapper for the Ed25519Signature2020 suite by digitalcredentials
+
+This API is experimental and is very likely to change or disappear in future releases without notice.
+
+</td></tr>
+<tr><td>
+
+[VeramoJsonWebSignature2020](./credential-ld.veramojsonwebsignature2020.md)
+
+</td><td>
+
+**_(ALPHA)_** Veramo wrapper for the JsonWebSignature2020 suite by Transmute Industries
+
+This API is experimental and is very likely to change or disappear in future releases without notice.
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-| Abstract Class                                            | Description                                                                                                                                                                                    |
-| --------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [VeramoLdSignature](./credential-ld.veramoldsignature.md) | <p>**_(ALPHA)_** Base class for Veramo adapters of LinkedDataSignature suites.</p><p>This API is experimental and is very likely to change or disappear in future releases without notice.</p> |
+<table><thead><tr><th>
 
-## Interfaces
+Abstract Class
 
-| Interface                                                                                     | Description                                                                                                                                                                                                        |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [ICreateVerifiableCredentialLDArgs](./credential-ld.icreateverifiablecredentialldargs.md)     | <p>**_(BETA)_** Encapsulates the parameters required to create a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice.</p>     |
-| [ICreateVerifiablePresentationLDArgs](./credential-ld.icreateverifiablepresentationldargs.md) | <p>**_(BETA)_** Encapsulates the parameters required to create a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [ICredentialIssuerLD](./credential-ld.icredentialissuerld.md)                                 | **_(BETA)_** The interface definition for a plugin that can issue and verify Verifiable Credentials and Presentations that use JSON-LD format (also called Data Integrity Proofs).                                 |
-| [IVerifyCredentialLDArgs](./credential-ld.iverifycredentialldargs.md)                         | <p>**_(BETA)_** Encapsulates the parameters required to verify a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice</p>      |
-| [IVerifyPresentationLDArgs](./credential-ld.iverifypresentationldargs.md)                     | <p>**_(BETA)_** Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[VeramoLdSignature](./credential-ld.veramoldsignature.md)
+
+</td><td>
+
+**_(ALPHA)_** Base class for Veramo adapters of LinkedDataSignature suites.
+
+This API is experimental and is very likely to change or disappear in future releases without notice.
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                                  | Description                                                                                                                                                                                                                                                                                                                                            |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [LdDefaultContexts](./credential-ld.lddefaultcontexts.md) | <p>**_(BETA)_** Provides a hardcoded map of common Linked Data <code>@context</code> definitions.</p><p>You can use this to bootstrap the <code>@context</code> definitions used by [CredentialIssuerLD](./credential-ld.credentialissuerld.md) with these common context definitions.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [schema](./credential-ld.schema.md)                       |                                                                                                                                                                                                                                                                                                                                                        |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[LdDefaultContexts](./credential-ld.lddefaultcontexts.md)
+
+</td><td>
+
+**_(BETA)_** Provides a hardcoded map of common Linked Data `@context` definitions.
+
+You can use this to bootstrap the `@context` definitions used by [CredentialProviderLD](./credential-ld.credentialproviderld.md) with these common context definitions.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                                              | Description                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ContextDoc](./credential-ld.contextdoc.md)             | <p>**_(BETA)_** Describes a document with a <code>@context</code> property.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                 |
-| [IRequiredContext](./credential-ld.irequiredcontext.md) | <p>**_(BETA)_** Represents the requirements that this plugin has. The agent that is using this plugin is expected to provide these methods.</p><p>This interface can be used for static type checks, to make sure your application is properly initialized.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ContextDoc](./credential-ld.contextdoc.md)
+
+</td><td>
+
+**_(BETA)_** Describes a document with a `@context` property.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>

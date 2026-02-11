@@ -18,11 +18,111 @@ export interface IIdentifier
 
 ## Properties
 
-| Property                                                        | Modifiers | Type                                     | Description                                                                                       |
-| --------------------------------------------------------------- | --------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [alias?](./core-types.iidentifier.alias.md)                     |           | string                                   | _(Optional)_ Optional. Identifier alias. Can be used to reference an object in an external system |
-| [controllerKeyId?](./core-types.iidentifier.controllerkeyid.md) |           | string                                   | _(Optional)_ Controller key id                                                                    |
-| [did](./core-types.iidentifier.did.md)                          |           | string                                   | Decentralized identifier                                                                          |
-| [keys](./core-types.iidentifier.keys.md)                        |           | [IKey](./core-types.ikey.md)\[\]         | Array of managed keys                                                                             |
-| [provider](./core-types.iidentifier.provider.md)                |           | string                                   | Identifier provider name                                                                          |
-| [services](./core-types.iidentifier.services.md)                |           | [IService](./core-types.iservice.md)\[\] | Array of services                                                                                 |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alias?](./core-types.iidentifier.alias.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Identifier alias. Can be used to reference an object in an external system
+
+</td></tr>
+<tr><td>
+
+[controllerKeyId?](./core-types.iidentifier.controllerkeyid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Controller key id
+
+</td></tr>
+<tr><td>
+
+[did](./core-types.iidentifier.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Decentralized identifier
+
+</td></tr>
+<tr><td>
+
+[keys](./core-types.iidentifier.keys.md)
+
+</td><td>
+
+</td><td>
+
+[IKey](./core-types.ikey.md)\[\]
+
+</td><td>
+
+Array of managed keys
+
+</td></tr>
+<tr><td>
+
+[provider](./core-types.iidentifier.provider.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Identifier provider name
+
+</td></tr>
+<tr><td>
+
+[services](./core-types.iidentifier.services.md)
+
+</td><td>
+
+</td><td>
+
+[IService](./core-types.iservice.md)\[\]
+
+</td><td>
+
+Array of services
+
+</td></tr>
+</tbody></table>

@@ -20,10 +20,33 @@ RequestWithAgentRouter: (options: RequestWithAgentRouterOptions) => Router
 
 ## Parameters
 
-| Parameter | Type                          | Description           |
-| --------- | ----------------------------- | --------------------- |
-| options   | RequestWithAgentRouterOptions | Initialization option |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+RequestWithAgentRouterOptions
+
+</td><td>
+
+Initialization option
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Router

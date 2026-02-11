@@ -18,13 +18,71 @@ export declare abstract class AbstractMessageHandler
 
 ## Properties
 
-| Property                                                                              | Modifiers | Type                                                                  | Description  |
-| ------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------------- | ------------ |
-| [nextMessageHandler?](./message-handler.abstractmessagehandler.nextmessagehandler.md) |           | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[nextMessageHandler?](./message-handler.abstractmessagehandler.nextmessagehandler.md)
+
+</td><td>
+
+</td><td>
+
+[AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                         | Modifiers | Description |
-| ------------------------------------------------------------------------------ | --------- | ----------- |
-| [handle(message, context)](./message-handler.abstractmessagehandler.handle.md) |           |             |
-| [setNext(messageHandler)](./message-handler.abstractmessagehandler.setnext.md) |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./message-handler.abstractmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[setNext(messageHandler)](./message-handler.abstractmessagehandler.setnext.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

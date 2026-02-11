@@ -8,7 +8,7 @@ hide_title: true
 
 ## IVerifyCredentialArgs.credential property
 
-The Verifiable Credential object according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials) or the JWT representation.
+The Verifiable Credential object according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials) or the [JWT representation](https://www.w3.org/TR/vc-data-model-1.1/#json-web-token).
 
 The signer of the Credential is verified based on the `issuer.id` property of the `credential` or the `iss` property of the JWT payload respectively
 

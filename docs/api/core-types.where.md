@@ -22,9 +22,81 @@ export interface Where<TColumns>
 
 ## Properties
 
-| Property                               | Modifiers | Type                                                                                                                                                                  | Description               |
-| -------------------------------------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
-| [column](./core-types.where.column.md) |           | TColumns                                                                                                                                                              | **_(BETA)_**              |
-| [not?](./core-types.where.not.md)      |           | boolean                                                                                                                                                               | **_(BETA)_** _(Optional)_ |
-| [op?](./core-types.where.op.md)        |           | 'LessThan' &#124; 'LessThanOrEqual' &#124; 'MoreThan' &#124; 'MoreThanOrEqual' &#124; 'Equal' &#124; 'Like' &#124; 'Between' &#124; 'In' &#124; 'Any' &#124; 'IsNull' | **_(BETA)_** _(Optional)_ |
-| [value?](./core-types.where.value.md)  |           | string\[\]                                                                                                                                                            | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[column](./core-types.where.column.md)
+
+</td><td>
+
+</td><td>
+
+TColumns
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[not?](./core-types.where.not.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[op?](./core-types.where.op.md)
+
+</td><td>
+
+</td><td>
+
+'LessThan' \| 'LessThanOrEqual' \| 'MoreThan' \| 'MoreThanOrEqual' \| 'Equal' \| 'Like' \| 'Between' \| 'In' \| 'Any' \| 'IsNull'
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[value?](./core-types.where.value.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

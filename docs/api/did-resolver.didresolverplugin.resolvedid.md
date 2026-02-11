@@ -21,10 +21,31 @@ resolveDid({ didUrl, options, }: {
 
 ## Parameters
 
-| Parameter            | Type                                                | Description |
-| -------------------- | --------------------------------------------------- | ----------- |
-| { didUrl, options, } | { didUrl: string; options?: DIDResolutionOptions; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ didUrl, options, }
+
+</td><td>
+
+{ didUrl: string; options?: DIDResolutionOptions; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;DIDResolutionResult&gt;

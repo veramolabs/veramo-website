@@ -18,8 +18,81 @@ export interface IKeyManagerCreateArgs
 
 ## Properties
 
-| Property                                            | Modifiers | Type                                       | Description                          |
-| --------------------------------------------------- | --------- | ------------------------------------------ | ------------------------------------ |
-| [kms](./core-types.ikeymanagercreateargs.kms.md)    |           | string                                     | Key Management System                |
-| [meta?](./core-types.ikeymanagercreateargs.meta.md) |           | [KeyMetadata](./core-types.keymetadata.md) | _(Optional)_ Optional. Key meta data |
-| [type](./core-types.ikeymanagercreateargs.type.md)  |           | [TKeyType](./core-types.tkeytype.md)       | Key type                             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kid?](./core-types.ikeymanagercreateargs.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Key ID
+
+</td></tr>
+<tr><td>
+
+[kms](./core-types.ikeymanagercreateargs.kms.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Key Management System
+
+</td></tr>
+<tr><td>
+
+[meta?](./core-types.ikeymanagercreateargs.meta.md)
+
+</td><td>
+
+</td><td>
+
+[KeyMetadata](./core-types.keymetadata.md)
+
+</td><td>
+
+_(Optional)_ Optional. Key meta data
+
+</td></tr>
+<tr><td>
+
+[type](./core-types.ikeymanagercreateargs.type.md)
+
+</td><td>
+
+</td><td>
+
+[TKeyType](./core-types.tkeytype.md)
+
+</td><td>
+
+Key type
+
+</td></tr>
+</tbody></table>

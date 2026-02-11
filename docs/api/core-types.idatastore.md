@@ -20,13 +20,85 @@ export interface IDataStore extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                                      | Description                                       |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
-| [dataStoreDeleteMessage(args)](./core-types.idatastore.datastoredeletemessage.md)                           | Deletes message from the data store               |
-| [dataStoreDeleteVerifiableCredential(args)](./core-types.idatastore.datastoredeleteverifiablecredential.md) | Deletes verifiable credential from the data store |
-| [dataStoreGetMessage(args)](./core-types.idatastore.datastoregetmessage.md)                                 | Gets message from the data store                  |
-| [dataStoreGetVerifiableCredential(args)](./core-types.idatastore.datastoregetverifiablecredential.md)       | Gets verifiable credential from the data store    |
-| [dataStoreGetVerifiablePresentation(args)](./core-types.idatastore.datastoregetverifiablepresentation.md)   | Gets verifiable presentation from the data store  |
-| [dataStoreSaveMessage(args)](./core-types.idatastore.datastoresavemessage.md)                               | Saves message to the data store                   |
-| [dataStoreSaveVerifiableCredential(args)](./core-types.idatastore.datastoresaveverifiablecredential.md)     | Saves verifiable credential to the data store     |
-| [dataStoreSaveVerifiablePresentation(args)](./core-types.idatastore.datastoresaveverifiablepresentation.md) | Saves verifiable presentation to the data store   |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dataStoreDeleteMessage(args)](./core-types.idatastore.datastoredeletemessage.md)
+
+</td><td>
+
+Deletes message from the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreDeleteVerifiableCredential(args)](./core-types.idatastore.datastoredeleteverifiablecredential.md)
+
+</td><td>
+
+Deletes verifiable credential from the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreGetMessage(args)](./core-types.idatastore.datastoregetmessage.md)
+
+</td><td>
+
+Gets message from the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreGetVerifiableCredential(args)](./core-types.idatastore.datastoregetverifiablecredential.md)
+
+</td><td>
+
+Gets verifiable credential from the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreGetVerifiablePresentation(args)](./core-types.idatastore.datastoregetverifiablepresentation.md)
+
+</td><td>
+
+Gets verifiable presentation from the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreSaveMessage(args)](./core-types.idatastore.datastoresavemessage.md)
+
+</td><td>
+
+Saves message to the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreSaveVerifiableCredential(args)](./core-types.idatastore.datastoresaveverifiablecredential.md)
+
+</td><td>
+
+Saves verifiable credential to the data store
+
+</td></tr>
+<tr><td>
+
+[dataStoreSaveVerifiablePresentation(args)](./core-types.idatastore.datastoresaveverifiablepresentation.md)
+
+</td><td>
+
+Saves verifiable presentation to the data store
+
+</td></tr>
+</tbody></table>

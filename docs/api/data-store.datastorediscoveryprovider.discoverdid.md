@@ -18,11 +18,42 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<IDataStor
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)                      |             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStoreORM](./core-types.idatastoreorm.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStoreORM](./core-types.idatastoreorm.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)&gt;

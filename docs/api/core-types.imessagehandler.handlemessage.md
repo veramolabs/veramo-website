@@ -20,11 +20,46 @@ handleMessage(args: IHandleMessageArgs, context: IAgentContext<IDataStore>): Pro
 
 ## Parameters
 
-| Parameter | Type                                                                                           | Description                                                                                            |
-| --------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| args      | [IHandleMessageArgs](./core-types.ihandlemessageargs.md)                                       | The <code>raw</code> message to be handled along with optional <code>metadata</code> about the origin. |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStore](./core-types.idatastore.md)&gt; | Execution context. Requires agent with [IDataStore](./core-types.idatastore.md) methods                |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IHandleMessageArgs](./core-types.ihandlemessageargs.md)
+
+</td><td>
+
+The `raw` message to be handled along with optional `metadata` about the origin.
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IDataStore](./core-types.idatastore.md)&gt;
+
+</td><td>
+
+Execution context. Requires agent with [IDataStore](./core-types.idatastore.md) methods
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IMessage](./core-types.imessage.md)&gt;

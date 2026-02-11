@@ -22,10 +22,96 @@ export interface IDIDCommMessageAttachmentData
 
 ## Properties
 
-| Property                                                      | Modifiers | Type       | Description               |
-| ------------------------------------------------------------- | --------- | ---------- | ------------------------- |
-| [base64?](./did-comm.ididcommmessageattachmentdata.base64.md) |           | string     | **_(BETA)_** _(Optional)_ |
-| [hash?](./did-comm.ididcommmessageattachmentdata.hash.md)     |           | string     | **_(BETA)_** _(Optional)_ |
-| [json?](./did-comm.ididcommmessageattachmentdata.json.md)     |           | any        | **_(BETA)_** _(Optional)_ |
-| [jws?](./did-comm.ididcommmessageattachmentdata.jws.md)       |           | any        | **_(BETA)_** _(Optional)_ |
-| [links?](./did-comm.ididcommmessageattachmentdata.links.md)   |           | string\[\] | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[base64?](./did-comm.ididcommmessageattachmentdata.base64.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[hash?](./did-comm.ididcommmessageattachmentdata.hash.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[json?](./did-comm.ididcommmessageattachmentdata.json.md)
+
+</td><td>
+
+</td><td>
+
+any
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[jws?](./did-comm.ididcommmessageattachmentdata.jws.md)
+
+</td><td>
+
+</td><td>
+
+any
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[links?](./did-comm.ididcommmessageattachmentdata.links.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

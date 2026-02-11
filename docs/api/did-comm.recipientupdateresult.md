@@ -22,9 +22,69 @@ export declare enum RecipientUpdateResult
 
 ## Enumeration Members
 
-| Member       | Value                                 | Description  |
-| ------------ | ------------------------------------- | ------------ |
-| CLIENT_ERROR | <code>&quot;client_error&quot;</code> | **_(BETA)_** |
-| NO_CHANGE    | <code>&quot;no_change&quot;</code>    | **_(BETA)_** |
-| SERVER_ERROR | <code>&quot;server_error&quot;</code> | **_(BETA)_** |
-| SUCCESS      | <code>&quot;success&quot;</code>      | **_(BETA)_** |
+<table><thead><tr><th>
+
+Member
+
+</th><th>
+
+Value
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+CLIENT_ERROR
+
+</td><td>
+
+`"client_error"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+NO_CHANGE
+
+</td><td>
+
+`"no_change"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+SERVER_ERROR
+
+</td><td>
+
+`"server_error"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+SUCCESS
+
+</td><td>
+
+`"success"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

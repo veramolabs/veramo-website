@@ -18,11 +18,42 @@ validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, contex
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md) |             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;                                             |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IPresentationValidationResult](./selective-disclosure.ipresentationvalidationresult.md)&gt;

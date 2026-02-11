@@ -18,11 +18,46 @@ verifyPresentation(args: IVerifyPresentationArgs, context: VerifierAgentContext)
 
 ## Parameters
 
-| Parameter | Type                                                               | Description                                                                                  |
-| --------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
-| args      | [IVerifyPresentationArgs](./core-types.iverifypresentationargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
-| context   | [VerifierAgentContext](./core-types.verifieragentcontext.md)       | This reserved param is automatically added and handled by the framework, \*do not override\* |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IVerifyPresentationArgs](./core-types.iverifypresentationargs.md)
+
+</td><td>
+
+Arguments necessary to verify a VerifiableCredential
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[VerifierAgentContext](./core-types.verifieragentcontext.md)
+
+</td><td>
+
+This reserved param is automatically added and handled by the framework, \*do not override\*
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IVerifyResult](./core-types.iverifyresult.md)&gt;

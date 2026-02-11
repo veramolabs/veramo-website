@@ -16,10 +16,31 @@ listKeys(args: {}): Promise<Exclude<IKey, 'privateKeyHex'>[]>;
 
 ## Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| args      | {}   |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{}
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Exclude&lt;[IKey](./core-types.ikey.md), 'privateKeyHex'&gt;\[\]&gt;

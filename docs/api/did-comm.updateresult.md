@@ -24,6 +24,36 @@ export interface UpdateResult extends Update
 
 ## Properties
 
-| Property                                    | Modifiers | Type                                                         | Description  |
-| ------------------------------------------- | --------- | ------------------------------------------------------------ | ------------ |
-| [result](./did-comm.updateresult.result.md) |           | [RecipientUpdateResult](./did-comm.recipientupdateresult.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[result](./did-comm.updateresult.result.md)
+
+</td><td>
+
+</td><td>
+
+[RecipientUpdateResult](./did-comm.recipientupdateresult.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

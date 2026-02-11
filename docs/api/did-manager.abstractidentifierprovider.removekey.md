@@ -14,17 +14,48 @@ hide_title: true
 abstract removeKey(args: {
         identifier: IIdentifier;
         kid: string;
-        options?: any;
+        options?: IDIDManagerRemoveKeyArgs['options'];
     }, context: IAgentContext<IKeyManager>): Promise<any>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                             | Description |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
-| args      | { identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: any; }          |             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: [IDIDManagerRemoveKeyArgs](./core-types.ididmanagerremovekeyargs.md)\['options'\]; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

@@ -12,19 +12,46 @@ Provides `did:jwk` [identifier provider](./did-provider-jwk.jwkdidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                                                                                                        |
-| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [JwkDIDProvider](./did-provider-jwk.jwkdidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:jwk</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[JwkDIDProvider](./did-provider-jwk.jwkdidprovider.md)
+
+</td><td>
+
+**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for `did:jwk` identifiers
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                       | Description                                           |
-| -------------------------------------------------------------- | ----------------------------------------------------- |
-| [getDidJwkResolver()](./did-provider-jwk.getdidjwkresolver.md) | Provides a mapping to a did:jwk resolver, usable by . |
+<table><thead><tr><th>
 
-## Type Aliases
+Function
 
-| Type Alias                                                                           | Description |
-| ------------------------------------------------------------------------------------ | ----------- |
-| [JwkCreateIdentifierOptions](./did-provider-jwk.jwkcreateidentifieroptions.md)       |             |
-| [JwkDidImportOrGenerateKeyArgs](./did-provider-jwk.jwkdidimportorgeneratekeyargs.md) |             |
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDidJwkResolver()](./did-provider-jwk.getdidjwkresolver.md)
+
+</td><td>
+
+Provides a mapping to a did:jwk resolver, usable by .
+
+</td></tr>
+</tbody></table>

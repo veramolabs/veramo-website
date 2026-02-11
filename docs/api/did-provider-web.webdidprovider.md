@@ -20,18 +20,108 @@ export declare class WebDIDProvider extends AbstractIdentifierProvider
 
 ## Constructors
 
-| Constructor                                                                  | Modifiers | Description                                                        |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------ |
-| [(constructor)(options)](./did-provider-web.webdidprovider._constructor_.md) |           | Constructs a new instance of the <code>WebDIDProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./did-provider-web.webdidprovider._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `WebDIDProvider` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                                      | Modifiers | Description |
-| ----------------------------------------------------------------------------------------------------------- | --------- | ----------- |
-| [addKey({ identifier, key, options }, context)](./did-provider-web.webdidprovider.addkey.md)                |           |             |
-| [addService({ identifier, service, options }, context)](./did-provider-web.webdidprovider.addservice.md)    |           |             |
-| [createIdentifier({ kms, alias, options }, context)](./did-provider-web.webdidprovider.createidentifier.md) |           |             |
-| [deleteIdentifier(identifier, context)](./did-provider-web.webdidprovider.deleteidentifier.md)              |           |             |
-| [removeKey(args, context)](./did-provider-web.webdidprovider.removekey.md)                                  |           |             |
-| [removeService(args, context)](./did-provider-web.webdidprovider.removeservice.md)                          |           |             |
-| [updateIdentifier(args, context)](./did-provider-web.webdidprovider.updateidentifier.md)                    |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addKey({ identifier, key, options }, context)](./did-provider-web.webdidprovider.addkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[addService({ identifier, service, options }, context)](./did-provider-web.webdidprovider.addservice.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[createIdentifier({ kms, alias, options }, context)](./did-provider-web.webdidprovider.createidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[deleteIdentifier(identifier, context)](./did-provider-web.webdidprovider.deleteidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[removeKey(args, context)](./did-provider-web.webdidprovider.removekey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[removeService(args, context)](./did-provider-web.webdidprovider.removeservice.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[updateIdentifier(args, context)](./did-provider-web.webdidprovider.updateidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

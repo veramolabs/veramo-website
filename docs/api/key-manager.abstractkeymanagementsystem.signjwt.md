@@ -23,10 +23,31 @@ signJWT({ key, data }: {
 
 ## Parameters
 
-| Parameter     | Type                                                                                      | Description |
-| ------------- | ----------------------------------------------------------------------------------------- | ----------- |
-| { key, data } | { key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; data: string &#124; Uint8Array; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ key, data }
+
+</td><td>
+
+{ key: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; data: string \| Uint8Array; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

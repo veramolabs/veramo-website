@@ -16,10 +16,31 @@ addMetaData(meta: IMetaData): void;
 
 ## Parameters
 
-| Parameter | Type                                   | Description |
-| --------- | -------------------------------------- | ----------- |
-| meta      | [IMetaData](./core-types.imetadata.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+meta
+
+</td><td>
+
+[IMetaData](./core-types.imetadata.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 void

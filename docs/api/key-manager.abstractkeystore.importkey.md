@@ -16,10 +16,31 @@ abstract importKey(args: Partial<IKey>): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type                                        | Description |
-| --------- | ------------------------------------------- | ----------- |
-| args      | Partial&lt;[IKey](./core-types.ikey.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+Partial&lt;[IKey](./core-types.ikey.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;boolean&gt;

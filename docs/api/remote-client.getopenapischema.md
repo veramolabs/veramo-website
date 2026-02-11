@@ -24,14 +24,85 @@ getOpenApiSchema: (
 
 ## Parameters
 
-| Parameter      | Type                             | Description                                            |
-| -------------- | -------------------------------- | ------------------------------------------------------ |
-| agent          | [IAgent](./core-types.iagent.md) | The agent whose schema needs to be interpreted.        |
-| basePath       | string                           | The base URL                                           |
-| exposedMethods | Array&lt;string&gt;              | The list of method names available through this schema |
-| name           | string                           | _(Optional)_ The name of the agent                     |
-| version        | string                           | _(Optional)_ The version of the agent                  |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+agent
+
+</td><td>
+
+[IAgent](./core-types.iagent.md)
+
+</td><td>
+
+The agent whose schema needs to be interpreted.
+
+</td></tr>
+<tr><td>
+
+basePath
+
+</td><td>
+
+string
+
+</td><td>
+
+The base URL
+
+</td></tr>
+<tr><td>
+
+exposedMethods
+
+</td><td>
+
+Array&lt;string&gt;
+
+</td><td>
+
+The list of method names available through this schema
+
+</td></tr>
+<tr><td>
+
+name
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ The name of the agent
+
+</td></tr>
+<tr><td>
+
+version
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ The version of the agent
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 OpenAPIV3.Document

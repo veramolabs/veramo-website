@@ -20,10 +20,31 @@ entitiesConcat: (...entityArrays: unknown[][]) => unknown[]
 
 ## Parameters
 
-| Parameter    | Type            | Description |
-| ------------ | --------------- | ----------- |
-| entityArrays | unknown\[\]\[\] |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+entityArrays
+
+</td><td>
+
+unknown\[\]\[\]
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 unknown\[\]

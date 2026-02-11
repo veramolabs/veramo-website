@@ -18,11 +18,42 @@ didManagerAddKey({ did, key, options }: IDIDManagerAddKeyArgs, context: IAgentCo
 
 ## Parameters
 
-| Parameter             | Type                                                                                             | Description |
-| --------------------- | ------------------------------------------------------------------------------------------------ | ----------- |
-| { did, key, options } | [IDIDManagerAddKeyArgs](./core-types.ididmanageraddkeyargs.md)                                   |             |
-| context               | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ did, key, options }
+
+</td><td>
+
+[IDIDManagerAddKeyArgs](./core-types.ididmanageraddkeyargs.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

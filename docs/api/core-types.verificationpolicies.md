@@ -20,10 +20,96 @@ export interface VerificationPolicies
 
 ## Properties
 
-| Property                                                                   | Modifiers | Type    | Description                                                                                                          |
-| -------------------------------------------------------------------------- | --------- | ------- | -------------------------------------------------------------------------------------------------------------------- |
-| [audience?](./core-types.verificationpolicies.audience.md)                 |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the audience check when set to <code>false</code>                           |
-| [credentialStatus?](./core-types.verificationpolicies.credentialstatus.md) |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the revocation check (credentialStatus) when set to <code>false</code>      |
-| [expirationDate?](./core-types.verificationpolicies.expirationdate.md)     |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the expirationDate (exp) timestamp check when set to <code>false</code>     |
-| [issuanceDate?](./core-types.verificationpolicies.issuancedate.md)         |           | boolean | **_(BETA)_** _(Optional)_ policy to skip the issuanceDate (nbf) timestamp check when set to <code>false</code>       |
-| [now?](./core-types.verificationpolicies.now.md)                           |           | number  | **_(BETA)_** _(Optional)_ policy to over the now (current time) during the verification check (UNIX time in seconds) |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[audience?](./core-types.verificationpolicies.audience.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ policy to skip the audience check when set to `false`
+
+</td></tr>
+<tr><td>
+
+[credentialStatus?](./core-types.verificationpolicies.credentialstatus.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ policy to skip the revocation check (credentialStatus) when set to `false`
+
+</td></tr>
+<tr><td>
+
+[expirationDate?](./core-types.verificationpolicies.expirationdate.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ policy to skip the expirationDate (exp) timestamp check when set to `false`
+
+</td></tr>
+<tr><td>
+
+[issuanceDate?](./core-types.verificationpolicies.issuancedate.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ policy to skip the issuanceDate (nbf) timestamp check when set to `false`
+
+</td></tr>
+<tr><td>
+
+[now?](./core-types.verificationpolicies.now.md)
+
+</td><td>
+
+</td><td>
+
+number
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ policy to over the now (current time) during the verification check (UNIX time in seconds)
+
+</td></tr>
+</tbody></table>

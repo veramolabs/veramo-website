@@ -20,11 +20,46 @@ discoverDid(args: IDIDDiscoveryDiscoverDidArgs, context: IAgentContext<any>): Pr
 
 ## Parameters
 
-| Parameter | Type                                                                            | Description                                                             |
-| --------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| args      | [IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md) | The param object with the properties necessary to discover DID          |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;any&gt;                       | \*RESERVED\* This is filled by the framework when the method is called. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDIDDiscoveryDiscoverDidArgs](./did-discovery.ididdiscoverydiscoverdidargs.md)
+
+</td><td>
+
+The param object with the properties necessary to discover DID
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;any&gt;
+
+</td><td>
+
+\*RESERVED\* This is filled by the framework when the method is called.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IDIDDiscoveryDiscoverDidResult](./did-discovery.ididdiscoverydiscoverdidresult.md)&gt;

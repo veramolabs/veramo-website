@@ -22,12 +22,56 @@ export declare class CoordinateMediationV3RecipientMessageHandler extends Abstra
 
 ## Constructors
 
-| Constructor                                                                                 | Modifiers | Description                                                                                                   |
-| ------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------- |
-| [(constructor)()](./did-comm.coordinatemediationv3recipientmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>CoordinateMediationV3RecipientMessageHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./did-comm.coordinatemediationv3recipientmessagehandler._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `CoordinateMediationV3RecipientMessageHandler` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                        | Modifiers | Description                                                                                                                |
-| --------------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.coordinatemediationv3recipientmessagehandler.handle.md) |           | **_(BETA)_** Handles a Mediator Coordinator messages for the recipient role https://didcomm.org/mediator-coordination/2.0/ |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./did-comm.coordinatemediationv3recipientmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Handles a Mediator Coordinator messages for the recipient role https://didcomm.org/mediator-coordination/2.0/
+
+</td></tr>
+</tbody></table>

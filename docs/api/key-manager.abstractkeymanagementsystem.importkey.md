@@ -16,10 +16,31 @@ abstract importKey(args: Exclude<MinimalImportableKey, 'kms'>): Promise<ManagedK
 
 ## Parameters
 
-| Parameter | Type                                                                               | Description |
-| --------- | ---------------------------------------------------------------------------------- | ----------- |
-| args      | Exclude&lt;[MinimalImportableKey](./core-types.minimalimportablekey.md), 'kms'&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+Exclude&lt;[MinimalImportableKey](./core-types.minimalimportablekey.md), 'kms'&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

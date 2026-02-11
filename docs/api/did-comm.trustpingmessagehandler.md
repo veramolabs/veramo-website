@@ -22,12 +22,56 @@ export declare class TrustPingMessageHandler extends AbstractMessageHandler
 
 ## Constructors
 
-| Constructor                                                            | Modifiers | Description                                                                              |
-| ---------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------- |
-| [(constructor)()](./did-comm.trustpingmessagehandler._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>TrustPingMessageHandler</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)()](./did-comm.trustpingmessagehandler._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `TrustPingMessageHandler` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                   | Modifiers | Description                                                                                                           |
-| ------------------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------------------------------------------- |
-| [handle(message, context)](./did-comm.trustpingmessagehandler.handle.md) |           | **_(BETA)_** Handles a Trust Ping Message https://identity.foundation/didcomm-messaging/spec/\#trust-ping-protocol-10 |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./did-comm.trustpingmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Handles a Trust Ping Message https://identity.foundation/didcomm-messaging/spec/\#trust-ping-protocol-10
+
+</td></tr>
+</tbody></table>

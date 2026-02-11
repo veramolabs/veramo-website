@@ -22,18 +22,216 @@ export interface IDIDCommMessage
 
 ## Properties
 
-| Property                                                    | Modifiers | Type                                                                     | Description               |
-| ----------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | ------------------------- |
-| [attachments?](./did-comm.ididcommmessage.attachments.md)   |           | [IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)\[\] | **_(BETA)_** _(Optional)_ |
-| [body?](./did-comm.ididcommmessage.body.md)                 |           | any                                                                      | **_(BETA)_** _(Optional)_ |
-| [created_time?](./did-comm.ididcommmessage.created_time.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [expires_time?](./did-comm.ididcommmessage.expires_time.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [from_prior?](./did-comm.ididcommmessage.from_prior.md)     |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [from?](./did-comm.ididcommmessage.from.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [id](./did-comm.ididcommmessage.id.md)                      |           | string                                                                   | **_(BETA)_**              |
-| [next?](./did-comm.ididcommmessage.next.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [pthid?](./did-comm.ididcommmessage.pthid.md)               |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [return_route?](./did-comm.ididcommmessage.return_route.md) |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [thid?](./did-comm.ididcommmessage.thid.md)                 |           | string                                                                   | **_(BETA)_** _(Optional)_ |
-| [to?](./did-comm.ididcommmessage.to.md)                     |           | string\[\]                                                               | **_(BETA)_** _(Optional)_ |
-| [type](./did-comm.ididcommmessage.type.md)                  |           | string                                                                   | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[attachments?](./did-comm.ididcommmessage.attachments.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDCommMessageAttachment](./did-comm.ididcommmessageattachment.md)\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[body?](./did-comm.ididcommmessage.body.md)
+
+</td><td>
+
+</td><td>
+
+any
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[created_time?](./did-comm.ididcommmessage.created_time.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[expires_time?](./did-comm.ididcommmessage.expires_time.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[from_prior?](./did-comm.ididcommmessage.from_prior.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[from?](./did-comm.ididcommmessage.from.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[id](./did-comm.ididcommmessage.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[next?](./did-comm.ididcommmessage.next.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[pthid?](./did-comm.ididcommmessage.pthid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[return_route?](./did-comm.ididcommmessage.return_route.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[thid?](./did-comm.ididcommmessage.thid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[to?](./did-comm.ididcommmessage.to.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type](./did-comm.ididcommmessage.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

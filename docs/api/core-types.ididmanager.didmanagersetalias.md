@@ -18,11 +18,46 @@ didManagerSetAlias(args: IDIDManagerSetAliasArgs, context: IAgentContext<IKeyMan
 
 ## Parameters
 
-| Parameter | Type                                                                                             | Description                                                                                                                                                           |
-| --------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [IDIDManagerSetAliasArgs](./core-types.ididmanagersetaliasargs.md)                               | Required. Arguments to set identifier alias                                                                                                                           |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | <a href="/docs/agent/plugins#executing-plugin-methods">Execution context</a>. Requires <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDIDManagerSetAliasArgs](./core-types.ididmanagersetaliasargs.md)
+
+</td><td>
+
+Required. Arguments to set identifier alias
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+<a href="/docs/agent/plugins#executing-plugin-methods">Execution context</a>. Requires `agent` that has [IKeyManager](./core-types.ikeymanager.md) methods
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;boolean&gt;

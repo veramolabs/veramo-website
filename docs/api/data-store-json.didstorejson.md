@@ -28,15 +28,89 @@ export declare class DIDStoreJson extends AbstractDIDStore
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                                   |
-| --------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
-| [(constructor)(jsonStore)](./data-store-json.didstorejson._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>DIDStoreJson</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(jsonStore)](./data-store-json.didstorejson._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `DIDStoreJson` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                        | Modifiers | Description  |
-| ----------------------------------------------------------------------------- | --------- | ------------ |
-| [deleteDID({ did })](./data-store-json.didstorejson.deletedid.md)             |           | **_(BETA)_** |
-| [getDID({ did, alias, provider, })](./data-store-json.didstorejson.getdid.md) |           | **_(BETA)_** |
-| [importDID(args)](./data-store-json.didstorejson.importdid.md)                |           | **_(BETA)_** |
-| [listDIDs(args)](./data-store-json.didstorejson.listdids.md)                  |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteDID({ did })](./data-store-json.didstorejson.deletedid.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[getDID({ did, alias, provider, })](./data-store-json.didstorejson.getdid.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[importDID(args)](./data-store-json.didstorejson.importdid.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[listDIDs(args)](./data-store-json.didstorejson.listdids.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

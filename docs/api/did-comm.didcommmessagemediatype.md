@@ -22,8 +22,56 @@ export declare enum DIDCommMessageMediaType
 
 ## Enumeration Members
 
-| Member    | Value                                                       | Description                                  |
-| --------- | ----------------------------------------------------------- | -------------------------------------------- |
-| ENCRYPTED | <code>&quot;application/didcomm-encrypted+json&quot;</code> | **_(BETA)_** A JWE encrypted DIDComm message |
-| PLAIN     | <code>&quot;application/didcomm-plain+json&quot;</code>     | **_(BETA)_** A plain JSON DIDComm message    |
-| SIGNED    | <code>&quot;application/didcomm-signed+json&quot;</code>    | **_(BETA)_** A JWS signed DIDComm message    |
+<table><thead><tr><th>
+
+Member
+
+</th><th>
+
+Value
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+ENCRYPTED
+
+</td><td>
+
+`"application/didcomm-encrypted+json"`
+
+</td><td>
+
+**_(BETA)_** A JWE encrypted DIDComm message
+
+</td></tr>
+<tr><td>
+
+PLAIN
+
+</td><td>
+
+`"application/didcomm-plain+json"`
+
+</td><td>
+
+**_(BETA)_** A plain JSON DIDComm message
+
+</td></tr>
+<tr><td>
+
+SIGNED
+
+</td><td>
+
+`"application/didcomm-signed+json"`
+
+</td><td>
+
+**_(BETA)_** A JWS signed DIDComm message
+
+</td></tr>
+</tbody></table>

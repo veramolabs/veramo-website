@@ -20,10 +20,33 @@ export declare function decodeCredentialToObject(input: W3CVerifiableCredential)
 
 ## Parameters
 
-| Parameter | Type                                                               | Description                                                                                |
-| --------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) | the raw credential to be transformed This API may change without a BREAKING CHANGE notice. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+</td><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)
+
+</td><td>
+
+the raw credential to be transformed This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [VerifiableCredential](./core-types.verifiablecredential.md)

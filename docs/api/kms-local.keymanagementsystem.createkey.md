@@ -11,17 +11,39 @@ hide_title: true
 **Signature:**
 
 ```typescript
-createKey({ type }: {
+createKey({ type, kid }: {
         type: TKeyType;
+        kid?: string;
     }): Promise<ManagedKeyInfo>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                            | Description |
-| --------- | ----------------------------------------------- | ----------- |
-| { type }  | { type: [TKeyType](./core-types.tkeytype.md); } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ type, kid }
+
+</td><td>
+
+{ type: [TKeyType](./core-types.tkeytype.md); kid?: string; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

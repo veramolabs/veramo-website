@@ -16,10 +16,31 @@ importKey(args: IKey): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type                         | Description |
-| --------- | ---------------------------- | ----------- |
-| args      | [IKey](./core-types.ikey.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IKey](./core-types.ikey.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;boolean&gt;

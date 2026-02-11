@@ -14,19 +14,48 @@ hide_title: true
 abstract updateIdentifier?(args: {
         did: string;
         document: Partial<DIDDocument>;
-        options?: {
-            [x: string]: any;
-        };
+        options?: IDIDManagerUpdateArgs['options'];
     }, context: IAgentContext<IKeyManager>): Promise<IIdentifier>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                                                             | Description |
-| --------- | ------------------------------------------------------------------------------------------------ | ----------- |
-| args      | { did: string; document: Partial&lt;DIDDocument&gt;; options?: { \[x: string\]: any; }; }        |             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ did: string; document: Partial&lt;DIDDocument&gt;; options?: [IDIDManagerUpdateArgs](./core-types.ididmanagerupdateargs.md)\['options'\]; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

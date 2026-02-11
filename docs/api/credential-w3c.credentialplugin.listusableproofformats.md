@@ -8,6 +8,8 @@ hide_title: true
 
 ## CredentialPlugin.listUsableProofFormats() method
 
+Returns a list of supported proof formats for verifiable data that this plugin can generate based on the specified issuer.
+
 **Signature:**
 
 ```typescript
@@ -16,11 +18,46 @@ listUsableProofFormats(did: IIdentifier, context: IssuerAgentContext): Promise<P
 
 ## Parameters
 
-| Parameter | Type                                                     | Description |
-| --------- | -------------------------------------------------------- | ----------- |
-| did       | [IIdentifier](./core-types.iidentifier.md)               |             |
-| context   | [IssuerAgentContext](./core-types.issueragentcontext.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+did
+
+</td><td>
+
+[IIdentifier](./core-types.iidentifier.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IssuerAgentContext](./core-types.issueragentcontext.md)
+
+</td><td>
+
+This reserved param is automatically added and handled by the framework, \*do not override\*
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ProofFormat](./core-types.proofformat.md)\[\]&gt;

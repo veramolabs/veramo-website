@@ -8,12 +8,10 @@ hide_title: true
 
 ## ProofFormat type
 
-The type of encoding to be used for the Verifiable Credential or Presentation to be generated.
-
-Only `jwt` and `lds` is supported at the moment.
+Represents a format for a particular type of verifiable data. This is an extensible union of several known formats implemented by Veramo
 
 **Signature:**
 
 ```typescript
-export type ProofFormat = 'jwt' | 'lds' | 'EthereumEip712Signature2021'
+export type ProofFormat = (typeof PROOF_FORMAT)[keyof typeof PROOF_FORMAT] | (string & {})
 ```

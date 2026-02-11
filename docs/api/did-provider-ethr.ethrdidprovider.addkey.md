@@ -20,11 +20,42 @@ addKey({ identifier, key, options }: {
 
 ## Parameters
 
-| Parameter                    | Type                                                                                                                         | Description |
-| ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, key, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); key: [IKey](./core-types.ikey.md); options?: TransactionOptions; } |             |
-| context                      | IRequiredContext                                                                                                             |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ identifier, key, options }
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); key: [IKey](./core-types.ikey.md); options?: TransactionOptions; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IRequiredContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

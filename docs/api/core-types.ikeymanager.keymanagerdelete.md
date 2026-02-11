@@ -18,10 +18,31 @@ keyManagerDelete(args: IKeyManagerDeleteArgs): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type                                                           | Description |
-| --------- | -------------------------------------------------------------- | ----------- |
-| args      | [IKeyManagerDeleteArgs](./core-types.ikeymanagerdeleteargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IKeyManagerDeleteArgs](./core-types.ikeymanagerdeleteargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;boolean&gt;

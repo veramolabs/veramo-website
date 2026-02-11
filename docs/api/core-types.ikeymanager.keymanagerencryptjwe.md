@@ -20,10 +20,31 @@ keyManagerEncryptJWE(args: IKeyManagerEncryptJWEArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                                                                   | Description |
-| --------- | ---------------------------------------------------------------------- | ----------- |
-| args      | [IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

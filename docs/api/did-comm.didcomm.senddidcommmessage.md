@@ -22,11 +22,46 @@ sendDIDCommMessage(args: ISendDIDCommMessageArgs, context: IAgentContext<IDIDMan
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                                                                    | Description                                                                                                                                                                                                                                                                                                                                       |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [ISendDIDCommMessageArgs](./did-comm.isenddidcommmessageargs.md)                                                                                                                                                                                        | An object containing the message, recipient information and optional information about the transport that should be used.                                                                                                                                                                                                                         |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md) &amp; [IMessageHandler](./core-types.imessagehandler.md)&gt; | This method requires an agent that also has [IResolver](./core-types.iresolver.md), [IKeyManager](./core-types.ikeymanager.md), [IDIDManager](./core-types.ididmanager.md), and [IMessageHandler](./core-types.imessagehandler.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[ISendDIDCommMessageArgs](./did-comm.isenddidcommmessageargs.md)
+
+</td><td>
+
+An object containing the message, recipient information and optional information about the transport that should be used.
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md) &amp; [IMessageHandler](./core-types.imessagehandler.md)&gt;
+
+</td><td>
+
+This method requires an agent that also has [IResolver](./core-types.iresolver.md), [IKeyManager](./core-types.ikeymanager.md), [IDIDManager](./core-types.ididmanager.md), and [IMessageHandler](./core-types.imessagehandler.md) plugins in use. When calling this method, the `context` is supplied automatically by the framework.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ISendDIDCommMessageResponse](./did-comm.isenddidcommmessageresponse.md)&gt;

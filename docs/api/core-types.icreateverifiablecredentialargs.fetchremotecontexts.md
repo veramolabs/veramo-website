@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICreateVerifiableCredentialArgs.fetchRemoteContexts property
 
-When dealing with JSON-LD you also MUST provide the proper contexts. Set this to `true` ONLY if you want the `@context` URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.
+When dealing with JSON-LD, you also MUST provide the proper contexts. Set this to `true` ONLY if you want the `@context` URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.
 
 Defaults to `false`
 

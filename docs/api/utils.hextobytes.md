@@ -20,10 +20,33 @@ export declare function hexToBytes(hexString: string): Uint8Array
 
 ## Parameters
 
-| Parameter | Type   | Description                          |
-| --------- | ------ | ------------------------------------ |
-| hexString | string | The string representing the encoding |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+hexString
+
+</td><td>
+
+string
+
+</td><td>
+
+The string representing the encoding
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Uint8Array

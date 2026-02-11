@@ -20,11 +20,42 @@ addService({ identifier, service, options }: {
 
 ## Parameters
 
-| Parameter                        | Type                                                                                                                      | Description |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| { identifier, service, options } | { identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: any; } |             |
-| context                          | IContext                                                                                                                  |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ identifier, service, options }
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); service: [IService](./core-types.iservice.md); options?: any; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

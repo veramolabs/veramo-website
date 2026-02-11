@@ -20,10 +20,33 @@ export declare function convertIdentifierEncryptionKeys(identifier: IIdentifier)
 
 ## Parameters
 
-| Parameter  | Type                                       | Description              |
-| ---------- | ------------------------------------------ | ------------------------ |
-| identifier | [IIdentifier](./core-types.iidentifier.md) | the identifier with keys |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+identifier
+
+</td><td>
+
+[IIdentifier](./core-types.iidentifier.md)
+
+</td><td>
+
+the identifier with keys
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [IKey](./core-types.ikey.md)\[\]

@@ -30,6 +30,36 @@ await agent.resolveDid({
 
 ## Properties
 
-| Property                                     | Modifiers | Type                                      | Description      |
-| -------------------------------------------- | --------- | ----------------------------------------- | ---------------- |
-| [agent](./core-types.iagentcontext.agent.md) |           | [TAgent](./core-types.tagent.md)&lt;T&gt; | Configured agent |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[agent](./core-types.iagentcontext.agent.md)
+
+</td><td>
+
+</td><td>
+
+[TAgent](./core-types.tagent.md)&lt;T&gt;
+
+</td><td>
+
+Configured agent
+
+</td></tr>
+</tbody></table>

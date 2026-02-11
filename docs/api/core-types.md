@@ -12,137 +12,1251 @@ Provides [Agent](./core.agent.md) implementation and defines [IResolver](./core-
 
 ## Interfaces
 
-| Interface                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [AuthorizedDIDContext](./core-types.authorizeddidcontext.md)                                         | <p>**_(BETA)_** This context can be used for Veramo Agents that are created behind an authorization mechanism, that attaches a DID as the authorized executor of certain actions. This authorized DID is used to further filter the data that is available for querying.</p><p>This does not constitute an authorization mechanism, but relies on an authorization mechanism existing before the Veramo Agent is created.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                |
-| [CredentialPayload](./core-types.credentialpayload.md)                                               | <p>**_(BETA)_** Used as input when creating Verifiable Credentials</p><p>This API may change without prior notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [CredentialStatusGenerateArgs](./core-types.credentialstatusgenerateargs.md)                         | **_(BETA)_** Arguments for generating a <code>credentialStatus</code> property for a [VerifiableCredential](./core-types.verifiablecredential.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [CredentialStatusUpdateArgs](./core-types.credentialstatusupdateargs.md)                             | **_(BETA)_** Input arguments for [credentialStatusUpdate](./core-types.icredentialstatusmanager.credentialstatusupdate.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [FindArgs](./core-types.findargs.md)                                                                 | <p>**_(BETA)_** Represents an [IDataStoreORM](./core-types.idatastoreorm.md) Query.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [GetDIDComponentArgs](./core-types.getdidcomponentargs.md)                                           | **_(BETA)_** Input arguments for [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) This API may change without a BREAKING CHANGE notice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [IAgent](./core-types.iagent.md)                                                                     | Agent that can execute methods                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [IAgentBase](./core-types.iagentbase.md)                                                             | Agent base interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IAgentContext](./core-types.iagentcontext.md)                                                       | Standard plugin method context interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [IAgentOptions](./core-types.iagentoptions.md)                                                       | <p>Agent configuration options.</p><p>This interface is used to describe the constellation of plugins that this agent will use and provide.</p><p>You will use this to attach plugins, to setup overrides for their methods and to explicitly set the methods that this agent instance is allowed to call. This permissioning method is also used for internal calls made by plugin code.</p>                                                                                                                                                                                                                                                                                                                                            |
-| [IAgentPlugin](./core-types.iagentplugin.md)                                                         | Agent plugin interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [IAgentPluginSchema](./core-types.iagentpluginschema.md)                                             | Agent plugin schema                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [ICheckCredentialStatusArgs](./core-types.icheckcredentialstatusargs.md)                             | <p>**_(BETA)_** Arguments for calling [checkCredentialStatus](./core-types.icredentialstatusverifier.checkcredentialstatus.md).</p><p>The credential whose status should be checked and the DID document of the credential issuer.</p><p>See [Credential Status](https://www.w3.org/TR/vc-data-model/#status)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                            |
-| [ICreateVerifiableCredentialArgs](./core-types.icreateverifiablecredentialargs.md)                   | Encapsulates the parameters required to create a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [ICreateVerifiablePresentationArgs](./core-types.icreateverifiablepresentationargs.md)               | Encapsulates the parameters required to create a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [ICredentialIssuer](./core-types.icredentialissuer.md)                                               | The interface definition for a plugin that can generate Verifiable Credentials and Presentations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [ICredentialStatusManager](./core-types.icredentialstatusmanager.md)                                 | **_(BETA)_** Credential status manager interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md)                               | <p>**_(BETA)_** This interface defines a plugin that can check the [status](https://www.w3.org/TR/vc-data-model/#status) of a [Verifiable Credential](./core-types.verifiablecredential.md).</p><p>This is used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information is determined by the specific <code>credentialStatus</code> type definition, and varies depending on factors such as whether it is simple to implement or if it is privacy-enhancing.</p><p>The result provided by implementations of this plugin depend on whether the implementation of the StatusMethod is available.</p> |
-| [ICredentialVerifier](./core-types.icredentialverifier.md)                                           | The interface definition for a plugin that can generate Verifiable Credentials and Presentations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [IDataStore](./core-types.idatastore.md)                                                             | Basic data store interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [IDataStoreDeleteMessageArgs](./core-types.idatastoredeletemessageargs.md)                           | Input arguments for [dataStoreDeleteMessage](./core-types.idatastore.datastoredeletemessage.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md) | Input arguments for [IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [IDataStoreGetMessageArgs](./core-types.idatastoregetmessageargs.md)                                 | Input arguments for [dataStoreGetMessage](./core-types.idatastore.datastoregetmessage.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [IDataStoreGetVerifiableCredentialArgs](./core-types.idatastoregetverifiablecredentialargs.md)       | Input arguments for [dataStoreGetVerifiableCredential](./core-types.idatastore.datastoregetverifiablecredential.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [IDataStoreGetVerifiablePresentationArgs](./core-types.idatastoregetverifiablepresentationargs.md)   | Input arguments for [dataStoreGetVerifiablePresentation](./core-types.idatastore.datastoregetverifiablepresentation.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [IDataStoreORM](./core-types.idatastoreorm.md)                                                       | <p>**_(BETA)_** This is the default query interface for the credential data stored by a Veramo agent.</p><p>Plugins implementing this interface are expected to implement this simple query functionality to filter the data that was saved using [IDataStore](./core-types.idatastore.md).</p><p>If this interface is implemented by a different plugin than [IDataStore](./core-types.idatastore.md), then both plugins MUST use the same media for data storage.</p>                                                                                                                                                                                                                                                                  |
-| [IDataStoreSaveMessageArgs](./core-types.idatastoresavemessageargs.md)                               | Input arguments for [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [IDataStoreSaveVerifiableCredentialArgs](./core-types.idatastoresaveverifiablecredentialargs.md)     | Input arguments for [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [IDataStoreSaveVerifiablePresentationArgs](./core-types.idatastoresaveverifiablepresentationargs.md) | Input arguments for [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [IDIDManager](./core-types.ididmanager.md)                                                           | Identifier manager interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [IDIDManagerAddKeyArgs](./core-types.ididmanageraddkeyargs.md)                                       | Input arguments for [didManagerAddKey](./core-types.ididmanager.didmanageraddkey.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IDIDManagerAddServiceArgs](./core-types.ididmanageraddserviceargs.md)                               | Input arguments for [didManagerAddService](./core-types.ididmanager.didmanageraddservice.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [IDIDManagerCreateArgs](./core-types.ididmanagercreateargs.md)                                       | Input arguments for [didManagerCreate](./core-types.ididmanager.didmanagercreate.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IDIDManagerDeleteArgs](./core-types.ididmanagerdeleteargs.md)                                       | Input arguments for [didManagerDelete](./core-types.ididmanager.didmanagerdelete.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IDIDManagerFindArgs](./core-types.ididmanagerfindargs.md)                                           | Input arguments for [didManagerFind](./core-types.ididmanager.didmanagerfind.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [IDIDManagerGetArgs](./core-types.ididmanagergetargs.md)                                             | Input arguments for [didManagerGet](./core-types.ididmanager.didmanagerget.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md)                               | Input arguments for [didManagerGetByAlias](./core-types.ididmanager.didmanagergetbyalias.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [IDIDManagerGetOrCreateArgs](./core-types.ididmanagergetorcreateargs.md)                             | Input arguments for [didManagerGetOrCreate](./core-types.ididmanager.didmanagergetorcreate.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [IDIDManagerRemoveKeyArgs](./core-types.ididmanagerremovekeyargs.md)                                 | Input arguments for [didManagerRemoveKey](./core-types.ididmanager.didmanagerremovekey.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [IDIDManagerRemoveServiceArgs](./core-types.ididmanagerremoveserviceargs.md)                         | Input arguments for [didManagerRemoveService](./core-types.ididmanager.didmanagerremoveservice.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [IDIDManagerSetAliasArgs](./core-types.ididmanagersetaliasargs.md)                                   | Input arguments for [didManagerSetAlias](./core-types.ididmanager.didmanagersetalias.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [IDIDManagerUpdateArgs](./core-types.ididmanagerupdateargs.md)                                       | **_(BETA)_** The arguments necessary to perform a full DID document update for a DID.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [IError](./core-types.ierror.md)                                                                     | **_(BETA)_** An error object, which can contain a code.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [IEventListener](./core-types.ieventlistener.md)                                                     | Describes a listener interface that needs to be implemented by components interested in listening to events emitted by an agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [IHandleMessageArgs](./core-types.ihandlemessageargs.md)                                             | Input arguments for [handleMessage](./core-types.imessagehandler.handlemessage.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [IIdentifier](./core-types.iidentifier.md)                                                           | Identifier interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IKey](./core-types.ikey.md)                                                                         | Cryptographic key, usually managed by the current Veramo instance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [IKeyManager](./core-types.ikeymanager.md)                                                           | <p>Key manager interface.</p><p>This defines an interface for a plugin that orchestrates various implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md).</p><p>See [KeyManager](./key-manager.keymanager.md) for a reference implementation.</p><p>The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.</p>                                                                                                                                           |
-| [IKeyManagerCreateArgs](./core-types.ikeymanagercreateargs.md)                                       | Input arguments for [keyManagerCreate](./core-types.ikeymanager.keymanagercreate.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IKeyManagerDecryptJWEArgs](./core-types.ikeymanagerdecryptjweargs.md)                               | **_(BETA)_** Input arguments for [keyManagerDecryptJWE](./core-types.ikeymanager.keymanagerdecryptjwe.md) This API may change without a BREAKING CHANGE notice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [IKeyManagerDeleteArgs](./core-types.ikeymanagerdeleteargs.md)                                       | Input arguments for [keyManagerDelete](./core-types.ikeymanager.keymanagerdelete.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md)                               | **_(BETA)_** Input arguments for [keyManagerEncryptJWE](./core-types.ikeymanager.keymanagerencryptjwe.md) This API may change without a BREAKING CHANGE notice.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [IKeyManagerGetArgs](./core-types.ikeymanagergetargs.md)                                             | Input arguments for [keyManagerGet](./core-types.ikeymanager.keymanagerget.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [IKeyManagerSharedSecretArgs](./core-types.ikeymanagersharedsecretargs.md)                           | Input arguments for [keyManagerSharedSecret](./core-types.ikeymanager.keymanagersharedsecret.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [IKeyManagerSignArgs](./core-types.ikeymanagersignargs.md)                                           | Input arguments for [keyManagerSign](./core-types.ikeymanager.keymanagersign.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md)                                 | Input arguments for [keyManagerSignEthTX](./core-types.ikeymanager.keymanagersignethtx.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| [IKeyManagerSignJWTArgs](./core-types.ikeymanagersignjwtargs.md)                                     | Input arguments for [keyManagerSignJWT](./core-types.ikeymanager.keymanagersignjwt.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [IMessage](./core-types.imessage.md)                                                                 | Represents a DIDComm v1 message payload, with optionally decoded credentials and presentations.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [IMessageAttachment](./core-types.imessageattachment.md)                                             | Message attachment                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [IMessageAttachmentData](./core-types.imessageattachmentdata.md)                                     | <p>**_(BETA)_** The DIDComm message structure for data in an attachment. See https://identity.foundation/didcomm-messaging/spec/\#attachments</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [IMessageHandler](./core-types.imessagehandler.md)                                                   | Message handler plugin interface.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [IMetaData](./core-types.imetadata.md)                                                               | Message meta data                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [IPluginMethod](./core-types.ipluginmethod.md)                                                       | Agent plugin method interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [IPluginMethodMap](./core-types.ipluginmethodmap.md)                                                 | Plugin method map interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| [IResolver](./core-types.iresolver.md)                                                               | DID Resolver interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [IService](./core-types.iservice.md)                                                                 | Identifier service                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [IVerifyCredentialArgs](./core-types.iverifycredentialargs.md)                                       | Encapsulates the parameters required to verify a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [IVerifyPresentationArgs](./core-types.iverifypresentationargs.md)                                   | Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [IVerifyResult](./core-types.iverifyresult.md)                                                       | **_(BETA)_** Encapsulates the response object to verifyPresentation method after verifying a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| [KeyMetadata](./core-types.keymetadata.md)                                                           | <p>This encapsulates data about a key.</p><p>Implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) should populate this object, for each key, with the algorithms that can be performed using it.</p><p>This can also be used to add various tags to the keys under management.</p>                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [Order](./core-types.order.md)                                                                       | <p>**_(BETA)_** Represents the sort order of results from a [FindArgs](./core-types.findargs.md) query.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [PresentationPayload](./core-types.presentationpayload.md)                                           | <p>**_(BETA)_** Used as input when creating Verifiable Presentations</p><p>This API may change without prior notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [ProofType](./core-types.prooftype.md)                                                               | <p>**_(BETA)_** A proof property of a [VerifiableCredential](./core-types.verifiablecredential.md) or [VerifiablePresentation](./core-types.verifiablepresentation.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [RemoveContext](./core-types.removecontext.md)                                                       | Removes context parameter from plugin method interface                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [ResolveDidArgs](./core-types.resolvedidargs.md)                                                     | Input arguments for [resolveDid](./core-types.iresolver.resolvedid.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)                             | <p>**_(BETA)_** Represents the result of a Query for [VerifiableCredential](./core-types.verifiablecredential.md)s</p><p>See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md) See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                   |
-| [UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)                         | <p>**_(BETA)_** Represents the result of a Query for [VerifiablePresentation](./core-types.verifiablepresentation.md)s</p><p>See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [UnsignedCredential](./core-types.unsignedcredential.md)                                             | <p>**_(BETA)_** Represents an unsigned W3C Credential payload. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [UnsignedPresentation](./core-types.unsignedpresentation.md)                                         | Represents an unsigned W3C Presentation payload. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [UsingResolutionOptions](./core-types.usingresolutionoptions.md)                                     | Options that are forwarded to the DID resolver.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [VerificationPolicies](./core-types.verificationpolicies.md)                                         | **_(BETA)_** These optional settings can be used to override some default checks that are performed on Presentations during verification.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [Where](./core-types.where.md)                                                                       | <p>**_(BETA)_** Represents a WHERE predicate for a [FindArgs](./core-types.findargs.md) query. In situations where multiple WHERE predicates are present, they are combined with AND.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AuthorizedDIDContext](./core-types.authorizeddidcontext.md)
+
+</td><td>
+
+**_(BETA)_** This context can be used for Veramo Agents that are created behind an authorization mechanism, that attaches a DID as the authorized executor of certain actions. This authorized DID is used to further filter the data that is available for querying.
+
+This does not constitute an authorization mechanism, but relies on an authorization mechanism existing before the Veramo Agent is created.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CredentialPayload](./core-types.credentialpayload.md)
+
+</td><td>
+
+**_(BETA)_** Used as input when creating Verifiable Credentials
+
+This API may change without prior notice.
+
+</td></tr>
+<tr><td>
+
+[CredentialStatusGenerateArgs](./core-types.credentialstatusgenerateargs.md)
+
+</td><td>
+
+**_(BETA)_** Arguments for generating a `credentialStatus` property for a [VerifiableCredential](./core-types.verifiablecredential.md).
+
+</td></tr>
+<tr><td>
+
+[CredentialStatusUpdateArgs](./core-types.credentialstatusupdateargs.md)
+
+</td><td>
+
+**_(BETA)_** Input arguments for [credentialStatusUpdate](./core-types.icredentialstatusmanager.credentialstatusupdate.md)
+
+</td></tr>
+<tr><td>
+
+[FindArgs](./core-types.findargs.md)
+
+</td><td>
+
+**_(BETA)_** Represents an [IDataStoreORM](./core-types.idatastoreorm.md) Query.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[GetDIDComponentArgs](./core-types.getdidcomponentargs.md)
+
+</td><td>
+
+**_(BETA)_** Input arguments for [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IAgent](./core-types.iagent.md)
+
+</td><td>
+
+Agent that can execute methods
+
+</td></tr>
+<tr><td>
+
+[IAgentBase](./core-types.iagentbase.md)
+
+</td><td>
+
+Agent base interface
+
+</td></tr>
+<tr><td>
+
+[IAgentContext](./core-types.iagentcontext.md)
+
+</td><td>
+
+Standard plugin method context interface
+
+</td></tr>
+<tr><td>
+
+[IAgentOptions](./core-types.iagentoptions.md)
+
+</td><td>
+
+Agent configuration options.
+
+This interface is used to describe the constellation of plugins that this agent will use and provide.
+
+You will use this to attach plugins, to setup overrides for their methods and to explicitly set the methods that this agent instance is allowed to call. This permissioning method is also used for internal calls made by plugin code.
+
+</td></tr>
+<tr><td>
+
+[IAgentPlugin](./core-types.iagentplugin.md)
+
+</td><td>
+
+Agent plugin interface
+
+</td></tr>
+<tr><td>
+
+[IAgentPluginSchema](./core-types.iagentpluginschema.md)
+
+</td><td>
+
+Agent plugin schema
+
+</td></tr>
+<tr><td>
+
+[ICheckCredentialStatusArgs](./core-types.icheckcredentialstatusargs.md)
+
+</td><td>
+
+**_(BETA)_** Arguments for calling [checkCredentialStatus](./core-types.icredentialstatusverifier.checkcredentialstatus.md).
+
+The credential whose status should be checked and the DID document of the credential issuer.
+
+See [Credential Status](https://www.w3.org/TR/vc-data-model/#status)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ICreateVerifiableCredentialArgs](./core-types.icreateverifiablecredentialargs.md)
+
+</td><td>
+
+Encapsulates the parameters required to create a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)
+
+</td></tr>
+<tr><td>
+
+[ICreateVerifiablePresentationArgs](./core-types.icreateverifiablepresentationargs.md)
+
+</td><td>
+
+Encapsulates the parameters required to create a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)
+
+</td></tr>
+<tr><td>
+
+[ICredentialIssuer](./core-types.icredentialissuer.md)
+
+</td><td>
+
+The interface definition for a plugin that can generate Verifiable Credentials and Presentations
+
+</td></tr>
+<tr><td>
+
+[ICredentialStatusManager](./core-types.icredentialstatusmanager.md)
+
+</td><td>
+
+**_(BETA)_** Credential status manager interface
+
+</td></tr>
+<tr><td>
+
+[ICredentialStatusVerifier](./core-types.icredentialstatusverifier.md)
+
+</td><td>
+
+**_(BETA)_** This interface defines a plugin that can check the [status](https://www.w3.org/TR/vc-data-model/#status) of a [Verifiable Credential](./core-types.verifiablecredential.md).
+
+This is used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information is determined by the specific `credentialStatus` type definition, and varies depending on factors such as whether it is simple to implement or if it is privacy-enhancing.
+
+The result provided by implementations of this plugin depend on whether the implementation of the StatusMethod is available.
+
+</td></tr>
+<tr><td>
+
+[ICredentialVerifier](./core-types.icredentialverifier.md)
+
+</td><td>
+
+The interface definition for a plugin that can generate Verifiable Credentials and Presentations
+
+</td></tr>
+<tr><td>
+
+[IDataStore](./core-types.idatastore.md)
+
+</td><td>
+
+Basic data store interface
+
+</td></tr>
+<tr><td>
+
+[IDataStoreDeleteMessageArgs](./core-types.idatastoredeletemessageargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreDeleteMessage](./core-types.idatastore.datastoredeletemessage.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md)
+
+</td><td>
+
+Input arguments for [IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreGetMessageArgs](./core-types.idatastoregetmessageargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreGetMessage](./core-types.idatastore.datastoregetmessage.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreGetVerifiableCredentialArgs](./core-types.idatastoregetverifiablecredentialargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreGetVerifiableCredential](./core-types.idatastore.datastoregetverifiablecredential.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreGetVerifiablePresentationArgs](./core-types.idatastoregetverifiablepresentationargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreGetVerifiablePresentation](./core-types.idatastore.datastoregetverifiablepresentation.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreORM](./core-types.idatastoreorm.md)
+
+</td><td>
+
+**_(BETA)_** This is the default query interface for the credential data stored by a Veramo agent.
+
+Plugins implementing this interface are expected to implement this simple query functionality to filter the data that was saved using [IDataStore](./core-types.idatastore.md).
+
+If this interface is implemented by a different plugin than [IDataStore](./core-types.idatastore.md), then both plugins MUST use the same media for data storage.
+
+</td></tr>
+<tr><td>
+
+[IDataStoreSaveMessageArgs](./core-types.idatastoresavemessageargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreSaveVerifiableCredentialArgs](./core-types.idatastoresaveverifiablecredentialargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md)
+
+</td></tr>
+<tr><td>
+
+[IDataStoreSaveVerifiablePresentationArgs](./core-types.idatastoresaveverifiablepresentationargs.md)
+
+</td><td>
+
+Input arguments for [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManager](./core-types.ididmanager.md)
+
+</td><td>
+
+Identifier manager interface
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerAddKeyArgs](./core-types.ididmanageraddkeyargs.md)
+
+</td><td>
+
+Input arguments for [didManagerAddKey](./core-types.ididmanager.didmanageraddkey.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerAddServiceArgs](./core-types.ididmanageraddserviceargs.md)
+
+</td><td>
+
+Input arguments for [didManagerAddService](./core-types.ididmanager.didmanageraddservice.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerCreateArgs](./core-types.ididmanagercreateargs.md)
+
+</td><td>
+
+Input arguments for [didManagerCreate](./core-types.ididmanager.didmanagercreate.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerDeleteArgs](./core-types.ididmanagerdeleteargs.md)
+
+</td><td>
+
+Input arguments for [didManagerDelete](./core-types.ididmanager.didmanagerdelete.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerFindArgs](./core-types.ididmanagerfindargs.md)
+
+</td><td>
+
+Input arguments for [didManagerFind](./core-types.ididmanager.didmanagerfind.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerGetArgs](./core-types.ididmanagergetargs.md)
+
+</td><td>
+
+Input arguments for [didManagerGet](./core-types.ididmanager.didmanagerget.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md)
+
+</td><td>
+
+Input arguments for [didManagerGetByAlias](./core-types.ididmanager.didmanagergetbyalias.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerGetOrCreateArgs](./core-types.ididmanagergetorcreateargs.md)
+
+</td><td>
+
+Input arguments for [didManagerGetOrCreate](./core-types.ididmanager.didmanagergetorcreate.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerRemoveKeyArgs](./core-types.ididmanagerremovekeyargs.md)
+
+</td><td>
+
+Input arguments for [didManagerRemoveKey](./core-types.ididmanager.didmanagerremovekey.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerRemoveServiceArgs](./core-types.ididmanagerremoveserviceargs.md)
+
+</td><td>
+
+Input arguments for [didManagerRemoveService](./core-types.ididmanager.didmanagerremoveservice.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerSetAliasArgs](./core-types.ididmanagersetaliasargs.md)
+
+</td><td>
+
+Input arguments for [didManagerSetAlias](./core-types.ididmanager.didmanagersetalias.md)
+
+</td></tr>
+<tr><td>
+
+[IDIDManagerUpdateArgs](./core-types.ididmanagerupdateargs.md)
+
+</td><td>
+
+**_(BETA)_** The arguments necessary to perform a full DID document update for a DID.
+
+</td></tr>
+<tr><td>
+
+[IError](./core-types.ierror.md)
+
+</td><td>
+
+**_(BETA)_** An error object, which can contain a code.
+
+</td></tr>
+<tr><td>
+
+[IEventListener](./core-types.ieventlistener.md)
+
+</td><td>
+
+Describes a listener interface that needs to be implemented by components interested in listening to events emitted by an agent.
+
+</td></tr>
+<tr><td>
+
+[IHandleMessageArgs](./core-types.ihandlemessageargs.md)
+
+</td><td>
+
+Input arguments for [handleMessage](./core-types.imessagehandler.handlemessage.md)
+
+</td></tr>
+<tr><td>
+
+[IIdentifier](./core-types.iidentifier.md)
+
+</td><td>
+
+Identifier interface
+
+</td></tr>
+<tr><td>
+
+[IKey](./core-types.ikey.md)
+
+</td><td>
+
+Cryptographic key, usually managed by the current Veramo instance.
+
+</td></tr>
+<tr><td>
+
+[IKeyManager](./core-types.ikeymanager.md)
+
+</td><td>
+
+Key manager interface.
+
+This defines an interface for a plugin that orchestrates various implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md).
+
+See [KeyManager](./key-manager.keymanager.md) for a reference implementation.
+
+The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerCreateArgs](./core-types.ikeymanagercreateargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerCreate](./core-types.ikeymanager.keymanagercreate.md)
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerDecryptJWEArgs](./core-types.ikeymanagerdecryptjweargs.md)
+
+</td><td>
+
+**_(BETA)_** Input arguments for [keyManagerDecryptJWE](./core-types.ikeymanager.keymanagerdecryptjwe.md) This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerDeleteArgs](./core-types.ikeymanagerdeleteargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerDelete](./core-types.ikeymanager.keymanagerdelete.md)
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md)
+
+</td><td>
+
+**_(BETA)_** Input arguments for [keyManagerEncryptJWE](./core-types.ikeymanager.keymanagerencryptjwe.md) This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerGetArgs](./core-types.ikeymanagergetargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerGet](./core-types.ikeymanager.keymanagerget.md)
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerSharedSecretArgs](./core-types.ikeymanagersharedsecretargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerSharedSecret](./core-types.ikeymanager.keymanagersharedsecret.md)
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerSignArgs](./core-types.ikeymanagersignargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerSign](./core-types.ikeymanager.keymanagersign.md)
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerSignEthTX](./core-types.ikeymanager.keymanagersignethtx.md)
+
+</td></tr>
+<tr><td>
+
+[IKeyManagerSignJWTArgs](./core-types.ikeymanagersignjwtargs.md)
+
+</td><td>
+
+Input arguments for [keyManagerSignJWT](./core-types.ikeymanager.keymanagersignjwt.md)
+
+</td></tr>
+<tr><td>
+
+[IMessage](./core-types.imessage.md)
+
+</td><td>
+
+Represents a DIDComm v1 message payload, with optionally decoded credentials and presentations.
+
+</td></tr>
+<tr><td>
+
+[IMessageAttachment](./core-types.imessageattachment.md)
+
+</td><td>
+
+Message attachment
+
+</td></tr>
+<tr><td>
+
+[IMessageAttachmentData](./core-types.imessageattachmentdata.md)
+
+</td><td>
+
+**_(BETA)_** The DIDComm message structure for data in an attachment. See https://identity.foundation/didcomm-messaging/spec/\#attachments
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IMessageHandler](./core-types.imessagehandler.md)
+
+</td><td>
+
+Message handler plugin interface.
+
+</td></tr>
+<tr><td>
+
+[IMetaData](./core-types.imetadata.md)
+
+</td><td>
+
+Message meta data
+
+</td></tr>
+<tr><td>
+
+[IPluginMethod](./core-types.ipluginmethod.md)
+
+</td><td>
+
+Agent plugin method interface
+
+</td></tr>
+<tr><td>
+
+[IPluginMethodMap](./core-types.ipluginmethodmap.md)
+
+</td><td>
+
+Plugin method map interface
+
+</td></tr>
+<tr><td>
+
+[IResolver](./core-types.iresolver.md)
+
+</td><td>
+
+DID Resolver interface
+
+</td></tr>
+<tr><td>
+
+[IService](./core-types.iservice.md)
+
+</td><td>
+
+Identifier service
+
+</td></tr>
+<tr><td>
+
+[IVerifyCredentialArgs](./core-types.iverifycredentialargs.md)
+
+</td><td>
+
+Encapsulates the parameters required to verify a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)
+
+</td></tr>
+<tr><td>
+
+[IVerifyPresentationArgs](./core-types.iverifypresentationargs.md)
+
+</td><td>
+
+Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)
+
+</td></tr>
+<tr><td>
+
+[IVerifyResult](./core-types.iverifyresult.md)
+
+</td><td>
+
+**_(BETA)_** Encapsulates the response object to verifyPresentation method after verifying a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)
+
+</td></tr>
+<tr><td>
+
+[KeyMetadata](./core-types.keymetadata.md)
+
+</td><td>
+
+This encapsulates data about a key.
+
+Implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) should populate this object, for each key, with the algorithms that can be performed using it.
+
+This can also be used to add various tags to the keys under management.
+
+</td></tr>
+<tr><td>
+
+[Order](./core-types.order.md)
+
+</td><td>
+
+**_(BETA)_** Represents the sort order of results from a [FindArgs](./core-types.findargs.md) query.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[PresentationPayload](./core-types.presentationpayload.md)
+
+</td><td>
+
+**_(BETA)_** Used as input when creating Verifiable Presentations
+
+This API may change without prior notice.
+
+</td></tr>
+<tr><td>
+
+[ProofType](./core-types.prooftype.md)
+
+</td><td>
+
+**_(BETA)_** A proof property of a [VerifiableCredential](./core-types.verifiablecredential.md) or [VerifiablePresentation](./core-types.verifiablepresentation.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[RemoveContext](./core-types.removecontext.md)
+
+</td><td>
+
+Removes context parameter from plugin method interface
+
+</td></tr>
+<tr><td>
+
+[ResolveDidArgs](./core-types.resolvedidargs.md)
+
+</td><td>
+
+Input arguments for [resolveDid](./core-types.iresolver.resolvedid.md)
+
+</td></tr>
+<tr><td>
+
+[UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)
+
+</td><td>
+
+**_(BETA)_** Represents the result of a Query for [VerifiableCredential](./core-types.verifiablecredential.md)s
+
+See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md) See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)
+
+</td><td>
+
+**_(BETA)_** Represents the result of a Query for [VerifiablePresentation](./core-types.verifiablepresentation.md)s
+
+See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[UnsignedCredential](./core-types.unsignedcredential.md)
+
+</td><td>
+
+**_(BETA)_** Represents an unsigned W3C Credential payload. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[UnsignedPresentation](./core-types.unsignedpresentation.md)
+
+</td><td>
+
+Represents an unsigned W3C Presentation payload. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)
+
+</td></tr>
+<tr><td>
+
+[UsingResolutionOptions](./core-types.usingresolutionoptions.md)
+
+</td><td>
+
+Options that are forwarded to the DID resolver.
+
+</td></tr>
+<tr><td>
+
+[VerificationPolicies](./core-types.verificationpolicies.md)
+
+</td><td>
+
+**_(BETA)_** These optional settings can be used to override some default checks that are performed on Presentations during verification.
+
+</td></tr>
+<tr><td>
+
+[Where](./core-types.where.md)
+
+</td><td>
+
+**_(BETA)_** Represents a WHERE predicate for a [FindArgs](./core-types.findargs.md) query. In situations where multiple WHERE predicates are present, they are combined with AND.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                           | Description                                                                                                                                 |
-| -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CoreEvents](./core-types.coreevents.md)           | This collection defines the core event types.                                                                                               |
-| [KEY_ALG_MAPPING](./core-types.key_alg_mapping.md) | Mapping of known key types([TKeyType](./core-types.tkeytype.md)) to the known algorithms([TAlg](./core-types.talg.md)) they should support. |
-| [schema](./core-types.schema.md)                   |                                                                                                                                             |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CoreEvents](./core-types.coreevents.md)
+
+</td><td>
+
+This collection defines the core event types.
+
+</td></tr>
+<tr><td>
+
+[KEY_ALG_MAPPING](./core-types.key_alg_mapping.md)
+
+</td><td>
+
+Mapping of known key types([TKeyType](./core-types.tkeytype.md)) to the known algorithms([TAlg](./core-types.talg.md)) they should support.
+
+</td></tr>
+<tr><td>
+
+[schema](./core-types.schema.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [CompactJWT](./core-types.compactjwt.md)                                   | <p>**_(BETA)_** Represents a Json Web Token in compact form. "header.payload.signature"</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [ContextType](./core-types.contexttype.md)                                 | <p>**_(BETA)_** The data type for <code>@context</code> properties of credentials, presentations, etc.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [CredentialStatus](./core-types.credentialstatus.md)                       | <p>**_(BETA)_** Represents the result of a status check.</p><p>Implementations MUST populate the <code>revoked</code> boolean property, but they can return additional metadata that is method specific.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [CredentialStatusReference](./core-types.credentialstatusreference.md)     | <p>**_(BETA)_** Used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information is determined by the specific <code>credentialStatus</code> type definition, and varies depending on factors such as whether it is simple to implement or if it is privacy-enhancing.</p><p>See [Credential Status](https://www.w3.org/TR/vc-data-model/#status)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                              |
-| [CredentialSubject](./core-types.credentialsubject.md)                     | <p>**_(BETA)_** The value of the credentialSubject property is defined as a set of objects that contain one or more properties that are each related to a subject of the verifiable credential. Each object MAY contain an id.</p><p>See [Credential Subject](https://www.w3.org/TR/vc-data-model/#credential-subject)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                         |
-| [DateType](./core-types.datetype.md)                                       | <p>**_(BETA)_** Represents an issuance or expiration date for Credentials / Presentations. This is used as input when creating them.</p><p>This API may change without prior notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [DIDDocComponent](./core-types.diddoccomponent.md)                         | **_(BETA)_** Return type of [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) represents a <code>VerificationMethod</code> or a <code>ServiceEndpoint</code> entry from a This API may change without a BREAKING CHANGE notice.                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [DIDDocumentSection](./core-types.diddocumentsection.md)                   | <p>Refers to a section of a DID document. Either the list of verification methods or services or one of the verification relationships.</p><p>See [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)</p>                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [FindClaimsArgs](./core-types.findclaimsargs.md)                           | <p>**_(BETA)_** The filter that can be used to find [VerifiableCredential](./core-types.verifiablecredential.md)s in the data store, based on the types and values of their claims.</p><p>See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md) This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                             |
-| [FindCredentialsArgs](./core-types.findcredentialsargs.md)                 | <p>**_(BETA)_** The filter that can be used to find [VerifiableCredential](./core-types.verifiablecredential.md)s in the data store. See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                            |
-| [FindIdentifiersArgs](./core-types.findidentifiersargs.md)                 | <p>**_(BETA)_** The filter that can be used to find [IIdentifier](./core-types.iidentifier.md)s in the data store.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [FindMessagesArgs](./core-types.findmessagesargs.md)                       | <p>**_(BETA)_** The filter that can be used to find [IMessage](./core-types.imessage.md)s in the data store. See [IDataStoreORM.dataStoreORMGetMessages()](./core-types.idatastoreorm.datastoreormgetmessages.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                              |
-| [FindPresentationsArgs](./core-types.findpresentationsargs.md)             | <p>**_(BETA)_** The filter that can be used to find [VerifiablePresentation](./core-types.verifiablepresentation.md)s in the data store. See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                    |
-| [ICredentialPlugin](./core-types.icredentialplugin.md)                     | The interface definition for a plugin that can generate and verify Verifiable Credentials and Presentations                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [ICredentialStatus](./core-types.icredentialstatus.md)                     | **_(BETA)_** Veramo plugin interface for plugins implementing both the [manager](./core-types.icredentialstatusmanager.md) and the [verifier](./core-types.icredentialstatusverifier.md) aspects of Credential Status flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [IServiceEndpoint](./core-types.iserviceendpoint.md)                       | Represents a service endpoint URL or a map of URLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [IssuerAgentContext](./core-types.issueragentcontext.md)                   | <p>**_(BETA)_** Represents the requirements that this plugin has. The agent that is using this plugin is expected to provide these methods.</p><p>This interface can be used for static type checks, to make sure your application is properly initialized.</p>                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [IssuerType](./core-types.issuertype.md)                                   | <p>**_(BETA)_** The issuer of a [VerifiableCredential](./core-types.verifiablecredential.md) or the holder of a [VerifiablePresentation](./core-types.verifiablepresentation.md).</p><p>The value of the issuer property MUST be either a URI or an object containing an id property. It is RECOMMENDED that the URI in the issuer or its id be one which, if de-referenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential.</p><p>See [Issuer data model](https://www.w3.org/TR/vc-data-model/#issuer)</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [ManagedKeyInfo](./core-types.managedkeyinfo.md)                           | Represents information about a managed key. Private or secret key material is NOT present.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [MinimalImportableIdentifier](./core-types.minimalimportableidentifier.md) | Represents the minimum amount of information needed to import an [IIdentifier](./core-types.iidentifier.md).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [MinimalImportableKey](./core-types.minimalimportablekey.md)               | Represents the properties required to import a key.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [PartialIdentifier](./core-types.partialidentifier.md)                     | <p>**_(BETA)_** The result of a [IDataStoreORM.dataStoreORMGetIdentifiers()](./core-types.idatastoreorm.datastoreormgetidentifiers.md) query.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [ProofFormat](./core-types.proofformat.md)                                 | <p>The type of encoding to be used for the Verifiable Credential or Presentation to be generated.</p><p>Only <code>jwt</code> and <code>lds</code> is supported at the moment.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [RequireOnly](./core-types.requireonly.md)                                 | Represents an object type where a subset of keys are required and everything else is optional.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [TAgent](./core-types.tagent.md)                                           | Utility type for constructing agent type that has a list of available methods                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| [TAlg](./core-types.talg.md)                                               | <p>Known algorithms supported by some of the above key types defined by [TKeyType](./core-types.tkeytype.md).</p><p>Actual implementations of [Key Management Systems](./key-manager.abstractkeymanagementsystem.md) can support more. One should check the [IKey.meta.algorithms](./core-types.ikey.meta.md) property to see what is possible for a particular managed key.</p>                                                                                                                                                                                                                                                                                               |
-| [TClaimsColumns](./core-types.tclaimscolumns.md)                           | <p>**_(BETA)_** The columns that can be searched for the claims of a [VerifiableCredential](./core-types.verifiablecredential.md)</p><p>See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md) See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaimsCount()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaimscount.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                |
-| [TCredentialColumns](./core-types.tcredentialcolumns.md)                   | <p>**_(BETA)_** The columns that can be searched for a [VerifiableCredential](./core-types.verifiablecredential.md)</p><p>See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md) See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsCount()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialscount.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                              |
-| [TIdentifiersColumns](./core-types.tidentifierscolumns.md)                 | **_(BETA)_** The columns that can be queried for an [IIdentifier](./core-types.iidentifier.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| [TKeyType](./core-types.tkeytype.md)                                       | Cryptographic key type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [TMessageColumns](./core-types.tmessagecolumns.md)                         | <p>**_(BETA)_** The columns that can be queried for an [IMessage](./core-types.imessage.md)</p><p>See [IDataStoreORM.dataStoreORMGetMessagesCount()](./core-types.idatastoreorm.datastoreormgetmessagescount.md) This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [TPresentationColumns](./core-types.tpresentationcolumns.md)               | <p>**_(BETA)_** The columns that can be searched for a [VerifiablePresentation](./core-types.verifiablepresentation.md)</p><p>See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md) See [IDataStoreORM.dataStoreORMGetVerifiablePresentationsCount()](./core-types.idatastoreorm.datastoreormgetverifiablepresentationscount.md)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                  |
-| [VerifiableCredential](./core-types.verifiablecredential.md)               | <p>**_(BETA)_** Represents a signed Verifiable Credential payload (includes proof), using a JSON representation. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| [VerifiablePresentation](./core-types.verifiablepresentation.md)           | Represents a signed Verifiable Presentation (includes proof), using a JSON representation. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [VerifierAgentContext](./core-types.verifieragentcontext.md)               | <p>**_(BETA)_** Represents the requirements that this plugin has. The agent that is using this plugin is expected to provide these methods.</p><p>This interface can be used for static type checks, to make sure your application is properly initialized.</p>                                                                                                                                                                                                                                                                                                                                                                                                                |
-| [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)         | <p>**_(BETA)_** Represents a signed Verifiable Credential (includes proof), in either JSON or compact JWT format. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials) See [proof formats](https://www.w3.org/TR/vc-data-model/#proof-formats)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                                                                                                                |
-| [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md)     | Represents a signed Verifiable Presentation (includes proof) in either JSON or compact JWT format. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CompactJWT](./core-types.compactjwt.md)
+
+</td><td>
+
+**_(BETA)_** Represents a Json Web Token in compact form. "header.payload.signature"
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ContextType](./core-types.contexttype.md)
+
+</td><td>
+
+**_(BETA)_** The data type for `@context` properties of credentials, presentations, etc.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CredentialStatus](./core-types.credentialstatus.md)
+
+</td><td>
+
+**_(BETA)_** Represents the result of a status check.
+
+Implementations MUST populate the `revoked` boolean property, but they can return additional metadata that is method-specific.
+
+</td></tr>
+<tr><td>
+
+[CredentialStatusReference](./core-types.credentialstatusreference.md)
+
+</td><td>
+
+**_(BETA)_** Used for the discovery of information about the current status of a verifiable credential, such as whether it is suspended or revoked. The precise contents of the credential status information are determined by the specific `credentialStatus` type definition and vary depending on factors such as whether it is simple to implement or if it is privacy-enhancing.
+
+See [Credential Status](https://www.w3.org/TR/vc-data-model/#status)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CredentialSubject](./core-types.credentialsubject.md)
+
+</td><td>
+
+**_(BETA)_** The value of the credentialSubject property is defined as a set of objects that contain one or more properties that are each related to a subject of the verifiable credential. Each object MAY contain an id.
+
+See [Credential Subject](https://www.w3.org/TR/vc-data-model/#credential-subject)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DateType](./core-types.datetype.md)
+
+</td><td>
+
+**_(BETA)_** Represents an issuance or expiration date for Credentials / Presentations. This is used as input when creating them.
+
+This API may change without prior notice.
+
+</td></tr>
+<tr><td>
+
+[DIDDocComponent](./core-types.diddoccomponent.md)
+
+</td><td>
+
+**_(BETA)_** Return type of [getDIDComponentById](./core-types.iresolver.getdidcomponentbyid.md) represents a `VerificationMethod` or a `ServiceEndpoint` entry from a This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DIDDocumentSection](./core-types.diddocumentsection.md)
+
+</td><td>
+
+Refers to a section of a DID document. Either the list of verification methods or services or one of the verification relationships.
+
+See [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)
+
+</td></tr>
+<tr><td>
+
+[FindClaimsArgs](./core-types.findclaimsargs.md)
+
+</td><td>
+
+**_(BETA)_** The filter that can be used to find [VerifiableCredential](./core-types.verifiablecredential.md)s in the data store, based on the types and values of their claims.
+
+See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md) This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[FindCredentialsArgs](./core-types.findcredentialsargs.md)
+
+</td><td>
+
+**_(BETA)_** The filter that can be used to find [VerifiableCredential](./core-types.verifiablecredential.md)s in the data store. See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[FindIdentifiersArgs](./core-types.findidentifiersargs.md)
+
+</td><td>
+
+**_(BETA)_** The filter that can be used to find [IIdentifier](./core-types.iidentifier.md)s in the data store.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[FindMessagesArgs](./core-types.findmessagesargs.md)
+
+</td><td>
+
+**_(BETA)_** The filter that can be used to find [IMessage](./core-types.imessage.md)s in the data store. See [IDataStoreORM.dataStoreORMGetMessages()](./core-types.idatastoreorm.datastoreormgetmessages.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[FindPresentationsArgs](./core-types.findpresentationsargs.md)
+
+</td><td>
+
+**_(BETA)_** The filter that can be used to find [VerifiablePresentation](./core-types.verifiablepresentation.md)s in the data store. See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ICredentialPlugin](./core-types.icredentialplugin.md)
+
+</td><td>
+
+The interface definition for a plugin that can generate and verify Verifiable Credentials and Presentations
+
+</td></tr>
+<tr><td>
+
+[ICredentialStatus](./core-types.icredentialstatus.md)
+
+</td><td>
+
+**_(BETA)_** Veramo plugin interface for plugins implementing both the [manager](./core-types.icredentialstatusmanager.md) and the [verifier](./core-types.icredentialstatusverifier.md) aspects of Credential Status flow.
+
+</td></tr>
+<tr><td>
+
+[IServiceEndpoint](./core-types.iserviceendpoint.md)
+
+</td><td>
+
+Represents a service endpoint URL or a map of URLs
+
+</td></tr>
+<tr><td>
+
+[IssuerAgentContext](./core-types.issueragentcontext.md)
+
+</td><td>
+
+**_(BETA)_** Represents the requirements that this plugin has. The agent using this plugin is expected to provide these methods.
+
+This interface can be used for static type checks to make sure your application is properly initialized.
+
+</td></tr>
+<tr><td>
+
+[IssuerType](./core-types.issuertype.md)
+
+</td><td>
+
+**_(BETA)_** The issuer of a [VerifiableCredential](./core-types.verifiablecredential.md) or the holder of a [VerifiablePresentation](./core-types.verifiablepresentation.md).
+
+The value of the issuer property MUST be either a URI or an object containing an id property. It is RECOMMENDED that the URI in the issuer or its id be one which, if de-referenced, results in a document containing machine-readable information about the issuer that can be used to verify the information expressed in the credential.
+
+See [Issuer data model](https://www.w3.org/TR/vc-data-model/#issuer)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ManagedKeyInfo](./core-types.managedkeyinfo.md)
+
+</td><td>
+
+Represents information about a managed key. Private or secret key material is NOT present.
+
+</td></tr>
+<tr><td>
+
+[MinimalImportableIdentifier](./core-types.minimalimportableidentifier.md)
+
+</td><td>
+
+Represents the minimum amount of information needed to import an [IIdentifier](./core-types.iidentifier.md).
+
+</td></tr>
+<tr><td>
+
+[MinimalImportableKey](./core-types.minimalimportablekey.md)
+
+</td><td>
+
+Represents the properties required to import a key.
+
+</td></tr>
+<tr><td>
+
+[PartialIdentifier](./core-types.partialidentifier.md)
+
+</td><td>
+
+**_(BETA)_** The result of a [IDataStoreORM.dataStoreORMGetIdentifiers()](./core-types.idatastoreorm.datastoreormgetidentifiers.md) query.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ProofFormat](./core-types.proofformat.md)
+
+</td><td>
+
+Represents a format for a particular type of verifiable data. This is an extensible union of several known formats implemented by Veramo
+
+</td></tr>
+<tr><td>
+
+[RequireOnly](./core-types.requireonly.md)
+
+</td><td>
+
+Represents an object type where a subset of keys is required and everything else is optional.
+
+</td></tr>
+<tr><td>
+
+[TAgent](./core-types.tagent.md)
+
+</td><td>
+
+Utility type for constructing agent type that has a list of available methods
+
+</td></tr>
+<tr><td>
+
+[TAlg](./core-types.talg.md)
+
+</td><td>
+
+Known algorithms supported by some of the above key types defined by [TKeyType](./core-types.tkeytype.md).
+
+Actual implementations of [Key Management Systems](./key-manager.abstractkeymanagementsystem.md) can support more. One should check the [IKey.meta.algorithms](./core-types.ikey.meta.md) property to see what is possible for a particular managed key.
+
+</td></tr>
+<tr><td>
+
+[TClaimsColumns](./core-types.tclaimscolumns.md)
+
+</td><td>
+
+**_(BETA)_** The columns that can be searched for the claims of a [VerifiableCredential](./core-types.verifiablecredential.md)
+
+See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaims()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md) See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsByClaimsCount()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaimscount.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[TCredentialColumns](./core-types.tcredentialcolumns.md)
+
+</td><td>
+
+**_(BETA)_** The columns that can be searched for a [VerifiableCredential](./core-types.verifiablecredential.md)
+
+See [IDataStoreORM.dataStoreORMGetVerifiableCredentials()](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md) See [IDataStoreORM.dataStoreORMGetVerifiableCredentialsCount()](./core-types.idatastoreorm.datastoreormgetverifiablecredentialscount.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[TIdentifiersColumns](./core-types.tidentifierscolumns.md)
+
+</td><td>
+
+**_(BETA)_** The columns that can be queried for an [IIdentifier](./core-types.iidentifier.md)
+
+</td></tr>
+<tr><td>
+
+[TKeyType](./core-types.tkeytype.md)
+
+</td><td>
+
+Cryptographic key type.
+
+</td></tr>
+<tr><td>
+
+[TMessageColumns](./core-types.tmessagecolumns.md)
+
+</td><td>
+
+**_(BETA)_** The columns that can be queried for an [IMessage](./core-types.imessage.md)
+
+See [IDataStoreORM.dataStoreORMGetMessagesCount()](./core-types.idatastoreorm.datastoreormgetmessagescount.md) This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[TPresentationColumns](./core-types.tpresentationcolumns.md)
+
+</td><td>
+
+**_(BETA)_** The columns that can be searched for a [VerifiablePresentation](./core-types.verifiablepresentation.md)
+
+See [IDataStoreORM.dataStoreORMGetVerifiablePresentations()](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md) See [IDataStoreORM.dataStoreORMGetVerifiablePresentationsCount()](./core-types.idatastoreorm.datastoreormgetverifiablepresentationscount.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)
+
+</td><td>
+
+**_(BETA)_** Represents a signed Verifiable Credential payload (includes proof), using a JSON representation. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[VerifiablePresentation](./core-types.verifiablepresentation.md)
+
+</td><td>
+
+Represents a signed Verifiable Presentation (includes proof), using a JSON representation. See [VP data model](https://www.w3.org/TR/vc-data-model/#presentations)
+
+</td></tr>
+<tr><td>
+
+[VerifierAgentContext](./core-types.verifieragentcontext.md)
+
+</td><td>
+
+**_(BETA)_** Represents the requirements that this plugin has. The agent that is using this plugin is expected to provide these methods.
+
+This interface can be used for static type checks, to make sure your application is properly initialized.
+
+</td></tr>
+<tr><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)
+
+</td><td>
+
+**_(BETA)_** Represents a signed Verifiable Credential (includes proof), in either JSON or compact JWT format. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials) See [proof formats](https://www.w3.org/TR/vc-data-model-1.1/#proof-formats)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md)
+
+</td><td>
+
+Represents a signed Verifiable Presentation (includes proof) in either JSON or compact JWT format. See [VC data model](https://www.w3.org/TR/vc-data-model/#credentials)
+
+</td></tr>
+</tbody></table>

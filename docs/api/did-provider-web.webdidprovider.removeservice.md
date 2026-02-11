@@ -20,11 +20,42 @@ removeService(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                   | Description |
-| --------- | -------------------------------------------------------------------------------------- | ----------- |
-| args      | { identifier: [IIdentifier](./core-types.iidentifier.md); id: string; options?: any; } |             |
-| context   | IContext                                                                               |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); id: string; options?: any; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

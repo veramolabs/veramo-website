@@ -21,10 +21,31 @@ abstract sign(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                   | Description |
-| --------- | ---------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | { keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; \[x: string\]: any; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ keyRef: Pick&lt;[IKey](./core-types.ikey.md), 'kid'&gt;; algorithm?: string; data: Uint8Array; \[x: string\]: any; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

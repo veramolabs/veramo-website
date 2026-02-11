@@ -18,10 +18,33 @@ ApiSchemaRouter: (options: ApiSchemaRouterOptions) => Router
 
 ## Parameters
 
-| Parameter | Type                                                                | Description           |
-| --------- | ------------------------------------------------------------------- | --------------------- |
-| options   | [ApiSchemaRouterOptions](./remote-server.apischemarouteroptions.md) | Initialization option |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+[ApiSchemaRouterOptions](./remote-server.apischemarouteroptions.md)
+
+</td><td>
+
+Initialization option
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Router

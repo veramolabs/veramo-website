@@ -18,10 +18,31 @@ keyManagerCreate(args: IKeyManagerCreateArgs): Promise<ManagedKeyInfo>;
 
 ## Parameters
 
-| Parameter | Type                                                           | Description |
-| --------- | -------------------------------------------------------------- | ----------- |
-| args      | [IKeyManagerCreateArgs](./core-types.ikeymanagercreateargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IKeyManagerCreateArgs](./core-types.ikeymanagercreateargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

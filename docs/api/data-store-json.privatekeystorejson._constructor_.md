@@ -20,7 +20,43 @@ constructor(jsonStore: VeramoJsonStore, secretBox?: AbstractSecretBox | undefine
 
 ## Parameters
 
-| Parameter | Type                                                                     | Description                                                                                                                                                                                                                                                             |
-| --------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jsonStore | [VeramoJsonStore](./data-store-json.veramojsonstore.md)                  | This serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object does not have to be shared with other users of [VeramoJsonStore](./data-store-json.veramojsonstore.md), but it can be. |
-| secretBox | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | _(Optional)_ If this is used, then key material is encrypted, even in memory.                                                                                                                                                                                           |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonStore
+
+</td><td>
+
+[VeramoJsonStore](./data-store-json.veramojsonstore.md)
+
+</td><td>
+
+This serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object does not have to be shared with other users of [VeramoJsonStore](./data-store-json.veramojsonstore.md), but it can be.
+
+</td></tr>
+<tr><td>
+
+secretBox
+
+</td><td>
+
+[AbstractSecretBox](./key-manager.abstractsecretbox.md) \| undefined
+
+</td><td>
+
+_(Optional)_ If this is used, then key material is encrypted, even in memory.
+
+</td></tr>
+</tbody></table>

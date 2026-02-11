@@ -24,7 +24,51 @@ export interface IDIDDiscoveryDiscoverDidResult extends Partial<IDIDDiscoveryDis
 
 ## Properties
 
-| Property                                                             | Modifiers | Type                                                                              | Description                                                     |
-| -------------------------------------------------------------------- | --------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [errors?](./did-discovery.ididdiscoverydiscoverdidresult.errors.md)  |           | Record&lt;string, string&gt;                                                      | **_(BETA)_** _(Optional)_ A record of encountered errors        |
-| [results](./did-discovery.ididdiscoverydiscoverdidresult.results.md) |           | [IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)\[\] | **_(BETA)_** List of discovery results from different providers |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[errors?](./did-discovery.ididdiscoverydiscoverdidresult.errors.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, string&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ A record of encountered errors
+
+</td></tr>
+<tr><td>
+
+[results](./did-discovery.ididdiscoverydiscoverdidresult.results.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDDiscoveryProviderResult](./did-discovery.ididdiscoveryproviderresult.md)\[\]
+
+</td><td>
+
+**_(BETA)_** List of discovery results from different providers
+
+</td></tr>
+</tbody></table>

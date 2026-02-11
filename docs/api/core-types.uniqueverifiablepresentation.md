@@ -24,7 +24,51 @@ export interface UniqueVerifiablePresentation
 
 ## Properties
 
-| Property                                                                                      | Modifiers | Type                                                             | Description  |
-| --------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------ |
-| [hash](./core-types.uniqueverifiablepresentation.hash.md)                                     |           | string                                                           | **_(BETA)_** |
-| [verifiablePresentation](./core-types.uniqueverifiablepresentation.verifiablepresentation.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[hash](./core-types.uniqueverifiablepresentation.hash.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[verifiablePresentation](./core-types.uniqueverifiablepresentation.verifiablepresentation.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiablePresentation](./core-types.verifiablepresentation.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

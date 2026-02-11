@@ -18,8 +18,66 @@ export interface IDIDManagerAddServiceArgs
 
 ## Properties
 
-| Property                                                      | Modifiers | Type                                 | Description                                                 |
-| ------------------------------------------------------------- | --------- | ------------------------------------ | ----------------------------------------------------------- |
-| [did](./core-types.ididmanageraddserviceargs.did.md)          |           | string                               | DID                                                         |
-| [options?](./core-types.ididmanageraddserviceargs.options.md) |           | object                               | _(Optional)_ Optional. Identifier provider specific options |
-| [service](./core-types.ididmanageraddserviceargs.service.md)  |           | [IService](./core-types.iservice.md) | Service object                                              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[did](./core-types.ididmanageraddserviceargs.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+DID
+
+</td></tr>
+<tr><td>
+
+[options?](./core-types.ididmanageraddserviceargs.options.md)
+
+</td><td>
+
+</td><td>
+
+{ localOnly?: boolean; \[key: string\]: any; }
+
+</td><td>
+
+_(Optional)_ Optional. Identifier-provider specific options
+
+</td></tr>
+<tr><td>
+
+[service](./core-types.ididmanageraddserviceargs.service.md)
+
+</td><td>
+
+</td><td>
+
+[IService](./core-types.iservice.md)
+
+</td><td>
+
+Service object
+
+</td></tr>
+</tbody></table>

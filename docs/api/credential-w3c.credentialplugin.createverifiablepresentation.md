@@ -18,11 +18,46 @@ createVerifiablePresentation(args: ICreateVerifiablePresentationArgs, context: I
 
 ## Parameters
 
-| Parameter | Type                                                                                   | Description                                                                                  |
-| --------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| args      | [ICreateVerifiablePresentationArgs](./core-types.icreateverifiablepresentationargs.md) | Arguments necessary to create the Presentation.                                              |
-| context   | [IssuerAgentContext](./core-types.issueragentcontext.md)                               | This reserved param is automatically added and handled by the framework, \*do not override\* |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[ICreateVerifiablePresentationArgs](./core-types.icreateverifiablepresentationargs.md)
+
+</td><td>
+
+Arguments necessary to create the Presentation.
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IssuerAgentContext](./core-types.issueragentcontext.md)
+
+</td><td>
+
+This reserved param is automatically added and handled by the framework, \*do not override\*
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;

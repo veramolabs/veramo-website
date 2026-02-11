@@ -12,13 +12,55 @@ Provides a [plugin](./did-resolver.didresolverplugin.md) for the [Agent](./core.
 
 ## Classes
 
-| Class                                                    | Description                                                                                                                                                                                                       |
-| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [DIDResolverPlugin](./did-resolver.didresolverplugin.md) | <p>A Veramo Plugin that enables users to resolve DID documents.</p><p>This plugin is used automatically by plugins that create or verify Verifiable Credentials or Presentations or when working with DIDComm</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DIDResolverPlugin](./did-resolver.didresolverplugin.md)
+
+</td><td>
+
+A Veramo Plugin that enables users to resolve DID documents.
+
+This plugin is used automatically by plugins that create or verify Verifiable Credentials or Presentations or when working with DIDComm
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                                           | Description                                                                                                |
-| ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| [getUniversalResolver(url)](./did-resolver.getuniversalresolver.md)                | Creates a DIDResolver instance that can be used with <code>did-resolver</code>                             |
-| [getUniversalResolverFor(methods, url)](./did-resolver.getuniversalresolverfor.md) | Creates a mapping of DID methods to a DIDResolver instance that can be used with <code>did-resolver</code> |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getUniversalResolver(url)](./did-resolver.getuniversalresolver.md)
+
+</td><td>
+
+Creates a DIDResolver instance that can be used with `did-resolver`
+
+</td></tr>
+<tr><td>
+
+[getUniversalResolverFor(methods, url)](./did-resolver.getuniversalresolverfor.md)
+
+</td><td>
+
+Creates a mapping of DID methods to a DIDResolver instance that can be used with `did-resolver`
+
+</td></tr>
+</tbody></table>

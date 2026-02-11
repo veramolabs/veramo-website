@@ -24,8 +24,40 @@ Please see [W3C Verifiable Credentials data model](https://www.w3.org/TR/vc-data
 
 ## Methods
 
-| Method                                                                                                        | Description                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [createVerifiableCredential(args, context)](./core-types.icredentialissuer.createverifiablecredential.md)     | Creates a Verifiable Credential. The payload, signer and format are chosen based on the <code>args</code> parameter.   |
-| [createVerifiablePresentation(args, context)](./core-types.icredentialissuer.createverifiablepresentation.md) | Creates a Verifiable Presentation. The payload, signer and format are chosen based on the <code>args</code> parameter. |
-| [listUsableProofFormats(identifier, context)](./core-types.icredentialissuer.listusableproofformats.md)       | **_(BETA)_** Returns a list of supported proof formats.                                                                |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createVerifiableCredential(args, context)](./core-types.icredentialissuer.createverifiablecredential.md)
+
+</td><td>
+
+Creates a Verifiable Credential. The payload, signer, and format are chosen based on the `args` parameter.
+
+</td></tr>
+<tr><td>
+
+[createVerifiablePresentation(args, context)](./core-types.icredentialissuer.createverifiablepresentation.md)
+
+</td><td>
+
+Creates a Verifiable Presentation. The payload, signer and format are chosen based on the `args` parameter.
+
+</td></tr>
+<tr><td>
+
+[listUsableProofFormats(identifier, context)](./core-types.icredentialissuer.listusableproofformats.md)
+
+</td><td>
+
+**_(BETA)_** Returns a list of supported proof formats for verifiable data that this plugin can generate based on the specified issuer.
+
+</td></tr>
+</tbody></table>

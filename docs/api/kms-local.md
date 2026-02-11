@@ -12,7 +12,35 @@ Provides a [libsodium](https://github.com/jedisct1/libsodium.js) backed [key man
 
 ## Classes
 
-| Class                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                           |
-| --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [KeyManagementSystem](./kms-local.keymanagementsystem.md) | <p>This is an implementation of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) that uses a local [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) to hold private key material.</p><p>The key material is used to provide local implementations of various cryptographic algorithms.</p>                                                              |
-| [SecretBox](./kms-local.secretbox.md)                     | <p>This is an implementation of [AbstractSecretBox](./key-manager.abstractsecretbox.md) that uses a JavaScript [nacl secretBox](https://nacl.cr.yp.to/secretbox.html) implementation for encryption.</p><p>See [PrivateKeyStore](./data-store.privatekeystore.md) See [PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md) See [AbstractSecretBox](./key-manager.abstractsecretbox.md)</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeyManagementSystem](./kms-local.keymanagementsystem.md)
+
+</td><td>
+
+This is an implementation of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) that uses a local [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) to hold private key material.
+
+The key material is used to provide local implementations of various cryptographic algorithms.
+
+</td></tr>
+<tr><td>
+
+[SecretBox](./kms-local.secretbox.md)
+
+</td><td>
+
+This is an implementation of [AbstractSecretBox](./key-manager.abstractsecretbox.md) that uses a JavaScript [nacl secretBox](https://nacl.cr.yp.to/secretbox.html) implementation for encryption.
+
+See [PrivateKeyStore](./data-store.privatekeystore.md) See [PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md) See [AbstractSecretBox](./key-manager.abstractsecretbox.md)
+
+</td></tr>
+</tbody></table>

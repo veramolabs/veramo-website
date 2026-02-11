@@ -16,10 +16,96 @@ export interface ApiSchemaRouterOptions
 
 ## Properties
 
-| Property                                                                    | Modifiers | Type                | Description                                 |
-| --------------------------------------------------------------------------- | --------- | ------------------- | ------------------------------------------- |
-| [apiName?](./remote-server.apischemarouteroptions.apiname.md)               |           | string              | _(Optional)_ Name used in OpenAPI schema    |
-| [apiVersion?](./remote-server.apischemarouteroptions.apiversion.md)         |           | string              | _(Optional)_ Version used in OpenAPI schema |
-| [basePath](./remote-server.apischemarouteroptions.basepath.md)              |           | string              | Base path                                   |
-| [exposedMethods?](./remote-server.apischemarouteroptions.exposedmethods.md) |           | Array&lt;string&gt; | _(Optional)_ List of exposed methods        |
-| [securityScheme?](./remote-server.apischemarouteroptions.securityscheme.md) |           | string              | _(Optional)_ Security scheme                |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[apiName?](./remote-server.apischemarouteroptions.apiname.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Name used in OpenAPI schema
+
+</td></tr>
+<tr><td>
+
+[apiVersion?](./remote-server.apischemarouteroptions.apiversion.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Version used in OpenAPI schema
+
+</td></tr>
+<tr><td>
+
+[basePath](./remote-server.apischemarouteroptions.basepath.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Base path
+
+</td></tr>
+<tr><td>
+
+[exposedMethods?](./remote-server.apischemarouteroptions.exposedmethods.md)
+
+</td><td>
+
+</td><td>
+
+Array&lt;string&gt;
+
+</td><td>
+
+_(Optional)_ List of exposed methods
+
+</td></tr>
+<tr><td>
+
+[securityScheme?](./remote-server.apischemarouteroptions.securityscheme.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Security scheme
+
+</td></tr>
+</tbody></table>

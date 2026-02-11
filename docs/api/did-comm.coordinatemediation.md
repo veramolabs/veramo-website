@@ -22,12 +22,108 @@ export declare enum CoordinateMediation
 
 ## Enumeration Members
 
-| Member                    | Value                                                                                           | Description  |
-| ------------------------- | ----------------------------------------------------------------------------------------------- | ------------ |
-| MEDIATE_DENY              | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/mediate-deny&quot;</code>              | **_(BETA)_** |
-| MEDIATE_GRANT             | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/mediate-grant&quot;</code>             | **_(BETA)_** |
-| MEDIATE_REQUEST           | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/mediate-request&quot;</code>           | **_(BETA)_** |
-| RECIPIENT_QUERY           | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/recipient-query&quot;</code>           | **_(BETA)_** |
-| RECIPIENT_QUERY_RESPONSE  | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/recipient&quot;</code>                 | **_(BETA)_** |
-| RECIPIENT_UPDATE          | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/recipient-update&quot;</code>          | **_(BETA)_** |
-| RECIPIENT_UPDATE_RESPONSE | <code>&quot;https://didcomm.org/coordinate-mediation/3.0/recipient-update-response&quot;</code> | **_(BETA)_** |
+<table><thead><tr><th>
+
+Member
+
+</th><th>
+
+Value
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+MEDIATE_DENY
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/mediate-deny"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+MEDIATE_GRANT
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/mediate-grant"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+MEDIATE_REQUEST
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/mediate-request"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+RECIPIENT_QUERY
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/recipient-query"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+RECIPIENT_QUERY_RESPONSE
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/recipient"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+RECIPIENT_UPDATE
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/recipient-update"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+RECIPIENT_UPDATE_RESPONSE
+
+</td><td>
+
+`"https://didcomm.org/coordinate-mediation/3.0/recipient-update-response"`
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

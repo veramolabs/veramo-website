@@ -20,7 +20,31 @@ export interface IResolver extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                     | Description                                                                                    |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [getDIDComponentById(args)](./core-types.iresolver.getdidcomponentbyid.md) | **_(BETA)_** Dereferences a DID URL fragment and returns the corresponding DID document entry. |
-| [resolveDid(args)](./core-types.iresolver.resolvedid.md)                   | Resolves DID and returns DID Resolution Result                                                 |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDIDComponentById(args)](./core-types.iresolver.getdidcomponentbyid.md)
+
+</td><td>
+
+**_(BETA)_** Dereferences a DID URL fragment and returns the corresponding DID document entry.
+
+</td></tr>
+<tr><td>
+
+[resolveDid(args)](./core-types.iresolver.resolvedid.md)
+
+</td><td>
+
+Resolves DID and returns DID Resolution Result
+
+</td></tr>
+</tbody></table>

@@ -12,6 +12,22 @@ Provides `did:ethr` [identifier provider](./did-provider-ethr.ethrdidprovider.md
 
 ## Classes
 
-| Class                                                     | Description                                                                                         |
-| --------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [EthrDIDProvider](./did-provider-ethr.ethrdidprovider.md) | [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:ethr</code> identifiers |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[EthrDIDProvider](./did-provider-ethr.ethrdidprovider.md)
+
+</td><td>
+
+[DIDManager](./did-manager.didmanager.md) identifier provider for `did:ethr` identifiers
+
+</td></tr>
+</tbody></table>

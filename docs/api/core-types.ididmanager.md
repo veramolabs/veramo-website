@@ -20,19 +20,139 @@ export interface IDIDManager extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                        | Description                                                               |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| [didManagerAddKey(args, context)](./core-types.ididmanager.didmanageraddkey.md)               | Adds a key to a DID Document                                              |
-| [didManagerAddService(args, context)](./core-types.ididmanager.didmanageraddservice.md)       | Adds a service to a DID Document                                          |
-| [didManagerCreate(args, context)](./core-types.ididmanager.didmanagercreate.md)               | Creates and returns a new identifier                                      |
-| [didManagerDelete(args, context)](./core-types.ididmanager.didmanagerdelete.md)               | Deletes identifier                                                        |
-| [didManagerFind(args)](./core-types.ididmanager.didmanagerfind.md)                            | Returns a list of managed identifiers                                     |
-| [didManagerGet(args)](./core-types.ididmanager.didmanagerget.md)                              | Returns a specific identifier                                             |
-| [didManagerGetByAlias(args)](./core-types.ididmanager.didmanagergetbyalias.md)                | Returns a specific identifier by alias                                    |
-| [didManagerGetOrCreate(args, context)](./core-types.ididmanager.didmanagergetorcreate.md)     | Returns an existing identifier or creates a new one for a specific alias  |
-| [didManagerGetProviders()](./core-types.ididmanager.didmanagergetproviders.md)                | Returns a list of available identifier providers                          |
-| [didManagerImport(args, context)](./core-types.ididmanager.didmanagerimport.md)               | Imports identifier                                                        |
-| [didManagerRemoveKey(args, context)](./core-types.ididmanager.didmanagerremovekey.md)         | Removes a key from a DID Document                                         |
-| [didManagerRemoveService(args, context)](./core-types.ididmanager.didmanagerremoveservice.md) | Removes a service from a DID Document                                     |
-| [didManagerSetAlias(args, context)](./core-types.ididmanager.didmanagersetalias.md)           | Sets identifier alias                                                     |
-| [didManagerUpdate(args, context)](./core-types.ididmanager.didmanagerupdate.md)               | Updates the DID document of a managed [DID](./core-types.iidentifier.md). |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[didManagerAddKey(args, context)](./core-types.ididmanager.didmanageraddkey.md)
+
+</td><td>
+
+Adds a key to a DID Document
+
+</td></tr>
+<tr><td>
+
+[didManagerAddService(args, context)](./core-types.ididmanager.didmanageraddservice.md)
+
+</td><td>
+
+Adds a service to a DID Document
+
+</td></tr>
+<tr><td>
+
+[didManagerCreate(args, context)](./core-types.ididmanager.didmanagercreate.md)
+
+</td><td>
+
+Creates and returns a new identifier
+
+</td></tr>
+<tr><td>
+
+[didManagerDelete(args, context)](./core-types.ididmanager.didmanagerdelete.md)
+
+</td><td>
+
+Deletes identifier
+
+</td></tr>
+<tr><td>
+
+[didManagerFind(args)](./core-types.ididmanager.didmanagerfind.md)
+
+</td><td>
+
+Returns a list of managed identifiers
+
+</td></tr>
+<tr><td>
+
+[didManagerGet(args)](./core-types.ididmanager.didmanagerget.md)
+
+</td><td>
+
+Returns a specific identifier
+
+</td></tr>
+<tr><td>
+
+[didManagerGetByAlias(args)](./core-types.ididmanager.didmanagergetbyalias.md)
+
+</td><td>
+
+Returns a specific identifier by alias
+
+</td></tr>
+<tr><td>
+
+[didManagerGetOrCreate(args, context)](./core-types.ididmanager.didmanagergetorcreate.md)
+
+</td><td>
+
+Returns an existing identifier or creates a new one for a specific alias
+
+</td></tr>
+<tr><td>
+
+[didManagerGetProviders()](./core-types.ididmanager.didmanagergetproviders.md)
+
+</td><td>
+
+Returns a list of available identifier providers
+
+</td></tr>
+<tr><td>
+
+[didManagerImport(args, context)](./core-types.ididmanager.didmanagerimport.md)
+
+</td><td>
+
+Imports identifier
+
+</td></tr>
+<tr><td>
+
+[didManagerRemoveKey(args, context)](./core-types.ididmanager.didmanagerremovekey.md)
+
+</td><td>
+
+Removes a key from a DID Document
+
+</td></tr>
+<tr><td>
+
+[didManagerRemoveService(args, context)](./core-types.ididmanager.didmanagerremoveservice.md)
+
+</td><td>
+
+Removes a service from a DID Document
+
+</td></tr>
+<tr><td>
+
+[didManagerSetAlias(args, context)](./core-types.ididmanager.didmanagersetalias.md)
+
+</td><td>
+
+Sets identifier alias
+
+</td></tr>
+<tr><td>
+
+[didManagerUpdate(args, context)](./core-types.ididmanager.didmanagerupdate.md)
+
+</td><td>
+
+Updates the DID document of a managed [DID](./core-types.iidentifier.md).
+
+</td></tr>
+</tbody></table>

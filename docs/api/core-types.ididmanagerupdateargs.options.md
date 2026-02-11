@@ -16,6 +16,7 @@ Identifier provider specific options.
 
 ```typescript
 options?: {
+        localOnly?: boolean;
         [x: string]: any;
     };
 ```

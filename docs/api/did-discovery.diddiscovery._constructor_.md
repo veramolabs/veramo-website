@@ -22,6 +22,28 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                         | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------ | ----------- |
-| options   | { providers: Array&lt;[AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)&gt;; } |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+{ providers: Array&lt;[AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md)&gt;; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>

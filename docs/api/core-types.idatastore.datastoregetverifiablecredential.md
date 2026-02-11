@@ -18,10 +18,33 @@ dataStoreGetVerifiableCredential(args: IDataStoreGetVerifiableCredentialArgs): P
 
 ## Parameters
 
-| Parameter | Type                                                                                           | Description                                 |
-| --------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| args      | [IDataStoreGetVerifiableCredentialArgs](./core-types.idatastoregetverifiablecredentialargs.md) | arguments for getting verifiable credential |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDataStoreGetVerifiableCredentialArgs](./core-types.idatastoregetverifiablecredentialargs.md)
+
+</td><td>
+
+arguments for getting verifiable credential
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[VerifiableCredential](./core-types.verifiablecredential.md)&gt;

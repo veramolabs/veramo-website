@@ -22,8 +22,66 @@ export declare class PrivateKey extends BaseEntity
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                                 | Description  |
-| --------------------------------------------------------- | --------- | ------------------------------------ | ------------ |
-| [alias](./data-store.privatekey.alias.md)                 |           | string                               | **_(BETA)_** |
-| [privateKeyHex](./data-store.privatekey.privatekeyhex.md) |           | string                               | **_(BETA)_** |
-| [type](./data-store.privatekey.type.md)                   |           | [KeyType](./data-store.keytype_2.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alias](./data-store.privatekey.alias.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[privateKeyHex](./data-store.privatekey.privatekeyhex.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[type](./data-store.privatekey.type.md)
+
+</td><td>
+
+</td><td>
+
+[KeyType](./data-store.keytype_2.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

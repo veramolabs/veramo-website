@@ -22,7 +22,51 @@ export interface IUnpackedDIDCommMessage
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                                             | Description  |
-| ---------------------------------------------------------- | --------- | ---------------------------------------------------------------- | ------------ |
-| [message](./did-comm.iunpackeddidcommmessage.message.md)   |           | [IDIDCommMessage](./did-comm.ididcommmessage.md)                 | **_(BETA)_** |
-| [metaData](./did-comm.iunpackeddidcommmessage.metadata.md) |           | [IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[message](./did-comm.iunpackeddidcommmessage.message.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDCommMessage](./did-comm.ididcommmessage.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[metaData](./did-comm.iunpackeddidcommmessage.metadata.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDCommMessageMetaData](./did-comm.ididcommmessagemetadata.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

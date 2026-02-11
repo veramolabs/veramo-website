@@ -18,10 +18,33 @@ didManagerGetByAlias(args: IDIDManagerGetByAliasArgs): Promise<IIdentifier>;
 
 ## Parameters
 
-| Parameter | Type                                                                   | Description                               |
-| --------- | ---------------------------------------------------------------------- | ----------------------------------------- |
-| args      | [IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md) | Required. Arguments to get the identifier |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDIDManagerGetByAliasArgs](./core-types.ididmanagergetbyaliasargs.md)
+
+</td><td>
+
+Required. Arguments to get the identifier
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

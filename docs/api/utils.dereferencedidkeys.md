@@ -26,12 +26,53 @@ export declare function dereferenceDidKeys(
 
 ## Parameters
 
-| Parameter   | Type                                                                                         | Description |
-| ----------- | -------------------------------------------------------------------------------------------- | ----------- |
-| didDocument | DIDDocument                                                                                  |             |
-| section     | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    |             |
-| context     | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+didDocument
+
+</td><td>
+
+DIDDocument
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+section
+
+</td><td>
+
+[DIDDocumentSection](./core-types.diddocumentsection.md) \| undefined
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;\_NormalizedVerificationMethod\[\]&gt;

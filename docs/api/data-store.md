@@ -12,46 +12,292 @@ hide_title: true
 
 ## Classes
 
-| Class                                                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Claim](./data-store.claim.md)                                           | **_(BETA)_** Represents the properties of a claim extracted from a Verifiable Credential <code>credentialSubject</code>, and stored in a TypeORM database for querying.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [Credential_2](./data-store.credential_2.md)                             | **_(BETA)_** Represents some common properties of a Verifiable Credential that are stored in a TypeORM database for querying.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [DataStore](./data-store.datastore.md)                                   | <p>**_(BETA)_** This class implements the [IDataStore](./core-types.idatastore.md) interface using a TypeORM compatible database.</p><p>This allows you to store and retrieve Verifiable Credentials, Presentations and Messages by their IDs.</p><p>For more complex queries you should use [DataStoreORM](./data-store.datastoreorm.md) which is the default way to query the stored data by some common properties. These two classes MUST also share the same database connection.</p>                                                                                                                          |
-| [DataStoreDiscoveryProvider](./data-store.datastorediscoveryprovider.md) | <p>**_(BETA)_** This implementation of [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md) helps you discover DIDs based on data that is stored by a local plugin that implements [IDataStoreORM](./core-types.idatastoreorm.md).</p><p>DIDs can be discovered by partial matches of <code>name</code> from <code>Profile</code> credentials, by partial matches of <code>alias</code> of managed DIDs as well as partial matches of DIDs that are issuer or subject of credentials.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                    |
-| [DataStoreORM](./data-store.datastoreorm.md)                             | <p>**_(BETA)_** This class implements the [IDataStoreORM](./core-types.idatastoreorm.md) query interface using a TypeORM compatible database.</p><p>This allows you to filter Verifiable Credentials, Presentations and Messages by some common properties that are parsed and stored in database tables.</p><p>This class is designed to work with [DataStore](./data-store.datastore.md) which is the default way to populate the database with Credentials, Presentations and Messages in such a way that they can be queried by this class. These two classes MUST also share the same database connection.</p> |
-| [DIDStore](./data-store.didstore.md)                                     | <p>An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that uses a TypeORM database to store the relationships between DIDs, their providers and controllers and their keys and services as they are known and managed by a Veramo agent.</p><p>An instance of this class can be used by [DIDManager](./did-manager.didmanager.md) as the data storage layer.</p><p>To make full use of this class, it should use the same database as the one used by [KeyStore](./data-store.keystore.md).</p>                                                                                             |
-| [Identifier](./data-store.identifier.md)                                 | **_(BETA)_** Represents some properties and relationships of an [IIdentifier](./core-types.iidentifier.md) that are stored in a TypeORM database for the purpose of keeping track of keys and services associated with a DID managed by a Veramo agent.                                                                                                                                                                                                                                                                                                                                                             |
-| [Key](./data-store.key.md)                                               | **_(BETA)_** Represents some properties of a [IKey](./core-types.ikey.md) that are stored in a TypeORM database for the purpose of keeping track of the [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations and the keys they are able to use.                                                                                                                                                                                                                                                                                                                              |
-| [KeyStore](./data-store.keystore.md)                                     | <p>An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that uses a TypeORM database to store the relationships between keys, their IDs, aliases and [KMS implementations](./key-manager.abstractkeymanagementsystem.md), as they are known and managed by a Veramo agent.</p><p>An instance of this class can be used by [KeyManager](./key-manager.keymanager.md) as the data storage layer.</p><p>To make full use of this class, it should use the same database as the one used by [DIDStore](./data-store.didstore.md).</p>                                                             |
-| [Message](./data-store.message.md)                                       | **_(BETA)_** Represents some common properties of an [IMessage](./core-types.imessage.md) that are stored in a TypeORM database for querying.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [PreMigrationKey](./data-store.premigrationkey.md)                       | <p>**_(BETA)_** This represents the private key data of keys that were stored by [KeyStore](./data-store.keystore.md) before Veramo 3.0. During database migration this key material is moved to a different table and accessible by [PrivateKeyStore](./data-store.privatekeystore.md).</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                            |
-| [Presentation](./data-store.presentation.md)                             | **_(BETA)_** Represents some common properties of a Verifiable Presentation that are stored in a TypeORM database for querying.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| [PrivateKey](./data-store.privatekey.md)                                 | **_(BETA)_** Represents some properties of a [ManagedPrivateKey](./key-manager.managedprivatekey.md) that are stored in a TypeORM database when using a [PrivateKeyStore](./data-store.privatekeystore.md) to store private key data.                                                                                                                                                                                                                                                                                                                                                                               |
-| [PrivateKeyStore](./data-store.privatekeystore.md)                       | <p>An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a TypeORM database connection to store private key material.</p><p>The keys can be encrypted while at rest if this class is initialized with an [AbstractSecretBox](./key-manager.abstractsecretbox.md) implementation.</p>                                                                                                                                                                                                                                                                                   |
-| [Service](./data-store.service.md)                                       | <p>**_(BETA)_** Represents some properties of a as it is stored in a TypeORM database. This is used by [DIDStore](./data-store.didstore.md) to provide information to [DIDManager](./did-manager.didmanager.md) when DID management information is stored in a local TypeORM database.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                              |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Claim](./data-store.claim.md)
+
+</td><td>
+
+**_(BETA)_** Represents the properties of a claim extracted from a Verifiable Credential `credentialSubject`, and stored in a TypeORM database for querying.
+
+</td></tr>
+<tr><td>
+
+[Credential_2](./data-store.credential_2.md)
+
+</td><td>
+
+**_(BETA)_** Represents some common properties of a Verifiable Credential that are stored in a TypeORM database for querying.
+
+</td></tr>
+<tr><td>
+
+[DataStore](./data-store.datastore.md)
+
+</td><td>
+
+**_(BETA)_** This class implements the [IDataStore](./core-types.idatastore.md) interface using a TypeORM compatible database.
+
+This allows you to store and retrieve Verifiable Credentials, Presentations and Messages by their IDs.
+
+For more complex queries you should use [DataStoreORM](./data-store.datastoreorm.md) which is the default way to query the stored data by some common properties. These two classes MUST also share the same database connection.
+
+</td></tr>
+<tr><td>
+
+[DataStoreDiscoveryProvider](./data-store.datastorediscoveryprovider.md)
+
+</td><td>
+
+**_(BETA)_** This implementation of [AbstractDidDiscoveryProvider](./did-discovery.abstractdiddiscoveryprovider.md) helps you discover DIDs based on data that is stored by a local plugin that implements [IDataStoreORM](./core-types.idatastoreorm.md).
+
+DIDs can be discovered by partial matches of `name` from `Profile` credentials, by partial matches of `alias` of managed DIDs as well as partial matches of DIDs that are issuer or subject of credentials.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DataStoreORM](./data-store.datastoreorm.md)
+
+</td><td>
+
+**_(BETA)_** This class implements the [IDataStoreORM](./core-types.idatastoreorm.md) query interface using a TypeORM compatible database.
+
+This allows you to filter Verifiable Credentials, Presentations and Messages by some common properties that are parsed and stored in database tables.
+
+This class is designed to work with [DataStore](./data-store.datastore.md) which is the default way to populate the database with Credentials, Presentations and Messages in such a way that they can be queried by this class. These two classes MUST also share the same database connection.
+
+</td></tr>
+<tr><td>
+
+[DIDStore](./data-store.didstore.md)
+
+</td><td>
+
+An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that uses a TypeORM database to store the relationships between DIDs, their providers and controllers and their keys and services as they are known and managed by a Veramo agent.
+
+An instance of this class can be used by [DIDManager](./did-manager.didmanager.md) as the data storage layer.
+
+To make full use of this class, it should use the same database as the one used by [KeyStore](./data-store.keystore.md).
+
+</td></tr>
+<tr><td>
+
+[Identifier](./data-store.identifier.md)
+
+</td><td>
+
+**_(BETA)_** Represents some properties and relationships of an [IIdentifier](./core-types.iidentifier.md) that are stored in a TypeORM database for the purpose of keeping track of keys and services associated with a DID managed by a Veramo agent.
+
+</td></tr>
+<tr><td>
+
+[Key](./data-store.key.md)
+
+</td><td>
+
+**_(BETA)_** Represents some properties of a [IKey](./core-types.ikey.md) that are stored in a TypeORM database for the purpose of keeping track of the [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations and the keys they are able to use.
+
+</td></tr>
+<tr><td>
+
+[KeyStore](./data-store.keystore.md)
+
+</td><td>
+
+An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that uses a TypeORM database to store the relationships between keys, their IDs, aliases and [KMS implementations](./key-manager.abstractkeymanagementsystem.md), as they are known and managed by a Veramo agent.
+
+An instance of this class can be used by [KeyManager](./key-manager.keymanager.md) as the data storage layer.
+
+To make full use of this class, it should use the same database as the one used by [DIDStore](./data-store.didstore.md).
+
+</td></tr>
+<tr><td>
+
+[Message](./data-store.message.md)
+
+</td><td>
+
+**_(BETA)_** Represents some common properties of an [IMessage](./core-types.imessage.md) that are stored in a TypeORM database for querying.
+
+</td></tr>
+<tr><td>
+
+[PreMigrationKey](./data-store.premigrationkey.md)
+
+</td><td>
+
+**_(BETA)_** This represents the private key data of keys that were stored by [KeyStore](./data-store.keystore.md) before Veramo 3.0. During database migration this key material is moved to a different table and accessible by [PrivateKeyStore](./data-store.privatekeystore.md).
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[Presentation](./data-store.presentation.md)
+
+</td><td>
+
+**_(BETA)_** Represents some common properties of a Verifiable Presentation that are stored in a TypeORM database for querying.
+
+</td></tr>
+<tr><td>
+
+[PrivateKey](./data-store.privatekey.md)
+
+</td><td>
+
+**_(BETA)_** Represents some properties of a [ManagedPrivateKey](./key-manager.managedprivatekey.md) that are stored in a TypeORM database when using a [PrivateKeyStore](./data-store.privatekeystore.md) to store private key data.
+
+</td></tr>
+<tr><td>
+
+[PrivateKeyStore](./data-store.privatekeystore.md)
+
+</td><td>
+
+An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a TypeORM database connection to store private key material.
+
+The keys can be encrypted while at rest if this class is initialized with an [AbstractSecretBox](./key-manager.abstractsecretbox.md) implementation.
+
+</td></tr>
+<tr><td>
+
+[Service](./data-store.service.md)
+
+</td><td>
+
+**_(BETA)_** Represents some properties of a as it is stored in a TypeORM database. This is used by [DIDStore](./data-store.didstore.md) to provide information to [DIDManager](./did-manager.didmanager.md) when DID management information is stored in a local TypeORM database.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                            | Description                                                                                                                                 |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [entitiesConcat(entityArrays)](./data-store.entitiesconcat.md)      | <p>Helper function to concatenate multiple arrays of TypeORM entities.</p><p>This array CAN be used when creating a TypeORM connection.</p> |
-| [migrationConcat(migrationArrays)](./data-store.migrationconcat.md) | The migrations helper that allows migrations from multiple sources to be combined into a single array.                                      |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[entitiesConcat(entityArrays)](./data-store.entitiesconcat.md)
+
+</td><td>
+
+Helper function to concatenate multiple arrays of TypeORM entities.
+
+This array CAN be used when creating a TypeORM connection.
+
+</td></tr>
+<tr><td>
+
+[migrationConcat(migrationArrays)](./data-store.migrationconcat.md)
+
+</td><td>
+
+The migrations helper that allows migrations from multiple sources to be combined into a single array.
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-| Interface                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [MetaData](./data-store.metadata.md) | <p>**_(BETA)_** Represents message metadata as it is stored by [DataStore](./data-store.datastore.md).</p><p>This metadata is most often used by [MessageHandler](./message-handler.messagehandler.md) and [IMessageHandler](./core-types.imessagehandler.md) implementations to decorate messages that are interpreted and decoded, but not returned as final, as they pass through the message handler chain.</p><p>- This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MetaData](./data-store.metadata.md)
+
+</td><td>
+
+**_(BETA)_** Represents message metadata as it is stored by [DataStore](./data-store.datastore.md).
+
+This metadata is most often used by [MessageHandler](./message-handler.messagehandler.md) and [IMessageHandler](./core-types.imessagehandler.md) implementations to decorate messages that are interpreted and decoded, but not returned as final, as they pass through the message handler chain.
+
+- This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                 | Description                                                                                                                                                                                                               |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Entities](./data-store.entities.md)     | <p>The TypeORM entities used by this package.</p><p>This array SHOULD be used when creating a TypeORM connection.</p>                                                                                                     |
-| [migrations](./data-store.migrations.md) | <p>The migrations array that SHOULD be used when initializing a TypeORM database connection.</p><p>These ensure the correct creation of tables and the proper migrations of data when tables change between versions.</p> |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Entities](./data-store.entities.md)
+
+</td><td>
+
+The TypeORM entities used by this package.
+
+This array SHOULD be used when creating a TypeORM connection.
+
+</td></tr>
+<tr><td>
+
+[migrations](./data-store.migrations.md)
+
+</td><td>
+
+The migrations array that SHOULD be used when initializing a TypeORM database connection.
+
+These ensure the correct creation of tables and the proper migrations of data when tables change between versions.
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                             | Description                                                                                                                    |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| [KeyType_2](./data-store.keytype_2.md) | <p>**_(BETA)_** Mirrors [TKeyType](./core-types.tkeytype.md)</p><p>- This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeyType_2](./data-store.keytype_2.md)
+
+</td><td>
+
+**_(BETA)_** Mirrors [TKeyType](./core-types.tkeytype.md)
+
+- This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>

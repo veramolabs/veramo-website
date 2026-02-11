@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Remove all DID parameters from a DID url
+Remove all DID query parameters and fragment components from a DID URL
 
 **Signature:**
 
@@ -20,10 +20,50 @@ export declare function removeDIDParameters(did: string): string
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                    |
-| --------- | ------ | ------------------------------------------------------------------------------ |
-| did       | string | <p>the DID URL</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+did
+
+</td><td>
+
+string
+
+</td><td>
+
+the DID URL that may contain query parameters
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string
+
+DID URL without query parameters
+
+## Example
+
+```TypeScript
+removeDIDParameters('did:example:abc:0x123?service=agent&relativeRef=%2Fpath#version=42')
+// Returns: 'did:example:abc:0x123'
+
+removeDIDParameters('https://example.com:3128/:abc:0x123?service=agent&relativeRef=%2Fpath#version=42')
+// Returns: 'https://example.com:3128/:abc:0x123'
+
+removeDIDParameters('did:example:abc:0x123#version=42')
+// Returns: 'did:example:abc:0x123'
+```
+
+This API may change without a BREAKING CHANGE notice.

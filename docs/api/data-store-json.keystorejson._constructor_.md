@@ -20,6 +20,30 @@ constructor(jsonStore: VeramoJsonStore);
 
 ## Parameters
 
-| Parameter | Type                                                    | Description                                                                                                                                                                                                                                                                                          |
-| --------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jsonStore | [VeramoJsonStore](./data-store-json.veramojsonstore.md) | Serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. For correct usage, this MUST use the same [VeramoJsonStore](./data-store-json.veramojsonstore.md) instance as the one used by [DIDManager](./did-manager.didmanager.md). |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonStore
+
+</td><td>
+
+[VeramoJsonStore](./data-store-json.veramojsonstore.md)
+
+</td><td>
+
+Serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. For correct usage, this MUST use the same [VeramoJsonStore](./data-store-json.veramojsonstore.md) instance as the one used by [DIDManager](./did-manager.didmanager.md).
+
+</td></tr>
+</tbody></table>

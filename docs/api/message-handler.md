@@ -12,13 +12,61 @@ Provides a [plugin](./message-handler.messagehandler.md) for the [Agent](./core.
 
 ## Classes
 
-| Class                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Message](./message-handler.message.md)               | <p>A class implementing [IMessage](./core-types.imessage.md).</p><p>This is used by [MessageHandler](./message-handler.messagehandler.md).</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| [MessageHandler](./message-handler.messagehandler.md) | <p>A Veramo agent plugin that implements [IMessageHandler](./core-types.imessagehandler.md) methods.</p><p>This plugin is meant to chain together multiple other [IMessageHandler](./core-types.imessagehandler.md) implementations.</p><p>When handling a message, the message is passed from one handler to the next, and each handler in the chain can decide if it is able to interpret the message.</p><p>If the message can be processed by a handler it is returned as an [IMessage](./core-types.imessage.md). If the message cannot be processed by any of the handlers, an error is thrown.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Message](./message-handler.message.md)
+
+</td><td>
+
+A class implementing [IMessage](./core-types.imessage.md).
+
+This is used by [MessageHandler](./message-handler.messagehandler.md).
+
+</td></tr>
+<tr><td>
+
+[MessageHandler](./message-handler.messagehandler.md)
+
+</td><td>
+
+A Veramo agent plugin that implements [IMessageHandler](./core-types.imessagehandler.md) methods.
+
+This plugin is meant to chain together multiple other [IMessageHandler](./core-types.imessagehandler.md) implementations.
+
+When handling a message, the message is passed from one handler to the next, and each handler in the chain can decide if it is able to interpret the message.
+
+If the message can be processed by a handler it is returned as an [IMessage](./core-types.imessage.md). If the message cannot be processed by any of the handlers, an error is thrown.
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-| Abstract Class                                                        | Description                                                                                  |
-| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) | An abstract class for creating [MessageHandler](./message-handler.messagehandler.md) plugins |
+<table><thead><tr><th>
+
+Abstract Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+
+</td><td>
+
+An abstract class for creating [MessageHandler](./message-handler.messagehandler.md) plugins
+
+</td></tr>
+</tbody></table>

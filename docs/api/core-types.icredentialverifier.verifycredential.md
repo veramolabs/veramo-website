@@ -8,7 +8,7 @@ hide_title: true
 
 ## ICredentialVerifier.verifyCredential() method
 
-Verifies a Verifiable Credential JWT, LDS Format or EIP712.
+Verifies a Verifiable Credential
 
 **Signature:**
 
@@ -18,11 +18,46 @@ verifyCredential(args: IVerifyCredentialArgs, context: VerifierAgentContext): Pr
 
 ## Parameters
 
-| Parameter | Type                                                           | Description                                                                                  |
-| --------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| args      | [IVerifyCredentialArgs](./core-types.iverifycredentialargs.md) | Arguments necessary to verify a VerifiableCredential                                         |
-| context   | [VerifierAgentContext](./core-types.verifieragentcontext.md)   | This reserved param is automatically added and handled by the framework, \*do not override\* |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IVerifyCredentialArgs](./core-types.iverifycredentialargs.md)
+
+</td><td>
+
+Arguments necessary to verify a VerifiableCredential
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[VerifierAgentContext](./core-types.verifieragentcontext.md)
+
+</td><td>
+
+This reserved param is automatically added and handled by the framework, \*do not override\*
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IVerifyResult](./core-types.iverifyresult.md)&gt;

@@ -18,8 +18,66 @@ export interface IDIDManagerAddKeyArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                         | Description                                                 |
-| --------------------------------------------------------- | --------- | ---------------------------- | ----------------------------------------------------------- |
-| [did](./core-types.ididmanageraddkeyargs.did.md)          |           | string                       | DID                                                         |
-| [key](./core-types.ididmanageraddkeyargs.key.md)          |           | [IKey](./core-types.ikey.md) | Key object                                                  |
-| [options?](./core-types.ididmanageraddkeyargs.options.md) |           | object                       | _(Optional)_ Optional. Identifier provider specific options |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[did](./core-types.ididmanageraddkeyargs.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+DID
+
+</td></tr>
+<tr><td>
+
+[key](./core-types.ididmanageraddkeyargs.key.md)
+
+</td><td>
+
+</td><td>
+
+[IKey](./core-types.ikey.md)
+
+</td><td>
+
+Key object
+
+</td></tr>
+<tr><td>
+
+[options?](./core-types.ididmanageraddkeyargs.options.md)
+
+</td><td>
+
+</td><td>
+
+{ localOnly?: boolean; \[key: string\]: any; }
+
+</td><td>
+
+_(Optional)_ Optional. Identifier-provider specific options
+
+</td></tr>
+</tbody></table>

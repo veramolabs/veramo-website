@@ -24,6 +24,22 @@ export interface IDIDDiscovery extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                     | Description  |
-| -------------------------------------------------------------------------- | ------------ |
-| [discoverDid(args, context)](./did-discovery.ididdiscovery.discoverdid.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[discoverDid(args, context)](./did-discovery.ididdiscovery.discoverdid.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

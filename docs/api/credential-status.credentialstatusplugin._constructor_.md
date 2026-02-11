@@ -20,6 +20,30 @@ constructor(registry?: Record<string, StatusMethod>);
 
 ## Parameters
 
-| Parameter | Type                               | Description  |
-| --------- | ---------------------------------- | ------------ |
-| registry  | Record&lt;string, StatusMethod&gt; | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+registry
+
+</td><td>
+
+Record&lt;string, StatusMethod&gt;
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

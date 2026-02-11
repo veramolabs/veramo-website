@@ -20,6 +20,30 @@ constructor({ transports }?: DIDCommConfig);
 
 ## Parameters
 
-| Parameter      | Type                                         | Description  |
-| -------------- | -------------------------------------------- | ------------ |
-| { transports } | [DIDCommConfig](./did-comm.didcommconfig.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ transports }
+
+</td><td>
+
+[DIDCommConfig](./did-comm.didcommconfig.md)
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

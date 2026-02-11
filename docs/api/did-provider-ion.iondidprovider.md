@@ -20,18 +20,120 @@ export declare class IonDIDProvider extends AbstractIdentifierProvider
 
 ## Constructors
 
-| Constructor                                                                  | Modifiers | Description                                                        |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------ |
-| [(constructor)(options)](./did-provider-ion.iondidprovider._constructor_.md) |           | Constructs a new instance of the <code>IonDIDProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./did-provider-ion.iondidprovider._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `IonDIDProvider` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                                      | Modifiers | Description                           |
-| ----------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------- |
-| [addKey({ identifier, key, options }, context)](./did-provider-ion.iondidprovider.addkey.md)                |           | Adds a key to a DID Document          |
-| [addService({ identifier, service, options }, context)](./did-provider-ion.iondidprovider.addservice.md)    |           | Adds a service to a DID Document      |
-| [createIdentifier({ kms, options, alias }, context)](./did-provider-ion.iondidprovider.createidentifier.md) |           | Creates and returns a new identifier  |
-| [deleteIdentifier(identifier, context)](./did-provider-ion.iondidprovider.deleteidentifier.md)              |           | Deletes identifier                    |
-| [removeKey({ identifier, kid, options }, context)](./did-provider-ion.iondidprovider.removekey.md)          |           | Removes a key from a DID Document     |
-| [removeService({ identifier, id, options }, context)](./did-provider-ion.iondidprovider.removeservice.md)   |           | Removes a service from a DID Document |
-| [updateIdentifier(args, context)](./did-provider-ion.iondidprovider.updateidentifier.md)                    |           |                                       |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addKey({ identifier, key, options }, context)](./did-provider-ion.iondidprovider.addkey.md)
+
+</td><td>
+
+</td><td>
+
+Adds a key to a DID Document
+
+</td></tr>
+<tr><td>
+
+[addService({ identifier, service, options }, context)](./did-provider-ion.iondidprovider.addservice.md)
+
+</td><td>
+
+</td><td>
+
+Adds a service to a DID Document
+
+</td></tr>
+<tr><td>
+
+[createIdentifier({ kms, options, alias }, context)](./did-provider-ion.iondidprovider.createidentifier.md)
+
+</td><td>
+
+</td><td>
+
+Creates and returns a new identifier
+
+</td></tr>
+<tr><td>
+
+[deleteIdentifier(identifier, context)](./did-provider-ion.iondidprovider.deleteidentifier.md)
+
+</td><td>
+
+</td><td>
+
+Deletes identifier
+
+</td></tr>
+<tr><td>
+
+[removeKey({ identifier, kid, options }, context)](./did-provider-ion.iondidprovider.removekey.md)
+
+</td><td>
+
+</td><td>
+
+Removes a key from a DID Document
+
+</td></tr>
+<tr><td>
+
+[removeService({ identifier, id, options }, context)](./did-provider-ion.iondidprovider.removeservice.md)
+
+</td><td>
+
+</td><td>
+
+Removes a service from a DID Document
+
+</td></tr>
+<tr><td>
+
+[updateIdentifier(args, context)](./did-provider-ion.iondidprovider.updateidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

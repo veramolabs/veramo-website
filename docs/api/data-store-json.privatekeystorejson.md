@@ -28,15 +28,89 @@ export declare class PrivateKeyStoreJson extends AbstractPrivateKeyStore
 
 ## Constructors
 
-| Constructor                                                                                   | Modifiers | Description                                                                          |
-| --------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ |
-| [(constructor)(jsonStore, secretBox)](./data-store-json.privatekeystorejson._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>PrivateKeyStoreJson</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(jsonStore, secretBox)](./data-store-json.privatekeystorejson._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `PrivateKeyStoreJson` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                     | Modifiers | Description  |
-| -------------------------------------------------------------------------- | --------- | ------------ |
-| [deleteKey({ alias })](./data-store-json.privatekeystorejson.deletekey.md) |           | **_(BETA)_** |
-| [getKey({ alias })](./data-store-json.privatekeystorejson.getkey.md)       |           | **_(BETA)_** |
-| [importKey(args)](./data-store-json.privatekeystorejson.importkey.md)      |           | **_(BETA)_** |
-| [listKeys()](./data-store-json.privatekeystorejson.listkeys.md)            |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteKey({ alias })](./data-store-json.privatekeystorejson.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[getKey({ alias })](./data-store-json.privatekeystorejson.getkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./data-store-json.privatekeystorejson.importkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[listKeys()](./data-store-json.privatekeystorejson.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

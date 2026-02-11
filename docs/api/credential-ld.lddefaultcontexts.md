@@ -12,7 +12,7 @@ hide_title: true
 
 Provides a hardcoded map of common Linked Data `@context` definitions.
 
-You can use this to bootstrap the `@context` definitions used by [CredentialIssuerLD](./credential-ld.credentialissuerld.md) with these common context definitions.
+You can use this to bootstrap the `@context` definitions used by [CredentialProviderLD](./credential-ld.credentialproviderld.md) with these common context definitions.
 
 This API may change without a BREAKING CHANGE notice.
 

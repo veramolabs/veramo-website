@@ -20,11 +20,48 @@ abstract send(service: any, message: string): Promise<IDIDCommTransportResult>;
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                |
-| --------- | ------ | ------------------------------------------------------------------------------------------ |
-| service   | any    | The DID Document service section that contains a <code>serviceEndpoint</code> entry.       |
-| message   | string | <p>The message to be sent.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+service
+
+</td><td>
+
+any
+
+</td><td>
+
+The DID Document service section that contains a `serviceEndpoint` entry.
+
+</td></tr>
+<tr><td>
+
+message
+
+</td><td>
+
+string
+
+</td><td>
+
+The message to be sent.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IDIDCommTransportResult](./did-comm.ididcommtransportresult.md)&gt;

@@ -22,17 +22,99 @@ export declare class KeyManagementSystem extends AbstractKeyManagementSystem
 
 ## Constructors
 
-| Constructor                                                                 | Modifiers | Description                                                             |
-| --------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------- |
-| [(constructor)(keyStore)](./kms-local.keymanagementsystem._constructor_.md) |           | Constructs a new instance of the <code>KeyManagementSystem</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(keyStore)](./kms-local.keymanagementsystem._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `KeyManagementSystem` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                        | Modifiers | Description |
-| ----------------------------------------------------------------------------- | --------- | ----------- |
-| [createKey({ type })](./kms-local.keymanagementsystem.createkey.md)           |           |             |
-| [deleteKey(args)](./kms-local.keymanagementsystem.deletekey.md)               |           |             |
-| [importKey(args)](./kms-local.keymanagementsystem.importkey.md)               |           |             |
-| [listKeys()](./kms-local.keymanagementsystem.listkeys.md)                     |           |             |
-| [sharedSecret(args)](./kms-local.keymanagementsystem.sharedsecret.md)         |           |             |
-| [sign({ keyRef, algorithm, data, })](./kms-local.keymanagementsystem.sign.md) |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createKey({ type, kid })](./kms-local.keymanagementsystem.createkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[deleteKey(args)](./kms-local.keymanagementsystem.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./kms-local.keymanagementsystem.importkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listKeys()](./kms-local.keymanagementsystem.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[sharedSecret(args)](./kms-local.keymanagementsystem.sharedsecret.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[sign({ keyRef, algorithm, data, })](./kms-local.keymanagementsystem.sign.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

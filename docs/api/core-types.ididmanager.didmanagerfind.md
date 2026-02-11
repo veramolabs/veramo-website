@@ -18,10 +18,33 @@ didManagerFind(args: IDIDManagerFindArgs): Promise<Array<IIdentifier>>;
 
 ## Parameters
 
-| Parameter | Type                                                       | Description                                        |
-| --------- | ---------------------------------------------------------- | -------------------------------------------------- |
-| args      | [IDIDManagerFindArgs](./core-types.ididmanagerfindargs.md) | Required. Arguments to get the list of identifiers |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDIDManagerFindArgs](./core-types.ididmanagerfindargs.md)
+
+</td><td>
+
+Required. Arguments to get the list of identifiers
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Array&lt;[IIdentifier](./core-types.iidentifier.md)&gt;&gt;

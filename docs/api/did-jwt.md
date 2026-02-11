@@ -12,6 +12,22 @@ Provides a [plugin](./did-jwt.jwtmessagehandler.md) for the [MessageHandler](./m
 
 ## Classes
 
-| Class                                               | Description                                                                                                    |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| [JwtMessageHandler](./did-jwt.jwtmessagehandler.md) | A plugin for [MessageHandler](./message-handler.messagehandler.md) that finds and verifies a JWT in a message. |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[JwtMessageHandler](./did-jwt.jwtmessagehandler.md)
+
+</td><td>
+
+A plugin for [MessageHandler](./message-handler.messagehandler.md) that finds and verifies a JWT in a message.
+
+</td></tr>
+</tbody></table>

@@ -22,29 +22,311 @@ export declare class Message extends BaseEntity
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                                             | Description               |
-| ------------------------------------------------------ | --------- | ---------------------------------------------------------------- | ------------------------- |
-| [createdAt?](./data-store.message.createdat.md)        |           | Date                                                             | **_(BETA)_** _(Optional)_ |
-| [credentials](./data-store.message.credentials.md)     |           | Relation&lt;[Credential](./data-store.credential_2.md)\[\]&gt;   | **_(BETA)_**              |
-| [data?](./data-store.message.data.md)                  |           | object &#124; null                                               | **_(BETA)_** _(Optional)_ |
-| [expiresAt?](./data-store.message.expiresat.md)        |           | Date                                                             | **_(BETA)_** _(Optional)_ |
-| [from?](./data-store.message.from.md)                  |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_** _(Optional)_ |
-| [id](./data-store.message.id.md)                       |           | string                                                           | **_(BETA)_**              |
-| [metaData?](./data-store.message.metadata.md)          |           | [MetaData](./data-store.metadata.md)\[\] &#124; null             | **_(BETA)_** _(Optional)_ |
-| [presentations](./data-store.message.presentations.md) |           | Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt; | **_(BETA)_**              |
-| [raw?](./data-store.message.raw.md)                    |           | string                                                           | **_(BETA)_** _(Optional)_ |
-| [replyTo?](./data-store.message.replyto.md)            |           | string\[\]                                                       | **_(BETA)_** _(Optional)_ |
-| [replyUrl?](./data-store.message.replyurl.md)          |           | string                                                           | **_(BETA)_** _(Optional)_ |
-| [saveDate](./data-store.message.savedate.md)           |           | Date                                                             | **_(BETA)_**              |
-| [threadId?](./data-store.message.threadid.md)          |           | string                                                           | **_(BETA)_** _(Optional)_ |
-| [to?](./data-store.message.to.md)                      |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt;         | **_(BETA)_** _(Optional)_ |
-| [type](./data-store.message.type.md)                   |           | string                                                           | **_(BETA)_**              |
-| [updateDate](./data-store.message.updatedate.md)       |           | Date                                                             | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createdAt?](./data-store.message.createdat.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[credentials](./data-store.message.credentials.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Credential](./data-store.credential_2.md)\[\]&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[data?](./data-store.message.data.md)
+
+</td><td>
+
+</td><td>
+
+object \| null
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[expiresAt?](./data-store.message.expiresat.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[from?](./data-store.message.from.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[id](./data-store.message.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[metaData?](./data-store.message.metadata.md)
+
+</td><td>
+
+</td><td>
+
+[MetaData](./data-store.metadata.md)\[\] \| null
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[presentations](./data-store.message.presentations.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Presentation](./data-store.presentation.md)\[\]&gt;
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[raw?](./data-store.message.raw.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[replyTo?](./data-store.message.replyto.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[replyUrl?](./data-store.message.replyurl.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[saveDate](./data-store.message.savedate.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[threadId?](./data-store.message.threadid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[to?](./data-store.message.to.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type](./data-store.message.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[updateDate](./data-store.message.updatedate.md)
+
+</td><td>
+
+</td><td>
+
+Date
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                   | Modifiers | Description  |
-| -------------------------------------------------------- | --------- | ------------ |
-| [setId()](./data-store.message.setid.md)                 |           | **_(BETA)_** |
-| [setSaveDate()](./data-store.message.setsavedate.md)     |           | **_(BETA)_** |
-| [setUpdateDate()](./data-store.message.setupdatedate.md) |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[setId()](./data-store.message.setid.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[setSaveDate()](./data-store.message.setsavedate.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[setUpdateDate()](./data-store.message.setupdatedate.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

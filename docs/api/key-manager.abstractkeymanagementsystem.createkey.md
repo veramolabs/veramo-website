@@ -14,15 +14,37 @@ hide_title: true
 abstract createKey(args: {
         type: TKeyType;
         meta?: any;
+        kid?: string;
     }): Promise<ManagedKeyInfo>;
 ```
 
 ## Parameters
 
-| Parameter | Type                                                        | Description |
-| --------- | ----------------------------------------------------------- | ----------- |
-| args      | { type: [TKeyType](./core-types.tkeytype.md); meta?: any; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ type: [TKeyType](./core-types.tkeytype.md); meta?: any; kid?: string; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;

@@ -18,12 +18,64 @@ export declare abstract class AbstractDidDiscoveryProvider
 
 ## Properties
 
-| Property                                                     | Modifiers             | Type   | Description |
-| ------------------------------------------------------------ | --------------------- | ------ | ----------- |
-| [name](./did-discovery.abstractdiddiscoveryprovider.name.md) | <code>abstract</code> | string |             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./did-discovery.abstractdiddiscoveryprovider.name.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                    | Modifiers             | Description |
-| ----------------------------------------------------------------------------------------- | --------------------- | ----------- |
-| [discoverDid(args, context)](./did-discovery.abstractdiddiscoveryprovider.discoverdid.md) | <code>abstract</code> |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[discoverDid(args, context)](./did-discovery.abstractdiddiscoveryprovider.discoverdid.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+</tbody></table>

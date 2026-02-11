@@ -27,6 +27,13 @@ readonly schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -72,7 +79,6 @@ readonly schema: {
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {
@@ -104,6 +110,13 @@ readonly schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -370,6 +383,13 @@ readonly schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -389,6 +409,13 @@ readonly schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -620,6 +647,13 @@ readonly schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };

@@ -20,11 +20,48 @@ validatePresentationAgainstSdr(args: IValidatePresentationAgainstSdrArgs, contex
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description                                                                                                                                |
-| --------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| args      | [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md) | Contains the request and the response <code>Presentation</code> that needs to be checked.                                                  |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;                                             | <p>\*RESERVED\* This is filled by the framework when the method is called.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md)
+
+</td><td>
+
+Contains the request and the response `Presentation` that needs to be checked.
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;
+
+</td><td>
+
+\*RESERVED\* This is filled by the framework when the method is called.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IPresentationValidationResult](./selective-disclosure.ipresentationvalidationresult.md)&gt;

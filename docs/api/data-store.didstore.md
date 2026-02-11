@@ -24,15 +24,81 @@ export declare class DIDStore extends AbstractDIDStore
 
 ## Constructors
 
-| Constructor                                                           | Modifiers | Description                                                  |
-| --------------------------------------------------------------------- | --------- | ------------------------------------------------------------ |
-| [(constructor)(dbConnection)](./data-store.didstore._constructor_.md) |           | Constructs a new instance of the <code>DIDStore</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(dbConnection)](./data-store.didstore._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `DIDStore` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                               | Modifiers | Description |
-| -------------------------------------------------------------------- | --------- | ----------- |
-| [deleteDID({ did })](./data-store.didstore.deletedid.md)             |           |             |
-| [getDID({ did, alias, provider, })](./data-store.didstore.getdid.md) |           |             |
-| [importDID(args)](./data-store.didstore.importdid.md)                |           |             |
-| [listDIDs(args)](./data-store.didstore.listdids.md)                  |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteDID({ did })](./data-store.didstore.deletedid.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getDID({ did, alias, provider, })](./data-store.didstore.getdid.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importDID(args)](./data-store.didstore.importdid.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listDIDs(args)](./data-store.didstore.listdids.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

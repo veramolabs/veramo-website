@@ -12,15 +12,75 @@ Provides a [plugin](./did-manager.didmanager.md) for the [Agent](./core.agent.md
 
 ## Classes
 
-| Class                                                             | Description                                                                                                                                                                                                          |
-| ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [AliasDiscoveryProvider](./did-manager.aliasdiscoveryprovider.md) | <p>**_(BETA)_** A DID discovery provider that can filter DIDs by the <code>alias</code> used internally in [DIDManager](./did-manager.didmanager.md)</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [DIDManager](./did-manager.didmanager.md)                         | Agent plugin that implements [IDIDManager](./core-types.ididmanager.md) interface                                                                                                                                    |
-| [MemoryDIDStore](./did-manager.memorydidstore.md)                 | <p>**_(BETA)_** An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that stores everything in memory.</p><p>This API may change without a BREAKING CHANGE notice.</p>                         |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AliasDiscoveryProvider](./did-manager.aliasdiscoveryprovider.md)
+
+</td><td>
+
+**_(BETA)_** A DID discovery provider that can filter DIDs by the `alias` used internally in [DIDManager](./did-manager.didmanager.md)
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DIDManager](./did-manager.didmanager.md)
+
+</td><td>
+
+Agent plugin that implements [IDIDManager](./core-types.ididmanager.md) interface
+
+</td></tr>
+<tr><td>
+
+[MemoryDIDStore](./did-manager.memorydidstore.md)
+
+</td><td>
+
+**_(BETA)_** An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that stores everything in memory.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-| Abstract Class                                                            | Description                                                                              |
-| ------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [AbstractDIDStore](./did-manager.abstractdidstore.md)                     | An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier store     |
-| [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md) | An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier providers |
+<table><thead><tr><th>
+
+Abstract Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AbstractDIDStore](./did-manager.abstractdidstore.md)
+
+</td><td>
+
+An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier store
+
+</td></tr>
+<tr><td>
+
+[AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)
+
+</td><td>
+
+An abstract class for the [DIDManager](./did-manager.didmanager.md) identifier providers
+
+</td></tr>
+</tbody></table>

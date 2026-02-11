@@ -22,14 +22,74 @@ export declare class SecretBox extends AbstractSecretBox
 
 ## Constructors
 
-| Constructor                                                        | Modifiers | Description                                                   |
-| ------------------------------------------------------------------ | --------- | ------------------------------------------------------------- |
-| [(constructor)(secretKey)](./kms-local.secretbox._constructor_.md) |           | Constructs a new instance of the <code>SecretBox</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(secretKey)](./kms-local.secretbox._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `SecretBox` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                           | Modifiers           | Description |
-| ---------------------------------------------------------------- | ------------------- | ----------- |
-| [createSecretKey()](./kms-local.secretbox.createsecretkey.md)    | <code>static</code> |             |
-| [decrypt(encryptedMessageHex)](./kms-local.secretbox.decrypt.md) |                     |             |
-| [encrypt(message)](./kms-local.secretbox.encrypt.md)             |                     |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createSecretKey()](./kms-local.secretbox.createsecretkey.md)
+
+</td><td>
+
+`static`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[decrypt(encryptedMessageHex)](./kms-local.secretbox.decrypt.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[encrypt(message)](./kms-local.secretbox.encrypt.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

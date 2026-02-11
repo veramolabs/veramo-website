@@ -22,10 +22,35 @@ export declare function computeEntryHash(
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                         | Description                                                                                                             |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) &#124; [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) &#124; [IMessage](./core-types.imessage.md) | <p>the Credential or Presentation whose hash is neeeded</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+</td><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) \| [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) \| [IMessage](./core-types.imessage.md)
+
+</td><td>
+
+the Credential or Presentation whose hash is neeeded
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string

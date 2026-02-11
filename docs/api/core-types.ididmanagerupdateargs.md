@@ -20,8 +20,66 @@ export interface IDIDManagerUpdateArgs
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                       | Description                                                     |
-| ---------------------------------------------------------- | --------- | -------------------------- | --------------------------------------------------------------- |
-| [did](./core-types.ididmanagerupdateargs.did.md)           |           | string                     | **_(BETA)_** Required. DID                                      |
-| [document](./core-types.ididmanagerupdateargs.document.md) |           | Partial&lt;DIDDocument&gt; | **_(BETA)_** Required                                           |
-| [options?](./core-types.ididmanagerupdateargs.options.md)  |           | { \[x: string\]: any; }    | **_(BETA)_** _(Optional)_ Identifier provider specific options. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[did](./core-types.ididmanagerupdateargs.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** Required. DID
+
+</td></tr>
+<tr><td>
+
+[document](./core-types.ididmanagerupdateargs.document.md)
+
+</td><td>
+
+</td><td>
+
+Partial&lt;DIDDocument&gt;
+
+</td><td>
+
+**_(BETA)_** Required
+
+</td></tr>
+<tr><td>
+
+[options?](./core-types.ididmanagerupdateargs.options.md)
+
+</td><td>
+
+</td><td>
+
+{ localOnly?: boolean; \[x: string\]: any; }
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Identifier provider specific options.
+
+</td></tr>
+</tbody></table>

@@ -18,11 +18,44 @@ didManagerUpdate({ did, document, options }: IDIDManagerUpdateArgs, context: IAg
 
 ## Parameters
 
-| Parameter                  | Type                                                                                             | Description                                                                                                                                                                                                                                                    |
-| -------------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| { did, document, options } | [IDIDManagerUpdateArgs](./core-types.ididmanagerupdateargs.md)                                   |                                                                                                                                                                                                                                                                |
-| context                    | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ did, document, options }
+
+</td><td>
+
+[IDIDManagerUpdateArgs](./core-types.ididmanagerupdateargs.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+\*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an `agent` that has [IKeyManager](./core-types.ikeymanager.md) methods.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IIdentifier](./core-types.iidentifier.md)&gt;

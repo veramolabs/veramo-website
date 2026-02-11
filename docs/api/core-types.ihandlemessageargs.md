@@ -18,8 +18,66 @@ export interface IHandleMessageArgs
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                       | Description                                                                                                                                                          |
-| -------------------------------------------------------- | --------- | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [metaData?](./core-types.ihandlemessageargs.metadata.md) |           | [IMetaData](./core-types.imetadata.md)\[\] | _(Optional)_ Optional. Message meta data                                                                                                                             |
-| [raw](./core-types.ihandlemessageargs.raw.md)            |           | string                                     | Raw message data                                                                                                                                                     |
-| [save?](./core-types.ihandlemessageargs.save.md)         |           | boolean                                    | _(Optional)_ Optional. If set to <code>true</code>, the message will be saved using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md) <p/><p/> |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[metaData?](./core-types.ihandlemessageargs.metadata.md)
+
+</td><td>
+
+</td><td>
+
+[IMetaData](./core-types.imetadata.md)\[\]
+
+</td><td>
+
+_(Optional)_ Optional. Message meta data
+
+</td></tr>
+<tr><td>
+
+[raw](./core-types.ihandlemessageargs.raw.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Raw message data
+
+</td></tr>
+<tr><td>
+
+[save?](./core-types.ihandlemessageargs.save.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ Optional. If set to `true`, the message will be saved using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md) <p/><p/>
+
+</td></tr>
+</tbody></table>

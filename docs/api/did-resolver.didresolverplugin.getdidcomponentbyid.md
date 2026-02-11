@@ -22,10 +22,31 @@ getDIDComponentById({ didDocument, didUrl, section, }: {
 
 ## Parameters
 
-| Parameter                         | Type                                                                                                              | Description |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------- |
-| { didDocument, didUrl, section, } | { didDocument: DIDDocument; didUrl: string; section?: [DIDDocumentSection](./core-types.diddocumentsection.md); } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ didDocument, didUrl, section, }
+
+</td><td>
+
+{ didDocument: DIDDocument; didUrl: string; section?: [DIDDocumentSection](./core-types.diddocumentsection.md); }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;VerificationMethod \| ServiceEndpoint&gt;

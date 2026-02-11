@@ -18,12 +18,60 @@ export interface IEventListener
 
 ## Properties
 
-| Property                                                 | Modifiers             | Type       | Description                                                                |
-| -------------------------------------------------------- | --------------------- | ---------- | -------------------------------------------------------------------------- |
-| [eventTypes?](./core-types.ieventlistener.eventtypes.md) | <code>readonly</code> | string\[\] | _(Optional)_ Declares the event types that this listener is interested in. |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[eventTypes?](./core-types.ieventlistener.eventtypes.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+_(Optional)_ Declares the event types that this listener is interested in.
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                             | Description                                           |
-| ------------------------------------------------------------------ | ----------------------------------------------------- |
-| [onEvent(event, context)?](./core-types.ieventlistener.onevent.md) | _(Optional)_ Processes an event emitted by the agent. |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[onEvent(event, context)?](./core-types.ieventlistener.onevent.md)
+
+</td><td>
+
+_(Optional)_ Processes an event emitted by the agent.
+
+</td></tr>
+</tbody></table>

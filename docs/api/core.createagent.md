@@ -24,10 +24,33 @@ export declare function createAgent<T extends IPluginMethodMap, C = Record<strin
 
 ## Parameters
 
-| Parameter | Type                                                                  | Description                 |
-| --------- | --------------------------------------------------------------------- | --------------------------- |
-| options   | [IAgentOptions](./core-types.iagentoptions.md) &amp; { context?: C; } | Agent configuration options |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+[IAgentOptions](./core-types.iagentoptions.md) &amp; { context?: C; }
+
+</td><td>
+
+Agent configuration options
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [TAgent](./core-types.tagent.md)&lt;T&gt; &amp; { context?: C; }

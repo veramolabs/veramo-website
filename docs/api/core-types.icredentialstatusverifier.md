@@ -26,6 +26,22 @@ export interface ICredentialStatusVerifier extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                                  | Description                                                                                        |
-| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [checkCredentialStatus(args, context)](./core-types.icredentialstatusverifier.checkcredentialstatus.md) | **_(BETA)_** Checks the status of a [Verifiable Credential](./core-types.verifiablecredential.md). |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[checkCredentialStatus(args, context)](./core-types.icredentialstatusverifier.checkcredentialstatus.md)
+
+</td><td>
+
+**_(BETA)_** Checks the status of a [Verifiable Credential](./core-types.verifiablecredential.md).
+
+</td></tr>
+</tbody></table>

@@ -18,7 +18,51 @@ export interface IDIDManagerGetByAliasArgs
 
 ## Properties
 
-| Property                                                        | Modifiers | Type   | Description                    |
-| --------------------------------------------------------------- | --------- | ------ | ------------------------------ |
-| [alias](./core-types.ididmanagergetbyaliasargs.alias.md)        |           | string | Alias                          |
-| [provider?](./core-types.ididmanagergetbyaliasargs.provider.md) |           | string | _(Optional)_ Optional provider |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alias](./core-types.ididmanagergetbyaliasargs.alias.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Alias
+
+</td></tr>
+<tr><td>
+
+[provider?](./core-types.ididmanagergetbyaliasargs.provider.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional provider
+
+</td></tr>
+</tbody></table>

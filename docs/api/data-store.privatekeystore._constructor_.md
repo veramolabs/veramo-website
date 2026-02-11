@@ -18,7 +18,41 @@ constructor(dbConnection: OrPromise<DataSource>, secretBox?: AbstractSecretBox |
 
 ## Parameters
 
-| Parameter    | Type                                                                     | Description  |
-| ------------ | ------------------------------------------------------------------------ | ------------ |
-| dbConnection | OrPromise&lt;DataSource&gt;                                              |              |
-| secretBox    | [AbstractSecretBox](./key-manager.abstractsecretbox.md) &#124; undefined | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dbConnection
+
+</td><td>
+
+OrPromise&lt;DataSource&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+secretBox
+
+</td><td>
+
+[AbstractSecretBox](./key-manager.abstractsecretbox.md) \| undefined
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

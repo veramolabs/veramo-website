@@ -20,11 +20,46 @@ unpackDIDCommMessage(args: IUnpackDIDCommMessageArgs, context: IAgentContext<IDI
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                           | Description                                                                                                                                                                                                                                                                                  |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [IUnpackDIDCommMessageArgs](./did-comm.iunpackdidcommmessageargs.md)                                                                                                                           | an object containing the serialized message to be unpacked                                                                                                                                                                                                                                   |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md)&gt; | This method requires an agent that also has [IDIDManager](./core-types.ididmanager.md), [IKeyManager](./core-types.ikeymanager.md) and [IResolver](./core-types.iresolver.md) plugins in use. When calling this method, the <code>context</code> is supplied automatically by the framework. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IUnpackDIDCommMessageArgs](./did-comm.iunpackdidcommmessageargs.md)
+
+</td><td>
+
+an object containing the serialized message to be unpacked
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IDIDManager](./core-types.ididmanager.md) &amp; [IKeyManager](./core-types.ikeymanager.md) &amp; [IResolver](./core-types.iresolver.md)&gt;
+
+</td><td>
+
+This method requires an agent that also has [IDIDManager](./core-types.ididmanager.md), [IKeyManager](./core-types.ikeymanager.md) and [IResolver](./core-types.iresolver.md) plugins in use. When calling this method, the `context` is supplied automatically by the framework.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IUnpackedDIDCommMessage](./did-comm.iunpackeddidcommmessage.md)&gt;

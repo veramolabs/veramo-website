@@ -12,12 +12,46 @@ Provides `did:pkh` [identifier provider](./did-provider-pkh.pkhdidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                                                                                                        |
-| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [PkhDIDProvider](./did-provider-pkh.pkhdidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:pkh</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[PkhDIDProvider](./did-provider-pkh.pkhdidprovider.md)
+
+</td><td>
+
+**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for `did:pkh` identifiers
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                       | Description                                   |
-| -------------------------------------------------------------- | --------------------------------------------- |
-| [getDidPkhResolver()](./did-provider-pkh.getdidpkhresolver.md) | Creates a DID resolver that resolves PKH DIDs |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDidPkhResolver()](./did-provider-pkh.getdidpkhresolver.md)
+
+</td><td>
+
+Creates a DID resolver that resolves PKH DIDs
+
+</td></tr>
+</tbody></table>

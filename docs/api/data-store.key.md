@@ -22,11 +22,111 @@ export declare class Key extends BaseEntity
 
 ## Properties
 
-| Property                                         | Modifiers | Type                                                     | Description               |
-| ------------------------------------------------ | --------- | -------------------------------------------------------- | ------------------------- |
-| [identifier?](./data-store.key.identifier.md)    |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | **_(BETA)_** _(Optional)_ |
-| [kid](./data-store.key.kid.md)                   |           | string                                                   | **_(BETA)_**              |
-| [kms](./data-store.key.kms.md)                   |           | string                                                   | **_(BETA)_**              |
-| [meta?](./data-store.key.meta.md)                |           | [KeyMetadata](./core-types.keymetadata.md) &#124; null   | **_(BETA)_** _(Optional)_ |
-| [publicKeyHex](./data-store.key.publickeyhex.md) |           | string                                                   | **_(BETA)_**              |
-| [type](./data-store.key.type.md)                 |           | [KeyType](./data-store.keytype_2.md)                     | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[identifier?](./data-store.key.identifier.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[kid](./data-store.key.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[kms](./data-store.key.kms.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[meta?](./data-store.key.meta.md)
+
+</td><td>
+
+</td><td>
+
+[KeyMetadata](./core-types.keymetadata.md) \| null
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[publicKeyHex](./data-store.key.publickeyhex.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[type](./data-store.key.type.md)
+
+</td><td>
+
+</td><td>
+
+[KeyType](./data-store.keytype_2.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

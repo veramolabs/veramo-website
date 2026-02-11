@@ -18,10 +18,31 @@ keyManagerEncryptJWE({ kid, to, data }: IKeyManagerEncryptJWEArgs): Promise<stri
 
 ## Parameters
 
-| Parameter         | Type                                                                   | Description |
-| ----------------- | ---------------------------------------------------------------------- | ----------- |
-| { kid, to, data } | [IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ kid, to, data }
+
+</td><td>
+
+[IKeyManagerEncryptJWEArgs](./core-types.ikeymanagerencryptjweargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

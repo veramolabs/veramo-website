@@ -20,10 +20,33 @@ getDIDComponentById(args: GetDIDComponentArgs): Promise<DIDDocComponent>;
 
 ## Parameters
 
-| Parameter | Type                                                       | Description                                |
-| --------- | ---------------------------------------------------------- | ------------------------------------------ |
-| args      | [GetDIDComponentArgs](./core-types.getdidcomponentargs.md) | The description of the component you want. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[GetDIDComponentArgs](./core-types.getdidcomponentargs.md)
+
+</td><td>
+
+The description of the component you want.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[DIDDocComponent](./core-types.diddoccomponent.md)&gt;
@@ -39,7 +62,7 @@ This API may change without a BREAKING CHANGE notice.
 ## Example
 
 ```typescript
-const did = 'did:ethr:0xb09b66026ba5909a7cfe99b76875431d2b8d5190'
+const did = 'did:ethr:ganache:0xb09b66026ba5909a7cfe99b76875431d2b8d5190'
 const didFragment = `${did}#controller`
 const fragment = await agent.getDIDComponentById({
   didDocument: (await agent.resolveDid({ didUrl: did }))?.didDocument,
@@ -47,9 +70,9 @@ const fragment = await agent.getDIDComponentById({
   section: 'authentication',
 })
 expect(fragment).toEqual({
-  id: 'did:ethr:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller',
+  id: 'did:ethr:ganache:0xb09b66026ba5909a7cfe99b76875431d2b8d5190#controller',
   type: 'EcdsaSecp256k1RecoveryMethod2020',
-  controller: 'did:ethr:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
-  blockchainAccountId: 'eip155:1:0xb09B66026bA5909A7CFE99b76875431D2b8D5190',
+  controller: 'did:ethr:ganache:0xb09b66026ba5909a7cfe99b76875431d2b8d5190',
+  blockchainAccountId: 'eip155:1337:0xb09B66026bA5909A7CFE99b76875431D2b8D5190',
 })
 ```

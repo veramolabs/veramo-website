@@ -20,10 +20,35 @@ export declare function convertEd25519PublicKeyToX25519(publicKey: Uint8Array): 
 
 ## Parameters
 
-| Parameter | Type       | Description                                                                                            |
-| --------- | ---------- | ------------------------------------------------------------------------------------------------------ |
-| publicKey | Uint8Array | <p>The bytes of an Ed25519P public key</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+publicKey
+
+</td><td>
+
+Uint8Array
+
+</td><td>
+
+The bytes of an Ed25519P public key
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Uint8Array

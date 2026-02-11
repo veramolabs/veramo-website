@@ -22,6 +22,36 @@ export interface IPackedDIDCommMessage
 
 ## Properties
 
-| Property                                               | Modifiers | Type   | Description  |
-| ------------------------------------------------------ | --------- | ------ | ------------ |
-| [message](./did-comm.ipackeddidcommmessage.message.md) |           | string | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[message](./did-comm.ipackeddidcommmessage.message.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

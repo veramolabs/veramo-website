@@ -20,8 +20,66 @@ export interface IKeyManagerEncryptJWEArgs
 
 ## Properties
 
-| Property                                               | Modifiers | Type                                            | Description                               |
-| ------------------------------------------------------ | --------- | ----------------------------------------------- | ----------------------------------------- |
-| [data](./core-types.ikeymanagerencryptjweargs.data.md) |           | string                                          | **_(BETA)_** Data to encrypt              |
-| [kid](./core-types.ikeymanagerencryptjweargs.kid.md)   |           | string                                          | **_(BETA)_** Key ID to use for encryption |
-| [to](./core-types.ikeymanagerencryptjweargs.to.md)     |           | Omit&lt;[IKey](./core-types.ikey.md), 'kms'&gt; | **_(BETA)_** Recipient key object         |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[data](./core-types.ikeymanagerencryptjweargs.data.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** Data to encrypt
+
+</td></tr>
+<tr><td>
+
+[kid](./core-types.ikeymanagerencryptjweargs.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** Key ID to use for encryption
+
+</td></tr>
+<tr><td>
+
+[to](./core-types.ikeymanagerencryptjweargs.to.md)
+
+</td><td>
+
+</td><td>
+
+Omit&lt;[IKey](./core-types.ikey.md), 'kms'&gt;
+
+</td><td>
+
+**_(BETA)_** Recipient key object
+
+</td></tr>
+</tbody></table>

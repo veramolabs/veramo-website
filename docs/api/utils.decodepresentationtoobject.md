@@ -20,10 +20,35 @@ export declare function decodePresentationToObject(input: W3CVerifiablePresentat
 
 ## Parameters
 
-| Parameter | Type                                                                   | Description                                                                                                |
-| --------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| input     | [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) | <p>the raw presentation to be transformed.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+</td><td>
+
+[W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md)
+
+</td><td>
+
+the raw presentation to be transformed.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [VerifiablePresentation](./core-types.verifiablepresentation.md)

@@ -21,11 +21,42 @@ createIdentifier({ kms, options }: {
 
 ## Parameters
 
-| Parameter        | Type                                             | Description |
-| ---------------- | ------------------------------------------------ | ----------- |
-| { kms, options } | { kms?: string; options?: CreateKeyDidOptions; } |             |
-| context          | IContext                                         |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ kms, options }
+
+</td><td>
+
+{ kms?: string; options?: CreateKeyDidOptions; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

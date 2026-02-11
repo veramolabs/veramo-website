@@ -20,11 +20,48 @@ export declare function concat(arrays: ArrayLike<number>[], length?: number): Ui
 
 ## Parameters
 
-| Parameter | Type                        | Description                                                                                                               |
-| --------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| arrays    | ArrayLike&lt;number&gt;\[\] | the arrays to be concatenated                                                                                             |
-| length    | number                      | <p>_(Optional)_ the maximum length of the resulting array</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+arrays
+
+</td><td>
+
+ArrayLike&lt;number&gt;\[\]
+
+</td><td>
+
+the arrays to be concatenated
+
+</td></tr>
+<tr><td>
+
+length
+
+</td><td>
+
+number
+
+</td><td>
+
+_(Optional)_ the maximum length of the resulting array
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Uint8Array

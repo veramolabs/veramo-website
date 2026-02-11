@@ -18,6 +18,36 @@ export interface IDataStoreSaveVerifiableCredentialArgs
 
 ## Properties
 
-| Property                                                                                            | Modifiers | Type                                                         | Description                    |
-| --------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------------------------ |
-| [verifiableCredential](./core-types.idatastoresaveverifiablecredentialargs.verifiablecredential.md) |           | [VerifiableCredential](./core-types.verifiablecredential.md) | Required. VerifiableCredential |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[verifiableCredential](./core-types.idatastoresaveverifiablecredentialargs.verifiablecredential.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)
+
+</td><td>
+
+Required. VerifiableCredential
+
+</td></tr>
+</tbody></table>

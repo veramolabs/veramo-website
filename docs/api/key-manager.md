@@ -12,30 +12,160 @@ Provides a [plugin](./key-manager.keymanager.md) for the [Agent](./core.agent.md
 
 ## Classes
 
-| Class                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [KeyManager](./key-manager.keymanager.md)                       | <p>Agent plugin that implements [IKeyManager](./core-types.ikeymanager.md) methods.</p><p>This plugin orchestrates various implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md), using a KeyStore to remember the link between a key reference, its metadata, and the respective key management system that provides the actual cryptographic capabilities.</p><p>The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.</p> |
-| [MemoryKeyStore](./key-manager.memorykeystore.md)               | <p>An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that holds everything in memory.</p><p>This is usable by [KeyManager](./key-manager.keymanager.md) to hold the key metadata and relationship to the KMS implementation.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| [MemoryPrivateKeyStore](./key-manager.memoryprivatekeystore.md) | <p>An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that holds everything in memory.</p><p>This is usable by [KeyManagementSystem](./kms-local.keymanagementsystem.md) to hold the private key data.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeyManager](./key-manager.keymanager.md)
+
+</td><td>
+
+Agent plugin that implements [IKeyManager](./core-types.ikeymanager.md) methods.
+
+This plugin orchestrates various implementations of [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md), using a KeyStore to remember the link between a key reference, its metadata, and the respective key management system that provides the actual cryptographic capabilities.
+
+The methods of this plugin are used automatically by other plugins, such as [DIDManager](./did-manager.didmanager.md), [CredentialPlugin](./credential-w3c.credentialplugin.md), or [DIDComm](./did-comm.didcomm.md) to perform their required cryptographic operations using the managed keys.
+
+</td></tr>
+<tr><td>
+
+[MemoryKeyStore](./key-manager.memorykeystore.md)
+
+</td><td>
+
+An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that holds everything in memory.
+
+This is usable by [KeyManager](./key-manager.keymanager.md) to hold the key metadata and relationship to the KMS implementation.
+
+</td></tr>
+<tr><td>
+
+[MemoryPrivateKeyStore](./key-manager.memoryprivatekeystore.md)
+
+</td><td>
+
+An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that holds everything in memory.
+
+This is usable by [KeyManagementSystem](./kms-local.keymanagementsystem.md) to hold the private key data.
+
+</td></tr>
+</tbody></table>
 
 ## Abstract Classes
 
-| Abstract Class                                                              | Description                                                                                                                                                                                                                                                                                                                                                    |
-| --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) | This base abstract class should be extended to provide cryptographic functions to other Veramo plugins.                                                                                                                                                                                                                                                        |
-| [AbstractKeyStore](./key-manager.abstractkeystore.md)                       | <p>This base abstract class should be extended to provide platform specific implementations that are usable by [KeyManager](./key-manager.keymanager.md).</p><p>Implementations of this class are used to store mappings between key IDs and their respective [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations.</p> |
-| [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)         | <p>This base abstract class should be extended to provide platform specific implementations that are usable by [kms-local](./kms-local.keymanagementsystem.md).</p><p>Implementations of this class are used to store mappings between key aliases and key material.</p>                                                                                       |
-| [AbstractSecretBox](./key-manager.abstractsecretbox.md)                     | This simple abstract class can be extended by different implementations to provide encryption at rest for some implementations of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md).                                                                                                                                                         |
+<table><thead><tr><th>
+
+Abstract Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md)
+
+</td><td>
+
+This base abstract class should be extended to provide cryptographic functions to other Veramo plugins.
+
+</td></tr>
+<tr><td>
+
+[AbstractKeyStore](./key-manager.abstractkeystore.md)
+
+</td><td>
+
+This base abstract class should be extended to provide platform specific implementations that are usable by [KeyManager](./key-manager.keymanager.md).
+
+Implementations of this class are used to store mappings between key IDs and their respective [AbstractKeyManagementSystem](./key-manager.abstractkeymanagementsystem.md) implementations.
+
+</td></tr>
+<tr><td>
+
+[AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md)
+
+</td><td>
+
+This base abstract class should be extended to provide platform specific implementations that are usable by [kms-local](./kms-local.keymanagementsystem.md).
+
+Implementations of this class are used to store mappings between key aliases and key material.
+
+</td></tr>
+<tr><td>
+
+[AbstractSecretBox](./key-manager.abstractsecretbox.md)
+
+</td><td>
+
+This simple abstract class can be extended by different implementations to provide encryption at rest for some implementations of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md).
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-| Interface                                               | Description                                                                                                                                                                                                                                                           |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ManagedPrivateKey](./key-manager.managedprivatekey.md) | <p>Represents a private key.</p><p>The <code>alias</code> is used to refer to the key material which is stored as the hex encoding of the raw byte array (<code>privateKeyHex</code>).</p><p>The <code>type</code> refers to the type of key that is represented.</p> |
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ManagedPrivateKey](./key-manager.managedprivatekey.md)
+
+</td><td>
+
+Represents a private key.
+
+The `alias` is used to refer to the key material which is stored as the hex encoding of the raw byte array (`privateKeyHex`).
+
+The `type` refers to the type of key that is represented.
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                                                    | Description                                                                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Eip712Payload](./key-manager.eip712payload.md)               | **_(BETA)_** The payload that is sent to be signed according to EIP712                                                                                                                                                                                                                          |
-| [ImportablePrivateKey](./key-manager.importableprivatekey.md) | <p>Represents private key data that can be imported. This is a subset of [ManagedPrivateKey](./key-manager.managedprivatekey.md).</p><p>The <code>alias</code> of the resulting [ManagedPrivateKey](./key-manager.managedprivatekey.md) can be generated automatically if none is provided.</p> |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[Eip712Payload](./key-manager.eip712payload.md)
+
+</td><td>
+
+**_(BETA)_** The payload that is sent to be signed according to EIP712
+
+</td></tr>
+<tr><td>
+
+[ImportablePrivateKey](./key-manager.importableprivatekey.md)
+
+</td><td>
+
+Represents private key data that can be imported. This is a subset of [ManagedPrivateKey](./key-manager.managedprivatekey.md).
+
+The `alias` of the resulting [ManagedPrivateKey](./key-manager.managedprivatekey.md) can be generated automatically if none is provided.
+
+</td></tr>
+</tbody></table>

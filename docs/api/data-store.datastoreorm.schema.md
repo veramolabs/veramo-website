@@ -166,7 +166,6 @@ readonly schema: {
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {
@@ -452,6 +451,9 @@ readonly schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };

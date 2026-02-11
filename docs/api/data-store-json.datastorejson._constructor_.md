@@ -20,6 +20,30 @@ constructor(jsonStore: VeramoJsonStore);
 
 ## Parameters
 
-| Parameter | Type                                                    | Description                                                                                                                                                                                       |
-| --------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| jsonStore | [VeramoJsonStore](./data-store-json.veramojsonstore.md) | A reference to the JSON object that holds the data in memory and implements an update callback. This object can be pre-populated with data from previous sessions, and will be used by reference. |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonStore
+
+</td><td>
+
+[VeramoJsonStore](./data-store-json.veramojsonstore.md)
+
+</td><td>
+
+A reference to the JSON object that holds the data in memory and implements an update callback. This object can be pre-populated with data from previous sessions, and will be used by reference.
+
+</td></tr>
+</tbody></table>

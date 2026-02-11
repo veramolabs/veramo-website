@@ -22,16 +22,114 @@ export declare class ValidationError extends Error
 
 ## Constructors
 
-| Constructor                                                                                        | Modifiers | Description                                                         |
-| -------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- |
-| [(constructor)(message, method, code, path, description)](./core.validationerror._constructor_.md) |           | Constructs a new instance of the <code>ValidationError</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(message, method, code, path, description)](./core.validationerror._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `ValidationError` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                             | Modifiers | Type   | Description |
-| ---------------------------------------------------- | --------- | ------ | ----------- |
-| [code](./core.validationerror.code.md)               |           | string |             |
-| [description](./core.validationerror.description.md) |           | string |             |
-| [message](./core.validationerror.message.md)         |           | string |             |
-| [method](./core.validationerror.method.md)           |           | string |             |
-| [path](./core.validationerror.path.md)               |           | string |             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[code](./core.validationerror.code.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[description](./core.validationerror.description.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[message](./core.validationerror.message.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[method](./core.validationerror.method.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[path](./core.validationerror.path.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>

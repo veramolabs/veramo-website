@@ -24,12 +24,66 @@ export declare class AliasDiscoveryProvider implements AbstractDidDiscoveryProvi
 
 ## Properties
 
-| Property                                             | Modifiers             | Type           | Description  |
-| ---------------------------------------------------- | --------------------- | -------------- | ------------ |
-| [name](./did-manager.aliasdiscoveryprovider.name.md) | <code>readonly</code> | (not declared) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[name](./did-manager.aliasdiscoveryprovider.name.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+(not declared)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                            | Modifiers | Description  |
-| --------------------------------------------------------------------------------- | --------- | ------------ |
-| [discoverDid(args, context)](./did-manager.aliasdiscoveryprovider.discoverdid.md) |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[discoverDid(args, context)](./did-manager.aliasdiscoveryprovider.discoverdid.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

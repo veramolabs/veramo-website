@@ -20,7 +20,51 @@ export interface CredentialStatusUpdateArgs
 
 ## Properties
 
-| Property                                                       | Modifiers | Type                                                         | Description                                                                                               |
-| -------------------------------------------------------------- | --------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| [options?](./core-types.credentialstatusupdateargs.options.md) |           | CredentialStatusUpdateOptions                                | **_(BETA)_** _(Optional)_ Options that will be forwarded to the credentialStatus method specific manager. |
-| [vc](./core-types.credentialstatusupdateargs.vc.md)            |           | [VerifiableCredential](./core-types.verifiablecredential.md) | **_(BETA)_** The verifiable credential whose status will be updated.                                      |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[options?](./core-types.credentialstatusupdateargs.options.md)
+
+</td><td>
+
+</td><td>
+
+CredentialStatusUpdateOptions
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Options that will be forwarded to the credentialStatus method specific manager.
+
+</td></tr>
+<tr><td>
+
+[vc](./core-types.credentialstatusupdateargs.vc.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)
+
+</td><td>
+
+**_(BETA)_** The verifiable credential whose status will be updated.
+
+</td></tr>
+</tbody></table>

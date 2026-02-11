@@ -18,10 +18,31 @@ keyManagerGet(args: IKeyManagerGetArgs): Promise<IKey>;
 
 ## Parameters
 
-| Parameter | Type                                                     | Description |
-| --------- | -------------------------------------------------------- | ----------- |
-| args      | [IKeyManagerGetArgs](./core-types.ikeymanagergetargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IKeyManagerGetArgs](./core-types.ikeymanagergetargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[IKey](./core-types.ikey.md)&gt;

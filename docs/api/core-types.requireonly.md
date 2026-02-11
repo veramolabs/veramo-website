@@ -8,7 +8,7 @@ hide_title: true
 
 ## RequireOnly type
 
-Represents an object type where a subset of keys are required and everything else is optional.
+Represents an object type where a subset of keys is required and everything else is optional.
 
 **Signature:**
 

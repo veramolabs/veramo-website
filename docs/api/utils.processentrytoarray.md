@@ -23,11 +23,48 @@ export declare function processEntryToArray(
 
 ## Parameters
 
-| Parameter         | Type                                | Description                                                                                                                                                 |
-| ----------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| inputEntryOrArray | string &#124; string\[\] &#124; any | _(Optional)_ The input that needs to be transformed to an array.                                                                                            |
-| startWithEntry    | string                              | <p>_(Optional)_ If this is provided, this element will be the first in the resulting array.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+inputEntryOrArray
+
+</td><td>
+
+string \| string\[\] \| any
+
+</td><td>
+
+_(Optional)_ The input that needs to be transformed to an array.
+
+</td></tr>
+<tr><td>
+
+startWithEntry
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ If this is provided, this element will be the first in the resulting array.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string\[\]

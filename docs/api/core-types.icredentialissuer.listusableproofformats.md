@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Returns a list of supported proof formats.
+Returns a list of supported proof formats for verifiable data that this plugin can generate based on the specified issuer.
 
 **Signature:**
 
@@ -20,11 +20,48 @@ listUsableProofFormats(identifier: IIdentifier, context: IAgentContext<{}>): Pro
 
 ## Parameters
 
-| Parameter  | Type                                                     | Description                                                                                                                                                     |
-| ---------- | -------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| identifier | [IIdentifier](./core-types.iidentifier.md)               | The identifier that may be used to sign a credential or presentation                                                                                            |
-| context    | [IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt; | <p>This reserved param is automatically added and handled by the framework, \*do not override\*</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+identifier
+
+</td><td>
+
+[IIdentifier](./core-types.iidentifier.md)
+
+</td><td>
+
+The identifier that may be used to sign a credential or presentation
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;{}&gt;
+
+</td><td>
+
+This reserved param is automatically added and handled by the framework, \*do not override\*
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Array&lt;[ProofFormat](./core-types.proofformat.md)&gt;&gt;

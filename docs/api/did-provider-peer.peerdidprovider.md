@@ -24,18 +24,122 @@ export declare class PeerDIDProvider extends AbstractIdentifierProvider
 
 ## Constructors
 
-| Constructor                                                                    | Modifiers | Description                                                                      |
-| ------------------------------------------------------------------------------ | --------- | -------------------------------------------------------------------------------- |
-| [(constructor)(options)](./did-provider-peer.peerdidprovider._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>PeerDIDProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./did-provider-peer.peerdidprovider._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `PeerDIDProvider` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                                     | Modifiers | Description  |
-| ---------------------------------------------------------------------------------------------------------- | --------- | ------------ |
-| [addKey({ identifier, key, options }, context)](./did-provider-peer.peerdidprovider.addkey.md)             |           | **_(BETA)_** |
-| [addService({ identifier, service, options }, context)](./did-provider-peer.peerdidprovider.addservice.md) |           | **_(BETA)_** |
-| [createIdentifier({ kms, options }, context)](./did-provider-peer.peerdidprovider.createidentifier.md)     |           | **_(BETA)_** |
-| [deleteIdentifier(identifier, context)](./did-provider-peer.peerdidprovider.deleteidentifier.md)           |           | **_(BETA)_** |
-| [removeKey(args, context)](./did-provider-peer.peerdidprovider.removekey.md)                               |           | **_(BETA)_** |
-| [removeService(args, context)](./did-provider-peer.peerdidprovider.removeservice.md)                       |           | **_(BETA)_** |
-| [updateIdentifier(args, context)](./did-provider-peer.peerdidprovider.updateidentifier.md)                 |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addKey({ identifier, key, options }, context)](./did-provider-peer.peerdidprovider.addkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[addService({ identifier, service, options }, context)](./did-provider-peer.peerdidprovider.addservice.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[createIdentifier({ kms, options }, context)](./did-provider-peer.peerdidprovider.createidentifier.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[deleteIdentifier(identifier, context)](./did-provider-peer.peerdidprovider.deleteidentifier.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[removeKey(args, context)](./did-provider-peer.peerdidprovider.removekey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[removeService(args, context)](./did-provider-peer.peerdidprovider.removeservice.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[updateIdentifier(args, context)](./did-provider-peer.peerdidprovider.updateidentifier.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

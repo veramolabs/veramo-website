@@ -10,7 +10,7 @@ hide_title: true
 
 > This API is provided as a beta preview for developers and may change based on feedback that we receive. Do not use this API in a production environment.
 
-Converts the publicKey of a VerificationMethod to hex encoding (publicKeyHex)
+Converts the publicKey of a VerificationMethod to hex encoding (publicKeyHex), with no 0x prefix. Secp256k1 public keys are compressed.
 
 **Signature:**
 
@@ -26,11 +26,46 @@ export declare function extractPublicKeyHex(
 
 ## Parameters
 
-| Parameter | Type                         | Description                                                                                  |
-| --------- | ---------------------------- | -------------------------------------------------------------------------------------------- |
-| pk        | \_ExtendedVerificationMethod | the VerificationMethod to be converted                                                       |
-| convert   | boolean                      | _(Optional)_ when this flag is set to true, Ed25519 keys are converted to their X25519 pairs |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+pk
+
+</td><td>
+
+\_ExtendedVerificationMethod
+
+</td><td>
+
+the VerificationMethod to be converted
+
+</td></tr>
+<tr><td>
+
+convert
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ when this flag is set to true, Ed25519 keys are converted to their X25519 pairs
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 { publicKeyHex: string; keyType: string \| undefined; }

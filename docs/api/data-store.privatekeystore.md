@@ -22,15 +22,81 @@ export declare class PrivateKeyStore extends AbstractPrivateKeyStore
 
 ## Constructors
 
-| Constructor                                                                             | Modifiers | Description                                                         |
-| --------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- |
-| [(constructor)(dbConnection, secretBox)](./data-store.privatekeystore._constructor_.md) |           | Constructs a new instance of the <code>PrivateKeyStore</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(dbConnection, secretBox)](./data-store.privatekeystore._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `PrivateKeyStore` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                            | Modifiers | Description |
-| ----------------------------------------------------------------- | --------- | ----------- |
-| [deleteKey({ alias })](./data-store.privatekeystore.deletekey.md) |           |             |
-| [getKey({ alias })](./data-store.privatekeystore.getkey.md)       |           |             |
-| [importKey(args)](./data-store.privatekeystore.importkey.md)      |           |             |
-| [listKeys()](./data-store.privatekeystore.listkeys.md)            |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[deleteKey({ alias })](./data-store.privatekeystore.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getKey({ alias })](./data-store.privatekeystore.getkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./data-store.privatekeystore.importkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[listKeys()](./data-store.privatekeystore.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

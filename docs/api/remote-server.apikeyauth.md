@@ -18,10 +18,31 @@ export declare function apiKeyAuth({ apiKey }: { apiKey: string }): Router
 
 ## Parameters
 
-| Parameter  | Type                | Description |
-| ---------- | ------------------- | ----------- |
-| { apiKey } | { apiKey: string; } |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ apiKey }
+
+</td><td>
+
+{ apiKey: string; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Router

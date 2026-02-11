@@ -22,9 +22,81 @@ export interface IDIDCommOptions
 
 ## Properties
 
-| Property                                                      | Modifiers | Type                                                                                         | Description                                                                                    |
-| ------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| [alg?](./did-comm.ididcommoptions.alg.md)                     |           | 'ECDH-ES+A256KW' &#124; 'ECDH-1PU+A256KW' &#124; 'ECDH-ES+XC20PKW' &#124; 'ECDH-1PU+XC20PKW' | **_(BETA)_** _(Optional)_ Optional key wrapping algorithm to use. Defaults to 'ECDH-ES+A256KW' |
-| [bcc?](./did-comm.ididcommoptions.bcc.md)                     |           | string\[\]                                                                                   | **_(BETA)_** _(Optional)_ Add extra recipients for the packed message.                         |
-| [enc?](./did-comm.ididcommoptions.enc.md)                     |           | 'XC20P' &#124; 'A256GCM' &#124; 'A256CBC-HS512'                                              | **_(BETA)_** _(Optional)_ Optional content encryption algorithm to use. Defaults to 'A256GCM'  |
-| [recipientKids?](./did-comm.ididcommoptions.recipientkids.md) |           | string\[\]                                                                                   | **_(BETA)_** _(Optional)_ Restrict to a set of kids for recipient                              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alg?](./did-comm.ididcommoptions.alg.md)
+
+</td><td>
+
+</td><td>
+
+'ECDH-ES+A256KW' \| 'ECDH-1PU+A256KW' \| 'ECDH-ES+XC20PKW' \| 'ECDH-1PU+XC20PKW'
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional key wrapping algorithm to use. Defaults to 'ECDH-ES+A256KW'
+
+</td></tr>
+<tr><td>
+
+[bcc?](./did-comm.ididcommoptions.bcc.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Add extra recipients for the packed message.
+
+</td></tr>
+<tr><td>
+
+[enc?](./did-comm.ididcommoptions.enc.md)
+
+</td><td>
+
+</td><td>
+
+'XC20P' \| 'A256GCM' \| 'A256CBC-HS512'
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Optional content encryption algorithm to use. Defaults to 'A256GCM'
+
+</td></tr>
+<tr><td>
+
+[recipientKids?](./did-comm.ididcommoptions.recipientkids.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Restrict to a set of kids for recipient
+
+</td></tr>
+</tbody></table>

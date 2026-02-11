@@ -18,7 +18,51 @@ export interface IDIDManagerFindArgs
 
 ## Properties
 
-| Property                                                  | Modifiers | Type   | Description                     |
-| --------------------------------------------------------- | --------- | ------ | ------------------------------- |
-| [alias?](./core-types.ididmanagerfindargs.alias.md)       |           | string | _(Optional)_ Optional. Alias    |
-| [provider?](./core-types.ididmanagerfindargs.provider.md) |           | string | _(Optional)_ Optional. Provider |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alias?](./core-types.ididmanagerfindargs.alias.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Alias
+
+</td></tr>
+<tr><td>
+
+[provider?](./core-types.ididmanagerfindargs.provider.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Provider
+
+</td></tr>
+</tbody></table>

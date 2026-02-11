@@ -24,19 +24,107 @@ export declare abstract class AbstractDIDCommTransport implements IDIDCommTransp
 
 ## Constructors
 
-| Constructor                                                               | Modifiers | Description                                                                                                                                    |
-| ------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [(constructor)(id)](./did-comm.abstractdidcommtransport._constructor_.md) |           | **_(BETA)_** Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md). |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(id)](./did-comm.abstractdidcommtransport._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Shared constructor that takes an optional identifier (for reusing) for this [IDIDCommTransport](./did-comm.ididcommtransport.md).
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                        | Modifiers | Type   | Description  |
-| ----------------------------------------------- | --------- | ------ | ------------ |
-| [id](./did-comm.abstractdidcommtransport.id.md) |           | string | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[id](./did-comm.abstractdidcommtransport.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                   | Modifiers             | Description                                                                                                                                            |
-| ---------------------------------------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [isServiceSupported(service)](./did-comm.abstractdidcommtransport.isservicesupported.md) | <code>abstract</code> | **_(BETA)_** Returns <code>true</code> if this transport is suitable for the provided DID Document service section, otherwise <code>false</code>.      |
-| [send(service, message)](./did-comm.abstractdidcommtransport.send.md)                    | <code>abstract</code> | **_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section. |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[isServiceSupported(service)](./did-comm.abstractdidcommtransport.isservicesupported.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+**_(BETA)_** Returns `true` if this transport is suitable for the provided DID Document service section, otherwise `false`.
+
+</td></tr>
+<tr><td>
+
+[send(service, message)](./did-comm.abstractdidcommtransport.send.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+**_(BETA)_** Sends the provided raw message (without further processing) to the service endpoint defined in the provided DID Document service section.
+
+</td></tr>
+</tbody></table>

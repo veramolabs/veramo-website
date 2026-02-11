@@ -20,10 +20,33 @@ export declare function getEthereumAddress(verificationMethod: VerificationMetho
 
 ## Parameters
 
-| Parameter          | Type               | Description                                         |
-| ------------------ | ------------------ | --------------------------------------------------- |
-| verificationMethod | VerificationMethod | the VerificationMethod object (from a DID document) |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+verificationMethod
+
+</td><td>
+
+VerificationMethod
+
+</td><td>
+
+the VerificationMethod object (from a DID document)
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string \| undefined

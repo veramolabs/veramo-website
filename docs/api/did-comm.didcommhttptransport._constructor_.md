@@ -20,6 +20,30 @@ constructor(httpMethod?: 'post' | 'get');
 
 ## Parameters
 
-| Parameter  | Type                | Description                                                               |
-| ---------- | ------------------- | ------------------------------------------------------------------------- |
-| httpMethod | 'post' &#124; 'get' | _(Optional)_ Default HTTP method if not specified in the service section. |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+httpMethod
+
+</td><td>
+
+'post' \| 'get'
+
+</td><td>
+
+_(Optional)_ Default HTTP method if not specified in the service section.
+
+</td></tr>
+</tbody></table>

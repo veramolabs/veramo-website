@@ -27,11 +27,44 @@ getLatestClaimValue(dbConnection: Promise<Connection>, where: any): Promise<stri
 
 ## Parameters
 
-| Parameter    | Type                      | Description                                   |
-| ------------ | ------------------------- | --------------------------------------------- |
-| dbConnection | Promise&lt;Connection&gt; |                                               |
-| where        | any                       | The TypeORM <code>where</code> filter to use. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dbConnection
+
+</td><td>
+
+Promise&lt;Connection&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+where
+
+</td><td>
+
+any
+
+</td><td>
+
+The TypeORM `where` filter to use.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string \| null \| undefined&gt;

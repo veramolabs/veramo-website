@@ -12,6 +12,22 @@ Provides a [plugin](./url-handler.urlmessagehandler.md) for the [MessageHandler]
 
 ## Classes
 
-| Class                                                   | Description                                                                                                                       |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| [UrlMessageHandler](./url-handler.urlmessagehandler.md) | An implementation of [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) that can extract a message from a URL. |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[UrlMessageHandler](./url-handler.urlmessagehandler.md)
+
+</td><td>
+
+An implementation of [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) that can extract a message from a URL.
+
+</td></tr>
+</tbody></table>

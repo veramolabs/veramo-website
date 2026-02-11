@@ -21,12 +21,53 @@ createV3RecipientUpdateMessage: (recipientDidUrl: string, mediatorDidUrl: string
 
 ## Parameters
 
-| Parameter       | Type                               | Description |
-| --------------- | ---------------------------------- | ----------- |
-| recipientDidUrl | string                             |             |
-| mediatorDidUrl  | string                             |             |
-| updates         | [Update](./did-comm.update.md)\[\] |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+recipientDidUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+mediatorDidUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+updates
+
+</td><td>
+
+[Update](./did-comm.update.md)\[\]
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [IDIDCommMessage](./did-comm.ididcommmessage.md)

@@ -12,12 +12,42 @@ Provides `did:ion` [identifier provider](./did-provider-ion.iondidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                        |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| [IonDIDProvider](./did-provider-ion.iondidprovider.md) | [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:ion</code> identifiers |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[IonDIDProvider](./did-provider-ion.iondidprovider.md)
+
+</td><td>
+
+[DIDManager](./did-manager.didmanager.md) identifier provider for `did:ion` identifiers
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                       | Description |
-| -------------------------------------------------------------- | ----------- |
-| [getDidIonResolver()](./did-provider-ion.getdidionresolver.md) |             |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDidIonResolver()](./did-provider-ion.getdidionresolver.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>

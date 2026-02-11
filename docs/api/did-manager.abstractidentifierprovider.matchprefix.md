@@ -18,10 +18,33 @@ matchPrefix?(prefix: string): boolean;
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                                    |
-| --------- | ------ | -------------------------------------------------------------------------------------------------------------- |
-| prefix    | string | a DID URL prefix, Example: 'did:key:z6Mk', or <code>did:ethr</code>, or <code>did:ethr:arbitrum:testnet</code> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+prefix
+
+</td><td>
+
+string
+
+</td><td>
+
+a DID URL prefix, Example: 'did:key:z6Mk', or `did:ethr`, or `did:ethr:arbitrum:testnet`
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 boolean

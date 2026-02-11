@@ -22,8 +22,42 @@ export interface ICredentialStatusManager extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                              | Description                                                                                                                                                                                                                                                                                                     |
-| --------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [credentialStatusGenerate(args)](./core-types.icredentialstatusmanager.credentialstatusgenerate.md) | <p>**_(BETA)_** Generates a <code>credentialStatus</code> property for a future credential, not yet signed.</p><p>This method is used during the creation of a [VerifiableCredential](./core-types.verifiablecredential.md) in order to make it capable of having its status updated later (to be revoked).</p> |
-| [credentialStatusTypes()](./core-types.icredentialstatusmanager.credentialstatustypes.md)           | **_(BETA)_** List all the credential status types (methods) available in the current agent instance.                                                                                                                                                                                                            |
-| [credentialStatusUpdate(args)](./core-types.icredentialstatusmanager.credentialstatusupdate.md)     | **_(BETA)_** Changes the status of an existing [VerifiableCredential](./core-types.verifiablecredential.md). Commonly used to revoke an existing credential.                                                                                                                                                    |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[credentialStatusGenerate(args)](./core-types.icredentialstatusmanager.credentialstatusgenerate.md)
+
+</td><td>
+
+**_(BETA)_** Generates a `credentialStatus` property for a future credential, not yet signed.
+
+This method is used during the creation of a [VerifiableCredential](./core-types.verifiablecredential.md) in order to make it capable of having its status updated later (to be revoked).
+
+</td></tr>
+<tr><td>
+
+[credentialStatusTypes()](./core-types.icredentialstatusmanager.credentialstatustypes.md)
+
+</td><td>
+
+**_(BETA)_** List all the credential status types (methods) available in the current agent instance.
+
+</td></tr>
+<tr><td>
+
+[credentialStatusUpdate(args)](./core-types.icredentialstatusmanager.credentialstatusupdate.md)
+
+</td><td>
+
+**_(BETA)_** Changes the status of an existing [VerifiableCredential](./core-types.verifiablecredential.md). Commonly used to revoke an existing credential.
+
+</td></tr>
+</tbody></table>

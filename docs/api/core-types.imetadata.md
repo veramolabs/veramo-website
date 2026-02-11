@@ -18,7 +18,51 @@ export interface IMetaData
 
 ## Properties
 
-| Property                                  | Modifiers | Type   | Description                  |
-| ----------------------------------------- | --------- | ------ | ---------------------------- |
-| [type](./core-types.imetadata.type.md)    |           | string | Type                         |
-| [value?](./core-types.imetadata.value.md) |           | string | _(Optional)_ Optional. Value |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[type](./core-types.imetadata.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Type
+
+</td></tr>
+<tr><td>
+
+[value?](./core-types.imetadata.value.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Value
+
+</td></tr>
+</tbody></table>

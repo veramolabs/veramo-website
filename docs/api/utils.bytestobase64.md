@@ -18,10 +18,33 @@ export declare function bytesToBase64(b: Uint8Array): string
 
 ## Parameters
 
-| Parameter | Type       | Description               |
-| --------- | ---------- | ------------------------- |
-| b         | Uint8Array | the byte array to convert |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+b
+
+</td><td>
+
+Uint8Array
+
+</td><td>
+
+the byte array to convert
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string

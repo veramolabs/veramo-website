@@ -20,19 +20,121 @@ export declare class EthrDIDProvider extends AbstractIdentifierProvider
 
 ## Constructors
 
-| Constructor                                                                    | Modifiers | Description                                                         |
-| ------------------------------------------------------------------------------ | --------- | ------------------------------------------------------------------- |
-| [(constructor)(options)](./did-provider-ethr.ethrdidprovider._constructor_.md) |           | Constructs a new instance of the <code>EthrDIDProvider</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./did-provider-ethr.ethrdidprovider._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `EthrDIDProvider` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                                      | Modifiers | Description                                                                                                                                                                                                                         |
-| ----------------------------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [addKey({ identifier, key, options }, context)](./did-provider-ethr.ethrdidprovider.addkey.md)              |           |                                                                                                                                                                                                                                     |
-| [addService({ identifier, service, options, }, context)](./did-provider-ethr.ethrdidprovider.addservice.md) |           |                                                                                                                                                                                                                                     |
-| [createIdentifier({ kms, options }, context)](./did-provider-ethr.ethrdidprovider.createidentifier.md)      |           |                                                                                                                                                                                                                                     |
-| [deleteIdentifier(identifier, context)](./did-provider-ethr.ethrdidprovider.deleteidentifier.md)            |           |                                                                                                                                                                                                                                     |
-| [matchPrefix(prefix)](./did-provider-ethr.ethrdidprovider.matchprefix.md)                                   |           | <p>Tries to determine if this DID provider can manage DIDs with the given prefix.</p><p>If this provider was configured for a particular network and that network name or hexChainId is used in the prefix it will return true.</p> |
-| [removeKey(args, context)](./did-provider-ethr.ethrdidprovider.removekey.md)                                |           |                                                                                                                                                                                                                                     |
-| [removeService(args, context)](./did-provider-ethr.ethrdidprovider.removeservice.md)                        |           |                                                                                                                                                                                                                                     |
-| [updateIdentifier(args, context)](./did-provider-ethr.ethrdidprovider.updateidentifier.md)                  |           |                                                                                                                                                                                                                                     |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addKey({ identifier, key, options }, context)](./did-provider-ethr.ethrdidprovider.addkey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[addService({ identifier, service, options, }, context)](./did-provider-ethr.ethrdidprovider.addservice.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[createIdentifier({ kms, options }, context)](./did-provider-ethr.ethrdidprovider.createidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[deleteIdentifier(identifier, context)](./did-provider-ethr.ethrdidprovider.deleteidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[matchPrefix(prefix)](./did-provider-ethr.ethrdidprovider.matchprefix.md)
+
+</td><td>
+
+</td><td>
+
+Tries to determine if this DID provider can manage DIDs with the given prefix.
+
+If this provider was configured for a particular network and that network name or hexChainId is used in the prefix it will return true.
+
+</td></tr>
+<tr><td>
+
+[removeKey(args, context)](./did-provider-ethr.ethrdidprovider.removekey.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[removeService(args, context)](./did-provider-ethr.ethrdidprovider.removeservice.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[updateIdentifier(args, context)](./did-provider-ethr.ethrdidprovider.updateidentifier.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

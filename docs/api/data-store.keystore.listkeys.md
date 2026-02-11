@@ -16,10 +16,33 @@ listKeys(args?: {}): Promise<ManagedKeyInfo[]>;
 
 ## Parameters
 
-| Parameter | Type | Description  |
-| --------- | ---- | ------------ |
-| args      | {}   | _(Optional)_ |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{}
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[ManagedKeyInfo](./core-types.managedkeyinfo.md)\[\]&gt;

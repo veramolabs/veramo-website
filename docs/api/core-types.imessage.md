@@ -18,21 +18,261 @@ export interface IMessage
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                                                 | Description                                                              |
-| -------------------------------------------------------- | --------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [attachments?](./core-types.imessage.attachments.md)     |           | [IMessageAttachment](./core-types.imessageattachment.md)\[\]         | _(Optional)_ Optional. Array of generic attachments                      |
-| [createdAt?](./core-types.imessage.createdat.md)         |           | string                                                               | _(Optional)_ Optional. Creation date (ISO 8601)                          |
-| [credentials?](./core-types.imessage.credentials.md)     |           | [VerifiableCredential](./core-types.verifiablecredential.md)\[\]     | _(Optional)_ Optional. Array of attached verifiable credentials          |
-| [data?](./core-types.imessage.data.md)                   |           | object &#124; null                                                   | _(Optional)_ Optional. Parsed data                                       |
-| [expiresAt?](./core-types.imessage.expiresat.md)         |           | string                                                               | _(Optional)_ Optional. Expiration date (ISO 8601)                        |
-| [from?](./core-types.imessage.from.md)                   |           | string                                                               | _(Optional)_ Optional. Sender DID                                        |
-| [id](./core-types.imessage.id.md)                        |           | string                                                               | Unique message ID                                                        |
-| [metaData?](./core-types.imessage.metadata.md)           |           | [IMetaData](./core-types.imetadata.md)\[\] &#124; null               | _(Optional)_ Optional. Array of message metadata                         |
-| [presentations?](./core-types.imessage.presentations.md) |           | [VerifiablePresentation](./core-types.verifiablepresentation.md)\[\] | _(Optional)_ Optional. Array of attached verifiable presentations        |
-| [raw?](./core-types.imessage.raw.md)                     |           | string                                                               | _(Optional)_ Optional. Original message raw data                         |
-| [replyTo?](./core-types.imessage.replyto.md)             |           | string\[\]                                                           | _(Optional)_ Optional. List of DIDs to reply to                          |
-| [replyUrl?](./core-types.imessage.replyurl.md)           |           | string                                                               | _(Optional)_ Optional. URL to post a reply message to                    |
-| [returnRoute?](./core-types.imessage.returnroute.md)     |           | string                                                               | _(Optional)_ Optional. Signal how to reuse transport for return messages |
-| [threadId?](./core-types.imessage.threadid.md)           |           | string                                                               | _(Optional)_ Optional. Thread ID                                         |
-| [to?](./core-types.imessage.to.md)                       |           | string                                                               | _(Optional)_ Optional. Recipient DID                                     |
-| [type](./core-types.imessage.type.md)                    |           | string                                                               | Message type                                                             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[attachments?](./core-types.imessage.attachments.md)
+
+</td><td>
+
+</td><td>
+
+[IMessageAttachment](./core-types.imessageattachment.md)\[\]
+
+</td><td>
+
+_(Optional)_ Optional. Array of generic attachments
+
+</td></tr>
+<tr><td>
+
+[createdAt?](./core-types.imessage.createdat.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Creation date (ISO 8601)
+
+</td></tr>
+<tr><td>
+
+[credentials?](./core-types.imessage.credentials.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiableCredential](./core-types.verifiablecredential.md)\[\]
+
+</td><td>
+
+_(Optional)_ Optional. Array of attached verifiable credentials
+
+</td></tr>
+<tr><td>
+
+[data?](./core-types.imessage.data.md)
+
+</td><td>
+
+</td><td>
+
+object \| null
+
+</td><td>
+
+_(Optional)_ Optional. Parsed data
+
+</td></tr>
+<tr><td>
+
+[expiresAt?](./core-types.imessage.expiresat.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Expiration date (ISO 8601)
+
+</td></tr>
+<tr><td>
+
+[from?](./core-types.imessage.from.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Sender DID
+
+</td></tr>
+<tr><td>
+
+[id](./core-types.imessage.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Unique message ID
+
+</td></tr>
+<tr><td>
+
+[metaData?](./core-types.imessage.metadata.md)
+
+</td><td>
+
+</td><td>
+
+[IMetaData](./core-types.imetadata.md)\[\] \| null
+
+</td><td>
+
+_(Optional)_ Optional. Array of message metadata
+
+</td></tr>
+<tr><td>
+
+[presentations?](./core-types.imessage.presentations.md)
+
+</td><td>
+
+</td><td>
+
+[VerifiablePresentation](./core-types.verifiablepresentation.md)\[\]
+
+</td><td>
+
+_(Optional)_ Optional. Array of attached verifiable presentations
+
+</td></tr>
+<tr><td>
+
+[raw?](./core-types.imessage.raw.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Original message raw data
+
+</td></tr>
+<tr><td>
+
+[replyTo?](./core-types.imessage.replyto.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+_(Optional)_ Optional. List of DIDs to reply to
+
+</td></tr>
+<tr><td>
+
+[replyUrl?](./core-types.imessage.replyurl.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. URL to post a reply message to
+
+</td></tr>
+<tr><td>
+
+[returnRoute?](./core-types.imessage.returnroute.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Signal how to reuse transport for return messages
+
+</td></tr>
+<tr><td>
+
+[threadId?](./core-types.imessage.threadid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Thread ID
+
+</td></tr>
+<tr><td>
+
+[to?](./core-types.imessage.to.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Recipient DID
+
+</td></tr>
+<tr><td>
+
+[type](./core-types.imessage.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Message type
+
+</td></tr>
+</tbody></table>

@@ -14,13 +14,108 @@ Provides a [plugin](./credential-w3c.w3cmessagehandler.md) for the [MessageHandl
 
 ## Classes
 
-| Class                                                      | Description                                                                                                                                                                                                                                                                                                                                          |
-| ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [CredentialPlugin](./credential-w3c.credentialplugin.md)   | A Veramo plugin that implements the [ICredentialPlugin](./core-types.icredentialplugin.md) methods.                                                                                                                                                                                                                                                  |
-| [W3cMessageHandler](./credential-w3c.w3cmessagehandler.md) | <p>An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md).</p><p>This plugin can handle incoming W3C Verifiable Credentials and Presentations and prepare them for internal storage as [Message](./message-handler.message.md) types.</p><p>The current version can only handle <code>JWT</code> encoded</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CredentialPlugin](./credential-w3c.credentialplugin.md)
+
+</td><td>
+
+A Veramo plugin that implements the [ICredentialPlugin](./core-types.icredentialplugin.md) methods.
+
+</td></tr>
+<tr><td>
+
+[W3cMessageHandler](./credential-w3c.w3cmessagehandler.md)
+
+</td><td>
+
+An implementation of the [AbstractMessageHandler](./message-handler.abstractmessagehandler.md).
+
+This plugin can handle incoming W3C Verifiable Credentials and Presentations and prepare them for internal storage as [Message](./message-handler.message.md) types.
+
+The current version can only handle `JWT` encoded
+
+</td></tr>
+</tbody></table>
+
+## Interfaces
+
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ICredentialProvider](./credential-w3c.icredentialprovider.md)
+
+</td><td>
+
+The interface definition for a sub-plugin that can issue and verify Verifiable Data (e.g. Verifiable Credentials and Presentations)
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                                 | Description |
-| -------------------------------------------------------- | ----------- |
-| [CredentialIssuer](./credential-w3c.credentialissuer.md) |             |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[CredentialIssuer](./credential-w3c.credentialissuer.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
+
+## Type Aliases
+
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ProofFormatQuery](./credential-w3c.proofformatquery.md)
+
+</td><td>
+
+Query a [ICredentialProvider](./credential-w3c.icredentialprovider.md) for a particular proof format
+
+</td></tr>
+<tr><td>
+
+[TentativeVerificationQuery](./credential-w3c.tentativeverificationquery.md)
+
+</td><td>
+
+Query a [ICredentialProvider](./credential-w3c.icredentialprovider.md) if a verification attempt can be made using the provided document
+
+</td></tr>
+</tbody></table>

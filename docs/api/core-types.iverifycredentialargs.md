@@ -20,8 +20,70 @@ export interface IVerifyCredentialArgs extends UsingResolutionOptions
 
 ## Properties
 
-| Property                                                                          | Modifiers | Type                                                               | Description                                                                                                                                                                                                                                                                                                                                         |
-| --------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [credential](./core-types.iverifycredentialargs.credential.md)                    |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) | <p>The Verifiable Credential object according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials) or the JWT representation.</p><p>The signer of the Credential is verified based on the <code>issuer.id</code> property of the <code>credential</code> or the <code>iss</code> property of the JWT payload respectively</p> |
-| [fetchRemoteContexts?](./core-types.iverifycredentialargs.fetchremotecontexts.md) |           | boolean                                                            | <p>_(Optional)_ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to <code>true</code> ONLY if you want the <code>@context</code> URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.</p><p>Defaults to <code>false</code></p>    |
-| [policies?](./core-types.iverifycredentialargs.policies.md)                       |           | [VerificationPolicies](./core-types.verificationpolicies.md)       | _(Optional)_ Overrides specific aspects of credential verification, where possible.                                                                                                                                                                                                                                                                 |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[credential](./core-types.iverifycredentialargs.credential.md)
+
+</td><td>
+
+</td><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)
+
+</td><td>
+
+The Verifiable Credential object according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials) or the [JWT representation](https://www.w3.org/TR/vc-data-model-1.1/#json-web-token).
+
+The signer of the Credential is verified based on the `issuer.id` property of the `credential` or the `iss` property of the JWT payload respectively
+
+</td></tr>
+<tr><td>
+
+[fetchRemoteContexts?](./core-types.iverifycredentialargs.fetchremotecontexts.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to `true` ONLY if you want the `@context` URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at application startup instead of being fetched.
+
+Defaults to `false`
+
+</td></tr>
+<tr><td>
+
+[policies?](./core-types.iverifycredentialargs.policies.md)
+
+</td><td>
+
+</td><td>
+
+[VerificationPolicies](./core-types.verificationpolicies.md)
+
+</td><td>
+
+_(Optional)_ Overrides specific aspects of credential verification, where possible.
+
+</td></tr>
+</tbody></table>

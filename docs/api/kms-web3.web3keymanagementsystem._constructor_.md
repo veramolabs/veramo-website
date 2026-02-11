@@ -20,6 +20,30 @@ constructor(providers: Record<string, BrowserProvider>);
 
 ## Parameters
 
-| Parameter | Type                                  | Description                                                                                                               |
-| --------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| providers | Record&lt;string, BrowserProvider&gt; | the key can be any unique name. Example <code>{ metamask: metamaskProvider, walletConnect: walletConnectProvider }</code> |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+providers
+
+</td><td>
+
+Record&lt;string, BrowserProvider&gt;
+
+</td><td>
+
+the key can be any unique name. Example `{ metamask: metamaskProvider, walletConnect: walletConnectProvider }`
+
+</td></tr>
+</tbody></table>

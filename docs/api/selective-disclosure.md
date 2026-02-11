@@ -14,29 +14,177 @@ Provides a [plugin](./selective-disclosure.sdrmessagehandler.md) for the [Messag
 
 ## Classes
 
-| Class                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [SdrMessageHandler](./selective-disclosure.sdrmessagehandler.md)     | <p>**_(BETA)_** A Veramo message handler plugin that can decode an incoming Selective Disclosure Response into the internal Message representation.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                                                         |
-| [SelectiveDisclosure](./selective-disclosure.selectivedisclosure.md) | <p>**_(BETA)_** This class adds support for creating [uPort Selective Disclosure](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) requests and interpret the responses received.</p><p>This implementation of the uPort protocol uses [W3C Presentation](https://www.w3.org/TR/vc-data-model/#presentations) as the response encoding instead of a <code>shareReq</code>.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[SdrMessageHandler](./selective-disclosure.sdrmessagehandler.md)
+
+</td><td>
+
+**_(BETA)_** A Veramo message handler plugin that can decode an incoming Selective Disclosure Response into the internal Message representation.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[SelectiveDisclosure](./selective-disclosure.selectivedisclosure.md)
+
+</td><td>
+
+**_(BETA)_** This class adds support for creating [uPort Selective Disclosure](https://github.com/uport-project/specs/blob/develop/flows/selectivedisclosure.md) requests and interpret the responses received.
+
+This implementation of the uPort protocol uses [W3C Presentation](https://www.w3.org/TR/vc-data-model/#presentations) as the response encoding instead of a `shareReq`.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-| Interface                                                                                                | Description                                                                                                                                                                                                                                                 |
-| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                 | <p>**_(BETA)_** Profile data</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                                |
-| [ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md) | **_(BETA)_** Contains the parameters of a Selective Disclosure Request.                                                                                                                                                                                     |
-| [ICredentialRequestInput](./selective-disclosure.icredentialrequestinput.md)                             | **_(BETA)_** Describes a particular credential that is being requested                                                                                                                                                                                      |
-| [ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)                                       | **_(BETA)_** The credentials that make up a response of a Selective Disclosure                                                                                                                                                                              |
-| [IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md)     | **_(BETA)_** Encapsulates the params needed to gather credentials to fulfill a Selective disclosure request.                                                                                                                                                |
-| [IPresentationValidationResult](./selective-disclosure.ipresentationvalidationresult.md)                 | <p>**_(BETA)_** The result of a selective disclosure response validation.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                   |
-| [ISelectiveDisclosure](./selective-disclosure.iselectivedisclosure.md)                                   | **_(BETA)_** Describes the interface of a Selective Disclosure plugin.                                                                                                                                                                                      |
-| [ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md)                     | **_(BETA)_** Represents the Selective Disclosure request parameters.                                                                                                                                                                                        |
-| [Issuer](./selective-disclosure.issuer.md)                                                               | <p>**_(BETA)_** Used for requesting Credentials using Selective Disclosure. Represents an accepted issuer of a credential.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                  |
-| [IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md)     | <p>**_(BETA)_** A tuple used to verify a Selective Disclosure Response. Encapsulates the response(<code>presentation</code>) and the corresponding request (<code>sdr</code>) that made it.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)
+
+</td><td>
+
+**_(BETA)_** Profile data
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ICreateSelectiveDisclosureRequestArgs](./selective-disclosure.icreateselectivedisclosurerequestargs.md)
+
+</td><td>
+
+**_(BETA)_** Contains the parameters of a Selective Disclosure Request.
+
+</td></tr>
+<tr><td>
+
+[ICredentialRequestInput](./selective-disclosure.icredentialrequestinput.md)
+
+</td><td>
+
+**_(BETA)_** Describes a particular credential that is being requested
+
+</td></tr>
+<tr><td>
+
+[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)
+
+</td><td>
+
+**_(BETA)_** The credentials that make up a response of a Selective Disclosure
+
+</td></tr>
+<tr><td>
+
+[IGetVerifiableCredentialsForSdrArgs](./selective-disclosure.igetverifiablecredentialsforsdrargs.md)
+
+</td><td>
+
+**_(BETA)_** Encapsulates the params needed to gather credentials to fulfill a Selective disclosure request.
+
+</td></tr>
+<tr><td>
+
+[IPresentationValidationResult](./selective-disclosure.ipresentationvalidationresult.md)
+
+</td><td>
+
+**_(BETA)_** The result of a selective disclosure response validation.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[ISelectiveDisclosure](./selective-disclosure.iselectivedisclosure.md)
+
+</td><td>
+
+**_(BETA)_** Describes the interface of a Selective Disclosure plugin.
+
+</td></tr>
+<tr><td>
+
+[ISelectiveDisclosureRequest](./selective-disclosure.iselectivedisclosurerequest.md)
+
+</td><td>
+
+**_(BETA)_** Represents the Selective Disclosure request parameters.
+
+</td></tr>
+<tr><td>
+
+[Issuer](./selective-disclosure.issuer.md)
+
+</td><td>
+
+**_(BETA)_** Used for requesting Credentials using Selective Disclosure. Represents an accepted issuer of a credential.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[IValidatePresentationAgainstSdrArgs](./selective-disclosure.ivalidatepresentationagainstsdrargs.md)
+
+</td><td>
+
+**_(BETA)_** A tuple used to verify a Selective Disclosure Response. Encapsulates the response(`presentation`) and the corresponding request (`sdr`) that made it.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Variables
 
-| Variable                                               | Description                                                                                                   |
-| ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| [MessageTypes](./selective-disclosure.messagetypes.md) | **_(BETA)_** Identifies a [IMessage](./core-types.imessage.md) that represents a Selective Disclosure Request |
-| [schema](./selective-disclosure.schema.md)             |                                                                                                               |
+<table><thead><tr><th>
+
+Variable
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[MessageTypes](./selective-disclosure.messagetypes.md)
+
+</td><td>
+
+**_(BETA)_** Identifies a [IMessage](./core-types.imessage.md) that represents a Selective Disclosure Request
+
+</td></tr>
+<tr><td>
+
+[schema](./selective-disclosure.schema.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>

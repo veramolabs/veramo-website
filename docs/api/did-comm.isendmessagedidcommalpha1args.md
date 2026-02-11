@@ -24,9 +24,81 @@ export interface ISendMessageDIDCommAlpha1Args
 
 ## Properties
 
-| Property                                                        | Modifiers | Type                                                                                 | Description               |
-| --------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------ | ------------------------- |
-| [data](./did-comm.isendmessagedidcommalpha1args.data.md)        |           | { id?: string; from: string; to: string; type: string; body: object &#124; string; } | **_(BETA)_**              |
-| [headers?](./did-comm.isendmessagedidcommalpha1args.headers.md) |           | Record&lt;string, string&gt;                                                         | **_(BETA)_** _(Optional)_ |
-| [save?](./did-comm.isendmessagedidcommalpha1args.save.md)       |           | boolean                                                                              | **_(BETA)_** _(Optional)_ |
-| [url?](./did-comm.isendmessagedidcommalpha1args.url.md)         |           | string                                                                               | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[data](./did-comm.isendmessagedidcommalpha1args.data.md)
+
+</td><td>
+
+</td><td>
+
+{ id?: string; from: string; to: string; type: string; body: object \| string; }
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[headers?](./did-comm.isendmessagedidcommalpha1args.headers.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, string&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[save?](./did-comm.isendmessagedidcommalpha1args.save.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[url?](./did-comm.isendmessagedidcommalpha1args.url.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

@@ -21,6 +21,30 @@ constructor(data?: {
 
 ## Parameters
 
-| Parameter | Type                                                                    | Description  |
-| --------- | ----------------------------------------------------------------------- | ------------ |
-| data      | { raw: string; metaData?: [IMetaData](./core-types.imetadata.md)\[\]; } | _(Optional)_ |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+data
+
+</td><td>
+
+{ raw: string; metaData?: [IMetaData](./core-types.imetadata.md)\[\]; }
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

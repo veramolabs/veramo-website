@@ -20,11 +20,46 @@ execute<P = any, R = any>(method: string, args: P): Promise<R>;
 
 ## Parameters
 
-| Parameter | Type   | Description      |
-| --------- | ------ | ---------------- |
-| method    | string | method name      |
-| args      | P      | arguments object |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+method
+
+</td><td>
+
+string
+
+</td><td>
+
+method name
+
+</td></tr>
+<tr><td>
+
+args
+
+</td><td>
+
+P
+
+</td><td>
+
+arguments object
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;R&gt;

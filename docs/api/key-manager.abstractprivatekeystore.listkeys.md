@@ -16,10 +16,31 @@ abstract listKeys(args: {}): Promise<Array<ManagedPrivateKey>>;
 
 ## Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| args      | {}   |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{}
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Array&lt;[ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;&gt;

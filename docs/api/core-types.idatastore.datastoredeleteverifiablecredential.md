@@ -18,10 +18,33 @@ dataStoreDeleteVerifiableCredential(args: IDataStoreDeleteVerifiableCredentialAr
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description           |
-| --------- | ---------------------------------------------------------------------------------------------------- | --------------------- |
-| args      | [IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md) | verifiable credential |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDataStoreDeleteVerifiableCredentialArgs](./core-types.idatastoredeleteverifiablecredentialargs.md)
+
+</td><td>
+
+verifiable credential
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;boolean&gt;

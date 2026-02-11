@@ -18,9 +18,81 @@ export interface IDIDManagerCreateArgs
 
 ## Properties
 
-| Property                                                    | Modifiers | Type   | Description                                                                                       |
-| ----------------------------------------------------------- | --------- | ------ | ------------------------------------------------------------------------------------------------- |
-| [alias?](./core-types.ididmanagercreateargs.alias.md)       |           | string | _(Optional)_ Optional. Identifier alias. Can be used to reference an object in an external system |
-| [kms?](./core-types.ididmanagercreateargs.kms.md)           |           | string | _(Optional)_ Optional. Key Management System                                                      |
-| [options?](./core-types.ididmanagercreateargs.options.md)   |           | object | _(Optional)_ Optional. Identifier provider specific options                                       |
-| [provider?](./core-types.ididmanagercreateargs.provider.md) |           | string | _(Optional)_ Optional. Identifier provider                                                        |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[alias?](./core-types.ididmanagercreateargs.alias.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Identifier alias. Can be used to reference an object in an external system
+
+</td></tr>
+<tr><td>
+
+[kms?](./core-types.ididmanagercreateargs.kms.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Key Management System
+
+</td></tr>
+<tr><td>
+
+[options?](./core-types.ididmanagercreateargs.options.md)
+
+</td><td>
+
+</td><td>
+
+object
+
+</td><td>
+
+_(Optional)_ Optional. Identifier-provider specific options
+
+</td></tr>
+<tr><td>
+
+[provider?](./core-types.ididmanagercreateargs.provider.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Identifier provider
+
+</td></tr>
+</tbody></table>

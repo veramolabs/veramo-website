@@ -24,9 +24,81 @@ export interface IPackDIDCommMessageArgs extends UsingResolutionOptions
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                                                         | Description               |
-| --------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------------------- |
-| [keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)   |           | string                                                       | **_(BETA)_** _(Optional)_ |
-| [message](./did-comm.ipackdidcommmessageargs.message.md)  |           | [IDIDCommMessage](./did-comm.ididcommmessage.md)             | **_(BETA)_**              |
-| [options?](./did-comm.ipackdidcommmessageargs.options.md) |           | [IDIDCommOptions](./did-comm.ididcommoptions.md)             | **_(BETA)_** _(Optional)_ |
-| [packing](./did-comm.ipackdidcommmessageargs.packing.md)  |           | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[keyRef?](./did-comm.ipackdidcommmessageargs.keyref.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[message](./did-comm.ipackdidcommmessageargs.message.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDCommMessage](./did-comm.ididcommmessage.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[options?](./did-comm.ipackdidcommmessageargs.options.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDCommOptions](./did-comm.ididcommoptions.md)
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[packing](./did-comm.ipackdidcommmessageargs.packing.md)
+
+</td><td>
+
+</td><td>
+
+[DIDCommMessagePacking](./did-comm.didcommmessagepacking.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

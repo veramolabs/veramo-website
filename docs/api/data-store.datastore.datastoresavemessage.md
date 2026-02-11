@@ -18,10 +18,31 @@ dataStoreSaveMessage(args: IDataStoreSaveMessageArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                                                                   | Description |
-| --------- | ---------------------------------------------------------------------- | ----------- |
-| args      | [IDataStoreSaveMessageArgs](./core-types.idatastoresavemessageargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDataStoreSaveMessageArgs](./core-types.idatastoresavemessageargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

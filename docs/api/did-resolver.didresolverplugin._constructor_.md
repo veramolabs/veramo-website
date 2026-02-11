@@ -22,6 +22,28 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                      | Description |
-| --------- | ------------------------------------------------------------------------- | ----------- |
-| options   | { resolver?: Resolvable; } &#124; { \[didMethod: string\]: DIDResolver; } |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+{ resolver?: Resolvable; } \| { \[didMethod: string\]: DIDResolver; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>

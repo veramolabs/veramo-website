@@ -20,7 +20,47 @@ export interface IAgent extends IAgentBase
 
 ## Properties
 
-| Property                                  | Modifiers | Type                                                                     | Description |
-| ----------------------------------------- | --------- | ------------------------------------------------------------------------ | ----------- |
-| [emit](./core-types.iagent.emit.md)       |           | (eventType: string, data: any) =&gt; Promise&lt;void&gt;                 |             |
-| [execute](./core-types.iagent.execute.md) |           | &lt;A = any, R = any&gt;(method: string, args: A) =&gt; Promise&lt;R&gt; |             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[emit](./core-types.iagent.emit.md)
+
+</td><td>
+
+</td><td>
+
+(eventType: string, data: any) =&gt; Promise&lt;void&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[execute](./core-types.iagent.execute.md)
+
+</td><td>
+
+</td><td>
+
+&lt;A = any, R = any&gt;(method: string, args: A) =&gt; Promise&lt;R&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>

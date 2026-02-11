@@ -18,10 +18,72 @@ constructor(message: string, method: string, code: string, path: string, descrip
 
 ## Parameters
 
-| Parameter   | Type   | Description |
-| ----------- | ------ | ----------- |
-| message     | string |             |
-| method      | string |             |
-| code        | string |             |
-| path        | string |             |
-| description | string |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+message
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+method
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+code
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+path
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+description
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+</tbody></table>

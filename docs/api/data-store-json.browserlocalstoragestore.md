@@ -27,19 +27,153 @@ const plugin = new DataStoreJson(dataStore)
 
 ## Properties
 
-| Property                                                                     | Modifiers | Type                                                                                        | Description |
-| ---------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------- | ----------- |
-| [claims](./data-store-json.browserlocalstoragestore.claims.md)               |           | Record&lt;string, [ClaimTableEntry](./data-store-json.claimtableentry.md)&gt;               |             |
-| [credentials](./data-store-json.browserlocalstoragestore.credentials.md)     |           | Record&lt;string, [CredentialTableEntry](./data-store-json.credentialtableentry.md)&gt;     |             |
-| [dids](./data-store-json.browserlocalstoragestore.dids.md)                   |           | Record&lt;string, [IIdentifier](./core-types.iidentifier.md)&gt;                            |             |
-| [keys](./data-store-json.browserlocalstoragestore.keys.md)                   |           | Record&lt;string, [ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;                      |             |
-| [messages](./data-store-json.browserlocalstoragestore.messages.md)           |           | Record&lt;string, [IMessage](./core-types.imessage.md)&gt;                                  |             |
-| [notifyUpdate](./data-store-json.browserlocalstoragestore.notifyupdate.md)   |           | [DiffCallback](./data-store-json.diffcallback.md)                                           |             |
-| [presentations](./data-store-json.browserlocalstoragestore.presentations.md) |           | Record&lt;string, [PresentationTableEntry](./data-store-json.presentationtableentry.md)&gt; |             |
-| [privateKeys](./data-store-json.browserlocalstoragestore.privatekeys.md)     |           | Record&lt;string, [ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;               |             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[claims](./data-store-json.browserlocalstoragestore.claims.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [ClaimTableEntry](./data-store-json.claimtableentry.md)&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[credentials](./data-store-json.browserlocalstoragestore.credentials.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [CredentialTableEntry](./data-store-json.credentialtableentry.md)&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[dids](./data-store-json.browserlocalstoragestore.dids.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [IIdentifier](./core-types.iidentifier.md)&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[keys](./data-store-json.browserlocalstoragestore.keys.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [ManagedKeyInfo](./core-types.managedkeyinfo.md)&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[messages](./data-store-json.browserlocalstoragestore.messages.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [IMessage](./core-types.imessage.md)&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[notifyUpdate](./data-store-json.browserlocalstoragestore.notifyupdate.md)
+
+</td><td>
+
+</td><td>
+
+[DiffCallback](./data-store-json.diffcallback.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[presentations](./data-store-json.browserlocalstoragestore.presentations.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [PresentationTableEntry](./data-store-json.presentationtableentry.md)&gt;
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[privateKeys](./data-store-json.browserlocalstoragestore.privatekeys.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, [ManagedPrivateKey](./key-manager.managedprivatekey.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                              | Modifiers           | Description |
-| --------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
-| [fromLocalStorage(localStorageKey)](./data-store-json.browserlocalstoragestore.fromlocalstorage.md) | <code>static</code> |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[fromLocalStorage(localStorageKey)](./data-store-json.browserlocalstoragestore.fromlocalstorage.md)
+
+</td><td>
+
+`static`
+
+</td><td>
+
+</td></tr>
+</tbody></table>

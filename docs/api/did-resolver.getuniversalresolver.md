@@ -18,10 +18,33 @@ export declare function getUniversalResolver(url?: string): DIDResolver
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                            |
-| --------- | ------ | -------------------------------------------------------------------------------------- |
-| url       | string | _(Optional)_ the URL for the universal resolver instance (See https://uniresolver.io ) |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+url
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ the URL for the universal resolver instance (See https://uniresolver.io )
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 DIDResolver

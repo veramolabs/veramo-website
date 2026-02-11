@@ -12,6 +12,22 @@ Provides `did:web` [identifier provider](./did-provider-web.webdidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                        |
-| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
-| [WebDIDProvider](./did-provider-web.webdidprovider.md) | [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:web</code> identifiers |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[WebDIDProvider](./did-provider-web.webdidprovider.md)
+
+</td><td>
+
+[DIDManager](./did-manager.didmanager.md) identifier provider for `did:web` identifiers
+
+</td></tr>
+</tbody></table>

@@ -16,10 +16,31 @@ importDID(args: IIdentifier): Promise<boolean>;
 
 ## Parameters
 
-| Parameter | Type                                       | Description |
-| --------- | ------------------------------------------ | ----------- |
-| args      | [IIdentifier](./core-types.iidentifier.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IIdentifier](./core-types.iidentifier.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;boolean&gt;

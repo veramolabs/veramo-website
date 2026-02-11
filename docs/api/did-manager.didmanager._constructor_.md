@@ -22,6 +22,28 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                   | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- |
-| options   | { providers: Record&lt;string, [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)&gt;; defaultProvider: string; store: [AbstractDIDStore](./did-manager.abstractdidstore.md); } |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+{ providers: Record&lt;string, [AbstractIdentifierProvider](./did-manager.abstractidentifierprovider.md)&gt;; defaultProvider: string; store: [AbstractDIDStore](./did-manager.abstractdidstore.md); }
+
+</td><td>
+
+</td></tr>
+</tbody></table>

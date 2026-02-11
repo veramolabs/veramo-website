@@ -14,26 +14,172 @@ The JSON tree backend can be persisted to any JSON compatible media using a call
 
 ## Classes
 
-| Class                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [BrowserLocalStorageStore](./data-store-json.browserlocalstoragestore.md) | Implementation of [VeramoJsonStore](./data-store-json.veramojsonstore.md) that uses browser localStorage to store data.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| [DataStoreJson](./data-store-json.datastorejson.md)                       | <p>**_(BETA)_** A Veramo agent storage plugin that implements the [IDataStore](./core-types.idatastore.md) and [IDataStoreORM](./core-types.idatastoreorm.md) methods using one big JSON object as a backend.</p><p>Each update operation triggers a callback that can be used to either save the latest state of the agent data or compute a diff and log only the changes.</p><p>This plugin must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object can be pre-populated with data from previous sessions.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                                                  |
-| [DIDStoreJson](./data-store-json.didstorejson.md)                         | <p>**_(BETA)_** An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that uses a JSON object to store the relationships between DIDs, their providers and controllers and their keys and services as they are known and managed by a Veramo agent.</p><p>An instance of this class can be used by [DIDManager](./did-manager.didmanager.md) as the data storage layer.</p><p>This class must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. For correct usage, this MUST use the same [VeramoJsonStore](./data-store-json.veramojsonstore.md) instance as the one used by [KeyManager](./key-manager.keymanager.md).</p><p>This API may change without a BREAKING CHANGE notice.</p>                                 |
-| [KeyStoreJson](./data-store-json.keystorejson.md)                         | <p>**_(BETA)_** An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that uses a JSON object to store the relationships between keys, their IDs, aliases and [KMS implementations](./key-manager.abstractkeymanagementsystem.md), as they are known and managed by a Veramo agent.</p><p>An instance of this class can be used by [KeyManager](./key-manager.keymanager.md) as the data storage layer.</p><p>This class must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. For correct usage, this MUST use the same [VeramoJsonStore](./data-store-json.veramojsonstore.md) instance as the one used by [DIDManager](./did-manager.didmanager.md).</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md)           | <p>**_(BETA)_** An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a JSON object to store the private key material needed by [KeyManagementSystem](./kms-local.keymanagementsystem.md).</p><p>This class must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object does not have to be shared with other users of [VeramoJsonStore](./data-store-json.veramojsonstore.md), but it can be.</p><p>If an [AbstractSecretBox](./key-manager.abstractsecretbox.md) is used, then key material is encrypted, even in memory.</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                           |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[BrowserLocalStorageStore](./data-store-json.browserlocalstoragestore.md)
+
+</td><td>
+
+Implementation of [VeramoJsonStore](./data-store-json.veramojsonstore.md) that uses browser localStorage to store data.
+
+</td></tr>
+<tr><td>
+
+[DataStoreJson](./data-store-json.datastorejson.md)
+
+</td><td>
+
+**_(BETA)_** A Veramo agent storage plugin that implements the [IDataStore](./core-types.idatastore.md) and [IDataStoreORM](./core-types.idatastoreorm.md) methods using one big JSON object as a backend.
+
+Each update operation triggers a callback that can be used to either save the latest state of the agent data or compute a diff and log only the changes.
+
+This plugin must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object can be pre-populated with data from previous sessions.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[DIDStoreJson](./data-store-json.didstorejson.md)
+
+</td><td>
+
+**_(BETA)_** An implementation of [AbstractDIDStore](./did-manager.abstractdidstore.md) that uses a JSON object to store the relationships between DIDs, their providers and controllers and their keys and services as they are known and managed by a Veramo agent.
+
+An instance of this class can be used by [DIDManager](./did-manager.didmanager.md) as the data storage layer.
+
+This class must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. For correct usage, this MUST use the same [VeramoJsonStore](./data-store-json.veramojsonstore.md) instance as the one used by [KeyManager](./key-manager.keymanager.md).
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[KeyStoreJson](./data-store-json.keystorejson.md)
+
+</td><td>
+
+**_(BETA)_** An implementation of [AbstractKeyStore](./key-manager.abstractkeystore.md) that uses a JSON object to store the relationships between keys, their IDs, aliases and [KMS implementations](./key-manager.abstractkeymanagementsystem.md), as they are known and managed by a Veramo agent.
+
+An instance of this class can be used by [KeyManager](./key-manager.keymanager.md) as the data storage layer.
+
+This class must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. For correct usage, this MUST use the same [VeramoJsonStore](./data-store-json.veramojsonstore.md) instance as the one used by [DIDManager](./did-manager.didmanager.md).
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[PrivateKeyStoreJson](./data-store-json.privatekeystorejson.md)
+
+</td><td>
+
+**_(BETA)_** An implementation of [AbstractPrivateKeyStore](./key-manager.abstractprivatekeystore.md) that uses a JSON object to store the private key material needed by [KeyManagementSystem](./kms-local.keymanagementsystem.md).
+
+This class must be initialized with a [VeramoJsonStore](./data-store-json.veramojsonstore.md), which serves as the JSON object storing data in memory as well as providing an update notification callback to persist this data. The JSON object does not have to be shared with other users of [VeramoJsonStore](./data-store-json.veramojsonstore.md), but it can be.
+
+If an [AbstractSecretBox](./key-manager.abstractsecretbox.md) is used, then key material is encrypted, even in memory.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Interfaces
 
-| Interface                                                             | Description                                                                                                                                                                                                                                                                                                                                                                          |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [ClaimTableEntry](./data-store-json.claimtableentry.md)               | <p>**_(BETA)_** This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent the claims contained in a Verifiable Credential in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.</p><p>This API may change in future versions without a BREAKING CHANGE notice.</p>                                |
-| [CredentialTableEntry](./data-store-json.credentialtableentry.md)     | <p>**_(BETA)_** This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent a Verifiable Credential in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.</p><p>This API may change in future versions without a BREAKING CHANGE notice.</p>                                                        |
-| [PresentationTableEntry](./data-store-json.presentationtableentry.md) | <p>**_(BETA)_** This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent a Verifiable Presentation in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.</p><p>This API may change in future versions without a BREAKING CHANGE notice.</p>                                                      |
-| [VeramoJsonCache](./data-store-json.veramojsoncache.md)               | <p>**_(BETA)_** A JSON data layout for data-store-json implementations.</p><p>This API may change in future versions without a BREAKING CHANGE notice.</p>                                                                                                                                                                                                                           |
-| [VeramoJsonStore](./data-store-json.veramojsonstore.md)               | <p>**_(BETA)_** An extension to [VeramoJsonCache](./data-store-json.veramojsoncache.md) that bundles an update notification callback that allows implementors to persist the [VeramoJsonCache](./data-store-json.veramojsoncache.md) and any other data it may contain to another storage medium.</p><p>This API may change in future versions without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Interface
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[ClaimTableEntry](./data-store-json.claimtableentry.md)
+
+</td><td>
+
+**_(BETA)_** This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent the claims contained in a Verifiable Credential in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.
+
+This API may change in future versions without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[CredentialTableEntry](./data-store-json.credentialtableentry.md)
+
+</td><td>
+
+**_(BETA)_** This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent a Verifiable Credential in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.
+
+This API may change in future versions without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[PresentationTableEntry](./data-store-json.presentationtableentry.md)
+
+</td><td>
+
+**_(BETA)_** This is used internally by [DataStoreJson](./data-store-json.datastorejson.md) to represent a Verifiable Presentation in a way that facilitates querying using the [IDataStoreORM](./core-types.idatastoreorm.md) interface.
+
+This API may change in future versions without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[VeramoJsonCache](./data-store-json.veramojsoncache.md)
+
+</td><td>
+
+**_(BETA)_** A JSON data layout for data-store-json implementations.
+
+This API may change in future versions without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[VeramoJsonStore](./data-store-json.veramojsonstore.md)
+
+</td><td>
+
+**_(BETA)_** An extension to [VeramoJsonCache](./data-store-json.veramojsoncache.md) that bundles an update notification callback that allows implementors to persist the [VeramoJsonCache](./data-store-json.veramojsoncache.md) and any other data it may contain to another storage medium.
+
+This API may change in future versions without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Type Aliases
 
-| Type Alias                                        | Description                                                                                                                                 |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| [DiffCallback](./data-store-json.diffcallback.md) | **_(BETA)_** A callback method that is called when the data stored in a [VeramoJsonCache](./data-store-json.veramojsoncache.md) is updated. |
+<table><thead><tr><th>
+
+Type Alias
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[DiffCallback](./data-store-json.diffcallback.md)
+
+</td><td>
+
+**_(BETA)_** A callback method that is called when the data stored in a [VeramoJsonCache](./data-store-json.veramojsoncache.md) is updated.
+
+</td></tr>
+</tbody></table>

@@ -22,13 +22,141 @@ export interface IDIDCommMessageAttachment
 
 ## Properties
 
-| Property                                                              | Modifiers | Type                                                                         | Description               |
-| --------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- | ------------------------- |
-| [byte_count?](./did-comm.ididcommmessageattachment.byte_count.md)     |           | number                                                                       | **_(BETA)_** _(Optional)_ |
-| [data](./did-comm.ididcommmessageattachment.data.md)                  |           | [IDIDCommMessageAttachmentData](./did-comm.ididcommmessageattachmentdata.md) | **_(BETA)_**              |
-| [description?](./did-comm.ididcommmessageattachment.description.md)   |           | string                                                                       | **_(BETA)_** _(Optional)_ |
-| [filename?](./did-comm.ididcommmessageattachment.filename.md)         |           | string                                                                       | **_(BETA)_** _(Optional)_ |
-| [format?](./did-comm.ididcommmessageattachment.format.md)             |           | string                                                                       | **_(BETA)_** _(Optional)_ |
-| [id?](./did-comm.ididcommmessageattachment.id.md)                     |           | string                                                                       | **_(BETA)_** _(Optional)_ |
-| [lastmod_time?](./did-comm.ididcommmessageattachment.lastmod_time.md) |           | string                                                                       | **_(BETA)_** _(Optional)_ |
-| [media_type?](./did-comm.ididcommmessageattachment.media_type.md)     |           | string                                                                       | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[byte_count?](./did-comm.ididcommmessageattachment.byte_count.md)
+
+</td><td>
+
+</td><td>
+
+number
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[data](./did-comm.ididcommmessageattachment.data.md)
+
+</td><td>
+
+</td><td>
+
+[IDIDCommMessageAttachmentData](./did-comm.ididcommmessageattachmentdata.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[description?](./did-comm.ididcommmessageattachment.description.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[filename?](./did-comm.ididcommmessageattachment.filename.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[format?](./did-comm.ididcommmessageattachment.format.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[id?](./did-comm.ididcommmessageattachment.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[lastmod_time?](./did-comm.ididcommmessageattachment.lastmod_time.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[media_type?](./did-comm.ididcommmessageattachment.media_type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

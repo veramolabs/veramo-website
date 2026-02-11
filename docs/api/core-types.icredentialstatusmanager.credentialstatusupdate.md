@@ -20,10 +20,33 @@ credentialStatusUpdate(args: CredentialStatusUpdateArgs): Promise<any>;
 
 ## Parameters
 
-| Parameter | Type                                                                     | Description                                                    |
-| --------- | ------------------------------------------------------------------------ | -------------------------------------------------------------- |
-| args      | [CredentialStatusUpdateArgs](./core-types.credentialstatusupdateargs.md) | Input arguments for updating the status(revoking) a credential |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[CredentialStatusUpdateArgs](./core-types.credentialstatusupdateargs.md)
+
+</td><td>
+
+Input arguments for updating the status(revoking) a credential
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

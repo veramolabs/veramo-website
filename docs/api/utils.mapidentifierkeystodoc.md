@@ -25,13 +25,72 @@ export declare function mapIdentifierKeysToDoc(
 
 ## Parameters
 
-| Parameter         | Type                                                                                         | Description                                                                                                                                                                                                       |
-| ----------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| identifier        | [IIdentifier](./core-types.iidentifier.md)                                                   | the identifier to be mapped                                                                                                                                                                                       |
-| section           | [DIDDocumentSection](./core-types.diddocumentsection.md) &#124; undefined                    | the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be <code>verificationMethod</code> to map all the keys. |
-| context           | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the identifier.                                                         |
-| resolutionOptions | DIDResolutionOptions                                                                         | _(Optional)_ optional parameters to be passed to the DID resolver                                                                                                                                                 |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+identifier
+
+</td><td>
+
+[IIdentifier](./core-types.iidentifier.md)
+
+</td><td>
+
+the identifier to be mapped
+
+</td></tr>
+<tr><td>
+
+section
+
+</td><td>
+
+[DIDDocumentSection](./core-types.diddocumentsection.md) \| undefined
+
+</td><td>
+
+the section of the DID document to be mapped (see [verification relationships](https://www.w3.org/TR/did-core/#verification-relationships)), but can also be `verificationMethod` to map all the keys.
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt;
+
+</td><td>
+
+the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the identifier.
+
+</td></tr>
+<tr><td>
+
+resolutionOptions
+
+</td><td>
+
+DIDResolutionOptions
+
+</td><td>
+
+_(Optional)_ optional parameters to be passed to the DID resolver
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;\_ExtendedIKey\[\]&gt;

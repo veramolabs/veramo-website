@@ -24,10 +24,96 @@ export declare class Service extends BaseEntity
 
 ## Properties
 
-| Property                                                   | Modifiers | Type                                                     | Description               |
-| ---------------------------------------------------------- | --------- | -------------------------------------------------------- | ------------------------- |
-| [description?](./data-store.service.description.md)        |           | string                                                   | **_(BETA)_** _(Optional)_ |
-| [id](./data-store.service.id.md)                           |           | string                                                   | **_(BETA)_**              |
-| [identifier?](./data-store.service.identifier.md)          |           | Relation&lt;[Identifier](./data-store.identifier.md)&gt; | **_(BETA)_** _(Optional)_ |
-| [serviceEndpoint](./data-store.service.serviceendpoint.md) |           | string                                                   | **_(BETA)_**              |
-| [type](./data-store.service.type.md)                       |           | string                                                   | **_(BETA)_**              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[description?](./data-store.service.description.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[id](./data-store.service.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[identifier?](./data-store.service.identifier.md)
+
+</td><td>
+
+</td><td>
+
+Relation&lt;[Identifier](./data-store.identifier.md)&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[serviceEndpoint](./data-store.service.serviceendpoint.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[type](./data-store.service.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

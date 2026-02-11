@@ -18,6 +18,36 @@ export interface IDataStoreSaveMessageArgs
 
 ## Properties
 
-| Property                                                     | Modifiers | Type                                 | Description       |
-| ------------------------------------------------------------ | --------- | ------------------------------------ | ----------------- |
-| [message](./core-types.idatastoresavemessageargs.message.md) |           | [IMessage](./core-types.imessage.md) | Required. Message |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[message](./core-types.idatastoresavemessageargs.message.md)
+
+</td><td>
+
+</td><td>
+
+[IMessage](./core-types.imessage.md)
+
+</td><td>
+
+Required. Message
+
+</td></tr>
+</tbody></table>

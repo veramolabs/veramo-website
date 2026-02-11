@@ -16,10 +16,31 @@ setNext(messageHandler: AbstractMessageHandler): AbstractMessageHandler;
 
 ## Parameters
 
-| Parameter      | Type                                                                  | Description |
-| -------------- | --------------------------------------------------------------------- | ----------- |
-| messageHandler | [AbstractMessageHandler](./message-handler.abstractmessagehandler.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+messageHandler
+
+</td><td>
+
+[AbstractMessageHandler](./message-handler.abstractmessagehandler.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [AbstractMessageHandler](./message-handler.abstractmessagehandler.md)

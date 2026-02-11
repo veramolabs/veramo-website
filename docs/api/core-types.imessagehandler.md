@@ -20,6 +20,24 @@ export interface IMessageHandler extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                        | Description                                                                                                                                                                                                        |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [handleMessage(args, context)](./core-types.imessagehandler.handlemessage.md) | <p>Parses a raw message.</p><p>After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core-types.idatastore.datastoresavemessage.md) to save it.</p> |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handleMessage(args, context)](./core-types.imessagehandler.handlemessage.md)
+
+</td><td>
+
+Parses a raw message.
+
+After the message is parsed, you can decide if it should be saved, and pass the result to [dataStoreSaveMessage()](./core-types.idatastore.datastoresavemessage.md) to save it.
+
+</td></tr>
+</tbody></table>

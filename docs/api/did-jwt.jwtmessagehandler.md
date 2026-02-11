@@ -20,6 +20,26 @@ export declare class JwtMessageHandler extends AbstractMessageHandler
 
 ## Methods
 
-| Method                                                            | Modifiers | Description |
-| ----------------------------------------------------------------- | --------- | ----------- |
-| [handle(message, context)](./did-jwt.jwtmessagehandler.handle.md) |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./did-jwt.jwtmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

@@ -20,10 +20,33 @@ AgentRouter: (options: AgentRouterOptions) => Router
 
 ## Parameters
 
-| Parameter | Type                                                        | Description           |
-| --------- | ----------------------------------------------------------- | --------------------- |
-| options   | [AgentRouterOptions](./remote-server.agentrouteroptions.md) | Initialization option |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+[AgentRouterOptions](./remote-server.agentrouteroptions.md)
+
+</td><td>
+
+Initialization option
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Router

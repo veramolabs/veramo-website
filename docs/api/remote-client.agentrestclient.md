@@ -24,13 +24,81 @@ export declare class AgentRestClient implements IAgentPlugin
 
 ## Constructors
 
-| Constructor                                                                | Modifiers | Description                                                         |
-| -------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- |
-| [(constructor)(options)](./remote-client.agentrestclient._constructor_.md) |           | Constructs a new instance of the <code>AgentRestClient</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./remote-client.agentrestclient._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `AgentRestClient` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                              | Modifiers             | Type                                                     | Description  |
-| ----------------------------------------------------- | --------------------- | -------------------------------------------------------- | ------------ |
-| [methods](./remote-client.agentrestclient.methods.md) | <code>readonly</code> | [IPluginMethodMap](./core-types.ipluginmethodmap.md)     |              |
-| [schema?](./remote-client.agentrestclient.schema.md)  | <code>readonly</code> | [IAgentPluginSchema](./core-types.iagentpluginschema.md) | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[methods](./remote-client.agentrestclient.methods.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IPluginMethodMap](./core-types.ipluginmethodmap.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[schema?](./remote-client.agentrestclient.schema.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IAgentPluginSchema](./core-types.iagentpluginschema.md)
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

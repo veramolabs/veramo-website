@@ -22,6 +22,36 @@ export interface DIDCommConfig<T extends IDIDCommTransport = DIDCommHttpTranspor
 
 ## Properties
 
-| Property                                              | Modifiers | Type  | Description               |
-| ----------------------------------------------------- | --------- | ----- | ------------------------- |
-| [transports?](./did-comm.didcommconfig.transports.md) |           | T\[\] | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[transports?](./did-comm.didcommconfig.transports.md)
+
+</td><td>
+
+</td><td>
+
+T\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

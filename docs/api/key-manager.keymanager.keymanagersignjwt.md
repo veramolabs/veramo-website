@@ -18,10 +18,31 @@ keyManagerSignJWT({ kid, data }: IKeyManagerSignJWTArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter     | Type                                                             | Description |
-| ------------- | ---------------------------------------------------------------- | ----------- |
-| { kid, data } | [IKeyManagerSignJWTArgs](./core-types.ikeymanagersignjwtargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ kid, data }
+
+</td><td>
+
+[IKeyManagerSignJWTArgs](./core-types.ikeymanagersignjwtargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

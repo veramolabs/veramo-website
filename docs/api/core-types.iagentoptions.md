@@ -22,10 +22,98 @@ export interface IAgentOptions
 
 ## Properties
 
-| Property                                                              | Modifiers | Type                                                 | Description                                                                                                                                        |
-| --------------------------------------------------------------------- | --------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [authorizedMethods?](./core-types.iagentoptions.authorizedmethods.md) |           | string\[\]                                           | _(Optional)_ The array of method names that will be exposed by the agent                                                                           |
-| [context?](./core-types.iagentoptions.context.md)                     |           | Record&lt;string, any&gt;                            | _(Optional)_ The context object that will be available to the plugin methods                                                                       |
-| [overrides?](./core-types.iagentoptions.overrides.md)                 |           | [IPluginMethodMap](./core-types.ipluginmethodmap.md) | _(Optional)_ The map of plugin methods. Can be used to override methods provided by plugins, or to add additional methods without writing a plugin |
-| [plugins?](./core-types.iagentoptions.plugins.md)                     |           | [IAgentPlugin](./core-types.iagentplugin.md)\[\]     | _(Optional)_ The array of agent plugins                                                                                                            |
-| [schemaValidation?](./core-types.iagentoptions.schemavalidation.md)   |           | boolean                                              | <p>_(Optional)_ Flag that enables schema validation for plugin methods.</p><p>Defaults to <code>false</code>.</p>                                  |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[authorizedMethods?](./core-types.iagentoptions.authorizedmethods.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+_(Optional)_ The array of method names that will be exposed by the agent
+
+</td></tr>
+<tr><td>
+
+[context?](./core-types.iagentoptions.context.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, any&gt;
+
+</td><td>
+
+_(Optional)_ The context object that will be available to the plugin methods
+
+</td></tr>
+<tr><td>
+
+[overrides?](./core-types.iagentoptions.overrides.md)
+
+</td><td>
+
+</td><td>
+
+[IPluginMethodMap](./core-types.ipluginmethodmap.md)
+
+</td><td>
+
+_(Optional)_ The map of plugin methods. Can be used to override methods provided by plugins, or to add additional methods without writing a plugin
+
+</td></tr>
+<tr><td>
+
+[plugins?](./core-types.iagentoptions.plugins.md)
+
+</td><td>
+
+</td><td>
+
+[IAgentPlugin](./core-types.iagentplugin.md)\[\]
+
+</td><td>
+
+_(Optional)_ The array of agent plugins
+
+</td></tr>
+<tr><td>
+
+[schemaValidation?](./core-types.iagentoptions.schemavalidation.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ Flag that enables schema validation for plugin methods.
+
+Defaults to `false`.
+
+</td></tr>
+</tbody></table>

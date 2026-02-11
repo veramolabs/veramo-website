@@ -20,11 +20,48 @@ dataStoreORMGetMessages(args: FindMessagesArgs, context: AuthorizedDIDContext): 
 
 ## Parameters
 
-| Parameter | Type                                                         | Description                                                                                                                                                                                                                                          |
-| --------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [FindMessagesArgs](./core-types.findmessagesargs.md)         | The filter to apply when querying                                                                                                                                                                                                                    |
-| context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md) | <p>Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[FindMessagesArgs](./core-types.findmessagesargs.md)
+
+</td><td>
+
+The filter to apply when querying
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[AuthorizedDIDContext](./core-types.authorizeddidcontext.md)
+
+</td><td>
+
+Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Array&lt;[IMessage](./core-types.imessage.md)&gt;&gt;

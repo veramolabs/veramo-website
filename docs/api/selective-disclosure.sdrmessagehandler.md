@@ -28,6 +28,28 @@ export declare class SdrMessageHandler extends AbstractMessageHandler
 
 ## Methods
 
-| Method                                                                         | Modifiers | Description  |
-| ------------------------------------------------------------------------------ | --------- | ------------ |
-| [handle(message, context)](./selective-disclosure.sdrmessagehandler.handle.md) |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./selective-disclosure.sdrmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

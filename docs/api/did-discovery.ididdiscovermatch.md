@@ -22,7 +22,51 @@ export interface IDIDDiscoverMatch
 
 ## Properties
 
-| Property                                                  | Modifiers | Type                      | Description                                                     |
-| --------------------------------------------------------- | --------- | ------------------------- | --------------------------------------------------------------- |
-| [did](./did-discovery.ididdiscovermatch.did.md)           |           | string                    | **_(BETA)_** DID                                                |
-| [metaData](./did-discovery.ididdiscovermatch.metadata.md) |           | Record&lt;string, any&gt; | **_(BETA)_** Provider specific related metadata about the match |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[did](./did-discovery.ididdiscovermatch.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** DID
+
+</td></tr>
+<tr><td>
+
+[metaData](./did-discovery.ididdiscovermatch.metadata.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, any&gt;
+
+</td><td>
+
+**_(BETA)_** Provider specific related metadata about the match
+
+</td></tr>
+</tbody></table>

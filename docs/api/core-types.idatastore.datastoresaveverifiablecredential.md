@@ -18,10 +18,33 @@ dataStoreSaveVerifiableCredential(args: IDataStoreSaveVerifiableCredentialArgs):
 
 ## Parameters
 
-| Parameter | Type                                                                                             | Description           |
-| --------- | ------------------------------------------------------------------------------------------------ | --------------------- |
-| args      | [IDataStoreSaveVerifiableCredentialArgs](./core-types.idatastoresaveverifiablecredentialargs.md) | verifiable credential |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDataStoreSaveVerifiableCredentialArgs](./core-types.idatastoresaveverifiablecredentialargs.md)
+
+</td><td>
+
+verifiable credential
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

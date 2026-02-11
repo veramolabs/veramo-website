@@ -20,6 +20,28 @@ constructor(jsonStore: VeramoJsonStore);
 
 ## Parameters
 
-| Parameter | Type                                                    | Description |
-| --------- | ------------------------------------------------------- | ----------- |
-| jsonStore | [VeramoJsonStore](./data-store-json.veramojsonstore.md) |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+jsonStore
+
+</td><td>
+
+[VeramoJsonStore](./data-store-json.veramojsonstore.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>

@@ -18,8 +18,66 @@ export interface IDIDManagerRemoveKeyArgs
 
 ## Properties
 
-| Property                                                     | Modifiers | Type   | Description                                                 |
-| ------------------------------------------------------------ | --------- | ------ | ----------------------------------------------------------- |
-| [did](./core-types.ididmanagerremovekeyargs.did.md)          |           | string | DID                                                         |
-| [kid](./core-types.ididmanagerremovekeyargs.kid.md)          |           | string | Key ID                                                      |
-| [options?](./core-types.ididmanagerremovekeyargs.options.md) |           | object | _(Optional)_ Optional. Identifier provider specific options |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[did](./core-types.ididmanagerremovekeyargs.did.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+DID
+
+</td></tr>
+<tr><td>
+
+[kid](./core-types.ididmanagerremovekeyargs.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Key ID
+
+</td></tr>
+<tr><td>
+
+[options?](./core-types.ididmanagerremovekeyargs.options.md)
+
+</td><td>
+
+</td><td>
+
+{ localOnly?: boolean; \[key: string\]: any; }
+
+</td><td>
+
+_(Optional)_ Optional. Identifier-provider specific options
+
+</td></tr>
+</tbody></table>

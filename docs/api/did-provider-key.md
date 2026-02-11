@@ -12,12 +12,46 @@ Provides `did:key` [identifier provider](./did-provider-key.keydidprovider.md) f
 
 ## Classes
 
-| Class                                                  | Description                                                                                                                                                                        |
-| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [KeyDIDProvider](./did-provider-key.keydidprovider.md) | <p>**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for <code>did:key</code> identifiers</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Class
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[KeyDIDProvider](./did-provider-key.keydidprovider.md)
+
+</td><td>
+
+**_(BETA)_** [DIDManager](./did-manager.didmanager.md) identifier provider for `did:key` identifiers
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 
 ## Functions
 
-| Function                                                       | Description                                           |
-| -------------------------------------------------------------- | ----------------------------------------------------- |
-| [getDidKeyResolver()](./did-provider-key.getdidkeyresolver.md) | Provides a mapping to a did:key resolver, usable by . |
+<table><thead><tr><th>
+
+Function
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[getDidKeyResolver()](./did-provider-key.getdidkeyresolver.md)
+
+</td><td>
+
+Provides a mapping to a did:key resolver, usable by .
+
+</td></tr>
+</tbody></table>

@@ -13,5 +13,33 @@ Constructs a new instance of the `CredentialPlugin` class
 **Signature:**
 
 ```typescript
-constructor()
+constructor(providers: ICredentialProvider[]);
 ```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+providers
+
+</td><td>
+
+[ICredentialProvider](./credential-w3c.icredentialprovider.md)\[\]
+
+</td><td>
+
+</td></tr>
+</tbody></table>

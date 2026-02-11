@@ -23,6 +23,28 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                      | Description |
-| --------- | ----------------------------------------- | ----------- |
-| options   | { defaultKms: string; chainId?: string; } |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+{ defaultKms: string; chainId?: string; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>

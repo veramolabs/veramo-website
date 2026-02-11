@@ -8,7 +8,7 @@ hide_title: true
 
 ## IDIDManagerCreateArgs.options property
 
-Optional. Identifier provider specific options
+Optional. Identifier-provider specific options
 
 **Signature:**
 

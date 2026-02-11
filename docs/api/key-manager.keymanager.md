@@ -24,30 +24,230 @@ export declare class KeyManager implements IAgentPlugin
 
 ## Constructors
 
-| Constructor                                                         | Modifiers | Description                                                    |
-| ------------------------------------------------------------------- | --------- | -------------------------------------------------------------- |
-| [(constructor)(options)](./key-manager.keymanager._constructor_.md) |           | Constructs a new instance of the <code>KeyManager</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(options)](./key-manager.keymanager._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+Constructs a new instance of the `KeyManager` class
+
+</td></tr>
+</tbody></table>
 
 ## Properties
 
-| Property                                       | Modifiers             | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Description    |
-| ---------------------------------------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| [methods](./key-manager.keymanager.methods.md) | <code>readonly</code> | [IKeyManager](./core-types.ikeymanager.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Plugin methods |
-| [schema](./key-manager.keymanager.schema.md)   | <code>readonly</code> | { components: { schemas: { IKeyManagerCreateArgs: { type: string; properties: { type: { $ref: string; description: string; }; kms: { type: string; description: string; }; meta: { $ref: string; description: string; }; }; required: string\[\]; description: string; }; TKeyType: { type: string; enum: string\[\]; description: string; }; KeyMetadata: { type: string; properties: { algorithms: { type: string; items: { $ref: string; }; }; }; description: string; }; TAlg: { type: string; description: string; }; ManagedKeyInfo: { type: string; properties: { kid: { type: string; description: string; }; kms: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } &#124; { type: string; $ref?: undefined; })\[\]; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerDecryptJWEArgs: { type: string; properties: { kid: { type: string; description: string; }; data: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerDeleteArgs: { type: string; properties: { kid: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerEncryptJWEArgs: { type: string; properties: { kid: { type: string; description: string; }; to: { type: string; properties: { kid: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; privateKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } &#124; { type: string; $ref?: undefined; })\[\]; description: string; }; }; required: string\[\]; description: string; }; data: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerGetArgs: { type: string; properties: { kid: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKey: { type: string; properties: { kid: { type: string; description: string; }; kms: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; privateKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } &#124; { type: string; $ref?: undefined; })\[\]; description: string; }; }; required: string\[\]; description: string; }; MinimalImportableKey: { $ref: string; description: string; }; "RequireOnly&lt;IKey,(\\"privateKeyHex\\"&#124;\\"type\\"&#124;\\"kms\\")&gt;": { type: string; properties: { kid: { type: string; description: string; }; kms: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; privateKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } &#124; { type: string; $ref?: undefined; })\[\]; description: string; }; }; description: string; }; IKeyManagerSharedSecretArgs: { type: string; properties: { secretKeyRef: { type: string; description: string; }; publicKey: { type: string; properties: { publicKeyHex: { type: string; description: string; }; type: { $ref: string; description: string; }; }; required: string\[\]; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerSignArgs: { type: string; properties: { keyRef: { type: string; description: string; }; algorithm: { type: string; description: string; }; data: { type: string; description: string; }; encoding: { type: string; enum: string\[\]; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerSignEthTXArgs: { type: string; properties: { kid: { type: string; description: string; }; transaction: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerSignJWTArgs: { type: string; properties: { kid: { type: string; description: string; }; data: { anyOf: ({ type: string; properties?: undefined; required?: undefined; additionalProperties?: undefined; } &#124; { type: string; properties: { BYTES_PER_ELEMENT: { type: string; }; buffer: { anyOf: ({ type: string; properties: { byteLength: { type: string; }; }; required: string\[\]; } &#124; { type?: undefined; properties?: undefined; required?: undefined; })\[\]; }; byteLength: { type: string; }; byteOffset: { type: string; }; length: { type: string; }; }; required: string\[\]; additionalProperties: { type: string; }; })\[\]; description: string; }; }; required: string\[\]; description: string; }; }; methods: { keyManagerCreate: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; keyManagerDecryptJWE: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerDelete: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerEncryptJWE: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerGet: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; keyManagerGetKeyManagementSystems: { description: string; arguments: { type: string; }; returnType: { type: string; items: { type: string; }; }; }; keyManagerImport: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; keyManagerSharedSecret: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerSign: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerSignEthTX: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerSignJWT: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; }; }; } |                |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[methods](./key-manager.keymanager.methods.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+[IKeyManager](./core-types.ikeymanager.md)
+
+</td><td>
+
+Plugin methods
+
+</td></tr>
+<tr><td>
+
+[schema](./key-manager.keymanager.schema.md)
+
+</td><td>
+
+`readonly`
+
+</td><td>
+
+{ components: { schemas: { IKeyManagerCreateArgs: { type: string; properties: { type: { $ref: string; description: string; }; kms: { type: string; description: string; }; meta: { $ref: string; description: string; }; kid: { type: string; description: string; }; }; required: string\[\]; description: string; }; TKeyType: { type: string; description: string; }; KeyMetadata: { type: string; properties: { algorithms: { type: string; items: { $ref: string; }; }; }; description: string; }; TAlg: { type: string; description: string; }; ManagedKeyInfo: { type: string; properties: { kid: { type: string; description: string; }; kms: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } \| { type: string; $ref?: undefined; })\[\]; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerDecryptJWEArgs: { type: string; properties: { kid: { type: string; description: string; }; data: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerDeleteArgs: { type: string; properties: { kid: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerEncryptJWEArgs: { type: string; properties: { kid: { type: string; description: string; }; to: { type: string; properties: { kid: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; privateKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } \| { type: string; $ref?: undefined; })\[\]; description: string; }; }; required: string\[\]; description: string; }; data: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerGetArgs: { type: string; properties: { kid: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKey: { type: string; properties: { kid: { type: string; description: string; }; kms: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; privateKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } \| { type: string; $ref?: undefined; })\[\]; description: string; }; }; required: string\[\]; description: string; }; MinimalImportableKey: { $ref: string; description: string; }; "RequireOnly&lt;IKey,(\\"privateKeyHex\\"\|\\"type\\"\|\\"kms\\")&gt;": { type: string; properties: { kid: { type: string; description: string; }; kms: { type: string; description: string; }; type: { $ref: string; description: string; }; publicKeyHex: { type: string; description: string; }; privateKeyHex: { type: string; description: string; }; meta: { anyOf: ({ $ref: string; type?: undefined; } \| { type: string; $ref?: undefined; })\[\]; description: string; }; }; description: string; }; IKeyManagerSharedSecretArgs: { type: string; properties: { secretKeyRef: { type: string; description: string; }; publicKey: { type: string; properties: { publicKeyHex: { type: string; description: string; }; type: { $ref: string; description: string; }; }; required: string\[\]; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerSignArgs: { type: string; properties: { keyRef: { type: string; description: string; }; algorithm: { type: string; description: string; }; data: { type: string; description: string; }; encoding: { type: string; enum: string\[\]; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerSignEthTXArgs: { type: string; properties: { kid: { type: string; description: string; }; transaction: { type: string; description: string; }; }; required: string\[\]; description: string; }; IKeyManagerSignJWTArgs: { type: string; properties: { kid: { type: string; description: string; }; data: { anyOf: ({ type: string; properties?: undefined; required?: undefined; additionalProperties?: undefined; } \| { type: string; properties: { BYTES_PER_ELEMENT: { type: string; }; buffer: { anyOf: ({ type: string; properties: { byteLength: { type: string; }; }; required: string\[\]; } \| { type?: undefined; properties?: undefined; required?: undefined; })\[\]; }; byteLength: { type: string; }; byteOffset: { type: string; }; length: { type: string; }; }; required: string\[\]; additionalProperties: { type: string; }; })\[\]; description: string; }; }; required: string\[\]; description: string; }; }; methods: { keyManagerCreate: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; keyManagerDecryptJWE: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerDelete: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerEncryptJWE: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerGet: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; keyManagerGetKeyManagementSystems: { description: string; arguments: { type: string; }; returnType: { type: string; items: { type: string; }; }; }; keyManagerImport: { description: string; arguments: { $ref: string; }; returnType: { $ref: string; }; }; keyManagerSharedSecret: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerSign: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerSignEthTX: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; keyManagerSignJWT: { description: string; arguments: { $ref: string; }; returnType: { type: string; }; }; }; }; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                                               | Modifiers | Description                                                                                                                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [createX25519ECDH(secretKeyRef)](./key-manager.keymanager.createx25519ecdh.md)                       |           |                                                                                                                                                                                                                                      |
-| [keyManagerCreate(args)](./key-manager.keymanager.keymanagercreate.md)                               |           | Creates and returns a new key                                                                                                                                                                                                        |
-| [keyManagerDecryptJWE({ kid, data })](./key-manager.keymanager.keymanagerdecryptjwe.md)              |           | Decrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                                  |
-| [keyManagerDelete({ kid })](./key-manager.keymanager.keymanagerdelete.md)                            |           | Deletes a key                                                                                                                                                                                                                        |
-| [keyManagerEncryptJWE({ kid, to, data })](./key-manager.keymanager.keymanagerencryptjwe.md)          |           | Encrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                                  |
-| [keyManagerGet({ kid })](./key-manager.keymanager.keymanagerget.md)                                  |           | Returns an existing key                                                                                                                                                                                                              |
-| [keyManagerGetKeyManagementSystems()](./key-manager.keymanager.keymanagergetkeymanagementsystems.md) |           | Lists available key management systems                                                                                                                                                                                               |
-| [keyManagerImport(key)](./key-manager.keymanager.keymanagerimport.md)                                |           | Imports a created key                                                                                                                                                                                                                |
-| [keyManagerSharedSecret(args)](./key-manager.keymanager.keymanagersharedsecret.md)                   |           | <p>Compute a shared secret with the public key of another party.</p><p>This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result.</p> |
-| [keyManagerSign(args)](./key-manager.keymanager.keymanagersign.md)                                   |           | Generates a signature according to the algorithm specified.                                                                                                                                                                          |
-| [keyManagerSignEthTX({ kid, transaction })](./key-manager.keymanager.keymanagersignethtx.md)         |           | Signs Ethereum transaction                                                                                                                                                                                                           |
-| [keyManagerSignJWT({ kid, data })](./key-manager.keymanager.keymanagersignjwt.md)                    |           | Signs JWT                                                                                                                                                                                                                            |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createX25519ECDH(secretKeyRef)](./key-manager.keymanager.createx25519ecdh.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[keyManagerCreate(args)](./key-manager.keymanager.keymanagercreate.md)
+
+</td><td>
+
+</td><td>
+
+Creates and returns a new key
+
+</td></tr>
+<tr><td>
+
+[keyManagerDecryptJWE({ kid, data })](./key-manager.keymanager.keymanagerdecryptjwe.md)
+
+</td><td>
+
+</td><td>
+
+Decrypts data This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[keyManagerDelete({ kid })](./key-manager.keymanager.keymanagerdelete.md)
+
+</td><td>
+
+</td><td>
+
+Deletes a key
+
+</td></tr>
+<tr><td>
+
+[keyManagerEncryptJWE({ kid, to, data })](./key-manager.keymanager.keymanagerencryptjwe.md)
+
+</td><td>
+
+</td><td>
+
+Encrypts data This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[keyManagerGet({ kid })](./key-manager.keymanager.keymanagerget.md)
+
+</td><td>
+
+</td><td>
+
+Returns an existing key
+
+</td></tr>
+<tr><td>
+
+[keyManagerGetKeyManagementSystems()](./key-manager.keymanager.keymanagergetkeymanagementsystems.md)
+
+</td><td>
+
+</td><td>
+
+Lists available key management systems
+
+</td></tr>
+<tr><td>
+
+[keyManagerImport(key)](./key-manager.keymanager.keymanagerimport.md)
+
+</td><td>
+
+</td><td>
+
+Imports a created key
+
+</td></tr>
+<tr><td>
+
+[keyManagerSharedSecret(args)](./key-manager.keymanager.keymanagersharedsecret.md)
+
+</td><td>
+
+</td><td>
+
+Compute a shared secret with the public key of another party.
+
+This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result.
+
+</td></tr>
+<tr><td>
+
+[keyManagerSign(args)](./key-manager.keymanager.keymanagersign.md)
+
+</td><td>
+
+</td><td>
+
+Generates a signature according to the algorithm specified.
+
+</td></tr>
+<tr><td>
+
+[keyManagerSignEthTX({ kid, transaction })](./key-manager.keymanager.keymanagersignethtx.md)
+
+</td><td>
+
+</td><td>
+
+Signs Ethereum transaction
+
+</td></tr>
+<tr><td>
+
+[keyManagerSignJWT({ kid, data })](./key-manager.keymanager.keymanagersignjwt.md)
+
+</td><td>
+
+</td><td>
+
+Signs JWT
+
+</td></tr>
+</tbody></table>

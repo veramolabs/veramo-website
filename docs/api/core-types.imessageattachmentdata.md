@@ -22,10 +22,96 @@ export interface IMessageAttachmentData
 
 ## Properties
 
-| Property                                                 | Modifiers | Type       | Description               |
-| -------------------------------------------------------- | --------- | ---------- | ------------------------- |
-| [base64?](./core-types.imessageattachmentdata.base64.md) |           | string     | **_(BETA)_** _(Optional)_ |
-| [hash?](./core-types.imessageattachmentdata.hash.md)     |           | string     | **_(BETA)_** _(Optional)_ |
-| [json?](./core-types.imessageattachmentdata.json.md)     |           | any        | **_(BETA)_** _(Optional)_ |
-| [jws?](./core-types.imessageattachmentdata.jws.md)       |           | any        | **_(BETA)_** _(Optional)_ |
-| [links?](./core-types.imessageattachmentdata.links.md)   |           | string\[\] | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[base64?](./core-types.imessageattachmentdata.base64.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[hash?](./core-types.imessageattachmentdata.hash.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[json?](./core-types.imessageattachmentdata.json.md)
+
+</td><td>
+
+</td><td>
+
+any
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[jws?](./core-types.imessageattachmentdata.jws.md)
+
+</td><td>
+
+</td><td>
+
+any
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[links?](./core-types.imessageattachmentdata.links.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

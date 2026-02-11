@@ -10,28 +10,24 @@ hide_title: true
 
 ## Classes
 
-| Class                                                                   | Description                                                                                                                                                                                            |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [CredentialIssuerEIP712](./credential-eip712.credentialissuereip712.md) | <p>**_(BETA)_** A Veramo plugin that implements the [ICredentialIssuerEIP712](./credential-eip712.icredentialissuereip712.md) methods.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
-## Interfaces
+Class
 
-| Interface                                                                                                 | Description                                                                                                                                                                                                                                                                                                                              |
-| --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ICreateVerifiableCredentialEIP712Args](./credential-eip712.icreateverifiablecredentialeip712args.md)     | <p>**_(BETA)_** Encapsulates the parameters required to create a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                           |
-| [ICreateVerifiablePresentationEIP712Args](./credential-eip712.icreateverifiablepresentationeip712args.md) | <p>**_(BETA)_** Encapsulates the parameters required to create a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations) using the [EthereumEip712Signature2021](https://w3c-ccg.github.io/ethereum-eip712-signature-2021-spec/) proof format.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
-| [ICredentialIssuerEIP712](./credential-eip712.icredentialissuereip712.md)                                 | **_(BETA)_** The interface definition for a plugin that can issue and verify Verifiable Credentials and Presentations that use EIP712 proof format.                                                                                                                                                                                      |
-| [IVerifyCredentialEIP712Args](./credential-eip712.iverifycredentialeip712args.md)                         | <p>**_(BETA)_** Encapsulates the parameters required to verify a [W3C Verifiable Credential](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>This API may change without a BREAKING CHANGE notice.</p>                                                                                                                           |
-| [IVerifyPresentationEIP712Args](./credential-eip712.iverifypresentationeip712args.md)                     | Encapsulates the parameters required to verify a [W3C Verifiable Presentation](https://www.w3.org/TR/vc-data-model/#presentations)                                                                                                                                                                                                       |
+</th><th>
 
-## Variables
+Description
 
-| Variable                                | Description |
-| --------------------------------------- | ----------- |
-| [schema](./credential-eip712.schema.md) |             |
+</th></tr></thead>
+<tbody><tr><td>
 
-## Type Aliases
+[CredentialProviderEIP712](./credential-eip712.credentialprovidereip712.md)
 
-| Type Alias                                                  | Description                                                                                                                                                                                                                                                                                                                 |
-| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [IRequiredContext](./credential-eip712.irequiredcontext.md) | <p>**_(BETA)_** Represents the requirements that this plugin has. The agent that is using this plugin is expected to provide these methods.</p><p>This interface can be used for static type checks, to make sure your application is properly initialized.</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+</td><td>
+
+**_(BETA)_** A Veramo Credential sub-plugin that implements a [ICredentialProvider](./credential-w3c.icredentialprovider.md) with support for EthereumEIP712Signature2021 proofs.
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>

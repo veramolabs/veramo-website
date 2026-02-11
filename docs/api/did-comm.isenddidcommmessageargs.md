@@ -24,9 +24,81 @@ export interface ISendDIDCommMessageArgs extends UsingResolutionOptions
 
 ## Properties
 
-| Property                                                                      | Modifiers | Type                                                         | Description               |
-| ----------------------------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------------------- |
-| [messageId](./did-comm.isenddidcommmessageargs.messageid.md)                  |           | string                                                       | **_(BETA)_**              |
-| [packedMessage](./did-comm.isenddidcommmessageargs.packedmessage.md)          |           | [IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md) | **_(BETA)_**              |
-| [recipientDidUrl](./did-comm.isenddidcommmessageargs.recipientdidurl.md)      |           | string                                                       | **_(BETA)_**              |
-| [returnTransportId?](./did-comm.isenddidcommmessageargs.returntransportid.md) |           | string                                                       | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[messageId](./did-comm.isenddidcommmessageargs.messageid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[packedMessage](./did-comm.isenddidcommmessageargs.packedmessage.md)
+
+</td><td>
+
+</td><td>
+
+[IPackedDIDCommMessage](./did-comm.ipackeddidcommmessage.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[recipientDidUrl](./did-comm.isenddidcommmessageargs.recipientdidurl.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[returnTransportId?](./did-comm.isenddidcommmessageargs.returntransportid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

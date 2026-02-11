@@ -18,6 +18,36 @@ export interface IDataStoreDeleteMessageArgs
 
 ## Properties
 
-| Property                                             | Modifiers | Type   | Description          |
-| ---------------------------------------------------- | --------- | ------ | -------------------- |
-| [id](./core-types.idatastoredeletemessageargs.id.md) |           | string | Required. Message ID |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[id](./core-types.idatastoredeletemessageargs.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Required. Message ID
+
+</td></tr>
+</tbody></table>

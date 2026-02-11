@@ -20,6 +20,26 @@ export declare class UrlMessageHandler extends AbstractMessageHandler
 
 ## Methods
 
-| Method                                                                | Modifiers | Description |
-| --------------------------------------------------------------------- | --------- | ----------- |
-| [handle(message, context)](./url-handler.urlmessagehandler.handle.md) |           |             |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[handle(message, context)](./url-handler.urlmessagehandler.handle.md)
+
+</td><td>
+
+</td><td>
+
+</td></tr>
+</tbody></table>

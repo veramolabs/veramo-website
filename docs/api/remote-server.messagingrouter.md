@@ -20,10 +20,33 @@ MessagingRouter: (options: MessagingRouterOptions) => Router
 
 ## Parameters
 
-| Parameter | Type                   | Description           |
-| --------- | ---------------------- | --------------------- |
-| options   | MessagingRouterOptions | Initialization option |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+MessagingRouterOptions
+
+</td><td>
+
+Initialization option
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Router

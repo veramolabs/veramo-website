@@ -30,11 +30,46 @@ emit(eventType: string, data: any): Promise<void>;
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                           |
-| --------- | ------ | ----------------------------------------------------------------------------------------------------- |
-| eventType | string | the type of event being emitted                                                                       |
-| data      | any    | event payload. Use the same <code>data</code> type for events of a particular <code>eventType</code>. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+eventType
+
+</td><td>
+
+string
+
+</td><td>
+
+the type of event being emitted
+
+</td></tr>
+<tr><td>
+
+data
+
+</td><td>
+
+any
+
+</td><td>
+
+event payload. Use the same `data` type for events of a particular `eventType`.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;void&gt;

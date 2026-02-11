@@ -20,6 +20,28 @@ constructor(dbConnection: OrPromise<DataSource>);
 
 ## Parameters
 
-| Parameter    | Type                        | Description |
-| ------------ | --------------------------- | ----------- |
-| dbConnection | OrPromise&lt;DataSource&gt; |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+dbConnection
+
+</td><td>
+
+OrPromise&lt;DataSource&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>

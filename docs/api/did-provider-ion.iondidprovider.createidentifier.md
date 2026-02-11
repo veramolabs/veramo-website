@@ -22,11 +22,44 @@ createIdentifier({ kms, options, alias }: {
 
 ## Parameters
 
-| Parameter               | Type                                                                                             | Description                                                                                                                                                                                                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| { kms, options, alias } | { kms?: string; alias?: string; options?: ICreateIdentifierOpts; }                               |                                                                                                                                                                                                                                                                |
-| context                 | [IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt; | \*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an <code>agent</code> that has [IKeyManager](./core-types.ikeymanager.md) methods. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+{ kms, options, alias }
+
+</td><td>
+
+{ kms?: string; alias?: string; options?: ICreateIdentifierOpts; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IKeyManager](./core-types.ikeymanager.md)&gt;
+
+</td><td>
+
+\*RESERVED\* This is filled by the framework when the method is called. This method's <a href="/docs/agent/plugins#executing-plugin-methods">execution context</a> requires an `agent` that has [IKeyManager](./core-types.ikeymanager.md) methods.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;Omit&lt;[IIdentifier](./core-types.iidentifier.md), 'provider'&gt;&gt;

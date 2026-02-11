@@ -498,13 +498,16 @@ schema: {
                             $ref: string;
                             description: string;
                         };
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
                     };
                     required: string[];
                     description: string;
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {
@@ -961,6 +964,13 @@ schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -1006,7 +1016,6 @@ schema: {
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {
@@ -1038,6 +1047,13 @@ schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -1304,6 +1320,13 @@ schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -1323,6 +1346,13 @@ schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -1554,6 +1584,13 @@ schema: {
                         };
                         options: {
                             type: string;
+                            properties: {
+                                localOnly: {
+                                    type: string;
+                                    description: string;
+                                    default: boolean;
+                                };
+                            };
                             description: string;
                         };
                     };
@@ -2061,6 +2098,9 @@ schema: {
                         type: {
                             type: string;
                         };
+                        proofValue: {
+                            type: string;
+                        };
                     };
                     description: string;
                 };
@@ -2510,7 +2550,6 @@ schema: {
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {
@@ -2796,6 +2835,9 @@ schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };
@@ -3502,6 +3544,9 @@ schema: {
                         type: {
                             type: string;
                         };
+                        proofValue: {
+                            type: string;
+                        };
                     };
                     description: string;
                 };
@@ -3804,7 +3849,13 @@ schema: {
                     description: string;
                 };
                 DateType: {
-                    type: string;
+                    anyOf: ({
+                        type: string;
+                        format?: undefined;
+                    } | {
+                        type: string;
+                        format: string;
+                    })[];
                     description: string;
                 };
                 CredentialStatusReference: {
@@ -3822,7 +3873,6 @@ schema: {
                 };
                 ProofFormat: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 VerifiableCredential: {
@@ -3871,6 +3921,9 @@ schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };
@@ -4105,7 +4158,6 @@ schema: {
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {
@@ -4287,6 +4339,9 @@ schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };
@@ -4616,6 +4671,9 @@ schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };
@@ -5083,6 +5141,9 @@ schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };

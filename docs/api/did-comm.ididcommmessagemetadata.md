@@ -22,6 +22,36 @@ export interface IDIDCommMessageMetaData
 
 ## Properties
 
-| Property                                                 | Modifiers | Type                                                         | Description  |
-| -------------------------------------------------------- | --------- | ------------------------------------------------------------ | ------------ |
-| [packing](./did-comm.ididcommmessagemetadata.packing.md) |           | [DIDCommMessagePacking](./did-comm.didcommmessagepacking.md) | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[packing](./did-comm.ididcommmessagemetadata.packing.md)
+
+</td><td>
+
+</td><td>
+
+[DIDCommMessagePacking](./did-comm.didcommmessagepacking.md)
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

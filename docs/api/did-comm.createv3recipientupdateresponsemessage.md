@@ -25,13 +25,64 @@ export declare function createV3RecipientUpdateResponseMessage(
 
 ## Parameters
 
-| Parameter       | Type                                           | Description |
-| --------------- | ---------------------------------------------- | ----------- |
-| recipientDidUrl | string                                         |             |
-| mediatorDidUrl  | string                                         |             |
-| thid            | string                                         |             |
-| updates         | [UpdateResult](./did-comm.updateresult.md)\[\] |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+recipientDidUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+mediatorDidUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+thid
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+updates
+
+</td><td>
+
+[UpdateResult](./did-comm.updateresult.md)\[\]
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 [IDIDCommMessage](./did-comm.ididcommmessage.md)

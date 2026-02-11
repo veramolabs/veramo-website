@@ -18,7 +18,51 @@ export interface ResolveDidArgs
 
 ## Properties
 
-| Property                                           | Modifiers | Type                 | Description                                                                                                                                                                                                                          |
-| -------------------------------------------------- | --------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [didUrl](./core-types.resolvedidargs.didurl.md)    |           | string               | DID URL                                                                                                                                                                                                                              |
-| [options?](./core-types.resolvedidargs.options.md) |           | DIDResolutionOptions | _(Optional)_ DID resolution options that will be passed to the method specific resolver. See: https://w3c.github.io/did-spec-registries/\#did-resolution-input-metadata See: https://www.w3.org/TR/did-core/\#did-resolution-options |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[didUrl](./core-types.resolvedidargs.didurl.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+DID URL
+
+</td></tr>
+<tr><td>
+
+[options?](./core-types.resolvedidargs.options.md)
+
+</td><td>
+
+</td><td>
+
+DIDResolutionOptions
+
+</td><td>
+
+_(Optional)_ DID resolution options that will be passed to the method specific resolver. See: https://w3c.github.io/did-spec-registries/\#did-resolution-input-metadata See: https://www.w3.org/TR/did-core/\#did-resolution-options
+
+</td></tr>
+</tbody></table>

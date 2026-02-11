@@ -20,7 +20,51 @@ export interface IError
 
 ## Properties
 
-| Property                                       | Modifiers | Type   | Description                                                                 |
-| ---------------------------------------------- | --------- | ------ | --------------------------------------------------------------------------- |
-| [errorCode?](./core-types.ierror.errorcode.md) |           | string | **_(BETA)_** _(Optional)_ The code for the error being throw                |
-| [message?](./core-types.ierror.message.md)     |           | string | **_(BETA)_** _(Optional)_ The details of the error being throw or forwarded |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[errorCode?](./core-types.ierror.errorcode.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The code for the error being throw
+
+</td></tr>
+<tr><td>
+
+[message?](./core-types.ierror.message.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ The details of the error being throw or forwarded
+
+</td></tr>
+</tbody></table>

@@ -29,13 +29,16 @@ readonly schema: {
                             $ref: string;
                             description: string;
                         };
+                        kid: {
+                            type: string;
+                            description: string;
+                        };
                     };
                     required: string[];
                     description: string;
                 };
                 TKeyType: {
                     type: string;
-                    enum: string[];
                     description: string;
                 };
                 KeyMetadata: {

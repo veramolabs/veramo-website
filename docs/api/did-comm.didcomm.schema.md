@@ -139,7 +139,7 @@ readonly schema: {
                         data: {
                             $ref: string;
                         };
-                    }; /** Plugin methods */
+                    };
                     required: string[];
                     description: string;
                 };
@@ -396,6 +396,9 @@ readonly schema: {
                     type: string;
                     properties: {
                         type: {
+                            type: string;
+                        };
+                        proofValue: {
                             type: string;
                         };
                     };

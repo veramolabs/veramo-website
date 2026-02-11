@@ -18,13 +18,107 @@ export declare abstract class AbstractIdentifierProvider
 
 ## Methods
 
-| Method                                                                                           | Modifiers             | Description                                                                                    |
-| ------------------------------------------------------------------------------------------------ | --------------------- | ---------------------------------------------------------------------------------------------- |
-| [addKey(args, context)](./did-manager.abstractidentifierprovider.addkey.md)                      | <code>abstract</code> |                                                                                                |
-| [addService(args, context)](./did-manager.abstractidentifierprovider.addservice.md)              | <code>abstract</code> |                                                                                                |
-| [createIdentifier(args, context)](./did-manager.abstractidentifierprovider.createidentifier.md)  | <code>abstract</code> |                                                                                                |
-| [deleteIdentifier(args, context)](./did-manager.abstractidentifierprovider.deleteidentifier.md)  | <code>abstract</code> |                                                                                                |
-| [matchPrefix(prefix)?](./did-manager.abstractidentifierprovider.matchprefix.md)                  |                       | _(Optional)_ Subclasses can override this to signal that they can work with a given DID prefix |
-| [removeKey(args, context)](./did-manager.abstractidentifierprovider.removekey.md)                | <code>abstract</code> |                                                                                                |
-| [removeService(args, context)](./did-manager.abstractidentifierprovider.removeservice.md)        | <code>abstract</code> |                                                                                                |
-| [updateIdentifier(args, context)?](./did-manager.abstractidentifierprovider.updateidentifier.md) | <code>abstract</code> | _(Optional)_                                                                                   |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[addKey(args, context)](./did-manager.abstractidentifierprovider.addkey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[addService(args, context)](./did-manager.abstractidentifierprovider.addservice.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[createIdentifier(args, context)](./did-manager.abstractidentifierprovider.createidentifier.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[deleteIdentifier(args, context)](./did-manager.abstractidentifierprovider.deleteidentifier.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[matchPrefix(prefix)?](./did-manager.abstractidentifierprovider.matchprefix.md)
+
+</td><td>
+
+</td><td>
+
+_(Optional)_ Subclasses can override this to signal that they can work with a given DID prefix
+
+</td></tr>
+<tr><td>
+
+[removeKey(args, context)](./did-manager.abstractidentifierprovider.removekey.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[removeService(args, context)](./did-manager.abstractidentifierprovider.removeservice.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[updateIdentifier(args, context)?](./did-manager.abstractidentifierprovider.updateidentifier.md)
+
+</td><td>
+
+`abstract`
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

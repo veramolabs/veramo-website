@@ -18,10 +18,33 @@ dataStoreSaveVerifiablePresentation(args: IDataStoreSaveVerifiablePresentationAr
 
 ## Parameters
 
-| Parameter | Type                                                                                                 | Description             |
-| --------- | ---------------------------------------------------------------------------------------------------- | ----------------------- |
-| args      | [IDataStoreSaveVerifiablePresentationArgs](./core-types.idatastoresaveverifiablepresentationargs.md) | verifiable presentation |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IDataStoreSaveVerifiablePresentationArgs](./core-types.idatastoresaveverifiablepresentationargs.md)
+
+</td><td>
+
+verifiable presentation
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

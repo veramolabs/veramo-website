@@ -20,6 +20,32 @@ constructor(id?: string);
 
 ## Parameters
 
-| Parameter | Type   | Description                                                                                                                                                           |
-| --------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| id        | string | <p>_(Optional)_ An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md).</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+id
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ An optional identifier for this [IDIDCommTransport](./did-comm.ididcommtransport.md).
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>

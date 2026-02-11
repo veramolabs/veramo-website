@@ -26,15 +26,119 @@ export interface IDataStoreORM extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [dataStoreORMGetIdentifiers(args, context)](./core-types.idatastoreorm.datastoreormgetidentifiers.md)                                               | <p>**_(BETA)_** Tries to obtain a list of [IIdentifiers](./core-types.iidentifier.md) that match the given filter. The origin of these identifiers is from any credential / presentation or message that was successfully processed by this agent.</p><p>If the same database is used for implementations of [AbstractDIDStore](./did-manager.abstractdidstore.md), then these identifiers can also come from [didManagerCreate](./core-types.ididmanager.didmanagercreate.md) or [didManagerImport](./core-types.ididmanager.didmanagerimport.md) operations.</p>  |
-| [dataStoreORMGetIdentifiersCount(args, context)](./core-types.idatastoreorm.datastoreormgetidentifierscount.md)                                     | <p>**_(BETA)_** Tries to obtain a count of [IIdentifiers](./core-types.iidentifier.md) that match the given filter. The origin of these identifiers is from any credential / presentation or message that was successfully processed by this agent.</p><p>If the same database is used for implementations of [AbstractDIDStore](./did-manager.abstractdidstore.md), then these identifiers can also come from [didManagerCreate](./core-types.ididmanager.didmanagercreate.md) or [didManagerImport](./core-types.ididmanager.didmanagerimport.md) operations.</p> |
-| [dataStoreORMGetMessages(args, context)](./core-types.idatastoreorm.datastoreormgetmessages.md)                                                     | **_(BETA)_** Returns a list of [IMessage](./core-types.imessage.md)s that match the given filter. These are messages that were stored using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md).                                                                                                                                                                                                                                                                                                                                                |
-| [dataStoreORMGetMessagesCount(args, context)](./core-types.idatastoreorm.datastoreormgetmessagescount.md)                                           | **_(BETA)_** Returns a count of [IMessage](./core-types.imessage.md)s that match the given filter. These are messages that were stored using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md).                                                                                                                                                                                                                                                                                                                                               |
-| [dataStoreORMGetVerifiableCredentials(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md)                           | <p>**_(BETA)_** Returns a list of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the top level properties of a credential.</p><p>These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).</p>                                                                                                                                                                                                      |
-| [dataStoreORMGetVerifiableCredentialsByClaims(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md)           | <p>**_(BETA)_** Returns a list of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the claims they contain.</p><p>These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).</p>                                                                                                                                                                                                                       |
-| [dataStoreORMGetVerifiableCredentialsByClaimsCount(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaimscount.md) | <p>**_(BETA)_** Returns a count of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the claims they contain.</p><p>These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).</p>                                                                                                                                                                                                                      |
-| [dataStoreORMGetVerifiableCredentialsCount(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentialscount.md)                 | <p>**_(BETA)_** Returns a count of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the top level properties of a credential.</p><p>These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).</p>                                                                                                                                                                                                     |
-| [dataStoreORMGetVerifiablePresentations(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)                       | <p>**_(BETA)_** Returns a list of [UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)s that match the given filter based on the top level properties of a presentation.</p><p>These are [VerifiablePresentation](./core-types.verifiablepresentation.md)s that were stored using [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md).</p>                                                                                                                                                |
-| [dataStoreORMGetVerifiablePresentationsCount(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablepresentationscount.md)             | <p>**_(BETA)_** Returns a count of [UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)s that match the given filter based on the top level properties of a presentation.</p><p>These are [VerifiablePresentation](./core-types.verifiablepresentation.md)s that were stored using [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md).</p>                                                                                                                                               |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[dataStoreORMGetIdentifiers(args, context)](./core-types.idatastoreorm.datastoreormgetidentifiers.md)
+
+</td><td>
+
+**_(BETA)_** Tries to obtain a list of [IIdentifiers](./core-types.iidentifier.md) that match the given filter. The origin of these identifiers is from any credential / presentation or message that was successfully processed by this agent.
+
+If the same database is used for implementations of [AbstractDIDStore](./did-manager.abstractdidstore.md), then these identifiers can also come from [didManagerCreate](./core-types.ididmanager.didmanagercreate.md) or [didManagerImport](./core-types.ididmanager.didmanagerimport.md) operations.
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetIdentifiersCount(args, context)](./core-types.idatastoreorm.datastoreormgetidentifierscount.md)
+
+</td><td>
+
+**_(BETA)_** Tries to obtain a count of [IIdentifiers](./core-types.iidentifier.md) that match the given filter. The origin of these identifiers is from any credential / presentation or message that was successfully processed by this agent.
+
+If the same database is used for implementations of [AbstractDIDStore](./did-manager.abstractdidstore.md), then these identifiers can also come from [didManagerCreate](./core-types.ididmanager.didmanagercreate.md) or [didManagerImport](./core-types.ididmanager.didmanagerimport.md) operations.
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetMessages(args, context)](./core-types.idatastoreorm.datastoreormgetmessages.md)
+
+</td><td>
+
+**_(BETA)_** Returns a list of [IMessage](./core-types.imessage.md)s that match the given filter. These are messages that were stored using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetMessagesCount(args, context)](./core-types.idatastoreorm.datastoreormgetmessagescount.md)
+
+</td><td>
+
+**_(BETA)_** Returns a count of [IMessage](./core-types.imessage.md)s that match the given filter. These are messages that were stored using [dataStoreSaveMessage](./core-types.idatastore.datastoresavemessage.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetVerifiableCredentials(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentials.md)
+
+</td><td>
+
+**_(BETA)_** Returns a list of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the top level properties of a credential.
+
+These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetVerifiableCredentialsByClaims(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaims.md)
+
+</td><td>
+
+**_(BETA)_** Returns a list of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the claims they contain.
+
+These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetVerifiableCredentialsByClaimsCount(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentialsbyclaimscount.md)
+
+</td><td>
+
+**_(BETA)_** Returns a count of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the claims they contain.
+
+These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetVerifiableCredentialsCount(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablecredentialscount.md)
+
+</td><td>
+
+**_(BETA)_** Returns a count of [UniqueVerifiableCredential](./core-types.uniqueverifiablecredential.md)s that match the given filter based on the top level properties of a credential.
+
+These are VerifiableCredentials that were stored using [dataStoreSaveVerifiableCredential](./core-types.idatastore.datastoresaveverifiablecredential.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetVerifiablePresentations(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablepresentations.md)
+
+</td><td>
+
+**_(BETA)_** Returns a list of [UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)s that match the given filter based on the top level properties of a presentation.
+
+These are [VerifiablePresentation](./core-types.verifiablepresentation.md)s that were stored using [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md).
+
+</td></tr>
+<tr><td>
+
+[dataStoreORMGetVerifiablePresentationsCount(args, context)](./core-types.idatastoreorm.datastoreormgetverifiablepresentationscount.md)
+
+</td><td>
+
+**_(BETA)_** Returns a count of [UniqueVerifiablePresentation](./core-types.uniqueverifiablepresentation.md)s that match the given filter based on the top level properties of a presentation.
+
+These are [VerifiablePresentation](./core-types.verifiablepresentation.md)s that were stored using [dataStoreSaveVerifiablePresentation](./core-types.idatastore.datastoresaveverifiablepresentation.md).
+
+</td></tr>
+</tbody></table>

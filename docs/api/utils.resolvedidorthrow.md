@@ -24,12 +24,59 @@ export declare function resolveDidOrThrow(
 
 ## Parameters
 
-| Parameter         | Type                                                                                         | Description                                                                                                                                                        |
-| ----------------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| didUrl            | string                                                                                       | the DID to be resolved                                                                                                                                             |
-| context           | [IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt; | the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the <code>didUrl</code>. |
-| resolutionOptions | DIDResolutionOptions                                                                         | _(Optional)_ optional parameters to be passed to the DID resolver                                                                                                  |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+didUrl
+
+</td><td>
+
+string
+
+</td><td>
+
+the DID to be resolved
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[IResolver](./core-types.iresolver.md)&gt;
+
+</td><td>
+
+the veramo agent context, which must contain a [IResolver](./core-types.iresolver.md) implementation that can resolve the DID document of the `didUrl`.
+
+</td></tr>
+<tr><td>
+
+resolutionOptions
+
+</td><td>
+
+DIDResolutionOptions
+
+</td><td>
+
+_(Optional)_ optional parameters to be passed to the DID resolver
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;DIDDocument&gt;

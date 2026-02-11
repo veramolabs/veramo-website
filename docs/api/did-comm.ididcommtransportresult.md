@@ -22,8 +22,66 @@ export interface IDIDCommTransportResult
 
 ## Properties
 
-| Property                                                              | Modifiers | Type   | Description               |
-| --------------------------------------------------------------------- | --------- | ------ | ------------------------- |
-| [error?](./did-comm.ididcommtransportresult.error.md)                 |           | string | **_(BETA)_** _(Optional)_ |
-| [result?](./did-comm.ididcommtransportresult.result.md)               |           | string | **_(BETA)_** _(Optional)_ |
-| [returnMessage?](./did-comm.ididcommtransportresult.returnmessage.md) |           | string | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[error?](./did-comm.ididcommtransportresult.error.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[result?](./did-comm.ididcommtransportresult.result.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[returnMessage?](./did-comm.ididcommtransportresult.returnmessage.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

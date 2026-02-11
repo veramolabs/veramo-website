@@ -20,11 +20,117 @@ export interface ICreateVerifiableCredentialArgs extends UsingResolutionOptions
 
 ## Properties
 
-| Property                                                                                      | Modifiers | Type                                                   | Description                                                                                                                                                                                                                                                                                                                                                                 |
-| --------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [credential](./core-types.icreateverifiablecredentialargs.credential.md)                      |           | [CredentialPayload](./core-types.credentialpayload.md) | <p>The JSON payload of the Credential according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials)</p><p>The signer of the Credential is chosen based on the <code>issuer.id</code> property of the <code>credential</code></p><p><code>@context</code>, <code>type</code> and <code>issuanceDate</code> will be added automatically if omitted</p> |
-| [fetchRemoteContexts?](./core-types.icreateverifiablecredentialargs.fetchremotecontexts.md)   |           | boolean                                                | <p>_(Optional)_ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to <code>true</code> ONLY if you want the <code>@context</code> URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.</p><p>Defaults to <code>false</code></p>                            |
-| [keyRef?](./core-types.icreateverifiablecredentialargs.keyref.md)                             |           | string                                                 | _(Optional)_ \[Optional\] The ID of the key that should sign this credential. If this is not specified, the first matching key will be used.                                                                                                                                                                                                                                |
-| [proofFormat](./core-types.icreateverifiablecredentialargs.proofformat.md)                    |           | [ProofFormat](./core-types.proofformat.md)             | The desired format for the VerifiableCredential to be created.                                                                                                                                                                                                                                                                                                              |
-| [removeOriginalFields?](./core-types.icreateverifiablecredentialargs.removeoriginalfields.md) |           | boolean                                                | _(Optional)_ Remove payload members during JWT-JSON transformation. Defaults to <code>true</code>. See https://www.w3.org/TR/vc-data-model/\#jwt-encoding                                                                                                                                                                                                                   |
-| [save?](./core-types.icreateverifiablecredentialargs.save.md)                                 |           | boolean                                                | _(Optional)_ If this parameter is true, the resulting VerifiableCredential is sent to the [storage plugin](./core-types.idatastore.md) to be saved.                                                                                                                                                                                                                         |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[credential](./core-types.icreateverifiablecredentialargs.credential.md)
+
+</td><td>
+
+</td><td>
+
+[CredentialPayload](./core-types.credentialpayload.md)
+
+</td><td>
+
+The JSON payload of the Credential according to the [canonical model](https://www.w3.org/TR/vc-data-model/#credentials)
+
+The signer of the Credential is chosen based on the `issuer.id` property of the `credential`
+
+`@context`, `type` and `issuanceDate` will be added automatically if omitted
+
+</td></tr>
+<tr><td>
+
+[fetchRemoteContexts?](./core-types.icreateverifiablecredentialargs.fetchremotecontexts.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ When dealing with JSON-LD, you also MUST provide the proper contexts. Set this to `true` ONLY if you want the `@context` URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.
+
+Defaults to `false`
+
+</td></tr>
+<tr><td>
+
+[keyRef?](./core-types.icreateverifiablecredentialargs.keyref.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ \[Optional\] The ID of the key that should sign this credential. If this is not specified, the first matching key will be used.
+
+</td></tr>
+<tr><td>
+
+[proofFormat](./core-types.icreateverifiablecredentialargs.proofformat.md)
+
+</td><td>
+
+</td><td>
+
+[ProofFormat](./core-types.proofformat.md)
+
+</td><td>
+
+The desired format for the VerifiableCredential to be created.
+
+</td></tr>
+<tr><td>
+
+[removeOriginalFields?](./core-types.icreateverifiablecredentialargs.removeoriginalfields.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ Remove payload members during JWT-JSON transformation. Defaults to `true`. See https://www.w3.org/TR/vc-data-model/\#jwt-encoding
+
+</td></tr>
+<tr><td>
+
+[save?](./core-types.icreateverifiablecredentialargs.save.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ If this parameter is true, the resulting VerifiableCredential is sent to the [storage plugin](./core-types.idatastore.md) to be saved.
+
+</td></tr>
+</tbody></table>

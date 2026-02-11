@@ -15,5 +15,5 @@ Actual implementations of [Key Management Systems](./key-manager.abstractkeymana
 **Signature:**
 
 ```typescript
-export type TAlg = 'ES256K' | 'ES256K-R' | 'ES256' | 'EdDSA' | 'ECDH' | 'ECDH-ES' | 'ECDH-1PU' | string
+export type TAlg = 'ES256K' | 'ES256K-R' | 'ES256' | 'EdDSA' | 'ECDH' | 'ECDH-ES' | 'ECDH-1PU' | (string & {})
 ```

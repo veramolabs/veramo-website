@@ -22,7 +22,51 @@ export interface IPresentationValidationResult
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                                                                   | Description  |
-| ------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------- | ------------ |
-| [claims](./selective-disclosure.ipresentationvalidationresult.claims.md) |           | [ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)\[\] | **_(BETA)_** |
-| [valid](./selective-disclosure.ipresentationvalidationresult.valid.md)   |           | boolean                                                                | **_(BETA)_** |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[claims](./selective-disclosure.ipresentationvalidationresult.claims.md)
+
+</td><td>
+
+</td><td>
+
+[ICredentialsForSdr](./selective-disclosure.icredentialsforsdr.md)\[\]
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[valid](./selective-disclosure.ipresentationvalidationresult.valid.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

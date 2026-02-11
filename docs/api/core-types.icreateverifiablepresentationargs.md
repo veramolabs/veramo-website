@@ -20,13 +20,147 @@ export interface ICreateVerifiablePresentationArgs extends UsingResolutionOption
 
 ## Properties
 
-| Property                                                                                        | Modifiers | Type                                                       | Description                                                                                                                                                                                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [challenge?](./core-types.icreateverifiablepresentationargs.challenge.md)                       |           | string                                                     | _(Optional)_ Optional (only JWT) string challenge parameter to add to the verifiable presentation.                                                                                                                                                                                                                                                                                |
-| [domain?](./core-types.icreateverifiablepresentationargs.domain.md)                             |           | string                                                     | _(Optional)_ Optional string domain parameter to add to the verifiable presentation.                                                                                                                                                                                                                                                                                              |
-| [fetchRemoteContexts?](./core-types.icreateverifiablepresentationargs.fetchremotecontexts.md)   |           | boolean                                                    | <p>_(Optional)_ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to <code>true</code> ONLY if you want the <code>@context</code> URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.</p><p>Defaults to <code>false</code></p>                                  |
-| [keyRef?](./core-types.icreateverifiablepresentationargs.keyref.md)                             |           | string                                                     | _(Optional)_ \[Optional\] The ID of the key that should sign this presentation. If this is not specified, the first matching key will be used.                                                                                                                                                                                                                                    |
-| [presentation](./core-types.icreateverifiablepresentationargs.presentation.md)                  |           | [PresentationPayload](./core-types.presentationpayload.md) | <p>The JSON payload of the Presentation according to the [canonical model](https://www.w3.org/TR/vc-data-model/#presentations).</p><p>The signer of the Presentation is chosen based on the <code>holder</code> property of the <code>presentation</code></p><p><code>@context</code>, <code>type</code> and <code>issuanceDate</code> will be added automatically if omitted</p> |
-| [proofFormat](./core-types.icreateverifiablepresentationargs.proofformat.md)                    |           | [ProofFormat](./core-types.proofformat.md)                 | The desired format for the VerifiablePresentation to be created. Currently, only JWT is supported                                                                                                                                                                                                                                                                                 |
-| [removeOriginalFields?](./core-types.icreateverifiablepresentationargs.removeoriginalfields.md) |           | boolean                                                    | _(Optional)_ Remove payload members during JWT-JSON transformation. Defaults to <code>true</code>. See https://www.w3.org/TR/vc-data-model/\#jwt-encoding                                                                                                                                                                                                                         |
-| [save?](./core-types.icreateverifiablepresentationargs.save.md)                                 |           | boolean                                                    | _(Optional)_ If this parameter is true, the resulting VerifiablePresentation is sent to the [storage plugin](./core-types.idatastore.md) to be saved. <p/><p/>                                                                                                                                                                                                                    |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[challenge?](./core-types.icreateverifiablepresentationargs.challenge.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional (only JWT) string challenge parameter to add to the verifiable presentation.
+
+</td></tr>
+<tr><td>
+
+[domain?](./core-types.icreateverifiablepresentationargs.domain.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional string domain parameter to add to the verifiable presentation.
+
+</td></tr>
+<tr><td>
+
+[fetchRemoteContexts?](./core-types.icreateverifiablepresentationargs.fetchremotecontexts.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ When dealing with JSON-LD, you also MUST provide the proper contexts. Set this to `true` ONLY if you want the `@context` URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.
+
+Defaults to `false`
+
+</td></tr>
+<tr><td>
+
+[keyRef?](./core-types.icreateverifiablepresentationargs.keyref.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ \[Optional\] The ID of the key that should sign this presentation. If this is not specified, the first matching key will be used.
+
+</td></tr>
+<tr><td>
+
+[presentation](./core-types.icreateverifiablepresentationargs.presentation.md)
+
+</td><td>
+
+</td><td>
+
+[PresentationPayload](./core-types.presentationpayload.md)
+
+</td><td>
+
+The JSON payload of the Presentation according to the [canonical model](https://www.w3.org/TR/vc-data-model/#presentations).
+
+The signer of the Presentation is chosen based on the `holder` property of the `presentation`
+
+`@context`, `type` and `issuanceDate` will be added automatically if omitted
+
+</td></tr>
+<tr><td>
+
+[proofFormat](./core-types.icreateverifiablepresentationargs.proofformat.md)
+
+</td><td>
+
+</td><td>
+
+[ProofFormat](./core-types.proofformat.md)
+
+</td><td>
+
+The desired format for the VerifiablePresentation to be created.
+
+</td></tr>
+<tr><td>
+
+[removeOriginalFields?](./core-types.icreateverifiablepresentationargs.removeoriginalfields.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ Remove payload members during JWT-JSON transformation. Defaults to `true`. See https://www.w3.org/TR/vc-data-model/\#jwt-encoding
+
+</td></tr>
+<tr><td>
+
+[save?](./core-types.icreateverifiablepresentationargs.save.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ If this parameter is true, the resulting VerifiablePresentation is sent to the [storage plugin](./core-types.idatastore.md) to be saved. <p/><p/>
+
+</td></tr>
+</tbody></table>

@@ -30,11 +30,48 @@ export declare function extractIssuer(
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                                                                                                         | Description                                                                                                                                                                |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| input     | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) &#124; [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) &#124; [CredentialPayload](./core-types.credentialpayload.md) &#124; [PresentationPayload](./core-types.presentationpayload.md) &#124; null | _(Optional)_ the credential or presentation whose issuer/holder needs to be extracted.                                                                                     |
-| options   | { removeParameters?: boolean; }                                                                                                                                                                                                                                                              | <p>_(Optional)_ options for the extraction removeParameters - Remove all DID parameters from the issuer ID</p><p>This API may change without a BREAKING CHANGE notice.</p> |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+input
+
+</td><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md) \| [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) \| [CredentialPayload](./core-types.credentialpayload.md) \| [PresentationPayload](./core-types.presentationpayload.md) \| null
+
+</td><td>
+
+_(Optional)_ the credential or presentation whose issuer/holder needs to be extracted.
+
+</td></tr>
+<tr><td>
+
+options
+
+</td><td>
+
+{ removeParameters?: boolean; }
+
+</td><td>
+
+_(Optional)_ options for the extraction removeParameters - Remove all DID parameters from the issuer ID
+
+This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string

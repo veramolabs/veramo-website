@@ -18,7 +18,51 @@ export interface IKeyManagerSignEthTXArgs
 
 ## Properties
 
-| Property                                                            | Modifiers | Type   | Description                 |
-| ------------------------------------------------------------------- | --------- | ------ | --------------------------- |
-| [kid](./core-types.ikeymanagersignethtxargs.kid.md)                 |           | string | Key ID                      |
-| [transaction](./core-types.ikeymanagersignethtxargs.transaction.md) |           | object | Ethereum transaction object |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kid](./core-types.ikeymanagersignethtxargs.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Key ID
+
+</td></tr>
+<tr><td>
+
+[transaction](./core-types.ikeymanagersignethtxargs.transaction.md)
+
+</td><td>
+
+</td><td>
+
+object
+
+</td><td>
+
+Ethereum transaction object
+
+</td></tr>
+</tbody></table>

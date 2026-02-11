@@ -28,6 +28,28 @@ constructor(options: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                                                                                   | Description |
-| --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| options   | { defaultKms: string; networks?: EthrNetworkConfiguration\[\]; ttl?: number; network?: string &#124; number &#124; bigint; name?: string; rpcUrl?: string; web3Provider?: Provider; registry?: string; gas?: number; } |             |
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+{ defaultKms: string; networks?: EthrNetworkConfiguration\[\]; ttl?: number; network?: string \| number \| bigint; name?: string; rpcUrl?: string; web3Provider?: Provider; registry?: string; gas?: number; }
+
+</td><td>
+
+</td></tr>
+</tbody></table>

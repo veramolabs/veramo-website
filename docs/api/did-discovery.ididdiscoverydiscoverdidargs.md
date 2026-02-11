@@ -22,7 +22,51 @@ export interface IDIDDiscoveryDiscoverDidArgs
 
 ## Properties
 
-| Property                                                            | Modifiers | Type                      | Description                                         |
-| ------------------------------------------------------------------- | --------- | ------------------------- | --------------------------------------------------- |
-| [options?](./did-discovery.ididdiscoverydiscoverdidargs.options.md) |           | Record&lt;string, any&gt; | **_(BETA)_** _(Optional)_ Provider specific options |
-| [query](./did-discovery.ididdiscoverydiscoverdidargs.query.md)      |           | string                    | **_(BETA)_** Search string                          |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[options?](./did-discovery.ididdiscoverydiscoverdidargs.options.md)
+
+</td><td>
+
+</td><td>
+
+Record&lt;string, any&gt;
+
+</td><td>
+
+**_(BETA)_** _(Optional)_ Provider specific options
+
+</td></tr>
+<tr><td>
+
+[query](./did-discovery.ididdiscoverydiscoverdidargs.query.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** Search string
+
+</td></tr>
+</tbody></table>

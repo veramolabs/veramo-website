@@ -18,10 +18,31 @@ keyManagerSignEthTX(args: IKeyManagerSignEthTXArgs): Promise<string>;
 
 ## Parameters
 
-| Parameter | Type                                                                 | Description |
-| --------- | -------------------------------------------------------------------- | ----------- |
-| args      | [IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md) |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[IKeyManagerSignEthTXArgs](./core-types.ikeymanagersignethtxargs.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;string&gt;

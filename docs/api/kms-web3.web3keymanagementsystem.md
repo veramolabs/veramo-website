@@ -22,17 +22,111 @@ export declare class Web3KeyManagementSystem extends AbstractKeyManagementSystem
 
 ## Constructors
 
-| Constructor                                                                     | Modifiers | Description                                                                              |
-| ------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------------------- |
-| [(constructor)(providers)](./kms-web3.web3keymanagementsystem._constructor_.md) |           | **_(BETA)_** Constructs a new instance of the <code>Web3KeyManagementSystem</code> class |
+<table><thead><tr><th>
+
+Constructor
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[(constructor)(providers)](./kms-web3.web3keymanagementsystem._constructor_.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Constructs a new instance of the `Web3KeyManagementSystem` class
+
+</td></tr>
+</tbody></table>
 
 ## Methods
 
-| Method                                                                           | Modifiers | Description  |
-| -------------------------------------------------------------------------------- | --------- | ------------ |
-| [createKey({ type })](./kms-web3.web3keymanagementsystem.createkey.md)           |           | **_(BETA)_** |
-| [deleteKey(args)](./kms-web3.web3keymanagementsystem.deletekey.md)               |           | **_(BETA)_** |
-| [importKey(args)](./kms-web3.web3keymanagementsystem.importkey.md)               |           | **_(BETA)_** |
-| [listKeys()](./kms-web3.web3keymanagementsystem.listkeys.md)                     |           | **_(BETA)_** |
-| [sharedSecret(args)](./kms-web3.web3keymanagementsystem.sharedsecret.md)         |           | **_(BETA)_** |
-| [sign({ keyRef, algorithm, data, })](./kms-web3.web3keymanagementsystem.sign.md) |           | **_(BETA)_** |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[createKey({ type })](./kms-web3.web3keymanagementsystem.createkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[deleteKey(args)](./kms-web3.web3keymanagementsystem.deletekey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[importKey(args)](./kms-web3.web3keymanagementsystem.importkey.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[listKeys()](./kms-web3.web3keymanagementsystem.listkeys.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[sharedSecret(args)](./kms-web3.web3keymanagementsystem.sharedsecret.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[sign({ keyRef, algorithm, data, })](./kms-web3.web3keymanagementsystem.sign.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+</tbody></table>

@@ -18,10 +18,33 @@ export declare function bytesToUtf8String(b: Uint8Array): string
 
 ## Parameters
 
-| Parameter | Type       | Description               |
-| --------- | ---------- | ------------------------- |
-| b         | Uint8Array | the array to be converted |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+b
+
+</td><td>
+
+Uint8Array
+
+</td><td>
+
+the array to be converted
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 string

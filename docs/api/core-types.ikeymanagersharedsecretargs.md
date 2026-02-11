@@ -18,7 +18,51 @@ export interface IKeyManagerSharedSecretArgs
 
 ## Properties
 
-| Property                                                                 | Modifiers | Type                                                                   | Description                                                                                                                              |
-| ------------------------------------------------------------------------ | --------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| [publicKey](./core-types.ikeymanagersharedsecretargs.publickey.md)       |           | Pick&lt;[IKey](./core-types.ikey.md), 'publicKeyHex' &#124; 'type'&gt; | The public key of the other party. The <code>type</code> of key MUST be compatible with the type referenced by <code>secretKeyRef</code> |
-| [secretKeyRef](./core-types.ikeymanagersharedsecretargs.secretkeyref.md) |           | string                                                                 | The secret key handle (<code>kid</code>) as returned by [keyManagerCreate](./core-types.ikeymanager.keymanagercreate.md)                 |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[publicKey](./core-types.ikeymanagersharedsecretargs.publickey.md)
+
+</td><td>
+
+</td><td>
+
+Pick&lt;[IKey](./core-types.ikey.md), 'publicKeyHex' \| 'type'&gt;
+
+</td><td>
+
+The public key of the other party. The `type` of key MUST be compatible with the type referenced by `secretKeyRef`
+
+</td></tr>
+<tr><td>
+
+[secretKeyRef](./core-types.ikeymanagersharedsecretargs.secretkeyref.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+The secret key handle (`kid`) as returned by [keyManagerCreate](./core-types.ikeymanager.keymanagercreate.md)
+
+</td></tr>
+</tbody></table>

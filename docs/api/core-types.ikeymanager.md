@@ -26,16 +26,114 @@ export interface IKeyManager extends IPluginMethodMap
 
 ## Methods
 
-| Method                                                                                               | Description                                                                                                                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [keyManagerCreate(args)](./core-types.ikeymanager.keymanagercreate.md)                               | Creates and returns a new key                                                                                                                                                                                                        |
-| [keyManagerDecryptJWE(args)](./core-types.ikeymanager.keymanagerdecryptjwe.md)                       | **_(BETA)_** Decrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                     |
-| [keyManagerDelete(args)](./core-types.ikeymanager.keymanagerdelete.md)                               | Deletes a key                                                                                                                                                                                                                        |
-| [keyManagerEncryptJWE(args)](./core-types.ikeymanager.keymanagerencryptjwe.md)                       | **_(BETA)_** Encrypts data This API may change without a BREAKING CHANGE notice.                                                                                                                                                     |
-| [keyManagerGet(args)](./core-types.ikeymanager.keymanagerget.md)                                     | Returns an existing key                                                                                                                                                                                                              |
-| [keyManagerGetKeyManagementSystems()](./core-types.ikeymanager.keymanagergetkeymanagementsystems.md) | Lists available key management systems                                                                                                                                                                                               |
-| [keyManagerImport(args)](./core-types.ikeymanager.keymanagerimport.md)                               | Imports a created key                                                                                                                                                                                                                |
-| [keyManagerSharedSecret(args)](./core-types.ikeymanager.keymanagersharedsecret.md)                   | <p>Compute a shared secret with the public key of another party.</p><p>This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result.</p> |
-| [keyManagerSign(args)](./core-types.ikeymanager.keymanagersign.md)                                   | Generates a signature according to the algorithm specified.                                                                                                                                                                          |
-| [keyManagerSignEthTX(args)](./core-types.ikeymanager.keymanagersignethtx.md)                         | Signs Ethereum transaction                                                                                                                                                                                                           |
-| [keyManagerSignJWT(args)](./core-types.ikeymanager.keymanagersignjwt.md)                             | Signs JWT                                                                                                                                                                                                                            |
+<table><thead><tr><th>
+
+Method
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[keyManagerCreate(args)](./core-types.ikeymanager.keymanagercreate.md)
+
+</td><td>
+
+Creates and returns a new key
+
+</td></tr>
+<tr><td>
+
+[keyManagerDecryptJWE(args)](./core-types.ikeymanager.keymanagerdecryptjwe.md)
+
+</td><td>
+
+**_(BETA)_** Decrypts data This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[keyManagerDelete(args)](./core-types.ikeymanager.keymanagerdelete.md)
+
+</td><td>
+
+Deletes a key
+
+</td></tr>
+<tr><td>
+
+[keyManagerEncryptJWE(args)](./core-types.ikeymanager.keymanagerencryptjwe.md)
+
+</td><td>
+
+**_(BETA)_** Encrypts data This API may change without a BREAKING CHANGE notice.
+
+</td></tr>
+<tr><td>
+
+[keyManagerGet(args)](./core-types.ikeymanager.keymanagerget.md)
+
+</td><td>
+
+Returns an existing key
+
+</td></tr>
+<tr><td>
+
+[keyManagerGetKeyManagementSystems()](./core-types.ikeymanager.keymanagergetkeymanagementsystems.md)
+
+</td><td>
+
+Lists available key management systems
+
+</td></tr>
+<tr><td>
+
+[keyManagerImport(args)](./core-types.ikeymanager.keymanagerimport.md)
+
+</td><td>
+
+Imports a created key
+
+</td></tr>
+<tr><td>
+
+[keyManagerSharedSecret(args)](./core-types.ikeymanager.keymanagersharedsecret.md)
+
+</td><td>
+
+Compute a shared secret with the public key of another party.
+
+This computes the raw shared secret (the result of a Diffie-Hellman computation) To use this for symmetric encryption you MUST apply a KDF on the result.
+
+</td></tr>
+<tr><td>
+
+[keyManagerSign(args)](./core-types.ikeymanager.keymanagersign.md)
+
+</td><td>
+
+Generates a signature according to the algorithm specified.
+
+</td></tr>
+<tr><td>
+
+[keyManagerSignEthTX(args)](./core-types.ikeymanager.keymanagersignethtx.md)
+
+</td><td>
+
+Signs Ethereum transaction
+
+</td></tr>
+<tr><td>
+
+[keyManagerSignJWT(args)](./core-types.ikeymanager.keymanagersignjwt.md)
+
+</td><td>
+
+Signs JWT
+
+</td></tr>
+</tbody></table>

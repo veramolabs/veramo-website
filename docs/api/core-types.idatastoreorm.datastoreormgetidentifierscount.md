@@ -26,11 +26,46 @@ dataStoreORMGetIdentifiersCount(args: FindIdentifiersArgs, context: AuthorizedDI
 
 ## Parameters
 
-| Parameter | Type                                                         | Description                                                                                                                                                                       |
-| --------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| args      | [FindIdentifiersArgs](./core-types.findidentifiersargs.md)   | The filter to apply when querying                                                                                                                                                 |
-| context   | [AuthorizedDIDContext](./core-types.authorizeddidcontext.md) | Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access. |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[FindIdentifiersArgs](./core-types.findidentifiersargs.md)
+
+</td><td>
+
+The filter to apply when querying
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[AuthorizedDIDContext](./core-types.authorizeddidcontext.md)
+
+</td><td>
+
+Can be used to signal that only a particular DID is authorized to perform this operation. This will cause the result to only contain data that this DID should be able to access.
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;number&gt;

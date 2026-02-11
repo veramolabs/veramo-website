@@ -20,10 +20,100 @@ export interface IVerifyPresentationArgs extends UsingResolutionOptions
 
 ## Properties
 
-| Property                                                                            | Modifiers | Type                                                                   | Description                                                                                                                                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [challenge?](./core-types.iverifypresentationargs.challenge.md)                     |           | string                                                                 | _(Optional)_ Optional (only for JWT) string challenge parameter to verify the verifiable presentation against                                                                                                                                                                                                                                            |
-| [domain?](./core-types.iverifypresentationargs.domain.md)                           |           | string                                                                 | _(Optional)_ Optional (only for JWT) string domain parameter to verify the verifiable presentation against                                                                                                                                                                                                                                               |
-| [fetchRemoteContexts?](./core-types.iverifypresentationargs.fetchremotecontexts.md) |           | boolean                                                                | <p>_(Optional)_ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to <code>true</code> ONLY if you want the <code>@context</code> URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.</p><p>Defaults to <code>false</code></p>         |
-| [policies?](./core-types.iverifypresentationargs.policies.md)                       |           | [VerificationPolicies](./core-types.verificationpolicies.md)           | _(Optional)_ Overrides specific aspects of credential verification, where possible.                                                                                                                                                                                                                                                                      |
-| [presentation](./core-types.iverifypresentationargs.presentation.md)                |           | [W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md) | <p>The Verifiable Presentation object according to the [canonical model](https://www.w3.org/TR/vc-data-model/#presentations) or the JWT representation.</p><p>The signer of the Presentation is verified based on the <code>holder</code> property of the <code>presentation</code> or the <code>iss</code> property of the JWT payload respectively</p> |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[challenge?](./core-types.iverifypresentationargs.challenge.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional (only for JWT) string challenge parameter to verify the verifiable presentation against
+
+</td></tr>
+<tr><td>
+
+[domain?](./core-types.iverifypresentationargs.domain.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional (only for JWT) string domain parameter to verify the verifiable presentation against
+
+</td></tr>
+<tr><td>
+
+[fetchRemoteContexts?](./core-types.iverifypresentationargs.fetchremotecontexts.md)
+
+</td><td>
+
+</td><td>
+
+boolean
+
+</td><td>
+
+_(Optional)_ When dealing with JSON-LD you also MUST provide the proper contexts. Set this to `true` ONLY if you want the `@context` URLs to be fetched in case they are not preloaded. The context definitions SHOULD rather be provided at startup instead of being fetched.
+
+Defaults to `false`
+
+</td></tr>
+<tr><td>
+
+[policies?](./core-types.iverifypresentationargs.policies.md)
+
+</td><td>
+
+</td><td>
+
+[VerificationPolicies](./core-types.verificationpolicies.md)
+
+</td><td>
+
+_(Optional)_ Overrides specific aspects of credential verification, where possible.
+
+</td></tr>
+<tr><td>
+
+[presentation](./core-types.iverifypresentationargs.presentation.md)
+
+</td><td>
+
+</td><td>
+
+[W3CVerifiablePresentation](./core-types.w3cverifiablepresentation.md)
+
+</td><td>
+
+The Verifiable Presentation object according to the [canonical model](https://www.w3.org/TR/vc-data-model/#presentations) or the JWT representation.
+
+The signer of the Presentation is verified based on the `holder` property of the `presentation` or the `iss` property of the JWT payload respectively
+
+</td></tr>
+</tbody></table>

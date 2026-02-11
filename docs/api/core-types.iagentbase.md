@@ -18,7 +18,47 @@ export interface IAgentBase
 
 ## Properties
 
-| Property                                                        | Modifiers | Type                                                              | Description |
-| --------------------------------------------------------------- | --------- | ----------------------------------------------------------------- | ----------- |
-| [availableMethods](./core-types.iagentbase.availablemethods.md) |           | () =&gt; string\[\]                                               |             |
-| [getSchema](./core-types.iagentbase.getschema.md)               |           | () =&gt; [IAgentPluginSchema](./core-types.iagentpluginschema.md) |             |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[availableMethods](./core-types.iagentbase.availablemethods.md)
+
+</td><td>
+
+</td><td>
+
+() =&gt; string\[\]
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[getSchema](./core-types.iagentbase.getschema.md)
+
+</td><td>
+
+</td><td>
+
+() =&gt; [IAgentPluginSchema](./core-types.iagentpluginschema.md)
+
+</td><td>
+
+</td></tr>
+</tbody></table>

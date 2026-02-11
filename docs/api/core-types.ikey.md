@@ -18,11 +18,111 @@ export interface IKey
 
 ## Properties
 
-| Property                                             | Modifiers | Type                                                   | Description                                                                                           |
-| ---------------------------------------------------- | --------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| [kid](./core-types.ikey.kid.md)                      |           | string                                                 | Key ID                                                                                                |
-| [kms](./core-types.ikey.kms.md)                      |           | string                                                 | Key Management System                                                                                 |
-| [meta?](./core-types.ikey.meta.md)                   |           | [KeyMetadata](./core-types.keymetadata.md) &#124; null | _(Optional)_ Optional. Key metadata. This should be used to determine which algorithms are supported. |
-| [privateKeyHex?](./core-types.ikey.privatekeyhex.md) |           | string                                                 | _(Optional)_ Optional. Private key                                                                    |
-| [publicKeyHex](./core-types.ikey.publickeyhex.md)    |           | string                                                 | Public key                                                                                            |
-| [type](./core-types.ikey.type.md)                    |           | [TKeyType](./core-types.tkeytype.md)                   | Key type                                                                                              |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kid](./core-types.ikey.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Key ID
+
+</td></tr>
+<tr><td>
+
+[kms](./core-types.ikey.kms.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Key Management System
+
+</td></tr>
+<tr><td>
+
+[meta?](./core-types.ikey.meta.md)
+
+</td><td>
+
+</td><td>
+
+[KeyMetadata](./core-types.keymetadata.md) \| null
+
+</td><td>
+
+_(Optional)_ Optional. Key metadata. This should be used to determine which algorithms are supported.
+
+</td></tr>
+<tr><td>
+
+[privateKeyHex?](./core-types.ikey.privatekeyhex.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_ Optional. Private key
+
+</td></tr>
+<tr><td>
+
+[publicKeyHex](./core-types.ikey.publickeyhex.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+Public key
+
+</td></tr>
+<tr><td>
+
+[type](./core-types.ikey.type.md)
+
+</td><td>
+
+</td><td>
+
+[TKeyType](./core-types.tkeytype.md)
+
+</td><td>
+
+Key type
+
+</td></tr>
+</tbody></table>

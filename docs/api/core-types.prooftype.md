@@ -22,6 +22,51 @@ export interface ProofType
 
 ## Properties
 
-| Property                                | Modifiers | Type   | Description               |
-| --------------------------------------- | --------- | ------ | ------------------------- |
-| [type?](./core-types.prooftype.type.md) |           | string | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[proofValue?](./core-types.prooftype.proofvalue.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type?](./core-types.prooftype.type.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>

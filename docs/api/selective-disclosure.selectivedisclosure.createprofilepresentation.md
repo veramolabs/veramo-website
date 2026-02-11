@@ -22,11 +22,42 @@ createProfilePresentation(args: ICreateProfileCredentialsArgs, context: IAgentCo
 
 ## Parameters
 
-| Parameter | Type                                                                                                                                                          | Description |
-| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| args      | [ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)                                                                      |             |
-| context   | [IAgentContext](./core-types.iagentcontext.md)&lt;[ICredentialIssuer](./core-types.icredentialissuer.md) &amp; [IDIDManager](./core-types.ididmanager.md)&gt; |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+[ICreateProfileCredentialsArgs](./selective-disclosure.icreateprofilecredentialsargs.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+[IAgentContext](./core-types.iagentcontext.md)&lt;[ICredentialIssuer](./core-types.icredentialissuer.md) &amp; [IDIDManager](./core-types.ididmanager.md)&gt;
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;[VerifiablePresentation](./core-types.verifiablepresentation.md)&gt;

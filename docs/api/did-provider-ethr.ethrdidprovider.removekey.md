@@ -20,11 +20,42 @@ removeKey(args: {
 
 ## Parameters
 
-| Parameter | Type                                                                                                   | Description |
-| --------- | ------------------------------------------------------------------------------------------------------ | ----------- |
-| args      | { identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: TransactionOptions; } |             |
-| context   | IRequiredContext                                                                                       |             |
+<table><thead><tr><th>
 
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+args
+
+</td><td>
+
+{ identifier: [IIdentifier](./core-types.iidentifier.md); kid: string; options?: TransactionOptions; }
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+context
+
+</td><td>
+
+IRequiredContext
+
+</td><td>
+
+</td></tr>
+</tbody></table>
 **Returns:**
 
 Promise&lt;any&gt;

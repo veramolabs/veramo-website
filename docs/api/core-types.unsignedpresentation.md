@@ -18,13 +18,137 @@ export interface UnsignedPresentation
 
 ## Properties
 
-| Property                                                                           | Modifiers | Type                                                                   | Description  |
-| ---------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------- | ------------ |
-| ["@context"](./core-types.unsignedpresentation.__context_.md)                      |           | [ContextType](./core-types.contexttype.md)                             |              |
-| [expirationDate?](./core-types.unsignedpresentation.expirationdate.md)             |           | string                                                                 | _(Optional)_ |
-| [holder](./core-types.unsignedpresentation.holder.md)                              |           | string                                                                 |              |
-| [id?](./core-types.unsignedpresentation.id.md)                                     |           | string                                                                 | _(Optional)_ |
-| [issuanceDate?](./core-types.unsignedpresentation.issuancedate.md)                 |           | string                                                                 | _(Optional)_ |
-| [type?](./core-types.unsignedpresentation.type.md)                                 |           | string\[\] &#124; string                                               | _(Optional)_ |
-| [verifiableCredential?](./core-types.unsignedpresentation.verifiablecredential.md) |           | [W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\] | _(Optional)_ |
-| [verifier?](./core-types.unsignedpresentation.verifier.md)                         |           | string\[\]                                                             | _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+["@context"](./core-types.unsignedpresentation.__context_.md)
+
+</td><td>
+
+</td><td>
+
+[ContextType](./core-types.contexttype.md)
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[expirationDate?](./core-types.unsignedpresentation.expirationdate.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[holder](./core-types.unsignedpresentation.holder.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+</td></tr>
+<tr><td>
+
+[id?](./core-types.unsignedpresentation.id.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[issuanceDate?](./core-types.unsignedpresentation.issuancedate.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[type?](./core-types.unsignedpresentation.type.md)
+
+</td><td>
+
+</td><td>
+
+string\[\] \| string
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[verifiableCredential?](./core-types.unsignedpresentation.verifiablecredential.md)
+
+</td><td>
+
+</td><td>
+
+[W3CVerifiableCredential](./core-types.w3cverifiablecredential.md)\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+<tr><td>
+
+[verifier?](./core-types.unsignedpresentation.verifier.md)
+
+</td><td>
+
+</td><td>
+
+string\[\]
+
+</td><td>
+
+_(Optional)_
+
+</td></tr>
+</tbody></table>

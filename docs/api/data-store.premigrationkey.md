@@ -24,7 +24,51 @@ export declare class PreMigrationKey extends Key
 
 ## Properties
 
-| Property                                                        | Modifiers | Type   | Description               |
-| --------------------------------------------------------------- | --------- | ------ | ------------------------- |
-| [kid](./data-store.premigrationkey.kid.md)                      |           | string | **_(BETA)_**              |
-| [privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md) |           | string | **_(BETA)_** _(Optional)_ |
+<table><thead><tr><th>
+
+Property
+
+</th><th>
+
+Modifiers
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+[kid](./data-store.premigrationkey.kid.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_**
+
+</td></tr>
+<tr><td>
+
+[privateKeyHex?](./data-store.premigrationkey.privatekeyhex.md)
+
+</td><td>
+
+</td><td>
+
+string
+
+</td><td>
+
+**_(BETA)_** _(Optional)_
+
+</td></tr>
+</tbody></table>
