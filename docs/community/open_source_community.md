@@ -27,7 +27,7 @@ We organize and participate in various community events throughout the year, inc
 We use various communication channels to stay connected and collaborate on our product. Our main communication channels include:
 
 - [GitHub discussions](https://github.com/decentralized-identity/veramo/discussions)
-- [Discord](http://discord.gg/rhmDv85axQ)
+- [Discord](https://discord.gg/rhmDv85axQ)
 - [Community Email](mailto:hello@veramo.io)
 - [LinkedIn](https://www.linkedin.com/company/veramo) / [Twitter](https://twitter.com/veramolabs)
 - [Youtube](https://www.youtube.com/@veramolabs)
