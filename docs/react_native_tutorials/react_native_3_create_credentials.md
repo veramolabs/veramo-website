@@ -27,6 +27,8 @@ Next, let's install these in our Veramo setup. First, we'll add these imports:
 // imports:
 // This plugin allows us to issue and verify W3C Verifiable Credentials with JWT proof format
 import { CredentialPlugin, ICredentialIssuer, ICredentialVerifier } from '@veramo/credential-w3c'
+// JWT proof format for W3C Verifiable Credential plugin
+import { CredentialProviderJWT } from '@veramo/credential-jwt'
 ```
 
 Then, let's add this plugin to the list of plugins given to `createAgent`:
@@ -45,7 +47,9 @@ export const agent = createAgent<
     //
     // ... previously added plugins
     //
-    new CredentialPlugin(),
+    new CredentialPlugin([
+      new CredentialProviderJWT(),
+    ]),
   ],
 })
 ```

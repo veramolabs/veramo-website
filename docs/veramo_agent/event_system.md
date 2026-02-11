@@ -15,7 +15,7 @@ The agent exposes an emit method:
 agent.emit(type, data)
 ```
 
-Usually events are follow the fire-and-forget pattern.
+Usually events follow the fire-and-forget pattern.
 
 However, there may be situations where an application may need to make sure all events are consumed before exiting, or
 that some state change has been performed by an event listener before going forward.
@@ -28,18 +28,21 @@ await agent.emit(type, data)
 
 ### Listening for events
 
-Listeners are registered at the time of agent creation, and are declared alongside the plugin array. In fact, agent
+Listeners are registered at the time of agent creation and are declared alongside the plugin array. In fact, agent
 plugins can also behave as event listeners. A listener must declare `eventTypes` that it can handle and an
 async `onEvent({type, data}, context)` method that will be called when an event is fired.
 
 ```ts
-const fooEventLogger: IEventListener {
-  eventTypes: ['fooEvent']
-  onEvent: async (event, context) => { console.log(event.data) }
+const fooEventLogger: IEventListener = {
+  eventTypes: ['fooEvent'],
+  onEvent: async (event, context) => { console.log(event.data) },
 }
 
 const agent = new Agent({
-  plugins: [fooEventLogger,...],
+  plugins: [
+    fooEventLogger,
+    // ...
+  ],
 })
 ```
 
@@ -67,17 +70,19 @@ const foobarPlugin: IEventListener = {
 ### Error handling
 
 In case an Error is thrown during the processing of an event, the error is emitted as a new event of type "error" with
-the Error instance as the event data. Handling errors, therefore means registering an error listener on the agent.
+the Error instance as the event data. Handling errors, therefore, means registering an error listener on the agent.
 
 ```ts
-const faultyListener: IEventListener {
-  eventTypes: ['fooEvent']
-  onEvent: async () => { throw new Error('crashing!!'); }
+const faultyListener: IEventListener = {
+  eventTypes: ['fooEvent'],
+  onEvent: async () => {
+    throw new Error('crashing!!')
+  },
 }
 
-const errorLogger: IEventListener {
-  eventTypes: ['error']
-  onEvent: console.error
+const errorLogger: IEventListener = {
+  eventTypes: ['error'],
+  onEvent: console.error,
 }
 
 const agent = new Agent({

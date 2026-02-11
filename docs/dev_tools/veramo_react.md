@@ -53,14 +53,13 @@ export default = () => (
 Create an agent in your app and export it. You will need to install additional dependencies
 
 ```bash
-yarn add @veramo/did-resolver@next ethr-did-resolver did-resolver web-did-resolver
+yarn add @veramo/did-resolver@next ethr-did-resolver web-did-resolver
 ```
 
 ```tsx
 import { createAgent, IResolver } from '@veramo/core'
 
 import { DIDResolverPlugin } from '@veramo/did-resolver'
-import { Resolver } from 'did-resolver'
 import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
@@ -70,10 +69,8 @@ const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 export const agent = createAgent<IResolver>({
   plugins: [
     new DIDResolverPlugin({
-      resolver: new Resolver({
-        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
-        ...webDidResolver(),
-      }),
+      ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+      ...webDidResolver(),
     }),
   ],
 })
@@ -83,7 +80,7 @@ In the provider setup above, add the following to bootstrap the local agent. You
 add while your application is running.
 
 ```tsx
-import {agent} from '../veramo'
+import {agent} from '../veramo';
 
 <VeramoProvider agent={[agent]}>...<VeramoProvider>
 ```
