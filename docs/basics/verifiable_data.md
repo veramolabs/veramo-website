@@ -40,7 +40,7 @@ This is the current v1 format for a W3C compliant Verifiable Credential:
   "issuer": {
     "id": "did:web:veramo.io"
   },
-  "issuanceDate": "2020-01-01T19:73:24Z",
+  "issuanceDate": "2020-01-01T19:33:24Z",
   "credentialSubject": {
     "id": "did:example:user",
     "community": {
