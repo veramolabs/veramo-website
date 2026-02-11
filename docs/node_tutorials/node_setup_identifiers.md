@@ -45,7 +45,7 @@ Install dev dependencies
 yarn add typescript ts-node --dev
 ```
 
-> ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options.
+> ℹ️ **Note:** In case you run into issues, check out the [Troubleshooting](../troubleshooting.md) page for some options.
 
 Install Veramo core and plugins
 
@@ -115,10 +115,11 @@ import { KeyManagementSystem, SecretBox } from '@veramo/kms-local'
 
 // W3C Verifiable Credential plugin
 import { CredentialPlugin } from '@veramo/credential-w3c'
+// JWT proof format for W3C Verifiable Credential plugin
+import { CredentialProviderJWT } from '@veramo/credential-jwt'
 
 // Custom resolvers
 import { DIDResolverPlugin } from '@veramo/did-resolver'
-import { Resolver } from 'did-resolver'
 import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
@@ -182,29 +183,29 @@ export const agent = createAgent<
       },
     }),
     new DIDResolverPlugin({
-      resolver: new Resolver({
-        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
-        ...webDidResolver(),
-      }),
+      ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+      ...webDidResolver(),
     }),
-    new CredentialPlugin(),
+    new CredentialPlugin([
+      new CredentialProviderJWT(),
+    ]),
   ],
 })
 ```
 
 > **Note:**
 >
-> The types you specify for agent creation are optional, but may be very helpful when writing TypeScript, as long as
+> The types you specify for agent creation are optional but may be very helpful when writing TypeScript, as long as
 > they
 > match the plugins that you add to the agent.
 >
-> ```typescript
+> ```
 > <IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver & ICredentialPlugin>
 > ```
 >
-> These types help the typescript compiler to figure out what plugin methods get exposed by the agent and what
+> These types help the TypeScript compiler to figure out what plugin methods get exposed by the agent and what
 > parameters
-> those methods require. These types are also very helpful for development in VSCode, or other IDEs that provide
+> those methods require. These types are also very helpful for development in VSCode or other IDEs that provide
 > auto-complete.
 
 That's one possible agent setup. Let's use it to create and list identifiers.

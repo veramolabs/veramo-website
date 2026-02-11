@@ -12,7 +12,7 @@ import Feature from '../components/Feature'
 const textContent = {
   verifiableDataTitle: 'Verifiable data is the new standard',
   verifiableDataContent:
-    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiabilty is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust networks that accelerate decision making, efficiency and productivity',
+    'We live in a data driven, digital world and make decisions based on reputation. Off-chain verifiability is a critical building block for the economy of tomorrow. Veramo gives you the tools to start building trust networks that accelerate decision making, efficiency and productivity',
   cleanApi: 'Clean API backed by TypeScript',
   cleanApiContent:
     'Veramo has a simple and clean API that is easy to reason about. This example bootstraps your agent with minimal configuration.',
@@ -23,14 +23,15 @@ const textContent = {
   import { createAgent } from '@veramo/core'
   import { KeyManager } from '@veramo/key-manager'
   import { DIDManager } from '@veramo/did-manager'
-  import { CredentialIssuer } from '@veramo/credential-w3c'
+  import { CredentialPlugin } from '@veramo/credential-w3c'
+  import { CredentialProviderJWT } from '@veramo/credential-jwt'
 
   /* Configure the agent */
   const agent = createAgent({
     plugins: [
       new KeyManager(/* config */),
       new DIDManager(/* config */),
-      new CredentialIssuer(),
+      new CredentialPlugin([new CredentialProviderJWT()]),
     ],
   })
 
@@ -41,7 +42,7 @@ const textContent = {
 
   const verifiableCredential = await agent.createVerifiableCredential({
     credential: {
-      issuer: { id: 'did:web:sun.veramo.dev' },
+      issuer: { id: 'did:web:example.com' },
       credentialSubject: {
         id: user.did,
         tutorial: 42,
@@ -49,7 +50,6 @@ const textContent = {
       }
     },
     proofFormat: 'jwt',
-    save: false
   })
 
   `,

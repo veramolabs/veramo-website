@@ -15,10 +15,10 @@ operations for that `DID` type are executed. Each `DID Method` has different tra
 For example, a `did:web` can be created without a Blockchain but `DID Methods` exist that have a dependency on a
 Blockchain. All of them are valid `DIDs` but have different guarantees.
 
-The example below shows how a `did:web` for [veramo.dev](https://veramo.dev) might look like.
+The example below shows how a `did:web` for [veramo.io](https://veramo.io) might look like.
 
 ```
-did:web:veramo.dev
+did:web:veramo.io
 ```
 
 ### DID Creation
@@ -39,35 +39,41 @@ Every `DID` has a `DID Document` that describes the `DID` subject. In the case o
 on the website in the following format. It contains essential cryptographic information and also services that the `DID`
 has available. This is the foundation of how `DIDs` can start to communicate with each other.
 
-```json
-// 20201110152830
-// https://veramo.dev/.well-known/did.json
+```json5
+// https://veramo.io/.well-known/did.json
 
 {
-  "@context": "https://w3id.org/did/v1",
-  "id": "did:web:veramo.dev",
-  "publicKey": [
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/v2",
+    "https://w3id.org/security/suites/secp256k1recovery-2020/v2",
+    "https://w3id.org/security/suites/ed25519-2018/v1"
+  ],
+  "id": "did:web:veramo.io",
+  "verificationMethod": [
     {
-      "id": "did:web:veramo.dev#0405aa19bb98a5fd29c15a730cb5064ca128dea19247b896b1a7bdad0b4bccccda9b47366cd1359e740d938e5a47d7bed0501150e8a1623805ac47c489421b1506",
-      "type": "Secp256k1VerificationKey2018",
-      "controller": "did:web:veramo.dev",
-      "publicKeyHex": "0405aa19bb98a5fd29c15a730cb5064ca128dea19247b896b1a7bdad0b4bccccda9b47366cd1359e740d938e5a47d7bed0501150e8a1623805ac47c489421b1506"
+      "id": "did:web:veramo.io#root-1",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "controller": "did:web:veramo.io",
+      "publicKeyHex": "042b0af9b3ae6c7c3a90b01a3879d9518081bc0dcdf038488db9cb109b082a77d97ea3373e3dfde0eccd9adbdce11d0302ea5c098dbb0b310234c86895c8641622"
+    },
+    {
+      "id": "did:web:veramo.io#root-2",
+      "type": "Ed25519VerificationKey2018",
+      "controller": "did:web:veramo.io",
+      "publicKeyBase58": "ZG6NM2qB1CwADHmJsbGqWVhwmGLrVACBu7xmXJNMWLH"
+    },
+    {
+      "id": "did:web:veramo.io#root-3",
+      "type": "Ed25519VerificationKey2020",
+      "controller": "did:web:veramo.io",
+      "publicKeyMultibase": "z6Mkf1X8xbHGWYhQGi8TzSZ7gc3hmLYCGNQYsv2tboGPGj7f"
     }
   ],
-  "authentication": [
-    {
-      "type": "Secp256k1SignatureAuthentication2018",
-      "publicKey": "did:web:veramo.dev#0405aa19bb98a5fd29c15a730cb5064ca128dea19247b896b1a7bdad0b4bccccda9b47366cd1359e740d938e5a47d7bed0501150e8a1623805ac47c489421b1506"
-    }
-  ],
-  "service": [
-    {
-      "id": "did:web:veramo.dev#msg",
-      "type": "Messaging",
-      "serviceEndpoint": "https://veramo.dev/messaging",
-      "description": "Handles incoming POST messages"
-    }
-  ]
+  "authentication": ["did:web:veramo.io#root-1", "did:web:veramo.io#root-2", "did:web:veramo.io#root-3"],
+  "assertionMethod": ["did:web:veramo.io#root-1", "did:web:veramo.io#root-2", "did:web:veramo.io#root-3"],
+  "keyAgreement": ["did:web:veramo.io#root-2", "did:web:veramo.io#root-3"],
+  "service": []
 }
 ```
 

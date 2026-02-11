@@ -29,7 +29,7 @@ traditional analog version.
 
 This is the current v1 format for a W3C compliant Verifiable Credential:
 
-```json
+```json5
 {
   "@context": [
     "https://www.w3.org/2018/credentials/v1"
@@ -38,9 +38,9 @@ This is the current v1 format for a W3C compliant Verifiable Credential:
     "VerifiableCredential"
   ],
   "issuer": {
-    "id": "did:web:veramo.dev"
+    "id": "did:web:veramo.io"
   },
-  "issuanceDate": "2010-01-01T19:73:24Z",
+  "issuanceDate": "2020-01-01T19:33:24Z",
   "credentialSubject": {
     "id": "did:example:user",
     "community": {
@@ -48,15 +48,7 @@ This is the current v1 format for a W3C compliant Verifiable Credential:
     }
   },
   "proof": {
-    "type": "RsaSignature2018",
-    "created": "2017-06-18T21:19:10Z",
-    "proofPurpose": "assertionMethod",
-    "verificationMethod": "https://example.edu/issuers/keys/1",
-    "jws": "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5X
-    sITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUc
-    X16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtj
-    PAYuNzVBAh4vGHSrQyHUdBBPM
-    "
+    // ...
   }
 }
 ```

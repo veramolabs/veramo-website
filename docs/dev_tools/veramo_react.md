@@ -7,11 +7,11 @@ Veramo React makes it easy to interact with multiple agents in React Application
 
 ## Motivation
 
-When using veramo in your front end React apps you may need to manage the state of multiple remote and local agents.
+When using veramo in your front end React apps, you may need to manage the state of multiple remote and local agents.
 Veramo React makes it easy to manage agents without needing to write or maintain boilerplate code. It also enables
 making new features available to front-end stacks without developers needing to implement them manually.
 
-When you add an agent configuration it is persisted to local storage. A randomly generated ID is assigned to each agent.
+When you add an agent configuration, it is persisted to local storage. A randomly generated ID is assigned to each agent.
 
 ## Install and set up
 
@@ -37,7 +37,7 @@ import App from '../App'
 
 const queryClient = new QueryClient()
 
-export default = () => (
+export default () => (
   <QueryClientProvider client={queryClient}>
     <VeramoProvider>
       <BrowserRouter>
@@ -48,19 +48,18 @@ export default = () => (
 )
 ```
 
-## Create local agent
+## Create the local agent
 
 Create an agent in your app and export it. You will need to install additional dependencies
 
 ```bash
-yarn add @veramo/did-resolver@next ethr-did-resolver did-resolver web-did-resolver
+yarn add @veramo/did-resolver@next ethr-did-resolver web-did-resolver
 ```
 
 ```tsx
 import { createAgent, IResolver } from '@veramo/core'
 
 import { DIDResolverPlugin } from '@veramo/did-resolver'
-import { Resolver } from 'did-resolver'
 import { getResolver as ethrDidResolver } from 'ethr-did-resolver'
 import { getResolver as webDidResolver } from 'web-did-resolver'
 
@@ -70,10 +69,8 @@ const INFURA_PROJECT_ID = '<your PROJECT_ID here>'
 export const agent = createAgent<IResolver>({
   plugins: [
     new DIDResolverPlugin({
-      resolver: new Resolver({
-        ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
-        ...webDidResolver(),
-      }),
+      ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
+      ...webDidResolver(),
     }),
   ],
 })
@@ -83,9 +80,9 @@ In the provider setup above, add the following to bootstrap the local agent. You
 add while your application is running.
 
 ```tsx
-import {agent} from '../veramo'
+import {agent} from '../veramo';
 
-<VeramoProvider agent={[agent]}>...<VeramoProvider>
+<VeramoProvider agent={[agent]}>...</VeramoProvider>
 ```
 
 ## `useVeramo hook`
@@ -97,21 +94,21 @@ uses the cache key of `resolutionResult + agentID` to identify the data to your 
 import { useVeramo } from '@veramo-community/veramo-react'
 import { useQuery } from 'react-query'
 
-export default = () => {
-    const { agent } = useVeramo<IResolver>()
-    const { data } = useQuery(
-        ['resolutionResult', { agentId: agent?.context.id }],
-        () => agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' })())
+export default () => {
+  const { agent } = useVeramo<IResolver>()
+  const { data } = useQuery(
+    ['resolutionResult', { agentId: agent?.context.id }],
+    () => agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' })())
 
-    return (
-        <div>
-            {
-                data?.didDocument?.verificationMethod.map((key) => (
-                    <div>{JSON.stringify(key)}</div>
-                )
-            }
-        <div>
-    )
+  return (
+    <div>
+      {
+        data?.didDocument?.verificationMethod.map((key) => (
+          <div>{JSON.stringify(key)}</div>
+        ))
+      }
+    </div>
+  )
 }
 ```
 

@@ -37,7 +37,7 @@ the [ethr-did-resolver](https://github.com/decentralized-identity/ethr-did-resol
 ### `did:web`
 
 ```bash
-did:web:veramo-agent.herokuapp.com
+did:web:veramo.io
 ```
 
 [did:web Spec](https://w3c-ccg.github.io/did-method-web/) • [Veramo did:web provider API](../api/did-provider-web.md)

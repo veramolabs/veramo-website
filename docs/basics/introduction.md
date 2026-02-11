@@ -7,8 +7,9 @@ sidebar_label: Introduction
 :::info
 
 Veramo is in a public beta. There will be some breaking changes in the coming months, and we endeavour to communicate
-these in advance via our [Discord community](discord.gg/sYBUXpACh4). However, we expect the core APIs to remain relatively stable. You can keep up to date
-here and get involved in our growing community. We are excited to see what you build with Veramo!
+these in advance via our [Discord community](https://discord.gg/sYBUXpACh4). However, we expect the core APIs to remain
+relatively stable. You can keep up to date here and get involved in our growing community. We are excited to see what
+you build with Veramo!
 
 :::
 
@@ -34,13 +35,13 @@ the [Plugins](../veramo_agent/plugins.md) section.
 
 > Our mission is to empower developers to build better trust layers in their applications.
 
-We obsess over standards and interop so developers and product owners can focus on building their next-generation
+We obsess over standards and interop, so developers and product owners can focus on building their next-generation
 applications that leverage verifiable data and their decentralized verification benefits.
 
 ### Why Veramo?
 
 The verifiable data landscape has grown exponentially in the past few years and continues to grow at an accelerated
-rate. Where you have accelerated innovation, you will also have a lot of competing standards. This anomaly makes
+rate. Where you have faster innovation, you will also have a lot of competing standards. This anomaly makes
 interoperability challenging. Veramo was designed to be flexible, modular, and scalable. It allows developers to
 orchestrate a custom system from a growing list of standards without worrying about interoperability and fast-changing
 specs.
@@ -61,7 +62,7 @@ plugins for DID Methods, Messaging Protocols, Storage, Key Management, Authentic
 
 ### Join the community
 
-- Join the [Discord](http://discord.gg/sYBUXpACh4) to discuss Veramo and SSI.
+- Join the [Discord](https://discord.gg/sYBUXpACh4) to discuss Veramo and SSI.
 - Follow us on [Twitter](https://twitter.com/veramolabs) for updates.
 - Read the [blog](https://medium.com/veramo) for news, announcements, and tutorials.
-- Watch the [Youtube channel](https://www.youtube.com/@veramolabs) for videos and presentations.
+- Watch the [YouTube channel](https://www.youtube.com/@veramolabs) for videos and presentations.
