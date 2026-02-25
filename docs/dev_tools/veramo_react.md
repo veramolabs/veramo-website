@@ -80,9 +80,9 @@ In the provider setup above, add the following to bootstrap the local agent. You
 add while your application is running.
 
 ```tsx
-import {agent} from '../veramo';
+import { agent } from '../veramo'
 
-<VeramoProvider agent={[agent]}>...</VeramoProvider>
+;<VeramoProvider agent={[agent]}>...</VeramoProvider>
 ```
 
 ## `useVeramo hook`
@@ -96,17 +96,15 @@ import { useQuery } from 'react-query'
 
 export default () => {
   const { agent } = useVeramo<IResolver>()
-  const { data } = useQuery(
-    ['resolutionResult', { agentId: agent?.context.id }],
-    () => agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' })())
+  const { data } = useQuery(['resolutionResult', { agentId: agent?.context.id }], () =>
+    agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' })(),
+  )
 
   return (
     <div>
-      {
-        data?.didDocument?.verificationMethod.map((key) => (
-          <div>{JSON.stringify(key)}</div>
-        ))
-      }
+      {data?.didDocument?.verificationMethod.map((key) => (
+        <div>{JSON.stringify(key)}</div>
+      ))}
     </div>
   )
 }

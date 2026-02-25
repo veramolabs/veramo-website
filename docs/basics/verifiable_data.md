@@ -31,24 +31,20 @@ This is the current v1 format for a W3C compliant Verifiable Credential:
 
 ```json5
 {
-  "@context": [
-    "https://www.w3.org/2018/credentials/v1"
-  ],
-  "type": [
-    "VerifiableCredential"
-  ],
-  "issuer": {
-    "id": "did:web:veramo.io"
+  '@context': ['https://www.w3.org/2018/credentials/v1'],
+  type: ['VerifiableCredential'],
+  issuer: {
+    id: 'did:web:veramo.io',
   },
-  "issuanceDate": "2020-01-01T19:33:24Z",
-  "credentialSubject": {
-    "id": "did:example:user",
-    "community": {
-      "rank": "rockstar"
-    }
+  issuanceDate: '2020-01-01T19:33:24Z',
+  credentialSubject: {
+    id: 'did:example:user',
+    community: {
+      rank: 'rockstar',
+    },
   },
-  "proof": {
+  proof: {
     // ...
-  }
+  },
 }
 ```

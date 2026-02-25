@@ -21,7 +21,7 @@ Additional info regarding ESM can be found at the following links:
 
 ### Prerequisites
 
-You need to have Node v14 or later installed. In this example, we use `yarn` as the package manager, but you can also
+You need to have Node v20 or later installed. In this example, we use `yarn` as the package manager, but you can also
 use `npm`.
 
 Start by creating a directory for our project and initializing the npm package.
@@ -90,6 +90,7 @@ and import the following dependencies:
 Note: In this file we'll use that secret key that we generated in an earlier step, so have it handy.
 
 ```typescript
+// filename: src/veramo/setup.ts
 // Core interfaces
 import {
   createAgent,
@@ -133,6 +134,7 @@ import { DataSource } from 'typeorm'
 Create some variables that we will use later
 
 ```ts
+// filename: src/veramo/setup.ts
 // This will be the name for the local sqlite database for demo purposes
 const DATABASE_FILE = 'database.sqlite'
 
@@ -147,6 +149,7 @@ const KMS_SECRET_KEY =
 Initialise a database using TypeORM
 
 ```ts
+// filename: src/veramo/setup.ts
 const dbConnection = new DataSource({
   type: 'sqlite',
   database: DATABASE_FILE,
@@ -161,6 +164,7 @@ const dbConnection = new DataSource({
 Create the agent by using the createAgent method from `@veramo/core`
 
 ```ts
+// filename: src/veramo/setup.ts
 export const agent = createAgent<
   IDIDManager & IKeyManager & IDataStore & IDataStoreORM & IResolver & ICredentialPlugin
 >({
@@ -186,9 +190,7 @@ export const agent = createAgent<
       ...ethrDidResolver({ infuraProjectId: INFURA_PROJECT_ID }),
       ...webDidResolver(),
     }),
-    new CredentialPlugin([
-      new CredentialProviderJWT(),
-    ]),
+    new CredentialPlugin([new CredentialProviderJWT()]),
   ],
 })
 ```
@@ -218,6 +220,7 @@ and `./src/verify-credential.ts`
 Add the following code to `./src/list-identifiers.ts`
 
 ```ts
+// filename: src/list-identifiers.ts
 import { agent } from './veramo/setup.js'
 
 async function main() {
@@ -239,6 +242,7 @@ main().catch(console.log)
 Add the following code to `./src/create-identifier.ts`
 
 ```ts
+// filename: src/create-identifier.ts
 import { agent } from './veramo/setup.js'
 
 async function main() {
@@ -253,6 +257,7 @@ main().catch(console.log)
 Add the following code to `./src/create-credential.ts`
 
 ```ts
+// filename: src/create-credential.ts
 import { agent } from './veramo/setup.js'
 
 async function main() {
@@ -278,6 +283,7 @@ main().catch(console.log)
 Add the following code to `./src/verify-credential.ts`
 
 ```ts
+// filename: src/verify-credential.ts
 import { agent } from './veramo/setup.js'
 
 async function main() {

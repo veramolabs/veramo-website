@@ -9,6 +9,21 @@ system where events can be emitted by application code or plugin and consumed as
 
 ### Emitting an event
 
+Let's say we have a Veramo agent configured like so:
+
+```ts
+import { Agent } from '@veramo/core'
+import { type IEventListener } from '@veramo/core-types'
+const agent = new Agent({
+  plugins: [
+    // ...
+  ],
+})
+
+const type = 'fooEvent'
+const data = { some: 'data' }
+```
+
 The agent exposes an emit method:
 
 ```ts
@@ -35,10 +50,12 @@ async `onEvent({type, data}, context)` method that will be called when an event 
 ```ts
 const fooEventLogger: IEventListener = {
   eventTypes: ['fooEvent'],
-  onEvent: async (event, context) => { console.log(event.data) },
+  onEvent: async (event, context) => {
+    console.log(event.data)
+  },
 }
 
-const agent = new Agent({
+const agentWithListener = new Agent({
   plugins: [
     fooEventLogger,
     // ...
@@ -57,10 +74,10 @@ const foobarPlugin: IEventListener = {
   eventTypes: ['fooEvent', 'barEvent'],
   onEvent: async (event, context) => {
     if (event.type === 'fooEvent') {
-      const fooData = event.data as FooData
+      const fooData = event.data // as FooData
       //do something with fooData
     } else if (event.type === 'barEvent') {
-      const barData = event.data as BarData
+      const barData = event.data // as BarData
       //do something with barData
     }
   },
@@ -82,11 +99,12 @@ const faultyListener: IEventListener = {
 
 const errorLogger: IEventListener = {
   eventTypes: ['error'],
-  onEvent: console.error,
+  onEvent: async (event) => {
+    console.error(event)
+  },
 }
 
-const agent = new Agent({
+const agentWithErrorListener = new Agent({
   plugins: [faultyListener, errorLogger],
 })
-
 ```
