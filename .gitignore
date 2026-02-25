@@ -1,11 +1,12 @@
 # Dependencies
-/node_modules
+**/node_modules
 
 # Production
 /build
 /temp
 /daf
 /veramo
+**/tmp
 
 # Generated files
 .docusaurus
