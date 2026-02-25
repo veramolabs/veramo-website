@@ -81,7 +81,6 @@ add while your application is running.
 
 ```tsx
 import { agent } from '../veramo'
-
 ;<VeramoProvider agent={[agent]}>...</VeramoProvider>
 ```
 

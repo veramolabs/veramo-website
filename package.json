@@ -11,9 +11,10 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "build:veramo": "bash ./scripts/build-veramo.sh",
-    "check:docs": "bash scripts/check-codeblocks.sh",
+    "check:codeblocks": "bash scripts/check-codeblocks.sh",
     "baseline:docs": "bash scripts/check-codeblocks.sh --report",
-    "format": "prettier --write '{src,docs, !build}/**/*'"
+    "check:all": "pnpm run build:veramo && pnpm run format && pnpm run check:docs && pnpm run build",
+    "format": "prettier --write '{src,docs}/**/*'"
   },
   "dependencies": {
     "@algolia/client-search": "^4.17.0",
