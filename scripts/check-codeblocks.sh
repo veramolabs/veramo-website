@@ -10,15 +10,8 @@ mkdir -p "$CODEBLOCKS_DIR"
 # Bootstrap or refresh the isolated package environment
 if [ ! -f "$CODEBLOCKS_DIR/package.json" ]; then
   echo "Initialising package environment in $CODEBLOCKS_DIR..."
-  pnpm init --dir "$CODEBLOCKS_DIR"
-  # Set type=module
-  node -e "
-    const fs = require('fs');
-    const p = '$CODEBLOCKS_DIR/package.json';
-    const pkg = JSON.parse(fs.readFileSync(p, 'utf8'));
-    pkg.type = 'module';
-    fs.writeFileSync(p, JSON.stringify(pkg, null, 2) + '\n');
-  "
+  pnpm init --init-type module --bare --dir "$CODEBLOCKS_DIR"
+
   pnpm add --dir "$CODEBLOCKS_DIR" \
     @veramo/core@latest \
     @veramo/core-types@latest \
