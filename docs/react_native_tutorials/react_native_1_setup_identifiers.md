@@ -6,7 +6,7 @@ sidebar_label: Setup & Create DIDs
 
 This guide will walk you through setting up Veramo on React Native (using [expo](https://expo.dev/)). You should have a
 good understanding of React Native and have your environment set up correctly to build iOS and Android apps. Check out
-the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. NodeJS v14 or later is required
+the [React Native](https://reactnative.dev/docs/environment-setup) docs to learn more. Node v20 or later is required
 to run Veramo.
 
 You'll be creating a React Native application that is able to create and remember Decentralized Identifiers (DIDs) along
@@ -235,7 +235,7 @@ let dbConnection = new DataSource({
 Finally, create the agent and add plugins for Key, Identifiers, Resolution, Credentials and Storage.
 
 ```ts
-// filename: src/veramo/setup.ts
+// filename: setup.ts
 
 // ... imports & CONSTANTS & DB setup
 

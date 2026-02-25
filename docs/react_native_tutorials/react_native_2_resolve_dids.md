@@ -38,7 +38,7 @@ Next, let's install these in our Veramo setup. First, we'll add these imports:
 
 // imports:
 // Core interfaces
-import { IResolver } from '@veramo/core'
+import { createAgent, IDataStore, IDataStoreORM, IDIDManager, IKeyManager, IResolver } from '@veramo/core'
 
 // Core DID resolver plugin. This plugin orchestrates different DID resolver drivers to resolve the corresponding DID Documents for the given DIDs.
 // This plugin implements `IResolver`
@@ -88,6 +88,7 @@ Let's add a method that will call the agent to resolve a DID.
 // filename: App.tsx
 
 // ... imports
+import { agent } from './setup'
 import { DIDResolutionResult } from '@veramo/core'
 
 const App = () => {

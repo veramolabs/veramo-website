@@ -1,0 +1,13 @@
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.svg
+**/*.ico
+**/*.webp
+**/*.woff
+**/*.woff2
+**/*.ttf
+**/*.eot
+build/
+

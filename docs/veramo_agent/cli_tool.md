@@ -4,7 +4,7 @@ title: CLI Tool
 sidebar_label: CLI Tool
 ---
 
-:::important Ensure you have Node v14 or later installed. The CLI tool is currently only supported on MACOS and Linux
+:::important Ensure you have Node v20 or later installed. The CLI tool is currently only supported on MACOS and Linux
 systems. Windows support is coming soon.
 :::
 

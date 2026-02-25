@@ -117,7 +117,7 @@ https://cdn.jsdelivr.net/gh/{USER}/{REPO}/dist/plugin.js
 
 The plugin name
 
-```ts
+```tsx
 name: string
 ```
 
@@ -125,7 +125,7 @@ name: string
 
 A short description of the plugin
 
-```ts
+```tsx
 description: string
 ```
 
@@ -133,7 +133,7 @@ description: string
 
 The plugin icon
 
-```ts
+```tsx
 icon?: React.ReactNode;
 ```
 
@@ -143,14 +143,14 @@ These will be displayed in the plugins list
 
 ### `routes`
 
-```ts
+```tsx
 /** An array of routes to be added to the explorer */
 routes?: IRouteComponent[];
 ```
 
 Example:
 
-```ts
+```tsx
 routes: [
   {
     path: '/contacts',
@@ -167,13 +167,13 @@ routes: [
 
 An array of menu items to be added to the explorer
 
-```ts
+```tsx
 menuItems?: ExtendedMenuDataItem[];
 ```
 
 Example:
 
-```ts
+```tsx
 menuItems: [
   {
     name: 'Contacts',
@@ -191,13 +191,13 @@ An array of methods that the plugin requires to be implemented by the agent.
 
 If the agent does not implement the required methods, the plugin will be loaded but the menu item will not be shown.
 
-```ts
+```tsx
 requiredMethods: string[];
 ```
 
 Example:
 
-```ts
+```tsx
 requiredMethods: ['dataStoreORMGetIdentifiers'],
 ```
 
@@ -205,7 +205,7 @@ requiredMethods: ['dataStoreORMGetIdentifiers'],
 
 Does the plugin provide custom css
 
-```ts
+```tsx
 hasCss?: boolean;
 ```
 
@@ -215,7 +215,7 @@ Example: [Brainshare](https://github.com/veramolabs/agent-explorer-plugin-graph-
 
 Veramo agent plugins accesable by all explorer plugins
 
-```ts
+```tsx
 agentPlugins?: IAgentPlugin[];
 ```
 
@@ -223,7 +223,7 @@ agentPlugins?: IAgentPlugin[];
 
 Veramo agent message handlers
 
-```ts
+```tsx
 messageHandlers?: AbstractMessageHandler[];
 ```
 
@@ -233,13 +233,13 @@ Example: [Chats plugin](https://github.com/veramolabs/agent-explorer/blob/main/p
 
 Menu items for the credential context menu
 
-```ts
+```tsx
 getCredentialContextMenuItems?: (credential: UniqueVerifiableCredential) => MenuProps['items'];
 ```
 
 Example [Chats plugin](https://github.com/veramolabs/agent-explorer/blob/7614ba2a25423aa6304013738af8e67c625394cd/packages/agent-explore/src/plugins/chats/menu.tsx#L8)
 
-```ts
+```tsx
 {
   key: 'sendto',
   label: 'Share with ...',
@@ -254,7 +254,7 @@ Example [Chats plugin](https://github.com/veramolabs/agent-explorer/blob/7614ba2
 
 Returns a react component for a given verifiable credential
 
-```ts
+```tsx
 getCredentialComponent?: (credential: UniqueVerifiableCredential) => React.FC<IVerifiableComponentProps> | undefined;
 ```
 
@@ -266,7 +266,7 @@ Example: [Kudos plugin](https://github.com/veramolabs/agent-explorer-plugin-kudo
 
 Returns a react component that will be displayed in the identifier hover component
 
-```ts
+```tsx
 getIdentifierHoverComponent?: () => React.FC<IIdentifierHoverComponentProps>;
 ```
 
@@ -278,13 +278,13 @@ Example: [Gitcoin Passport plugin](https://github.com/veramolabs/agent-explorer-
 
 Returns an array of react components and labels that will be displayed as tabs in the indentifier profile page
 
-```ts
+```tsx
 getIdentifierTabsComponents?: () => Array<{ label: string, component: React.FC<IIdentifierTabsComponentProps> }>;
 ```
 
 Example: [Credentials plugin](https://github.com/veramolabs/agent-explorer/blob/42c625bdcfe03c725abb2cf3db88bec2e3e90a99/packages/agent-explore/src/plugins/credentials/index.tsx)
 
-```ts
+```tsx
 getIdentifierTabsComponents: () => {
   return [
     {
@@ -305,7 +305,7 @@ getIdentifierTabsComponents: () => {
 
 Returns an array of react components that will be displayed as action buttons in Credential component
 
-```ts
+```tsx
 getCredentialActionComponents?: () => Array<React.FC<ICredentialActionComponentProps>>;
 ```
 
@@ -317,7 +317,7 @@ Example: [Reactions plugin](https://github.com/veramolabs/agent-explorer/blob/ma
 
 `react-markdown` Components for custom markdown rendering
 
-```ts
+```tsx
 getMarkdownComponents?: () => Partial<Components> | undefined;
 ```
 
@@ -325,7 +325,7 @@ getMarkdownComponents?: () => Partial<Components> | undefined;
 
 `remark` plugins for custom markdown manipulations
 
-```ts
+```tsx
 getRemarkPlugins?: () => PluggableList;
 ```
 

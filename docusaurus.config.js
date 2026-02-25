@@ -176,6 +176,11 @@ module.exports = {
       //... other Algolia params
     },
   },
+  markdown: { mermaid: true },
+  themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    require.resolve('./plugins/cytoscape-alias-plugin'),
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',

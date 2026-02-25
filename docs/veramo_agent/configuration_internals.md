@@ -42,6 +42,7 @@ objects containing:
 This:
 
 ```typescript
+// filename: config.mts
 import { Agent } from '@veramo/core'
 import { DIDComm } from '@veramo/did-comm'
 const agent = new Agent({
@@ -52,6 +53,7 @@ const agent = new Agent({
 is equivalent to:
 
 ```typescript
+// filename: config.cts
 const agent = new (require('@veramo/core')['Agent'])({
   plugins: [new (require('@veramo/core')['DIDComm'])()],
 })
@@ -93,6 +95,7 @@ result:
 is equivalent to:
 
 ```typescript
+// filename: setup-resolver.ts
 import { getResolver } from 'ethr-did-resolver'
 const obj = getResolver({
   networks: [

@@ -25,6 +25,7 @@ Next, let's install these in our Veramo setup. First, we'll add these imports:
 // filename: setup.ts
 
 // imports:
+import { createAgent, IDataStore, IDataStoreORM, IDIDManager, IKeyManager, IResolver } from '@veramo/core'
 // This plugin allows us to issue and verify W3C Verifiable Credentials with JWT proof format
 import { CredentialPlugin, ICredentialIssuer, ICredentialVerifier } from '@veramo/credential-w3c'
 // JWT proof format for W3C Verifiable Credential plugin
@@ -47,9 +48,7 @@ export const agent = createAgent<
     //
     // ... previously added plugins
     //
-    new CredentialPlugin([
-      new CredentialProviderJWT(),
-    ]),
+    new CredentialPlugin([new CredentialProviderJWT()]),
   ],
 })
 ```
@@ -62,6 +61,7 @@ Let's add a method that will call the agent to create a verifiable credential.
 // filename: App.tsx
 
 // ... imports
+import { agent } from './setup'
 import { VerifiableCredential } from '@veramo/core'
 
 const App = () => {
