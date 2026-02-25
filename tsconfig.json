@@ -1,5 +1,10 @@
 {
-    "extends": "@tsconfig/docusaurus/tsconfig.json",
-    "include": ["src/"]
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "include": ["src/"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true
   }
-  
+}
