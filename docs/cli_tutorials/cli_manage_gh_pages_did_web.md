@@ -48,7 +48,7 @@ veramo did create
 ```
 
 This will prompt you to select a DID method. Select `did:web` and for the alias
-enter `<your github user>:github.io:alice`. The current version of the CLI tool (5.x) uses the alias to determine the
+enter `<your github user>:github.io:alice`. The CLI tool uses the alias to determine the
 DID for a `did:web`.
 
 ## Get the new DID document
