@@ -5,7 +5,7 @@ title: DID Methods
 
 A definition of how a specific DID method scheme is implemented. A DID method is defined by a DID method specification,
 which specifies the precise operations by which DIDs and DID documents are created, resolved, updated, and deactivated.
-See [DID Methods W3C Spec](https://www.w3.org/TR/did-core/#methods).
+See [DID Methods W3C Spec](https://www.w3.org/TR/did-1.0/#methods).
 
 ![img](../../static/img/diagrams/did_method.svg)
 
@@ -59,7 +59,7 @@ their DID, it is has some drawbacks related to security and privacy (e.g., track
 did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH
 ```
 
-[did:key Spec](https://w3c-ccg.github.io/did-method-key/) • [Veramo did:key provider API](../api/did-provider-key.md)
+[did:key Spec](https://w3c-ccg.github.io/did-key-spec/) • [Veramo did:key provider API](../api/did-provider-key.md)
 
 Key-DID represents a very light-weight self-certifying DID method which does not require any external utility such as a
 Blockchain. A Key-DID is created by generating a cryptographic key pair (e.g., Curve25519). Using Curve25519 will add

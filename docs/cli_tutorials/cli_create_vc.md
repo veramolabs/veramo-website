@@ -97,7 +97,7 @@ list of DIDs you have created already, then a subject and the output should look
 This is a self issued credential claiming that the subject is named Alice.
 
 Veramo uses a synthetic proof type (`JwtProof2020`) to represent JWT credentials in a format closer to
-the [W3C Veriable Credentials data model](https://www.w3.org/TR/vc-data-model/). `JwtProof2020` is not a registered
+the [W3C Verifiable Credentials data model](https://www.w3.org/TR/vc-data-model/). `JwtProof2020` is not a registered
 proof type, it is only used as a convenience to provide a human-readable credential.
 The credential is actually entirely contained in the `proof.jwt` field.
 To verify this credential you can use the `credential verify` command:

@@ -55,7 +55,7 @@ is equivalent to:
 ```typescript
 // filename: config.cts
 const agent = new (require('@veramo/core')['Agent'])({
-  plugins: [new (require('@veramo/core')['DIDComm'])()],
+  plugins: [new (require('@veramo/did-comm')['DIDComm'])()],
 })
 ```
 
