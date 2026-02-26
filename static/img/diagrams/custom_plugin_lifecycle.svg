@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-family: Helvetica, Arial; font-size: 20px; font-weight: bold; }
+    .box { fill: none; stroke: #1e1e1e; stroke-width: 2; rx: 10; }
+    .label { font-family: Helvetica, Arial; font-size: 18px; text-anchor: middle; fill: #1e1e1e; }
+    .desc { font-family: Helvetica, Arial; font-size: 14px; fill: #555; text-anchor: middle; }
+  </style>
+  <!-- Registration -->
+  <rect x="300" y="30" width="300" height="60" class="box"/>
+  <text x="450" y="70" class="label">Plugin Registration</text>
+  <text x="450" y="95" class="desc">Add to agent plugins array</text>
+  <line x1="450" y1="90" x2="450" y2="120" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Initialization -->
+  <rect x="300" y="120" width="300" height="60" class="box"/>
+  <text x="450" y="160" class="label">Initialization</text>
+  <text x="450" y="185" class="desc">Agent calls plugin.init(agent)</text>
+  <line x1="450" y1="180" x2="450" y2="210" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Request Handling -->
+  <rect x="300" y="210" width="300" height="60" class="box"/>
+  <text x="450" y="250" class="label">Request Handling</text>
+  <text x="450" y="275" class="desc">Plugins expose methods on agent</text>
+  <line x1="450" y1="270" x2="450" y2="300" stroke="#1e1e1e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <!-- Cleanup -->
+  <rect x="300" y="300" width="300" height="60" class="box"/>
+  <text x="450" y="340" class="label">Cleanup</text>
+  <text x="450" y="365" class="desc">Agent calls plugin.dispose() on shutdown</text>
+</svg>

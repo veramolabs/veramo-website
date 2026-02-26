@@ -14,7 +14,26 @@ when writing plugins to ensure we have an ecosystem of highly interoperable func
 This diagram shows the high level relationship between the core agent, interfaces, plugins and external protocols. This
 is one simple configuration of many.
 
-![img](../../static/img/diagrams/veramo_plugins_simple.svg)
+```mermaid
+flowchart TD
+    A[Veramo DID Agent]
+    A --> IKM[IKeyManager]
+    A --> IDS[IDataStore]
+    A --> IDM[IDIDManager]
+    A --> IR[IResolver]
+    A --> ICE[ICredentialIssuer]
+
+    IKM --> KMS[KMS]
+    IDS --> KS[KeyStore]
+    IDS --> DB[DBConnection]
+    IDM --> DS[DIDStore]
+    IDM --> WProv[WebDIDProvider]
+    IR --> Prov[Providers]
+    ICE --> JWT[JWT]
+
+    DB --> Postgres[Postgres]
+    KS --> Local[Local]
+```
 
 ## Core Plugins
 

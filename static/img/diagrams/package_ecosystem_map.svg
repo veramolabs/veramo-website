@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <style>
+    .title { font-family: Helvetica, Arial; font-size: 28px; font-weight: bold; }
+    .category { font-family: Helvetica, Arial; font-size: 22px; font-weight: bold; }
+    .pkg { font-family: Helvetica, Arial; font-size: 16px; fill: #555; }
+  </style>
+  <text x="60" y="50" class="title">Veramo Package Ecosystem</text>
+  <!-- Core -->
+  <text x="60" y="100" class="category">Core</text>
+  <text x="80" y="130" class="pkg">@veramo/core, @veramo/core-types</text>
+  <!-- DID -->
+  <text x="60" y="180" class="category">DID</text>
+  <text x="80" y="210" class="pkg">@veramo/did-manager, @veramo/did-resolver, @veramo/did-provider-ethr, @veramo/did-provider-web, @veramo/did-provider-key, @veramo/did-provider-peer, @veramo/did-provider-pkh, @veramo/did-provider-ion, @veramo/did-provider-jwk</text>
+  <!-- Credential -->
+  <text x="60" y="280" class="category">Credential</text>
+  <text x="80" y="310" class="pkg">@veramo/credential-w3c, @veramo/credential-jwt, @veramo/credential-ld, @veramo/credential-eip712, @veramo/credential-status</text>
+  <!-- Key Management -->
+  <text x="60" y="380" class="category">Key Management</text>
+  <text x="80" y="410" class="pkg">@veramo/key-manager</text>
+  <!-- KMS -->
+  <text x="60" y="460" class="category">Key Management Services (KMS)</text>
+  <text x="80" y="490" class="pkg">@veramo/kms-local, @veramo/kms-web3</text>
+  <!-- Messaging -->
+  <text x="60" y="540" class="category">Messaging</text>
+  <text x="80" y="570" class="pkg">@veramo/did-comm, @veramo/did-jwt, @veramo/message-handler, @veramo/url-handler, @veramo/selective-disclosure</text>
+  <!-- Storage -->
+  <text x="60" y="660" class="category">Storage</text>
+  <text x="80" y="690" class="pkg">@veramo/data-store, @veramo/data-store-json</text>
+  <!-- Remote -->
+  <text x="60" y="740" class="category">Remote</text>
+  <text x="80" y="770" class="pkg">@veramo/remote-client, @veramo/remote-server</text>
+</svg>

@@ -7,7 +7,10 @@ A definition of how a specific DID method scheme is implemented. A DID method is
 which specifies the precise operations by which DIDs and DID documents are created, resolved, updated, and deactivated.
 See [DID Methods W3C Spec](https://www.w3.org/TR/did-1.0/#methods).
 
-![img](../../static/img/diagrams/did_method.svg)
+```mermaid
+flowchart LR
+    did_scheme[did] --> did_method[method<br/>e.g. example] --> did_id[method-specific identifier]
+```
 
 ## Core Supported DID Methods
 

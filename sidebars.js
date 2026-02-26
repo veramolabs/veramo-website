@@ -12,7 +12,7 @@ module.exports = {
       items: [
         'veramo_agent/introduction',
         'veramo_agent/plugins',
-        // 'veramo_agent/configuration',
+        'veramo_agent/package_overview',
         'veramo_agent/did_methods',
         'veramo_agent/messages',
         'veramo_agent/message_handlers',

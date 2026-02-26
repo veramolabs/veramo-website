@@ -7,7 +7,14 @@ Veramo can communicate with other systems using it's messaging system. The messa
 Type, a MessageHandler interface, a MessageHandler plugin that accepts multiple message parsers plugins that implement
 AbstractMessageHandler You can create custom message handling plugins to add new message types for your agent.
 
-![img](../../static/img/diagrams/veramo_message_handler_simple.svg)
+```mermaid
+flowchart TD
+    Abstract[AbstractMessageHandler]
+    Abstract --> W3C[W3CMessageHandler]
+    Abstract --> JWT[JWTMessageHandler]
+    Abstract --> DIDComm[DIDCommMessageHandler]
+    Abstract --> SDR[SDRMessageHandler]
+```
 
 ### Handling Messages
 
@@ -43,7 +50,22 @@ order specified in the configuration.
 
 The above example would look like this:
 
-![img](../../static/img/diagrams/veramo_message_handler_chain.svg)
+```mermaid
+flowchart LR
+    InMsg[Incoming Message] --> H1[DIDCommMessageHandler]
+    H1 --> C1{Can handle?}
+    C1 -- Yes --> Result[Return MessageObject]
+    C1 -- No --> H2[JwtMessageHandler]
+    H2 --> C2{Can handle?}
+    C2 -- Yes --> Result
+    C2 -- No --> H3[W3cMessageHandler]
+    H3 --> C3{Can handle?}
+    C3 -- Yes --> Result
+    C3 -- No --> H4[SdrMessageHandler]
+    H4 --> C4{Can handle?}
+    C4 -- Yes --> Result
+    C4 -- No --> Error[Error: no handler]
+```
 
 Each parser will try to read the message and return a message object by examining the payload/type and deciding if it
 can do the job or if it should pass it onto the next parser in the chain if one exists. Once a message can be
