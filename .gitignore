@@ -33,3 +33,6 @@ AGENTS.md
 CLAUDE.md
 .claude/
 /roadmap/
+
+# Git worktrees
+.worktrees/
