@@ -1,4 +1,5 @@
 const version = require('./package.json').version
+const {themes: prismThemes} = require('prism-react-renderer')
 
 // @ts-check
 
@@ -17,7 +18,7 @@ module.exports = {
   themeConfig: {
     prism: {
       defaultLanguage: 'javascript',
-      theme: require('prism-react-renderer/themes/dracula'),
+      theme: prismThemes.dracula,
     },
     navbar: {
       title: 'Veramo ' + '(v' + version + ')',
@@ -176,11 +177,18 @@ module.exports = {
       //... other Algolia params
     },
   },
-  markdown: { mermaid: true },
+  markdown: { mermaid: true, format: 'detect' },
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: false,
+    },
+  },
   themes: ['@docusaurus/theme-mermaid'],
-  plugins: [
-    require.resolve('./plugins/cytoscape-alias-plugin'),
-  ],
+  plugins: [],
   presets: [
     [
       '@docusaurus/preset-classic',
