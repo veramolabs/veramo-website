@@ -29,7 +29,7 @@ including caching and global data syncing.
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { VeramoProvider } from '@veramo-community/veramo-react'
-import { QueryClientProvider, QueryClient } from 'react-query'
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import App from '../App'
 
 const queryClient = new QueryClient()
@@ -38,7 +38,7 @@ export default () => (
   <QueryClientProvider client={queryClient}>
     <VeramoProvider>
       <BrowserRouter>
-        <Route component={App} />
+        <Route path="/" element={<App />} />
       </BrowserRouter>
     </VeramoProvider>
   </QueryClientProvider>
@@ -88,7 +88,7 @@ uses the cache key of `resolutionResult + agentID` to identify the data to your 
 
 ```tsx
 import { useVeramo } from '@veramo-community/veramo-react'
-import { useQuery } from 'react-query'
+import { useQuery } from '@tanstack/react-query'
 
 export default () => {
   const { agent } = useVeramo<IResolver>()
