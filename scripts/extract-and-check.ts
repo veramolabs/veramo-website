@@ -10,134 +10,49 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const REPORT_MODE = process.argv.includes('--report')
-const VERBOSE = process.argv.includes('--verbose')
 
-// Determine repository root (one level up from this script's directory)
 const repoRoot = path.resolve(__dirname, '..')
-
-// Define paths
-const docsGlob = 'docs/**/*.{md,mdx}'
 const tmpDir = path.join(repoRoot, 'temp/codeblocks')
 const reportFile = path.join(repoRoot, 'baseline-report.md')
 
-// Ensure tmp directory exists
-if (!fs.existsSync(tmpDir)) {
-  fs.mkdirSync(tmpDir, { recursive: true })
+const TSC_FLAGS = [
+  '--noEmit',
+  '--skipLibCheck',
+  '--target',
+  'esnext',
+  '--module',
+  'esnext',
+  '--moduleResolution',
+  'bundler',
+]
+const CODE_BLOCK_RE = /```(ts|typescript)\n([\s\S]+?)\n```/gi
+const FILENAME_RE = /^\/\/\s*filename:\s*(.+)$/
+
+type CheckResult = { file: string; blockIndex: number; passed: boolean; error: string }
+
+/** Returns null on success, trimmed error string on failure. */
+function typecheck(targetFile: string): string | null {
+  try {
+    execFileSync('tsc', [...TSC_FLAGS, targetFile], {
+      stdio: 'pipe',
+      encoding: 'utf-8',
+      maxBuffer: 10 * 1024 * 1024,
+    })
+    return null
+  } catch (err: any) {
+    return (((err.stdout ?? '') + (err.stderr ?? '')).trim() || err.message).trim()
+  }
 }
 
-// Find all markdown files relative to repo root
-const allMdFiles = globSync(docsGlob, { cwd: repoRoot, absolute: false })
-
-// Exclude auto-generated API docs
-const mdFiles = allMdFiles.filter((file) => !file.startsWith('docs/api/'))
-
-// Process each file
-const results: [string, number, string, string][] = []
-const detailedErrors = new Map<string, { blockIndex: number; error: string }[]>()
-
-for (const mdFile of mdFiles) {
-  const content = fs.readFileSync(path.join(repoRoot, mdFile), 'utf-8')
-  const codeBlockRegex = /```(ts|typescript)\n([\s\S]+?)\n```/g
-  let match
-  let blockIndex = 0
-
-  // docDir: a scratch directory scoped to this markdown file, acts as the project root
-  const docBaseName = path.basename(mdFile, path.extname(mdFile))
-  const docDir = path.join(tmpDir, docBaseName)
-  if (fs.existsSync(docDir)) fs.rmSync(docDir, { recursive: true })
-  fs.mkdirSync(docDir, { recursive: true })
-
-  /**
-   * Virtual file tree: maps virtual filename (e.g. "src/veramo/setup.ts") to
-   * the accumulated source code written so far for that file.
-   */
-  const virtualFiles = new Map<string, string>()
-
-  /**
-   * Fallback accumulator for blocks that have no // filename: comment.
-   * They get merged into a single anonymous file as before.
-   */
-  const unnamedBlocks: string[] = []
-
-  while ((match = codeBlockRegex.exec(content)) !== null) {
-    const code = match[2]
-
-    // --- Detect // filename: comment (first line of the block) ---
-    const firstLine = code.split('\n')[0].trim()
-    const filenameMatch = firstLine.match(/^\/\/\s*filename:\s*(.+)$/)
-    const virtualFilename = filenameMatch ? filenameMatch[1].trim() : null
-
-    if (virtualFilename) {
-      // Reject filenames that escape docDir (path traversal guard)
-      const candidatePath = path.resolve(docDir, virtualFilename)
-      if (!candidatePath.startsWith(docDir + path.sep) && candidatePath !== docDir) {
-        results.push([mdFile, blockIndex, 'Fail', `unsafe filename: ${virtualFilename}`])
-        if (!detailedErrors.has(mdFile)) detailedErrors.set(mdFile, [])
-        detailedErrors.get(mdFile)!.push({ blockIndex, error: `unsafe filename: ${virtualFilename}` })
-        blockIndex++
-        continue
-      }
-
-      // Append this block's code (strip the filename comment line) to the virtual file
-      const codeWithoutComment = code.split('\n').slice(1).join('\n')
-      const existing = virtualFiles.get(virtualFilename) ?? ''
-      virtualFiles.set(virtualFilename, existing + (existing ? '\n' : '') + codeWithoutComment)
-
-      // Write ALL current virtual files to docDir so imports resolve
-      for (const [vPath, vCode] of virtualFiles) {
-        const absPath = path.join(docDir, vPath)
-        fs.mkdirSync(path.dirname(absPath), { recursive: true })
-        fs.writeFileSync(absPath, vCode)
-      }
-
-      // The file being checked is the one that was just updated
-      const targetFile = path.join(docDir, virtualFilename)
-
-      try {
-        execFileSync(
-          'tsc',
-          ['--noEmit', '--skipLibCheck', '--target', 'esnext', '--module', 'esnext', '--moduleResolution', 'bundler', targetFile],
-          { stdio: 'pipe', encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024 },
-        )
-        results.push([mdFile, blockIndex, 'Pass', ''])
-      } catch (error: any) {
-        let output = ''
-        if (error.stdout) output += error.stdout
-        if (error.stderr) output += error.stderr
-        if (!output && error.message) output = error.message
-        output = output.trim()
-        results.push([mdFile, blockIndex, 'Fail', output])
-        if (!detailedErrors.has(mdFile)) detailedErrors.set(mdFile, [])
-        detailedErrors.get(mdFile)!.push({ blockIndex, error: output })
-      }
-    } else {
-      // No filename comment — fall back to the flat accumulation approach
-      unnamedBlocks.push(code)
-      const merged = mergeBlocks(unnamedBlocks)
-      const tempFile = path.join(tmpDir, `${docBaseName}_block${blockIndex}.ts`)
-      fs.writeFileSync(tempFile, merged)
-
-      try {
-        execFileSync(
-          'tsc',
-          ['--noEmit', '--skipLibCheck', '--target', 'esnext', '--module', 'esnext', '--moduleResolution', 'bundler', tempFile],
-          { stdio: 'pipe', encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024 },
-        )
-        results.push([mdFile, blockIndex, 'Pass', ''])
-      } catch (error: any) {
-        let output = ''
-        if (error.stdout) output += error.stdout
-        if (error.stderr) output += error.stderr
-        if (!output && error.message) output = error.message
-        output = output.trim()
-        results.push([mdFile, blockIndex, 'Fail', output])
-        if (!detailedErrors.has(mdFile)) detailedErrors.set(mdFile, [])
-        detailedErrors.get(mdFile)!.push({ blockIndex, error: output })
-      }
-    }
-
-    blockIndex++
-  }
+/**
+ * Returns true when virtualFilename is safe to use as a file path inside docDir.
+ * Rejects traversal sequences, directory-only paths (trailing separator or "."), and
+ * anything that resolves to docDir itself.
+ */
+function isSafeVirtualFilename(docDir: string, virtualFilename: string): boolean {
+  if (virtualFilename.endsWith('/') || virtualFilename.endsWith(path.sep)) return false
+  const rel = path.relative(docDir, path.resolve(docDir, virtualFilename))
+  return rel !== '' && !rel.startsWith('..')
 }
 
 /**
@@ -145,52 +60,87 @@ for (const mdFile of mdFiles) {
  * Used as a fallback for blocks without a // filename: comment.
  */
 function mergeBlocks(blocks: string[]): string {
-  const seenImports = new Set<string>()
-  const imports: string[] = []
-  const bodies: string[] = []
-
-  for (const block of blocks) {
-    const lines = block.split('\n')
-    const bodyLines: string[] = []
-
-    for (const line of lines) {
-      const trimmed = line.trim()
-      if (/^import[\s{*("']/.test(trimmed)) {
-        if (!seenImports.has(line)) {
-          seenImports.add(line)
-          imports.push(line)
-        }
-      } else {
-        bodyLines.push(line)
-      }
-    }
-
-    const bodyText = bodyLines.join('\n').trim()
-    if (bodyText) bodies.push(bodyText)
-  }
-
+  const isImport = (line: string) => /^import[\s{*("']/.test(line.trim())
+  const imports = [...new Set(blocks.flatMap((b) => b.split('\n').filter(isImport)))]
+  const bodies = blocks
+    .map((b) =>
+      b
+        .split('\n')
+        .filter((l) => !isImport(l))
+        .join('\n')
+        .trim(),
+    )
+    .filter(Boolean)
   return [...imports, '', ...bodies].join('\n')
 }
 
-// Generate markdown table
-let table = '| File Path | Block Index | Result | Errors |\n|-----------|-------------|--------|--------|\n'
-results.forEach(([file, index, result, errors]) => {
-  const errorDisplay = errors.replace(/\|/g, '\\|').replace(/\n/g, ' ')
-  table += `| ${file} | ${index} | ${result} | ${errorDisplay} |\n`
-})
+fs.mkdirSync(tmpDir, { recursive: true })
+
+const mdFiles = globSync('docs/**/*.{md,mdx}', { cwd: repoRoot, absolute: false }).filter(
+  (f) => !f.startsWith('docs/api/'),
+)
+
+const results: CheckResult[] = []
+
+for (const mdFile of mdFiles) {
+  const content = fs.readFileSync(path.join(repoRoot, mdFile), 'utf-8')
+  const docBaseName = path.basename(mdFile, path.extname(mdFile))
+  const docDir = path.join(tmpDir, docBaseName)
+
+  fs.rmSync(docDir, { recursive: true, force: true })
+  fs.mkdirSync(docDir, { recursive: true })
+
+  const virtualFiles = new Map<string, string>()
+  const unnamedBlocks: string[] = []
+
+  for (const [blockIndex, match] of [...content.matchAll(CODE_BLOCK_RE)].entries()) {
+    const code = match[2]
+    const lines = code.split('\n')
+    const filenameMatch = lines[0].trim().match(FILENAME_RE)
+    const virtualFilename = filenameMatch?.[1].trim() ?? null
+
+    let targetFile: string
+
+    if (virtualFilename) {
+      if (!isSafeVirtualFilename(docDir, virtualFilename)) {
+        results.push({
+          file: mdFile,
+          blockIndex,
+          passed: false,
+          error: `unsafe filename: ${virtualFilename}`,
+        })
+        continue
+      }
+
+      const codeWithoutComment = lines.slice(1).join('\n')
+      const existing = virtualFiles.get(virtualFilename) ?? ''
+      virtualFiles.set(virtualFilename, existing ? `${existing}\n${codeWithoutComment}` : codeWithoutComment)
+
+      targetFile = path.join(docDir, virtualFilename)
+      fs.mkdirSync(path.dirname(targetFile), { recursive: true })
+      fs.writeFileSync(targetFile, virtualFiles.get(virtualFilename)!)
+    } else {
+      unnamedBlocks.push(code)
+      targetFile = path.join(tmpDir, `${docBaseName}_block${blockIndex}.ts`)
+      fs.writeFileSync(targetFile, mergeBlocks(unnamedBlocks))
+    }
+
+    const error = typecheck(targetFile)
+    results.push({ file: mdFile, blockIndex, passed: error === null, error: error ?? '' })
+  }
+}
+
+const table =
+  [
+    '| File Path | Block Index | Result | Errors |',
+    '|-----------|-------------|--------|--------|',
+    ...results.map(({ file, blockIndex, passed, error }) => {
+      const errorDisplay = error.replace(/\|/g, '\\|').replace(/\n/g, ' ')
+      return `| ${file} | ${blockIndex} | ${passed ? 'Pass' : 'Fail'} | ${errorDisplay} |`
+    }),
+  ].join('\n') + '\n'
 
 console.log(table)
-
-if (VERBOSE && detailedErrors.size > 0) {
-  console.log('\n### DETAILED ERRORS ###\n')
-  detailedErrors.forEach((errors, file) => {
-    console.log(`\n${file}\n`)
-    errors.forEach(({ blockIndex, error }) => {
-      console.log(`  Block ${blockIndex}:`)
-      console.log(`  ${error}\n`)
-    })
-  })
-}
 
 if (REPORT_MODE) {
   fs.writeFileSync(reportFile, table)
