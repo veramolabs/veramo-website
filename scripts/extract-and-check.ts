@@ -4,7 +4,7 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { globSync } from 'glob'
-import { execSync } from 'child_process'
+import { execFileSync } from 'child_process'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -68,6 +68,16 @@ for (const mdFile of mdFiles) {
     const virtualFilename = filenameMatch ? filenameMatch[1].trim() : null
 
     if (virtualFilename) {
+      // Reject filenames that escape docDir (path traversal guard)
+      const candidatePath = path.resolve(docDir, virtualFilename)
+      if (!candidatePath.startsWith(docDir + path.sep) && candidatePath !== docDir) {
+        results.push([mdFile, blockIndex, 'Fail', `unsafe filename: ${virtualFilename}`])
+        if (!detailedErrors.has(mdFile)) detailedErrors.set(mdFile, [])
+        detailedErrors.get(mdFile)!.push({ blockIndex, error: `unsafe filename: ${virtualFilename}` })
+        blockIndex++
+        continue
+      }
+
       // Append this block's code (strip the filename comment line) to the virtual file
       const codeWithoutComment = code.split('\n').slice(1).join('\n')
       const existing = virtualFiles.get(virtualFilename) ?? ''
@@ -84,8 +94,9 @@ for (const mdFile of mdFiles) {
       const targetFile = path.join(docDir, virtualFilename)
 
       try {
-        execSync(
-          `tsc --noEmit --skipLibCheck --target esnext --module esnext --moduleResolution bundler ${targetFile}`,
+        execFileSync(
+          'tsc',
+          ['--noEmit', '--skipLibCheck', '--target', 'esnext', '--module', 'esnext', '--moduleResolution', 'bundler', targetFile],
           { stdio: 'pipe', encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024 },
         )
         results.push([mdFile, blockIndex, 'Pass', ''])
@@ -107,8 +118,9 @@ for (const mdFile of mdFiles) {
       fs.writeFileSync(tempFile, merged)
 
       try {
-        execSync(
-          `tsc --noEmit --skipLibCheck --target esnext --module esnext --moduleResolution bundler ${tempFile}`,
+        execFileSync(
+          'tsc',
+          ['--noEmit', '--skipLibCheck', '--target', 'esnext', '--module', 'esnext', '--moduleResolution', 'bundler', tempFile],
           { stdio: 'pipe', encoding: 'utf-8', maxBuffer: 10 * 1024 * 1024 },
         )
         results.push([mdFile, blockIndex, 'Pass', ''])

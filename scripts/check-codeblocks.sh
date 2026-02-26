@@ -10,7 +10,7 @@ mkdir -p "$CODEBLOCKS_DIR"
 # Bootstrap or refresh the isolated package environment
 if [ ! -f "$CODEBLOCKS_DIR/package.json" ]; then
   echo "Initialising package environment in $CODEBLOCKS_DIR..."
-  pnpm init --init-type module --bare --dir "$CODEBLOCKS_DIR"
+  pnpm init -y --init-type module --bare --dir "$CODEBLOCKS_DIR"
 
   pnpm add --dir "$CODEBLOCKS_DIR" \
     @veramo/core@latest \
