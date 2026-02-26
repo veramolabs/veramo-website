@@ -14,7 +14,44 @@ when writing plugins to ensure we have an ecosystem of highly interoperable func
 This diagram shows the high level relationship between the core agent, interfaces, plugins and external protocols. This
 is one simple configuration of many.
 
-![img](../../static/img/diagrams/veramo_plugins_simple.svg)
+```mermaid
+graph TD
+    Agent["Veramo DID Agent"]
+
+    Agent --> IKM["IKeyManager"]
+    Agent --> IDS["IDataStore"]
+    Agent --> IDIDM["IDIDManager"]
+    Agent --> IR["IResolver"]
+    Agent --> ICI["ICredentialIssuer"]
+
+    IKM --> KM["@veramo/key-manager\nKeyManager"]
+    IDS --> DS["@veramo/data-store\nDataStore"]
+    IDIDM --> DM["@veramo/did-manager\nDIDManager"]
+    IR --> DR["@veramo/did-resolver\nDIDResolver"]
+    ICI --> CP["@veramo/credential-w3c\nCredentialPlugin"]
+
+    KM --> KMS["@veramo/kms-local\nKeyManagementSystem"]
+    DS --> DB[(TypeORM DB)]
+    DM --> EthrP["@veramo/did-provider-ethr"]
+    DM --> WebP["@veramo/did-provider-web"]
+    DM --> KeyP["@veramo/did-provider-key"]
+    DR --> Res["Universal Resolver"]
+    CP --> JWTProvider["@veramo/credential-jwt\nCredentialProviderJWT"]
+    CP --> LDProvider["@veramo/credential-ld\nCredentialProviderLD"]
+```
+
+### v7 Credential Plugin Architecture
+
+In Veramo v7, credential issuance was refactored. `CredentialPlugin` now accepts an array of
+`CredentialProvider` implementations, making it easy to support multiple proof formats:
+
+```mermaid
+graph TD
+    CP["CredentialPlugin\n(@veramo/credential-w3c)"]
+    CP --> JWT["CredentialProviderJWT\n(@veramo/credential-jwt)"]
+    CP --> LD["CredentialProviderLD\n(@veramo/credential-ld)"]
+    CP --> Custom["Custom CredentialProvider\n(your own plugin)"]
+```
 
 ## Core Plugins
 

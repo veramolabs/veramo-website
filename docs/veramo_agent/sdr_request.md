@@ -11,7 +11,14 @@ legal age requirements and or banking credit history. If we take the legal age e
 they are of legal age to access a service but should not have to share their actual date of birth, home address, contact
 number and other personally identifying information (PII).
 
-![img](../../static/img/diagrams/sdr_request_flow.svg)
+```mermaid
+flowchart LR
+    A["SDR Request"] -->|"Request name,\nemail credentials"| B["Agent Message Handler"]
+    B -->|"Create message\nwith type sdr"| C["Get Credentials\nfor Request"]
+    C --> D["Select Credentials\nto Share"]
+    D --> E["Create Verifiable\nPresentation"]
+    E --> F["SDR Response\n(DIDComm)"]
+```
 
 A Selective Disclosure Request is a Veramo message type that is created and signed by a DID. It contains a request for
 specific Verifiable Credential claims and can specify the issuer(s) of those credentials along with other criteria. The
