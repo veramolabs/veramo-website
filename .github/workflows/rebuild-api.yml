@@ -30,7 +30,7 @@ jobs:
           pnpm run format
       - name: 'check codeblocks'
         run: |
-          pnpm run check:codeblocks'
+          pnpm run check:codeblocks
       - name: 'Docusaurus build'
         run: |
           pnpm run build
