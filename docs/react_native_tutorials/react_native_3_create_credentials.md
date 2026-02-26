@@ -12,7 +12,7 @@ create and verify credentials with JWT proof type.
 Now add the credential package:
 
 ```bash
-npm install @veramo/credential-w3c`
+npm install @veramo/credential-w3c
 ```
 
 > ℹ️ **Note:** In case you run into issues check out the [Troubleshooting](../troubleshooting.md) page for some options.

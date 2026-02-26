@@ -27,7 +27,9 @@ The veramo list of "core" packages contains a DID resolver plugin. This plugin i
 drivers. Let's install that plugin as well as a DID resolver for `did:ethr`. And to see how multiple DID methods can be
 supported, let's also add support for resolving `did:web`.
 
-`npm install @veramo/did-resolver web-did-resolver cross-fetch`
+```bash
+npm install @veramo/did-resolver web-did-resolver cross-fetch
+```
 
 ## Setup
 

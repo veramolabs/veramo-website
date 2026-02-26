@@ -324,7 +324,7 @@ const App = () => {
         service: {
           id: '1',
           type: 'DIDCommMessaging',
-          serviceEndpoint: 'did:web:dev-didcomm-mediator.herokuapp.com',
+          serviceEndpoint: 'https://your-didcomm-mediator.example.com',
           description: 'for messaging',
         },
       },
