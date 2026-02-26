@@ -184,13 +184,11 @@ module.exports = {
       swcJsMinimizer: true,
       swcHtmlMinimizer: true,
       rspackBundler: true,
-      mdxCrossCompilerCache: true,
+      mdxCrossCompilerCache: false,
     },
   },
   themes: ['@docusaurus/theme-mermaid'],
-  plugins: [
-    require.resolve('./plugins/cytoscape-alias-plugin'),
-  ],
+  plugins: [],
   presets: [
     [
       '@docusaurus/preset-classic',
