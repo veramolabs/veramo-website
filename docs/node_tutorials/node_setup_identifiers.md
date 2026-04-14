@@ -294,13 +294,16 @@ async function main() {
         id: 'did:web:example.com',
       },
       issuer: {
+        // REPLACE: use the id generated from the 'create-credential' step
         id: 'did:ethr:sepolia:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16',
       },
       type: ['VerifiableCredential'],
       '@context': ['https://www.w3.org/2018/credentials/v1'],
+      /// REPLACE: use the issuanceDate generated from the 'create-credential' step
       issuanceDate: '2022-10-28T11:54:22.000Z',
       proof: {
         type: 'JwtProof2020',
+        // REPLACE: use the jwt generated from the 'create-credential' step
         jwt: 'eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7InlvdSI6IlJvY2sifX0sInN1YiI6ImRpZDp3ZWI6ZXhhbXBsZS5jb20iLCJuYmYiOjE2NjY5NTgwNjIsImlzcyI6ImRpZDpldGhyOmdvZXJsaToweDAzNTBlZWVlYTE0MTBjNWIxNTJmMWE4OGUwZmZlOGJiOGEwYmMzZGY4NjhiNzQwZWIyMzUyYjFkYmY5M2I1OWMxNiJ9.EPeuQBpkK13V9wu66SLg7u8ebY2OS8b2Biah2Vw-RI-Atui2rtujQkVc2t9m1Eqm4XQFECfysgQBdWwnSDvIjw',
       },
     },
@@ -395,6 +398,8 @@ New credential created
 ```
 
 ### Verify credential
+
+**Note:** You must replace the `issuer.id`, the `issuanceDate` and the `proof.jwt` strings at `verify-credential.ts` with the actual DID, Issuance Date and JWT output generated in your terminal from the previous step.
 
 ```bash
 yarn ts-node --esm ./src/verify-credential.ts
