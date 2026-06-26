@@ -42,7 +42,7 @@ in `package.json`
 Install dev dependencies
 
 ```bash
-yarn add typescript ts-node --dev
+yarn add typescript tsx --dev
 ```
 
 > ℹ️ **Note:** In case you run into issues, check out the [Troubleshooting](../troubleshooting.md) page for some options.
@@ -50,7 +50,7 @@ yarn add typescript ts-node --dev
 Install Veramo core and plugins
 
 ```bash
-yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local ethr-did-resolver web-did-resolver
+yarn add @veramo/core @veramo/credential-w3c @veramo/data-store @veramo/did-manager @veramo/did-provider-ethr @veramo/did-resolver @veramo/key-manager @veramo/kms-local @veramo/credential-jwt ethr-did-resolver web-did-resolver
 ```
 
 Install `sqlite`
@@ -294,13 +294,16 @@ async function main() {
         id: 'did:web:example.com',
       },
       issuer: {
+        // REPLACE: use the id generated from the 'create-credential' step
         id: 'did:ethr:sepolia:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16',
       },
       type: ['VerifiableCredential'],
       '@context': ['https://www.w3.org/2018/credentials/v1'],
+      /// REPLACE: use the issuanceDate generated from the 'create-credential' step
       issuanceDate: '2022-10-28T11:54:22.000Z',
       proof: {
         type: 'JwtProof2020',
+        // REPLACE: use the jwt generated from the 'create-credential' step
         jwt: 'eyJhbGciOiJFUzI1NksiLCJ0eXAiOiJKV1QifQ.eyJ2YyI6eyJAY29udGV4dCI6WyJodHRwczovL3d3dy53My5vcmcvMjAxOC9jcmVkZW50aWFscy92MSJdLCJ0eXBlIjpbIlZlcmlmaWFibGVDcmVkZW50aWFsIl0sImNyZWRlbnRpYWxTdWJqZWN0Ijp7InlvdSI6IlJvY2sifX0sInN1YiI6ImRpZDp3ZWI6ZXhhbXBsZS5jb20iLCJuYmYiOjE2NjY5NTgwNjIsImlzcyI6ImRpZDpldGhyOmdvZXJsaToweDAzNTBlZWVlYTE0MTBjNWIxNTJmMWE4OGUwZmZlOGJiOGEwYmMzZGY4NjhiNzQwZWIyMzUyYjFkYmY5M2I1OWMxNiJ9.EPeuQBpkK13V9wu66SLg7u8ebY2OS8b2Biah2Vw-RI-Atui2rtujQkVc2t9m1Eqm4XQFECfysgQBdWwnSDvIjw',
       },
     },
@@ -314,26 +317,26 @@ main().catch(console.log)
 ### List Identifiers
 
 ```bash
-yarn ts-node --esm ./src/list-identifiers.ts
+yarn tsx ./src/list-identifiers.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node ./src/list-identifiers
+$ tsx ./src/list-identifiers
 There are 0 identifiers
 ```
 
 ### Create Identifier
 
 ```bash
-yarn ts-node --esm ./src/create-identifier.ts
+yarn tsx ./src/create-identifier.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node --esm ./src/create-identifier.ts
+$ tsx ./src/create-identifier.ts
 New identifier created
 {
   "did": "did:ethr:sepolia:0x0350eeeea1410c5b152f1a88e0ffe8bb8a0bc3df868b740eb2352b1dbf93b59c16",
@@ -364,13 +367,13 @@ New identifier created
 ### Create credential
 
 ```bash
-yarn ts-node --esm ./src/create-credential.ts
+yarn tsx ./src/create-credential.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node --esm ./src/create-credential.ts
+$ tsx ./src/create-credential.ts
 New credential created
 {
   "credentialSubject": {
@@ -396,14 +399,16 @@ New credential created
 
 ### Verify credential
 
+**Note:** You must replace the `issuer.id`, the `issuanceDate` and the `proof.jwt` strings at `verify-credential.ts` with the actual DID, Issuance Date and JWT output generated in your terminal from the previous step.
+
 ```bash
-yarn ts-node --esm ./src/verify-credential.ts
+yarn tsx ./src/verify-credential.ts
 ```
 
 **Expected output**
 
 ```bash
-$ ts-node --esm ./src/verify-credential.ts
+$ tsx ./src/verify-credential.ts
 Credential verified true
 ```
 
