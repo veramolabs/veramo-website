@@ -9,7 +9,14 @@ Agent** using a plugin architecture. This architecture allows Veramo to be modul
 vast array of standards in the verifiable data space. Veramo is opinionated when it comes to standards compliance but
 not when it comes to how you build your application layers.
 
-![img](../../static/img/diagrams/veramo_agent_simple.svg)
+```mermaid
+graph TD
+    A[Veramo DID Agent] --- B[Messages]
+    A --- C[Identifiers]
+    A --- D[Credentials]
+    A --- E[Keys]
+    A -.- F[Custom]
+```
 
 Veramo Agent is responsible for but not limited to:
 

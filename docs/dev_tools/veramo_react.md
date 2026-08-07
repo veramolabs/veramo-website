@@ -19,10 +19,7 @@ When you add an agent configuration, it is persisted to local storage. A randoml
 yarn add @veramo-community/veramo-react
 ```
 
-**_NOTE:_** Veramo React depends on the `@next` versions of `@veramo`
-
-Installation includes `@veramo/core@next` and `@veramo/remote-client@next`. You will **NOT** need to add
-additional `@veramo` dependencies to your app if you are just working with remote agents.
+You will **NOT** need to add additional `@veramo` dependencies to your app if you are just working with remote agents.
 
 The following sippet is a simplified extract from [Veramo Agent Explorer](https://github.com/veramolabs/agent-explorer)
 that uses [React Query](https://github.com/tannerlinsley/react-query) ontop of `Veramo React` to manage the data layer
@@ -32,7 +29,7 @@ including caching and global data syncing.
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import { VeramoProvider } from '@veramo-community/veramo-react'
-import { QueryClientProvider, QueryClient } from 'react-query'
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import App from '../App'
 
 const queryClient = new QueryClient()
@@ -41,7 +38,7 @@ export default () => (
   <QueryClientProvider client={queryClient}>
     <VeramoProvider>
       <BrowserRouter>
-        <Route component={App} />
+        <Route path="/" element={<App />} />
       </BrowserRouter>
     </VeramoProvider>
   </QueryClientProvider>
@@ -53,7 +50,7 @@ export default () => (
 Create an agent in your app and export it. You will need to install additional dependencies
 
 ```bash
-yarn add @veramo/did-resolver@next ethr-did-resolver web-did-resolver
+yarn add @veramo/did-resolver ethr-did-resolver web-did-resolver
 ```
 
 ```tsx
@@ -91,12 +88,12 @@ uses the cache key of `resolutionResult + agentID` to identify the data to your 
 
 ```tsx
 import { useVeramo } from '@veramo-community/veramo-react'
-import { useQuery } from 'react-query'
+import { useQuery } from '@tanstack/react-query'
 
 export default () => {
   const { agent } = useVeramo<IResolver>()
   const { data } = useQuery(['resolutionResult', { agentId: agent?.context.id }], () =>
-    agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' })(),
+    agent?.resolveDid({ didUrl: 'did:web:community.veramo.io' }),
   )
 
   return (

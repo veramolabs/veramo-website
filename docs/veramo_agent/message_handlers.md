@@ -28,7 +28,10 @@ JWT and/or DIDComm handlers. The handler supports fetching of shortened URL redi
 DIDCommMessageHandler decrypts incoming messages using the private key of the recipient. The decrypted message is passed
 along to subsequent Message Handlers.
 
-![img](../../static/img/diagrams/message_didcomm.svg)
+```mermaid
+flowchart LR
+    A[Message] --> B[Ciphertext Check] --> C[Decrypt] --> D[Next Handler]
+```
 
 ### `did-jwt`
 
@@ -36,7 +39,10 @@ along to subsequent Message Handlers.
 
 JWTMessageHandler decodes a JWT and creates a message object.
 
-![img](../../static/img/diagrams/message_jwt.svg)
+```mermaid
+flowchart LR
+    A[Message] --> B[JWT Check] --> C[Decode / Resolve DID] --> D[Format] --> E[Next Handler]
+```
 
 ### `credential-w3c`
 
@@ -45,7 +51,10 @@ JWTMessageHandler decodes a JWT and creates a message object.
 W3CMessageHandler checks the message payload for Verifiable Credentials and Verifiable Presentations and formats the
 message object accordingly.
 
-![img](../../static/img/diagrams/message_w3c.svg)
+```mermaid
+flowchart LR
+    A[JWT] --> B[VC/VP Check] --> C[Format] --> D[Return Message]
+```
 
 ### `selective-disclosure`
 
@@ -56,4 +65,7 @@ SDRMessageHandler checks the message payload for Selective Disclosure Request an
 accordingly.
 Learn more about selective disclosure requests in the next section.
 
-![img](../../static/img/diagrams/message_sdr.svg)
+```mermaid
+flowchart LR
+    A[JWT] --> B[SDR Check] --> C[Format] --> D[Return Message]
+```
